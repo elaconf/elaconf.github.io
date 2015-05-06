@@ -1,0 +1,49 @@
+html {
+  font-size: 13px;
+}
+
+body {
+  background: #FAECCE;
+  font-size: 2.1rem;
+  text-align: center;
+  font-family: 'Strait', sans-serif;
+}
+
+.primary-header {
+  background: #231947;
+  width: 100%;
+}
+
+.ela-logo {
+  padding: 2rem;
+  width: 20rem;
+}
+
+.primary-main {
+  padding: 2rem;
+  margin: 1rem auto;
+  color: #231947;
+  background: #FAECCE;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+a {
+  color: #FB7049;
+  text-decoration: none;
+}
+a:hover {
+  color: #5A5AE0;
+}
+
+@media (min-width:700px) {
+  html {
+    font-size: 17px;
+  }
+  .primary-main {
+    width: 70%;
+  }
+}
