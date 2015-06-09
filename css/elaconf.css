@@ -1,0 +1,372 @@
+/*  colors
+tan: #FAECCE
+cyan: #38d7bd
+purple: #231947
+salmon: #fb7049
+*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FAECCE;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #231947;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+.page {
+  padding: .5em;
+}
+
+header,
+footer {
+  background-color: #231947;
+  color: #FAECCE;
+  padding: 2em;
+}
+
+header {
+  text-align: center;
+}
+
+
+header p {
+  color: #5a5ae0;
+  font-size: 1.5em;
+}
+
+header .button {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1.5em;
+}
+
+footer {
+  padding-bottom: 4em;
+}
+
+.ela-logo {
+  max-width: 25em;
+  display: block;
+  margin: 1em auto 2em;
+}
+
+section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em 1em 4em;
+  background-repeat: no-repeat;
+}
+
+section p,
+section ul {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 3em;
+  margin-bottom: 1.3em;
+}
+
+section li {
+  position: relative;
+}
+
+section li:before {
+  content: "";
+  position: absolute;
+  width: .7em;
+  height: .7em;
+  border-radius: .7em;
+  border: .15em solid #FAECCE;
+  left: -2.25em;
+  top: .3em;
+}
+
+/* cyan sections */
+section:nth-of-type(odd):not(.main) {
+  background-color: #38d7bd;
+}
+
+section:nth-of-type(odd) h1,
+section:nth-of-type(odd) a {
+  color: #5858dc;
+}
+
+section:nth-of-type(odd) h2 {
+  color: #FAECCE;
+}
+
+/* salmon sections */
+section:nth-of-type(even) {
+  background-color: #fb7049;
+}
+
+section:nth-of-type(even) h1,
+section:nth-of-type(even) a {
+  color: #faecce;
+}
+
+.page-conduct .main h2 {
+  color: #231947;
+}
+
+
+/* section: organizers */
+
+.organizer {
+  margin-bottom: 2em;
+}
+
+.organizer-bio {
+  max-width: 675px;
+}
+
+.organizer-img {
+  border: .4em solid #faecce;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  display: block;
+}
+
+.organizer:nth-of-type(even) .organizer-img {
+  border-radius: 100%;
+}
+
+
+
+/* type */
+
+p,
+li {
+  font-size: 1.25em;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+.button,
+header,
+footer,
+.nav {
+  font-family: 'Strait', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1.414em 0 .75em;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {font-size: 2em;}
+
+h3 {font-size: 1.33em;}
+
+small, .small {font-size: .75em;}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header a,
+footer a {
+  color: #FB7049;
+}
+
+header a:hover,
+footer a:hover {
+  color: #5A5AE0;
+}
+
+.button {
+  color: #FAECCE;
+  border: .2em solid;
+  padding: .6em 1.2em;
+  background: none;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.main .button:hover {
+  color: #A758DC;
+}
+
+.button-compact {
+  padding: .25em 1em;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: #231947;
+  color: #fff;
+}
+
+/* 500px and up */
+
+@media (min-width: 500px) {
+
+  body {
+    font-size: 17px;
+  }
+
+  .page {
+    padding: 1em;
+  }
+
+  .primary-header {
+    background-color: #231947;
+    background-size: 30%;
+    background-image: url(/images/bg-header-left.svg), url(/images/bg-header-right.svg);
+    background-position: 2em 2em, calc(100% - 2em) 2em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .ela-logo {
+    margin: 4em auto 3em;
+    max-width: 40%;
+  }
+
+  .half,
+  .fourth,
+  .third,
+  .two-thirds {
+    width: 50%;
+  }
+
+  .section-about {
+    background-image: url(/images/bg-about.svg);
+    background-position: 0 50%;
+    background-size: 10%;
+  }
+
+  .section-agenda,
+  .section-sponsor-spotlight {
+    background-image: url(/images/bg-agenda.svg);
+    background-position: calc(100% - 2em) calc(100% - 2em);
+    background-size: 15%;
+  }
+
+  .section-speaker-spotlight,
+  .section-venue {
+    background-image: url(/images/bg-conduct.svg);
+    background-position: 2em 2em;
+    background-size: 15%;
+  }
+
+  .section-reasons {
+    background-image: url(/images/bg-reasons.svg);
+    background-position: calc(100% - 2em) 2em;
+    background-size: 15%;
+  }
+
+  .section-organizers {
+    background-image: url(/images/bg-organizers.svg);
+    background-position: 0 2em;
+    background-size: 15%;
+  }
+
+  /* grid */
+
+  .grid,
+  .organizer {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+      -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+           align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+           -webkit-box-pack: left;
+    -webkit-justify-content: left;
+              -ms-flex-pack: left;
+            justify-content: left;
+  }
+
+  .organizer-img {
+    margin-bottom: 0;
+    width: 25%;
+  }
+
+  .organizer-bio {
+    padding: 1em .5em;
+    margin: 0 auto;
+  }
+
+  .header-small .ela-logo {
+    max-width: 150px;
+    margin: 0;
+  }
+
+}
+
+
+/* 900px and up */
+@media (min-width: 900px) {
+
+  .third {
+    width: 33.33%;
+  }
+
+  .fourth {
+    width: 25%;
+  }
+
+  .two-thirds {
+    width: 66.66%;
+  }
+
+  .organizer {
+    margin-bottom: 5em;
+  }
+
+}
