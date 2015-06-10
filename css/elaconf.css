@@ -29,7 +29,7 @@ header,
 footer {
   background-color: #231947;
   color: #FAECCE;
-  padding: 2em;
+  padding: 1em;
 }
 
 header {
@@ -253,6 +253,11 @@ img {
 
   .page {
     padding: 1em;
+  }
+
+  header,
+  footer {
+    padding: 2em;
   }
 
   .primary-header {
