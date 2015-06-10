@@ -126,7 +126,7 @@ section:nth-of-type(even) a {
 /* section: organizers */
 
 .organizer {
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 
 .organizer-bio {
@@ -135,7 +135,7 @@ section:nth-of-type(even) a {
 
 .organizer-img {
   border: .4em solid #faecce;
-  width: 45%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
@@ -334,7 +334,7 @@ img {
 
   .organizer-img {
     margin-bottom: 0;
-    width: 25%;
+    width: 40%;
   }
 
   .organizer-bio {
@@ -367,6 +367,10 @@ img {
 
   .organizer {
     margin-bottom: 5em;
+  }
+
+  .organizer-img {
+    width: 25%;
   }
 
 }
