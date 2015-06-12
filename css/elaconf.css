@@ -12,7 +12,7 @@ salmon: #fb7049
 }
 
 body {
-  background: #FAECCE;
+  background: #FAECD0;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -38,7 +38,7 @@ header {
 
 
 header p {
-  color: #5a5ae0;
+  color: #FAECD0;
   font-size: 1.5em;
 }
 
@@ -109,7 +109,7 @@ section:nth-of-type(odd):not(.main) {
 
 section:nth-of-type(odd) h1,
 section:nth-of-type(odd) a {
-  color: #5858dc;
+  color: #5C63A9;
 }
 
 section:nth-of-type(odd) h2 {
