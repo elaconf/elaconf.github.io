@@ -52,6 +52,10 @@ footer {
   padding-bottom: 4em;
 }
 
+footer .third p {
+  margin-bottom: .4em;
+}
+
 .ela-logo {
   max-width: 25em;
   display: block;
@@ -96,7 +100,7 @@ section li:before {
 
 /* cyan sections */
 section:nth-of-type(odd):not(.main) {
-  background-color: #38d7bd;
+  background-color: #50DDC2;
 }
 
 section:nth-of-type(odd) h1,
@@ -105,17 +109,22 @@ section:nth-of-type(odd) a {
 }
 
 section:nth-of-type(odd) h2 {
-  color: #FAECCE;
+  color: #231947;
 }
 
 /* salmon sections */
 section:nth-of-type(even) {
-  background-color: #fb7049;
+  background-color: #F77557;
+  color: #FAECD0;
+}
+
+section:nth-of-type(even) a {
+  color: blue;
 }
 
 section:nth-of-type(even) h1,
 section:nth-of-type(even) a {
-  color: #faecce;
+  color: #231947;
 }
 
 .page-conduct .main h2 {
@@ -204,7 +213,7 @@ a:hover {
 
 header a,
 footer a {
-  color: #FB7049;
+  color: #FAECD0;
 }
 
 header a:hover,
@@ -352,8 +361,16 @@ img {
     margin: 0;
   }
 
-}
+  #footer .third {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;      -webkit-flex-direction: column;
+    align-items: flex-end;
+    align-items: -webkit-flex-end;
+    -webkit-align-items: flex-end;
+  }
 
+}
 
 /* 900px and up */
 @media (min-width: 900px) {
