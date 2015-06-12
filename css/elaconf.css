@@ -222,7 +222,7 @@ footer a {
 
 header a:hover,
 footer a:hover {
-  color: #5A5AE0;
+  color: #5C63A9;
 }
 
 .button {
@@ -275,7 +275,7 @@ img {
 
   .primary-header {
     background-color: #231947;
-    background-size: 30%;
+    background-size: 24%;
     background-image: url(/images/bg-header-left.svg), url(/images/bg-header-right.svg);
     background-position: 2em 2em, calc(100% - 2em) 2em;
     background-repeat: no-repeat;
