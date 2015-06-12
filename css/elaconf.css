@@ -67,8 +67,8 @@ footer .third p {
 }
 
 section {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: .6em;
+  margin-bottom: .6em;
   padding: 1em 1em 4em;
   background-repeat: no-repeat;
 }
@@ -280,6 +280,11 @@ img {
     background-position: 2em 2em, calc(100% - 2em) 2em;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+
+  section {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .ela-logo {
