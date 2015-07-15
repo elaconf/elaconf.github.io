@@ -138,7 +138,6 @@ section:nth-of-type(even) a {
 .page-sponsorship-packages ul {
   list-style: disc;
   padding-left: 2em;
-  font-size: 14px;
   margin: 2em auto 4em;
 }
 
@@ -147,13 +146,12 @@ section:nth-of-type(even) a {
 }
   
 
-
 hr {
   border-style: solid;
-  border-width: .2em 0 0 0;
+  border-width: .1em 0 0 0;
   border-color: #231947 transparent transparent;
-  margin: 2em auto 3em;
   max-width: 750px;
+  margin-bottom: 3em;
 }
 
 /* section: organizers */
