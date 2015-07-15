@@ -131,10 +131,28 @@ section:nth-of-type(even) a {
   color: #231947;
 }
 
-.page-conduct .main h2 {
+.page-code-of-conduct .main h2 {
   color: #231947;
 }
 
+.page-sponsorship-packages ul {
+  list-style: disc;
+  padding-left: 2em;
+  margin: 2em auto 4em;
+}
+
+.page-sponsorship-packages li {
+  margin-bottom: .25em;
+}
+  
+
+hr {
+  border-style: solid;
+  border-width: .1em 0 0 0;
+  border-color: #231947 transparent transparent;
+  max-width: 750px;
+  margin-bottom: 3em;
+}
 
 /* section: organizers */
 
@@ -236,6 +254,20 @@ footer a:hover {
 
 .button:hover {
   text-decoration: none;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main p,
+.main ul {
+  text-align: left;
+  max-width: none;
 }
 
 .main .button:hover {
