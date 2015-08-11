@@ -1,0 +1,14 @@
+- name: nvite
+  site: https://nvite.com/
+  image: nvite.png
+  type: In-kind Sponsor
+  
+- name: NowSecure
+  site: https://www.nowsecure.com
+  image: nowsecure.svg
+  type: Ecosystem Supporter
+  
+- name: Mapbox
+  site: https://www.mapbox.com
+  image: mapbox.png
+  type: Ecosystem Supporter

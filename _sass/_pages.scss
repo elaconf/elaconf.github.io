@@ -1,0 +1,39 @@
+@include breakpoint(medium) {
+  .header-small .ela-logo {
+    max-width: 150px;
+    margin: 0;
+  }
+}
+
+.page-code-of-conduct .main h2 {
+  color: $text-color;
+}
+
+.page-sponsorship-packages ul {
+  list-style: disc;
+  padding-left: 2em;
+  margin: 2em auto 4em;
+}
+
+.page-sponsorship-packages li {
+  margin-bottom: .25em;
+}
+
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main p,
+.main ul {
+  text-align: left;
+  max-width: none;
+}
+
+.main .button:hover {
+  color: #A758DC;
+}
