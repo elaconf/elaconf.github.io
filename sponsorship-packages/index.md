@@ -87,7 +87,7 @@ To sponsor, please email [mailto:{{site.email}}]({{site.email}}). [Download the 
 
 ### Lunch Sponsor ($2500)
 
-* Company representatives at breakfast
+* Company representatives at lunch
 * FIVE (5) mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
 * Company name included on included on slideshow
 * Logo/link on [elaconf.com]({{site.url}})
