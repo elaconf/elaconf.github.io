@@ -12,3 +12,8 @@
   site: https://www.mapbox.com
   image: mapbox.png
   type: Ecosystem Supporter
+
+- name: Wharton
+  site: http://wcai.wharton.upenn.edu/
+  image: wharton.png
+  type: In-kind Sponsor
