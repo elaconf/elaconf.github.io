@@ -26,7 +26,8 @@ h3,
 .button,
 header,
 footer,
-.nav {
+.nav,
+thead {
   font-family: 'Strait', sans-serif;
 }
 
@@ -61,3 +62,6 @@ a:hover {
   background: $text-color;
   color: #fff;
 }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }

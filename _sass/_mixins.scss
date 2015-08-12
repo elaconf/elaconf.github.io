@@ -1,6 +1,8 @@
 @mixin breakpoint($point) {
   @if $point == medium {
     @media (min-width: 500px) { @content; }
+  } @else if $point == small {
+    @media (max-width: 500px) { @content; }
   } @else if $point == large {
     @media (min-width: 900px) { @content; }
   }
@@ -16,5 +18,12 @@
 
   &:after {
     clear: both;
+  }
+}
+
+.show-mobile {
+  display: none;
+  @include breakpoint(small) {
+    display: inline-block;
   }
 }

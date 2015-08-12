@@ -12,7 +12,9 @@ section {
 
 section p,
 section ul,
-section address {
+section ol,
+section address,
+section table {
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
@@ -25,11 +27,11 @@ section ul {
   margin-bottom: 1.3em;
 }
 
-section li {
+section ul li {
   position: relative;
 }
 
-section li:before {
+section ul li:before {
   content: "";
   position: absolute;
   width: .7em;
@@ -90,7 +92,8 @@ section:nth-of-type(even) a {
     background-size: 15%;
   }
 
-  .section-reasons {
+  .section-reasons,
+  .section-tickets {
     background-image: url(/images/bg-reasons.svg);
     background-position: calc(100% - 2em) 2em;
     background-size: 15%;
