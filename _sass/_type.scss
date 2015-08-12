@@ -1,9 +1,14 @@
 /* type */
 
 p,
-li {
+li,
+address {
   font-size: 1.25em;
   margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+iframe {
   margin-bottom: 1.3em;
 }
 
