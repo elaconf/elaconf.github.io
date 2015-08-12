@@ -1,0 +1,15 @@
+
+.sponsor-image {
+  margin: 1em auto;
+  display: block;
+  
+  @include breakpoint(medium) {
+    margin: 0;
+    display: inline-block;
+  }
+}
+.sponsor-nowsecure,
+.sponsor-wharton {
+  background-color: #fff;
+  padding: 30px;
+}

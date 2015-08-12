@@ -1,0 +1,63 @@
+/* type */
+
+p,
+li,
+address {
+  font-size: 1.25em;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+iframe {
+  margin-bottom: 1.3em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+.button,
+header,
+footer,
+.nav {
+  font-family: 'Strait', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1.414em 0 .75em;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {font-size: 2em;}
+
+h3 {font-size: 1.33em;}
+
+small, .small {font-size: .75em;}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: $text-color;
+  color: #fff;
+}

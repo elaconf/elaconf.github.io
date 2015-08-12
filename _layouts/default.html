@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}} 2015</title>
+  <meta name="description" content="{{site.mission}}">
+  <meta name="keywords" content="web design,design,designer,developer,front-end,tech,technology,women,female,girls,conference,empower,web,women in tech">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="fwQlP4L8TVoaRJctoltAtyp9zrdfeOkm1NNSAVENMdk" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{site.twitter}}">
+  <meta name="twitter:title" content="{{site.title}}">
+  <meta name="twitter:description" content="{{site.mission}}">
+  <meta name="twitter:image" content="http://elaconf.com/images/elaconf.png">
+  
+  <link rel="shortcut icon" href="/images/elafav.png" type="image/x-icon">
+  <link rel="icon" href="/images/elafav.png" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="/css/elaconf.css" />
+  <link href='http://fonts.googleapis.com/css?family=Strait|Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+  <div class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}">
+    {{content}}
+    <footer id="footer">
+      <div class="grid">
+        <div class="two-thirds">
+          <p>Twitter: <a href="https://www.twitter.com/{{site.twitter}}">@{{site.twitter}}</a><br>Email: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
+        </div>
+        <div class="third">
+          <p>Our Newsletter:</p>
+          <a href="{{site.newsletter}}" class="button button-compact button-newsletter">Sign up</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

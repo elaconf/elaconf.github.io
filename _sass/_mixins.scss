@@ -1,0 +1,20 @@
+@mixin breakpoint($point) {
+  @if $point == medium {
+    @media (min-width: 500px) { @content; }
+  } @else if $point == large {
+    @media (min-width: 900px) { @content; }
+  }
+}
+
+@mixin clearfix() {
+
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
