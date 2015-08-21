@@ -2,7 +2,7 @@
 layout: page
 title: Sponsorship Packages
 ---
-To sponsor, please email [mailto:{{site.email}}]({{site.email}}). [Download the sponsorship packages document](https://docs.google.com/document/u/1/d/1iZqNH1Udl1SvE20GKez7yQfNgMwxKGtz6EzBIxmBVvw/pub).
+To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Download the sponsorship packages document](https://docs.google.com/document/u/1/d/1iZqNH1Udl1SvE20GKez7yQfNgMwxKGtz6EzBIxmBVvw/pub).
 
 ## Support Levels
 
