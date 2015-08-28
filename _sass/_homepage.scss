@@ -3,7 +3,7 @@ section {
   margin-bottom: .6em;
   padding: 1em 1em 4em;
   background-repeat: no-repeat;
-  
+
   @include breakpoint(medium) {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -108,4 +108,12 @@ section:nth-of-type(even) a:hover {
     background-position: 0 2em;
     background-size: 15%;
   }
+}
+
+// Speaker app section
+.timeline {
+  display: block;
+  margin: auto;
+  width: 600px;
+  max-width: 100%;
 }
