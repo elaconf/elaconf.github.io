@@ -7,7 +7,7 @@ The following topics help summarize what ELA Conf is all about. This list is for
 
 **When you are ready to officially submit your talk abstract you can [fill out the speaker application here](http://goo.gl/forms/8iz7wdRLaa) and feel free to [contact us](mailto:hello@elaconf.com) with any questions.**
 
-*You can find the [lightening talk application here](http://goo.gl/forms/lRSWCTrXe8).*
+*You can find the [lightning talk application here](http://goo.gl/forms/lRSWCTrXe8).*
 
 ## Important Dates
 
