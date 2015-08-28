@@ -36,8 +36,8 @@ The following topics help summarize what ELA Conf is all about. This list is for
 ### Giving Back To The Community
 <p>We are all part of a community that loves to share things for free. It’s not uncommon for someone to pursue an entire technical education on the web from people that are happy to just share their knowledge. How have you given back to the community recently? Have you built/written/taught anything that you could tell us about? What have been the benefits for both yourself and the audience?</p>
 
-### The Self-Taught Journey
-<p>There are so many women with very unique stories related to how they got started in tech and how they obtained the foundational knowledge necessary to get a job. Did you go through a complete career change? Use online resources or books to teach yourself? The journey to a self-taught career can be a great source of inspiration as more and more women break into the industry this way.</p>
+<!--### The Self-Taught Journey
+<p>There are so many women with very unique stories related to how they got started in tech and how they obtained the foundational knowledge necessary to get a job. Did you go through a complete career change? Use online resources or books to teach yourself? The journey to a self-taught career can be a great source of inspiration as more and more women break into the industry this way.</p>-->
 
 ### Mentorship Stories
 <p>Being a part of a meaningful mentorship can be invaluable. Has there been someone in your life that has been a source of inspiration, feedback, and advice concerning your career? We’d love to hear about about how your mentorship relationship came to be, what makes it so special, and what you have gotten out of it.</p>
