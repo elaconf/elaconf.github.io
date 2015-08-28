@@ -10,16 +10,16 @@ body {
   color: $text-color;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  
+
   @include breakpoint(medium) {
     font-size: 17px;
   }
-  
+
 }
 
 .page {
   padding: .5em;
-  
+
   @include breakpoint(medium) {
     padding: 1em;
   }
@@ -42,9 +42,9 @@ footer {
   background-color: $text-color;
   color: $light;
   padding: 1em;
-  
+
   @include breakpoint(medium) {
-    padding: 2em;  
+    padding: 2em;
   }
 }
 
@@ -91,13 +91,13 @@ footer .third p {
   max-width: 25em;
   display: block;
   margin: 1em auto 2em;
-  
+
   @include breakpoint(medium) {
     margin: 4em auto 3em;
     max-width: 40%;
   }
 }
-  
+
 
 hr {
   border-style: solid;
