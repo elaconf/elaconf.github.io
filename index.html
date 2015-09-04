@@ -33,7 +33,7 @@ layout: default
 <!-- ///////////////////////////////////////////////////// -->
 <!-- CFP -->
 <!-- ///////////////////////////////////////////////////// -->
-<section class="section-cfp" id="call-for-speakder">
+<section class="section-cfp" id="call-for-speakers">
   <h1>Call for speakers</h1>
   <img class="timeline" src="images/timeline.svg" alt="A timeline of speaker application important dates; open August 28, end September 30, notifications October 12"/>
   <h2>Lightning talks</h2>
@@ -48,6 +48,22 @@ layout: default
 
 
 
+</section>
+
+<!-- ///////////////////////////////////////////////////// -->
+<!-- Speaker spotlight -->
+<!-- ///////////////////////////////////////////////////// -->
+<section class="section-speaker-spotlight" id="speakers">
+  <h1>Speaker Spotlight</h1>
+  {% for speaker in site.data.speakers %}
+  <div class="speaker">
+    <img class="speaker-img" src="/images/speakers/{{speaker.image}}" alt="{{speaker.name}}" />
+    <p class="speaker-bio">
+      {% if speaker.topic %}<span class="speaker-topic">{{speaker.topic}}</span>{% endif %}
+      <a href="https://twitter.com/{{speaker.twitter}}">{{speaker.name}}</a> {{speaker.bio}}</p>
+  </div>
+  {% endfor %}
+  <p><em>More speakers coming soon!</em></p>
 </section>
 
 <!-- ///////////////////////////////////////////////////// -->
@@ -88,14 +104,6 @@ layout: default
       </tr>
     </tbody>
   </table>
-</section>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Speaker spotlight -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-speaker-spotlight" id="speakers">
-  <h1>Speaker Spotlight</h1>
-  <p><em>This information is coming soon!</em></p>
 </section>
 
 <!-- ///////////////////////////////////////////////////// -->
