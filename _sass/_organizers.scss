@@ -1,10 +1,12 @@
-/* section: organizers */
+/* section: organizers + speakers */
 
-.organizer {
+.organizer,
+.speaker {
   margin-bottom: 5em;
 }
 
-.organizer-bio {
+.organizer-bio,
+.speaker-bio {
   max-width: 675px;
   
   @include breakpoint(medium) {
@@ -13,7 +15,8 @@
   }
 }
 
-.organizer-img {
+.organizer-img,
+.speaker-img {
   border: .4em solid $light;
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +33,14 @@
   }
 }
 
-.organizer:nth-of-type(even) .organizer-img {
+.organizer:nth-of-type(even) .organizer-img,
+.speaker:nth-of-type(even) .speaker-img {
   border-radius: 100%;
+}
+
+
+.speaker-topic {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
 }
