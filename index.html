@@ -60,7 +60,7 @@ layout: default
     <img class="speaker-img" src="/images/speakers/{{speaker.image}}" alt="{{speaker.name}}" />
     <p class="speaker-bio">
       {% if speaker.topic %}<span class="speaker-topic">{{speaker.topic}}</span>{% endif %}
-      <a href="https://twitter.com/{{speaker.twitter}}">{{speaker.name}}</a> {{speaker.bio}}</p>
+      {% if speaker.bio_verb != false %}<a href="https://twitter.com/{{speaker.twitter}}">{{speaker.name}}</a> {% endif %}{{speaker.bio}}</p>
   </div>
   {% endfor %}
   <p><em>More speakers coming soon!</em></p>

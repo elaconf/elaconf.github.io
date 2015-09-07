@@ -4,3 +4,10 @@
   topic: Opening Keynote
   bio: is a developer, currently working at Microsoft managing a new tech training program called Tech Jobs Academy. She's the founder of <a href="http://www.codenewbie.org/">CodeNewbie</a>, the most supportive community of programmers and people learning to code. You can hear her on the weekly <a href="https://devchat.tv/ruby-rogues/">RubyRogues podcast</a>, or catch her interviewing incredible people in tech on the <a href="http://www.codenewbie.org/podcast">CodeNewbie Podcast</a> (new episodes every Monday. Subscribe on your favorite podcast app).
 
+- name: Chanelle Henry
+  image: chanelle.jpg
+  twitter: Chanelle777
+  topic: MC & Closing Keynote
+  bio_verb: false # bio doesn't start with verb
+  bio: With a background in Psychology, Computer Science and cybersecurity, Art Direction and Design, <a href="https://twitter.com/Chanelle777">Chanelle Henry</a> also has a log for problem solving and creating methodologies; helping outline, encourage, and propel the UX Process. She uses creative and innovative solutions to execute ideas while consulting with everyone from startups to Fortune 50 companies to help refine their goals, make progress, and develop a UX strategy. 
+
