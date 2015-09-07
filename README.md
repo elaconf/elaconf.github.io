@@ -38,5 +38,5 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
   - `image` &mdash; the name and extention of the image
   - `twitter` &mdash; the handle only
   - `topic` &mdash; this is optional, when provided it will appear above the bio
-  - `bio` &mdash; start with a verb like "is" as the speaker's name will automatically start this paragraph off
+  - `bio` &mdash; start with a verb like "is" as the speaker's name will automatically start this paragraph off. If the bio *doesn't* start with a verb add `bio_verb: false` to the speaker's yaml.
 * Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
