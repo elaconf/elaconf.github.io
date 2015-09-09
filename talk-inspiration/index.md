@@ -24,6 +24,9 @@ The following topics help summarize what ELA Conf is all about. This list is for
 ### Sharing What You Learn: Becoming A Teacher
 <p>Beginners and experienced people alike make great teachers. As a beginner, the struggles of a topic are fresh in your mind and communicating these struggles from the perspective of a beginner is invaluable to other people in the same situation. We are also able to better retain what we learn as we communicate it to others. What is the last thing you learned about and immediately taught someone else? How exactly did you present this information; through writing, in-person presentations, a video, a demo?</p>
 
+### Responding To A Call For Proposal 
+<p>Have experience either writing amazing and accepted talk proposals or experience reviewing and selecting them? We'd love to hear and practice any advice you have through a hands-on, workshop setting.</p>
+
 ### Getting Started With An Open Source Project
 <p>Contributing to an open source project can be a very rewarding and educational experience. Not all open source projects are created equally though. Share your experience on how you got started with a particular project, what you have learned as a result, and any advice you have for others interested in becoming part of a project but don’t know where to start.</p>
 
@@ -32,9 +35,6 @@ The following topics help summarize what ELA Conf is all about. This list is for
 
 ### Negotiating a Promotion/Raise
 <p>It’s a fact, women are generally only likely to ask for a raise when we feel 100% qualified. How do we eliminate this assumption and empower one another to have the confidence needed to negotiate such things? What are the politics associated with asking for a promotion/raise and how should it actually be done?</p>
-
-### Giving Back To The Community
-<p>We are all part of a community that loves to share things for free. It’s not uncommon for someone to pursue an entire technical education on the web from people that are happy to just share their knowledge. How have you given back to the community recently? Have you built/written/taught anything that you could tell us about? What have been the benefits for both yourself and the audience?</p>
 
 <!--### The Self-Taught Journey
 <p>There are so many women with very unique stories related to how they got started in tech and how they obtained the foundational knowledge necessary to get a job. Did you go through a complete career change? Use online resources or books to teach yourself? The journey to a self-taught career can be a great source of inspiration as more and more women break into the industry this way.</p>-->
