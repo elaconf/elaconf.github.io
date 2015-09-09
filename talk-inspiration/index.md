@@ -27,6 +27,9 @@ The following topics help summarize what ELA Conf is all about. This list is for
 ### Responding To A Call For Proposal 
 <p>Have experience either writing amazing and accepted talk proposals or experience reviewing and selecting them? We'd love to hear and practice any advice you have through a hands-on, workshop setting.</p>
 
+### Writing A Great Bio
+<p>Bios are hard. It's awkward to write in the third person and listing our accomplishments while also showing a bit of our personality can be a challenge. Talk all about how to create a successful bio in a fun, workshop setting.</p>
+
 ### Getting Started With An Open Source Project
 <p>Contributing to an open source project can be a very rewarding and educational experience. Not all open source projects are created equally though. Share your experience on how you got started with a particular project, what you have learned as a result, and any advice you have for others interested in becoming part of a project but don’t know where to start.</p>
 
