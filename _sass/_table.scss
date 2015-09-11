@@ -26,7 +26,7 @@ table th {
   font-size: inherit;
   margin: 0;
   overflow: visible; /*to make ths where the title is really long work*/
-
+  
   @include breakpoint(medium) {
     padding: 0.75em 1em; /* cell padding */
     border-left: 1px solid $light;/*  inner column border */
@@ -67,19 +67,7 @@ table thead th {
   font-weight: bold;
 }
 
-/*
-table td {
-border-bottom: 1px solid $light;
+td.text-right {
+  @include breakpoint(medium) { min-width: 117px; }
+  @include breakpoint(small) { text-align: left; }
 }
-
-table tbody > tr:last-child > td {
-border-bottom-width: 0;
-}
-*/
-
-
-  td.text-right {
-    @include breakpoint(medium) { min-width: 117px; }
-      @include breakpoint(small) { text-align: left; }
-  }
-
