@@ -11,7 +11,7 @@ The following topics help summarize what ELA Conf is all about. This list is for
 
 ## Important Dates
 
-![A timeline of speaker application important dates; open August 28, end September 30, notifications October 12](timeline.svg)
+![A timeline of speaker application important dates; open August 28, end October 9, notifications October 16](timeline.svg)
 
 ## Topics
 

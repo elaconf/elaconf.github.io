@@ -12,8 +12,8 @@
 	<rect x="24.3" y="22.3" fill="none" width="163.5" height="96"/>
 	<text transform="matrix(1 0 0 1 24.2696 35.2178)"><tspan x="0" y="0" fill="#231947" font-family="'OpenSans-Bold'" font-size="17">August 28</tspan><tspan x="0" y="39.6" fill="#231947" font-family="'OpenSans'" font-size="16">Speaker Applications </tspan><tspan x="0" y="58.8" fill="#231947" font-family="'OpenSans'" font-size="16">Open</tspan></text>
 	<rect x="216.3" y="22.8" fill="none" width="163.5" height="96"/>
-	<text transform="matrix(1 0 0 1 239.7103 35.7256)"><tspan x="0" y="0" fill="#231947" font-family="'OpenSans-Bold'" font-size="17">September 30</tspan><tspan x="-19.5" y="39.6" fill="#231947" font-family="'OpenSans'" font-size="16">Speaker Applications </tspan><tspan x="38.1" y="58.8" fill="#231947" font-family="'OpenSans'" font-size="16">Close</tspan></text>
+	<text transform="matrix(1 0 0 1 239.7103 35.7256)"><tspan x="20" y="0" fill="#231947" font-family="'OpenSans-Bold'" font-size="17">October 9</tspan><tspan x="-19.5" y="39.6" fill="#231947" font-family="'OpenSans'" font-size="16">Speaker Applications </tspan><tspan x="38.1" y="58.8" fill="#231947" font-family="'OpenSans'" font-size="16">Close</tspan></text>
 	<rect x="415.2" y="23.3" fill="none" width="163.5" height="96"/>
-	<text transform="matrix(1 0 0 1 486.2159 36.2264)"><tspan x="0" y="0" fill="#231947" font-family="'OpenSans-Bold'" font-size="17">October 12</tspan><tspan x="-37.9" y="39.6" fill="#231947" font-family="'OpenSans'" font-size="16">Notifications sent</tspan></text>
+	<text transform="matrix(1 0 0 1 486.2159 36.2264)"><tspan x="0" y="0" fill="#231947" font-family="'OpenSans-Bold'" font-size="17">October 16</tspan><tspan x="-37.9" y="39.6" fill="#231947" font-family="'OpenSans'" font-size="16">Notifications sent</tspan></text>
 </g>
 </svg>
