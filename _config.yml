@@ -18,3 +18,13 @@ kramdown:
 nvite: a89f
 twitter: elaconf
 email: hello@elaconf.com
+
+permalink: /:categories/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "speaker"

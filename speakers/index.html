@@ -1,0 +1,14 @@
+---
+layout: page
+title: Speakers
+---
+
+<div class="speakers">
+  {% for speaker in site.posts reversed %}{% if speaker.image %}
+  <a href="{{speaker.url}}" class="speaker">
+    <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}})"></div>
+    {% if speaker.topic %}<div class="speaker-topic">{{speaker.topic}}</div>{% endif %}
+    <div class="speaker-name">{{speaker.title}}</div>
+  </a>
+  {% endif %}{% endfor %}
+</div>

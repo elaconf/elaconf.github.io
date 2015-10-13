@@ -44,14 +44,15 @@ layout: default
 <!-- ///////////////////////////////////////////////////// -->
 <section class="section-speaker-spotlight" id="speakers">
   <h1>Speaker Spotlight</h1>
-  {% for speaker in site.data.speakers %}
-  <div class="speaker">
-    <img class="speaker-img" src="/images/speakers/{{speaker.image}}" alt="{{speaker.name}}" />
-    <p class="speaker-bio">
-      {% if speaker.topic %}<span class="speaker-topic">{{speaker.topic}}</span>{% endif %}
-      {% if speaker.bio_verb != false %}<a href="https://twitter.com/{{speaker.twitter}}">{{speaker.name}}</a> {% endif %}{{speaker.bio}}</p>
+  <div class="speakers">
+    {% for speaker in site.posts reversed %}{% if speaker.image %}
+    <a href="{{speaker.url}}" class="speaker">
+      <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}})"></div>
+      <div class="speaker-details">{% if speaker.topic %}<div class="speaker-topic">{{speaker.topic}}</div>{% endif %}
+      <div class="speaker-name">{{speaker.title}}</div></div>
+    </a>
+    {% endif %}{% endfor %}
   </div>
-  {% endfor %}
   <p><em>More speakers coming soon!</em></p>
 </section>
 
