@@ -8,13 +8,24 @@
     display: inline-block;
   }
 }
+
+.sponsor-nowsecure,
+.sponsor-wharton,
+.sponsor-devbootcamp,
+.sponsor-mapbox {
+  background-color: #fff;
+  
+}
+
 .sponsor-nowsecure,
 .sponsor-wharton {
-  background-color: #fff;
   padding: 30px;
 }
 
 .sponsor-mapbox {
-  background: #fff;
   padding: 5px;
+}
+
+.sponsor-devbootcamp {
+  padding: 40px;
 }
