@@ -17,3 +17,8 @@
   site: http://wcai.wharton.upenn.edu/
   image: wharton.png
   type: In-kind Sponsor
+
+- name: devbootcamp
+  site: http://devbootcamp.com/
+  image: devbootcamp.jpg
+  type: Company Sponsor
