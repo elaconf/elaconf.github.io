@@ -24,6 +24,8 @@
 .main {
   max-width: 900px;
   margin: 0 auto;
+  
+  @include clearfix;
 }
 
 .main h1,

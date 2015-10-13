@@ -33,10 +33,12 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
 
 ### Speakers
 
-* You can add or update speakers from the [speakers.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/speakers.yml) file. Please include the following:
-  - `name` &mdash; first and last
-  - `image` &mdash; the name and extention of the image
+* Each speaker has her own page located in `/speakers/_posts/`
+* Each file is named: `0000-01-0#-first-last.md` (where # is incremented).
+* In the front matter of each file, please include:
+  - `title` &mdash; first and last name
+  - `image` &mdash; the name and extension of the image
   - `twitter` &mdash; the handle only
-  - `topic` &mdash; this is optional, when provided it will appear above the bio
-  - `bio` &mdash; start with a verb like "is" as the speaker's name will automatically start this paragraph off. If the bio *doesn't* start with a verb add `bio_verb: false` to the speaker's yaml.
+  - `topic` &mdash; topic of talk/role
+* The bio goes directly in the post content area (below the front matter)
 * Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.

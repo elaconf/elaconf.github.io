@@ -8,13 +8,7 @@ layout: default
 
 <section class="main">
   <h1>{{page.title}}</h1>
+  <img src="/images/speakers/{{page.image}}" alt="{{page.title}}" class="speaker-img-page">
+  <p>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a></p>
   {{content}}
 </section>
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-<script>
-$("h2,h3").each(function(){
-  $(this).wrap("<a href='#"+$(this).attr('id')+"'></a>");
-});
-</script>
