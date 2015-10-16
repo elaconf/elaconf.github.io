@@ -107,7 +107,7 @@ layout: default
   <p>A big thanks to our sponsors:</p>
   <p>
     {% for sponsor in site.data.sponsors %}
-    <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" height="150" class="sponsor-image sponsor-{{sponsor.name | slugify}}"></a>
+    <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image sponsor-{{sponsor.name | slugify}}"></a>
     {% endfor %}
   </p>
 </section>
