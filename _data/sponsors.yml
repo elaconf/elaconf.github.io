@@ -22,3 +22,8 @@
   site: http://devbootcamp.com/
   image: devbootcamp.jpg
   type: Company Sponsor
+
+- name: CommunicateHealth
+  site: http://communicatehealth.com/
+  image: ch.png
+  type: Community Builder

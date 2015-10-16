@@ -12,18 +12,20 @@
 .sponsor-nowsecure,
 .sponsor-wharton,
 .sponsor-devbootcamp,
-.sponsor-mapbox {
+.sponsor-mapbox,
+.sponsor-communicatehealth {
   background-color: #fff;
   
 }
 
-.sponsor-nowsecure,
-.sponsor-wharton {
-  padding: 30px;
-}
-
 .sponsor-mapbox {
   padding: 5px;
+}
+
+.sponsor-nowsecure,
+.sponsor-wharton,
+.sponsor-communicatehealth {
+  padding: 30px;
 }
 
 .sponsor-devbootcamp {
