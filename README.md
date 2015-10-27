@@ -42,3 +42,16 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
   - `topic` &mdash; topic of talk/role
 * The bio goes directly in the post content area (below the front matter)
 * Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
+
+
+### Talks
+
+* Each talk has its own page located in `/agenda/_posts/`
+* Each file is named: `yyyy-mm-dd-talk-title.md` 
+* In the front matter of each file, please include:
+  - `title` &mdash; title of the talk
+  - `time` &mdash; start and end time of the talk
+  - `room` &mdash; the room assigned
+  - `speakers` &mdash; list of speakers givin the talk
+  - `date` &mdash; the date and time in 24-hour format
+* The talk abstract goes directly in the post content area (below the front matter)
