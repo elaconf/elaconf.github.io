@@ -42,16 +42,18 @@
 }
 
 .page-agenda {
+  
   table {
     max-width: 100%;
   }
+  
   tbody tr:nth-child(even) td,
   .row-breakout td {
     background: rgba(#fff, .4);
   }
+  
   td {
     vertical-align: text-top;
-    
     @include breakpoint(small) {
       padding: .25em 1em;
     }
@@ -85,9 +87,9 @@
 }
 
 .agenda-title {
-  font-weight: bold;
   margin-bottom: .5em;
   display: block;
+  font-weight: bold;
 }
 
 @include breakpoint(medium) {
