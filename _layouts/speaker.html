@@ -6,9 +6,21 @@ layout: default
   <a href="{{site.url}}"><img class="ela-logo" src="/images/elalogo2.svg" alt="Ela Conf logo in basic shapes" /></a>
 </header>
 
+
 <section class="main">
+  
   <h1>{{page.title}}</h1>
   <img src="/images/speakers/{{page.image}}" alt="{{page.title}}" class="speaker-img-page">
   <p>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %} {% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
+  {% comment %}<p>
+    {% assign talks = (site.posts | where: "category", "agenda") %}
+    {% for talk in talks %}
+    {% if talk.speakers contains page.title %}<a href="{{talk.url}}">{{talk.title}}</a><br>{% endif %}
+    {% endfor %}
+  </p>{% endcomment %}
   {{content}}
+  
+  
+  
+  <a href="/speakers/" class="small">&larr; Speakers</a>
 </section>
