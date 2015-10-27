@@ -68,20 +68,20 @@
 }
 
 .agenda-speaker {
-    width: 25px;
-    height: 25px;
-    
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    background-size: cover;
-    
-    border: 1px solid $text-color;
-    
-    .agenda-speaker-link:nth-child(odd) & {
-      border-radius: 100%;
-    }
+  width: 25px;
+  height: 25px;
+  
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-size: cover;
+  
+  border: 1px solid $text-color;
+  
+  .agenda-speaker-link:nth-child(odd) & {
+    border-radius: 100%;
+  }
 }
 
 .agenda-title {
@@ -90,6 +90,23 @@
   display: block;
 }
 
+@include breakpoint(medium) {
+  .agenda-time {
+    border-right: .2em solid $text-color;
+    text-align: right;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: .7em;
+      height: .7em;
+      border-radius: .7em;
+      border: 0.15em solid #f77557;
+      right: -0.6em;
+      top: 1em;
+    }
+  }
+}
 
 .allow-bullets ul {
   list-style: disc;

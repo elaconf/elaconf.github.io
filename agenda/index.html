@@ -4,13 +4,12 @@ title: Agenda
 ---
 
 
-<h2>Saturday</h2>
+<h2 class="text-center">Saturday</h2>
 
 <table>
 <thead>
 <tr>
-  <th>Time</th>
-  <th>Room</th>
+  <th class="agenda-time">Time</th>
   <th>Talk</th>
 </tr>
 </thead>
@@ -26,8 +25,8 @@ title: Agenda
 {% elsif x.breakout == null %}
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
 {% endif %}
-<td class="agenda-room">{% if x.room %}{{x.room}}{% else %}TBA{% endif %}</td>
 <td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }}</a>
+{% if x.room %}{{x.room}}{% else %}{% endif %}
 {% for s in x.speakers %}
 {% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}<a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}
 </tr>
