@@ -40,3 +40,41 @@
 .main .button:hover {
   color: #A758DC;
 }
+
+.page-agenda {
+  table {
+    max-width: 100%;
+  }
+  tbody tr:nth-child(even) td,
+  .row-breakout td {
+    background: rgba(#fff, .4);
+  }
+  td {
+    vertical-align: text-top;
+  }
+}
+
+.agenda-speaker-link {
+  display: block;
+  min-width: 9em;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: .5em;
+}
+
+.agenda-speaker {
+    width: 25px;
+    height: 25px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: -.5em;
+    background-size: cover;
+    
+    border: 1px solid $text-color;
+    
+    .agenda-speaker-link:nth-child(odd) & {
+      border-radius: 100%;
+    }
+}

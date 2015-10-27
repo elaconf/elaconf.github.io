@@ -24,7 +24,15 @@ permalink: /:categories/:title/
 defaults:
   -
     scope:
-      path: ""
+      path: "speakers"
       type: "posts"
     values:
       layout: "speaker"
+      category: "speakers"
+  -
+    scope:
+      path: "agenda"
+      type: "posts"
+    values:
+      layout: "agenda"
+      category: "agenda"
