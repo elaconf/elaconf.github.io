@@ -7,9 +7,17 @@ layout: default
 </header>
 
 
-<section class="main">
+<section class="main allow-bullets">
   <h1>{{page.title}}</h1>
-  <p><strong>{{page.room}}</strong> &bull; {{page.date | date: '%B %d'}} {{page.time}} {{page.date | date: "%p"}}</p>
-  {% if page.speakers %}<p>Speaker{% if page.speakers[1] %}s{% endif %}: {% for s in page.speakers %}<a href="/speakers/{{s |slugify}}/">{{s}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+  {% if page.speakers %}
+  <p>
+    {% for s in page.speakers %}{% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}
+    <a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><span style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></span>{{s}}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+  <p><strong>{% if page.room %}{{page.room}}{% else %}Room TBA{% endif %}</strong> &bull; {{page.date | date: '%B %d'}} {{page.time}} {{page.date | date: "%p"}}</p>
+  
   {{content}}
+  <a href="/agenda/" class="small">&larr; Agenda</a>
 </section>

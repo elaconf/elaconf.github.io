@@ -58,7 +58,7 @@
   display: block;
   min-width: 9em;
   position: relative;
-  padding-left: 1em;
+  padding-left: 1.5em;
   margin-bottom: .5em;
 }
 
@@ -69,7 +69,7 @@
     display: inline-block;
     position: absolute;
     top: 3px;
-    left: -.5em;
+    left: 0;
     background-size: cover;
     
     border: 1px solid $text-color;
@@ -77,4 +77,9 @@
     .agenda-speaker-link:nth-child(odd) & {
       border-radius: 100%;
     }
+}
+
+
+.allow-bullets ul {
+  list-style: disc;
 }
