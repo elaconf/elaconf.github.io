@@ -12,7 +12,6 @@ title: Agenda
   <th>Time</th>
   <th>Room</th>
   <th>Talk</th>
-  <th>Speakers</th>
 </tr>
 </thead>
 
@@ -23,13 +22,12 @@ title: Agenda
 {% assign first_break = x.breakout %}
 <tr{% if x.breakout %} class="row-breakout"{% endif %}>
 {% if prev_break == null and first_break and x.breakout %}
-<td rowspan="3">{{x.time | replace:' ','&nbsp;'}}</td>
+<td rowspan="3" class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
 {% elsif x.breakout == null %}
-<td>{{x.time | replace:' ','&nbsp;'}}</td>
+<td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
 {% endif %}
-<td>{% if x.room %}{{x.room}}{% else %}TBA{% endif %}</td>
-<td><a href="{{x.url}}">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }}</a></td>
-<td>
+<td class="agenda-room">{% if x.room %}{{x.room}}{% else %}TBA{% endif %}</td>
+<td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }}</a>
 {% for s in x.speakers %}
 {% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}<a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}
 </tr>
