@@ -25,18 +25,12 @@ title: Agenda
 {% elsif x.breakout == null %}
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
 {% endif %}
-<td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }}</a>
+<td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "AM" %}:sunny: {% endif %}</a>
 {% if x.room %}{{x.room}}{% else %}{% endif %}
 {% for s in x.speakers %}
 {% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}<a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}
 </tr>
-
 {% assign prev_break = x.breakout %}
 {% endfor %}
 </tbody>
 </table>
-
-
-
-
-

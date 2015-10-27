@@ -21,6 +21,12 @@ email: hello@elaconf.com
 
 permalink: /:categories/:title/
 
+gems:
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-feed
+
 defaults:
   -
     scope:
