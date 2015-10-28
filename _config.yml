@@ -27,6 +27,11 @@ gems:
 - jekyll-sitemap
 - jekyll-feed
 
+author: 
+  name: ELA Conf
+  email: hello@elaconf.com
+  uri: http://elaconf.com
+
 defaults:
   -
     scope:
