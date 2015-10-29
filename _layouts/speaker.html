@@ -8,7 +8,6 @@ layout: default
 
 
 <section class="main">
-  
   <h1>{{page.title}}</h1>
   <img src="/images/speakers/{{page.image}}" alt="{{page.title}}" class="speaker-img-page">
   <p>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %} {% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
@@ -19,8 +18,5 @@ layout: default
     {% endfor %}
   </p>{% endcomment %}
   {{content}}
-  
-  
-  
-  <a href="/speakers/" class="small">&larr; Speakers</a>
+  <p><a href="/speakers/" class="button">&larr; Speakers</a></p>
 </section>

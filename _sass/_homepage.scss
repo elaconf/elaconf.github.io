@@ -43,8 +43,8 @@ section ul li:before {
 }
 
 /* cyan sections */
-section:nth-of-type(odd):not(.main) {
-  background-color: #50DDC2;
+section:nth-of-type(odd):not(.main):not(.page-wide) {
+  background-color: $cyan;
 }
 
 section:nth-of-type(odd) h1,
@@ -58,7 +58,7 @@ section:nth-of-type(odd) h2 {
 
 /* salmon sections */
 section:nth-of-type(even) {
-  background-color: #F77557;
+  background-color: $salmon;
   color: $body-bg;
 }
 
