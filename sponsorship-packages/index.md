@@ -2,7 +2,7 @@
 layout: page
 title: Sponsorship Packages
 ---
-To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Download the sponsorship packages document](https://docs.google.com/document/u/1/d/1iZqNH1Udl1SvE20GKez7yQfNgMwxKGtz6EzBIxmBVvw/pub).
+To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). You may also [download this sponsorship packages document](https://docs.google.com/document/u/1/d/1iZqNH1Udl1SvE20GKez7yQfNgMwxKGtz6EzBIxmBVvw/pub).
 
 ## Support Levels
 
@@ -15,7 +15,7 @@ To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Downloa
 
 * Up to TWO (2) tickets to the conference
 * Your swag in a giveaway bag for all guests
-* Thank you mention on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
+* Thank you mention on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
 * Individual name or company name included on slideshow
 * Up to TWO (2) job listings on conference slideshow and included in post-event email blast
 
@@ -23,7 +23,7 @@ To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Downloa
 
 * Up to FOUR (4) tickets to the event
 * Your swag in a giveaway bag for all guests
-* THREE (3) mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
+* THREE (3) mentions on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
 * Company name included on included on slideshow
 * Up to FOUR (4) job listings on conference slideshow and included in post-event email blast
 * Logo/link on [elaconf.com]({{site.url}})
@@ -33,7 +33,7 @@ To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Downloa
 
 * Up to SIX (6) tickets to the event
 * Your swag in a giveaway bag for all guests
-* SIX (6) mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during lead up and post-event
+* SIX (6) mentions on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during lead up and post-event
 * Company name included on included on slideshow
 * Up to SIX (6) job listings on conference slideshow and included in post-event email blast
 * Verbal recognition during the conference announcements
@@ -44,7 +44,7 @@ To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Downloa
 * Your company name among the highest level sponsors of this event
 * Up to TWELVE (12) tickets to the event
 * Your swag in a giveaway bag for all guests
-* Mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during lead up and post-event every time the conference is mentioned
+* Mentions on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during lead up and post-event every time the conference is mentioned
 * Company name included on slideshow
 * Up to TWELVE (12) job listings on conference slideshow; multiple slides
 * THREE-minute verbal welcome opportunity in conference announcements
@@ -74,13 +74,13 @@ To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Downloa
 ### T-Shirt Sponsor ($800)
 
 * Mentioned whenever the t-shirts are mentioned in writing and verbally
-* TWO (2) mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the party
+* TWO (2) mentions on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the party
 * Individual name or company name included on included on slideshow
 
 ### Breakfast Sponsor ($1000)
 
 * Company representatives at breakfast
-* THREE (3) mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
+* THREE (3) mentions on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
 * Company name included on included on slideshow
 * Logo/link on [elaconf.com]({{site.url}})
 * Verbal recognition during the conference announcements
@@ -88,14 +88,14 @@ To sponsor, please email [hello@elaconf.com](mailto:hello@elaconf.com). [Downloa
 ### Lunch Sponsor ($2500)
 
 * Company representatives at lunch
-* FIVE (5) mentions on the [@elaconf.com](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
+* FIVE (5) mentions on the [@elaconf](https://www.twitter.com/{{site.twitter}}) Twitter account during the lead up to the conference
 * Company name included on included on slideshow
 * Logo/link on [elaconf.com]({{site.url}})
 * Verbal recognition during the conference announcements
 
 ---
 
-Have another idea for sponsorships, such as some sort of in-kind exchange? We’d love to hear from you. For inquiries and more information regarding sponsorship opportunities, please email [{{site.email}}]({{site.email}})
+Have another idea for sponsorships, such as some sort of in-kind exchange? We’d love to hear from you. For inquiries and more information regarding sponsorship opportunities, please email [{{site.email}}](mailto:{{site.email}})
 
 ### Notes on Sponsorship Benefits
 
