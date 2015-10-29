@@ -1,0 +1,10 @@
+
+<h1>Sponsor Spotlight</h1>
+<p>If your company or organization is interested in sponsoring ELA Conf (hey, thanks so much!) we would love to <a href="mailto:hello@elaconf.com">hear from you</a>.</p>
+<p><em>Take a look at <a href="/sponsorship-packages/">our sponsorship package here</a>.</em></p>
+<p>A big thanks to our sponsors:</p>
+<p>
+  {% for sponsor in site.data.sponsors %}
+  <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image sponsor-{{sponsor.name | slugify}}"></a>
+  {% endfor %}
+</p>

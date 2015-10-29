@@ -1,0 +1,8 @@
+
+<h1>Organizers</h1>
+{% for organizer in site.data.organizers %}
+<div class="organizer">
+  <img class="organizer-img" src="/images/organizers/{{organizer.image}}" alt="{{organizer.name}}" />
+  <p class="organizer-bio"><a href="https://twitter.com/{{organizer.twitter}}">{{organizer.name}}</a> {{organizer.bio}}</p>
+</div>
+{% endfor %}
