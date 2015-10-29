@@ -14,12 +14,12 @@ layout: default
 <section class="section-about" id="about">
   <h1>About</h1>
   <h2><span class="about-stand-for">E</span>mpowerment. <span class="about-stand-for">L</span>eadership. <span class="about-stand-for">A</span>ction.</h2>
-
+  
   <p>ELA Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech. All profits from this event will be donated to <a href="https://www.girldevelopit.com/">Girl Develop It</a>.</p>
   <p>In an industry where women are so often marginalized, leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When women become leaders, the entire tech community benefits.
   </p>
   <p>Our <a href="code-of-conduct/">code of conduct</a> is the heart of our event. Please <a href="mailto:hello@elaconf.com">reach out to us</a> if you have any concerns or there is something you would like to see included that isn’t.</p>
-
+  
   <h2>What&rsquo;s included</h2>
   <ul>
     <li><strong>Meals &amp; snacks</strong> &mdash; We'll have snacks on Friday evening and on Saturday we'll serve breakfast, lunch, coffee, and even more snacks.</li>
@@ -27,7 +27,7 @@ layout: default
     <li><strong>Meet &amp; greet</strong> &mdash; We want to make sure there are as few unfamilar faces at the conf as possible!</li>
     <li><strong>Networking</strong> &mdash; We'll wrap up the conference on Saturday afternoon with a networking event.</li>
   </ul>
-
+  
 </section>
 
 <!-- ///////////////////////////////////////////////////// -->
@@ -54,111 +54,164 @@ layout: default
 <section class="section-agenda" id="agenda">
   <h1>Agenda</h1>
   <p>ELA Conf will kick off with a meet and greet on Friday evening, November 20th. The conference itself will be held on Saturday November 21st. There will be food, small breakout sessions, panel discussions, and presentations.</p>
+  <p class="text-center"><a href="/agenda/" class="button">Full agenda</a></p>
+  <h2 id="friday">Friday</h2>
   
-</section>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Tickets -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-tickets" id="tickets">
-  <h1>Tickets</h1>
-  <p><script async src="//widgets.nvite.com/1.0/button.js" data-resource="{{site.nvite}}" data-button-text="Buy ticket"></script></p>
-  <p>We're offering two different ticket options each with an early bird and regular price.</p>
-  <table>
+  <table class="agenda-table">
     <thead>
       <tr>
-        <th>Ticket type</th>
-        <th class="text-right">Early bird (ends 9/25)</th>
-        <th class="text-right">Regular</th>
+        <th class="agenda-time">Time</th>
+        <th>Lightning Talks :zap:</th>
       </tr>
     </thead>
+    
     <tbody>
+      {% assign items = (site.posts | where: "category", "agenda" ) %}
+      
+      {% for x in items reversed %}{% assign day = x.date | date: "%A"  %}{% if day == 'Friday' %}
+      {% assign first_break = x.breakout %}
       <tr>
-        <td><strong>Full-price ticket</strong></td>
-        <td class="text-right"><span class="show-mobile">Early bird (ends 9/25):</span> $120</td>
-        <td class="text-right"><span class="show-mobile">Regular:</span> $180</td>
-      </tr>
-      <tr>
-        <td><strong>Half-price ticket</strong></td>
-        <td class="text-right"><span class="show-mobile">Early bird (ends 9/25):</span> $60</td>
-        <td class="text-right"><span class="show-mobile">Regular:</span> $90</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>Choose the <strong>Full-price ticket</strong> if your company is paying for you to attend or will be reimbursing you, or if you're able to pay the full-price. Part of your ticket price will help support women to attend this conference that cannot select this option.<p>
-  <p>Choose the <strong>Half-price ticket</strong> if you’re a student, paying your own way, unemployed or transitioning between jobs. We have this ticket price to help keep the cost of this conference affordable for all women.<p>
-</section>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Sponsor spotlight -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-sponsor-spotlight" id="sponsors">
-  <h1>Sponsor Spotlight</h1>
-  <p>If your company or organization is interested in sponsoring ELA Conf (hey, thanks so much!) we would love to <a href="mailto:hello@elaconf.com">hear from you</a>.</p>
-  <p><em>Take a look at <a href="/sponsorship-packages/">our sponsorship package here</a>.</em></p>
-  <p>A big thanks to our sponsors:</p>
-  <p>
-    {% for sponsor in site.data.sponsors %}
-    <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image sponsor-{{sponsor.name | slugify}}"></a>
-    {% endfor %}
-  </p>
-</section>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Venue -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-venue" id="venue">
-  <h1>Venue</h1>
-  <p>ELA Conf will be taking place at <a href="https://www.wharton.upenn.edu/">Wharton</a> in <a href="http://operations.wharton.upenn.edu/huntsman-hall/">Huntsman Hall</a> located at <em>3730 Walnut Street</em>.</p>
-  <p><a href="/accessibility">Learn more about Huntsman Hall</a> including accessibility around the space and general use.</p>
-  <p><strong>Parking</strong></p>
-  <p>The closest parking facility is on Walnut St. between 37th &amp; 38th sts. N side (access via Walnut St.) Read more about <a href="http://cms.business-services.upenn.edu/parking/">parking</a>.</p>
-  <p><strong>Bus</strong></p>
-  <p>Route 21 to 37th and Walnut<br>Route 11 and Route 40 to 37th and Spruce</p>
-  <p><strong>SEPTA</strong></p>
-  <p>Market-Frankford Line "El" to 34th and Market<br>The Subway Surface Green Line: 11, 13, 34 or 36 to 36th and Samsom or to 37th Street and Spruce<br>Or the 10 to 36th Street and Market</p>
-</section>
-
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/katydecorah.n58gf84l/attribution,zoompan.html?access_token=pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiNGxUd0FiRSJ9.W6JiC41LhSNbMQjuF3NGhA'></iframe>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Hotel -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-hotel" id="hotel">
-  <h1>Hotel</h1>
+        <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} TBD</td>
+        <td><a href="{{x.url}}" class="agenda-title">{{ x.title }}</a>
+        </tr>
+        {% assign prev_break = x.breakout %}
+        {% endif %}{% endfor %}
+      </tbody>
+    </table>
+    
+    
+    <h2 id="saturday">Saturday</h2>
+    
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th class="agenda-time">Time</th>
+          <th>Talks, Workshops, and Panels</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        {% assign items = (site.posts | where: "category", "agenda" ) %}
+        
+        {% for x in items reversed %}{% assign day = x.date | date: "%A"  %}{% if day == 'Saturday' %}
+        {% assign first_break = x.breakout %}
+        <tr{% if x.breakout %} class="row-breakout"{% endif %}>
+        {% if prev_break == null and first_break and x.breakout %}
+        <td rowspan="3" class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
+        {% elsif x.breakout == null %}
+        <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
+        {% endif %}
+        <td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }}</a>
+        </tr>
+        {% assign prev_break = x.breakout %}
+        {% endif %}{% endfor %}
+      </tbody>
+    </table>
+    
+  </section>
   
-  <p>Coming from out of town? We have a block of rooms at the <a href="http://www.philadelphiasheraton.com/">Sheraton Philadelphia University City Hotel</a> located at <em>3549 Chestnut St</em>. Follow the link below to book a room at our discounted rate.</p>
-  <p><a href="https://www.starwoodmeeting.com/events/start.action?id=1509144196&key=9513F74" class="button">Book a room</a></p>
-</section>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Organizers -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-organizers" id="organizers">
-  <h1>Organizers</h1>
-  {% for organizer in site.data.organizers %}
-  <div class="organizer">
-    <img class="organizer-img" src="/images/organizers/{{organizer.image}}" alt="{{organizer.name}}" />
-    <p class="organizer-bio"><a href="https://twitter.com/{{organizer.twitter}}">{{organizer.name}}</a> {{organizer.bio}}</p>
-  </div>
-  {% endfor %}
-</section>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Reasons to Attend -->
-<!-- ///////////////////////////////////////////////////// -->
-<section class="section-reasons" id="reasons-to-attend">
-  <h1>Convince Your Boss</h1>
-  <ul>
-    <li>Learn valuable new tech and communication skills</li>
-    <li>Get inspired and motivated</li>
-    <li>Gain confidence to embrace and share your talents</li>
-    <li>Help hire talented, local women</li>
-    <li>Develop new ways of thinking and approaching the existing diversity gap in tech</li>
-    <li>Network with your peers</li>
-    <li>Become part of a lasting local community</li>
-    <li>Learn how to take action, become a leader, and create your own opportunties</li>
-    <li>Become part of a lasting, meaningful mentorship</li>
-  </ul>
-  <!--<em><p>Grab a neat <a href="">PDF of these fantastic points</a>.</p></em>-->
-</section>
+  <!-- ///////////////////////////////////////////////////// -->
+  <!-- Tickets -->
+  <!-- ///////////////////////////////////////////////////// -->
+  <section class="section-tickets" id="tickets">
+    <h1>Tickets</h1>
+    <p class="text-center"><script async src="//widgets.nvite.com/1.0/button.js" data-resource="{{site.nvite}}" data-button-text="Buy ticket"></script></p>
+    <p>We're offering two different ticket options each with an early bird and regular price.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Ticket type</th>
+          <th class="text-right">Early bird (ends 9/25)</th>
+          <th class="text-right">Regular</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Full-price ticket</strong></td>
+          <td class="text-right"><span class="show-mobile">Early bird (ends 9/25):</span> $120</td>
+          <td class="text-right"><span class="show-mobile">Regular:</span> $180</td>
+        </tr>
+        <tr>
+          <td><strong>Half-price ticket</strong></td>
+          <td class="text-right"><span class="show-mobile">Early bird (ends 9/25):</span> $60</td>
+          <td class="text-right"><span class="show-mobile">Regular:</span> $90</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Choose the <strong>Full-price ticket</strong> if your company is paying for you to attend or will be reimbursing you, or if you're able to pay the full-price. Part of your ticket price will help support women to attend this conference that cannot select this option.<p>
+      <p>Choose the <strong>Half-price ticket</strong> if you’re a student, paying your own way, unemployed or transitioning between jobs. We have this ticket price to help keep the cost of this conference affordable for all women.<p>
+      </section>
+      
+      <!-- ///////////////////////////////////////////////////// -->
+      <!-- Sponsor spotlight -->
+      <!-- ///////////////////////////////////////////////////// -->
+      <section class="section-sponsor-spotlight" id="sponsors">
+        <h1>Sponsor Spotlight</h1>
+        <p>If your company or organization is interested in sponsoring ELA Conf (hey, thanks so much!) we would love to <a href="mailto:hello@elaconf.com">hear from you</a>.</p>
+        <p><em>Take a look at <a href="/sponsorship-packages/">our sponsorship package here</a>.</em></p>
+        <p>A big thanks to our sponsors:</p>
+        <p>
+          {% for sponsor in site.data.sponsors %}
+          <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image sponsor-{{sponsor.name | slugify}}"></a>
+          {% endfor %}
+        </p>
+      </section>
+      
+      <!-- ///////////////////////////////////////////////////// -->
+      <!-- Venue -->
+      <!-- ///////////////////////////////////////////////////// -->
+      <section class="section-venue" id="venue">
+        <h1>Venue</h1>
+        <p>ELA Conf will be taking place at <a href="https://www.wharton.upenn.edu/">Wharton</a> in <a href="http://operations.wharton.upenn.edu/huntsman-hall/">Huntsman Hall</a> located at <em>3730 Walnut Street</em>.</p>
+        <p><a href="/accessibility">Learn more about Huntsman Hall</a> including accessibility around the space and general use.</p>
+        <p><strong>Parking</strong></p>
+        <p>The closest parking facility is on Walnut St. between 37th &amp; 38th sts. N side (access via Walnut St.) Read more about <a href="http://cms.business-services.upenn.edu/parking/">parking</a>.</p>
+        <p><strong>Bus</strong></p>
+        <p>Route 21 to 37th and Walnut<br>Route 11 and Route 40 to 37th and Spruce</p>
+        <p><strong>SEPTA</strong></p>
+        <p>Market-Frankford Line "El" to 34th and Market<br>The Subway Surface Green Line: 11, 13, 34 or 36 to 36th and Samsom or to 37th Street and Spruce<br>Or the 10 to 36th Street and Market</p>
+      </section>
+      
+      <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/katydecorah.n58gf84l/attribution,zoompan.html?access_token=pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiNGxUd0FiRSJ9.W6JiC41LhSNbMQjuF3NGhA'></iframe>
+      
+      <!-- ///////////////////////////////////////////////////// -->
+      <!-- Hotel -->
+      <!-- ///////////////////////////////////////////////////// -->
+      <section class="section-hotel" id="hotel">
+        <h1>Hotel</h1>
+        
+        <p>Coming from out of town? We have a block of rooms at the <a href="http://www.philadelphiasheraton.com/">Sheraton Philadelphia University City Hotel</a> located at <em>3549 Chestnut St</em>. Follow the link below to book a room at our discounted rate.</p>
+        <p class="text-center"><a href="https://www.starwoodmeeting.com/events/start.action?id=1509144196&key=9513F74" class="button">Book a room</a></p>
+      </section>
+      
+      <!-- ///////////////////////////////////////////////////// -->
+      <!-- Organizers -->
+      <!-- ///////////////////////////////////////////////////// -->
+      <section class="section-organizers" id="organizers">
+        <h1>Organizers</h1>
+        {% for organizer in site.data.organizers %}
+        <div class="organizer">
+          <img class="organizer-img" src="/images/organizers/{{organizer.image}}" alt="{{organizer.name}}" />
+          <p class="organizer-bio"><a href="https://twitter.com/{{organizer.twitter}}">{{organizer.name}}</a> {{organizer.bio}}</p>
+        </div>
+        {% endfor %}
+      </section>
+      
+      <!-- ///////////////////////////////////////////////////// -->
+      <!-- Reasons to Attend -->
+      <!-- ///////////////////////////////////////////////////// -->
+      <section class="section-reasons" id="reasons-to-attend">
+        <h1>Convince Your Boss</h1>
+        <ul>
+          <li>Learn valuable new tech and communication skills</li>
+          <li>Get inspired and motivated</li>
+          <li>Gain confidence to embrace and share your talents</li>
+          <li>Help hire talented, local women</li>
+          <li>Develop new ways of thinking and approaching the existing diversity gap in tech</li>
+          <li>Network with your peers</li>
+          <li>Become part of a lasting local community</li>
+          <li>Learn how to take action, become a leader, and create your own opportunties</li>
+          <li>Become part of a lasting, meaningful mentorship</li>
+        </ul>
+        <!--<em><p>Grab a neat <a href="">PDF of these fantastic points</a>.</p></em>-->
+      </section>
