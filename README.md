@@ -14,12 +14,14 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
 
 ### Organizers
 
-* You can update organizer information from the [organizers.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/organizers.yml) file. Please include:
-  - `name` &mdash; first and last
-  - `image` &mdash; the name and extention of the image
+* Each organizer has her own page located in `/organizer/_posts/`
+* Each file is named: `0000-01-0#-first-last.md` (where # is incremented).
+* In the front matter of each file, please include:
+  - `title` &mdash; first and last name
+  - `image` &mdash; the name and extension of the image
   - `twitter` &mdash; the handle only
-  - `bio` &mdash; start with a verb like "is" as the organizer's name will automatically start this paragraph off
-* Save organizer images in the [/images/organizers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/organizers) folder.
+* The bio goes directly in the post content area (below the front matter)
+* Save organizer images in the [/images/organizer/](https://github.com/elaconf/elaconf.github.io/tree/master/images/organizers) folder.
 
 
 ### Sponsors
@@ -39,7 +41,6 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
   - `title` &mdash; first and last name
   - `image` &mdash; the name and extension of the image
   - `twitter` &mdash; the handle only
-  - `topic` &mdash; topic of talk/role
 * The bio goes directly in the post content area (below the front matter)
 * Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
 

@@ -9,15 +9,15 @@ layout: default
 
 <section class="main">
   <h1>{{page.title}}</h1>
-  <img src="/images/speakers/{{page.image}}" alt="{{page.title}}" class="speaker-img-page">
+  <img src="/images/{{page.category}}/{{page.image}}" alt="{{page.title}}" class="speaker-img-page">
   <p>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %} {% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
   {{content}}
   {% assign talks = (site.posts | where: "category", "agenda") %}{% assign talk_num = 0 %}{% for talk in talks %}{% if talk.speakers contains page.title %}{% assign talk_num = talk_num | plus: 1 %}{% endif %}{% endfor %}
-  <p><strong>{{page.title | split: ' ' | first }}’s talk{% if talk_num > 1 %}s{% endif %}:</strong></p>
+  {% if talk_num > 0 %}<p><strong>{{page.title | split: ' ' | first }}’s talk{% if talk_num > 1 %}s{% endif %}:</strong></p>
   <ul>
     {% for talk in talks reverse %}
     {% if talk.speakers contains page.title %}<li><a href="{{talk.url}}">{{talk.title}}</a></li>{% endif %}
     {% endfor %}
-  </ul>
-  <p><a href="/speakers/" class="button">&larr; Speakers</a></p>
+  </ul>{% endif %}
+  <p><a href="/{{page.category}}/" class="button">&larr; {{page.category | capitalize}}</a></p>
 </section>
