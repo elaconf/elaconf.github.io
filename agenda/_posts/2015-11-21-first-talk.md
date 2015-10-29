@@ -2,7 +2,7 @@
 time: "3:30 - 3:50"
 date: 2015-11-21 15:30 
 room: 
-title: Preparing for Your First Talk Workshop
+title: Preparing for Your First Talk
 speakers:
   - Yash Prabhu
 ---
