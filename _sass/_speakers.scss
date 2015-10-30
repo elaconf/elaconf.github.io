@@ -43,6 +43,11 @@
   }
 }
 
+.speaker-name {
+  font-family: $font-headings;
+  font-size: 1.2em;
+}
+
 .page-speakers .speaker-img,
 .page-organizers .speaker-img {
   border-color: $text-color;
