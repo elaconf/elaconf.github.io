@@ -1,4 +1,4 @@
-.speakers {
+.speakers:not(a) {
   margin-bottom: 2em;
 }
 
@@ -43,7 +43,13 @@
   }
 }
 
-.page-speakers .speaker-img {
+.speaker-name {
+  font-family: $font-headings;
+  font-size: 1.2em;
+}
+
+.page-speakers .speaker-img,
+.page-organizers .speaker-img {
   border-color: $text-color;
 }
 
@@ -60,4 +66,10 @@
 
 .speaker-details {
   min-height: 50px;
+}
+
+.page-speakers-single {
+  li:before {
+    border-color: $cyan;
+  }
 }

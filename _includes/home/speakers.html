@@ -1,0 +1,12 @@
+
+<h1>Speaker Spotlight</h1>
+<div class="speakers">
+  {% assign speakers = (site.posts | where: "category", "speakers" ) %}
+  {% for speaker in speakers reversed %}{% if speaker.image %}
+  <a href="{{speaker.url}}" class="speaker">
+    <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}})"></div>
+    <div class="speaker-details">{% if speaker.topic %}<div class="speaker-topic">{{speaker.topic}}</div>{% endif %}
+    <div class="speaker-name">{{speaker.title}}</div></div>
+  </a>
+  {% endif %}{% endfor %}
+</div>

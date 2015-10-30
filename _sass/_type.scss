@@ -24,8 +24,9 @@ h3,
 header,
 footer,
 .nav,
-table {
-  font-family: 'Strait', sans-serif;
+table,
+.sticky-nav {
+  font-family: $font-headings;
 }
 
 h1,
@@ -57,7 +58,7 @@ a:hover {
 
 ::selection {
   background: $text-color;
-  color: #fff;
+  color: $white;
 }
 
 .text-left { text-align: left; }
