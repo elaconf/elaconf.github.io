@@ -47,3 +47,10 @@ defaults:
     values:
       layout: "agenda"
       category: "agenda"
+  -
+    scope:
+      path: "organizers"
+      type: "posts"
+    values:
+      layout: "speaker"
+      category: "organizers"

@@ -8,18 +8,18 @@ This site is built with [Jekyll](http://jekyllrb.com/), see [Using Jekyll with P
 
 Recommended build: `bundle exec jekyll serve -w`
 
-## Updating/adding organizers, sponsors, & speakers
-
-The data for all three is saved in a yaml file in the `_data/` folder. As soon as you save (and merge) the file, Jekyll will automatically add these changes to the home page.
+## Updating/adding organizers, talks, sponsors, & speakers
 
 ### Organizers
 
-* You can update organizer information from the [organizers.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/organizers.yml) file. Please include:
-  - `name` &mdash; first and last
-  - `image` &mdash; the name and extention of the image
+* Each organizer has her own page located in `/organizer/_posts/`
+* Each file is named: `0000-01-0#-first-last.md` (where # is incremented).
+* In the front matter of each file, please include:
+  - `title` &mdash; first and last name
+  - `image` &mdash; the name and extension of the image
   - `twitter` &mdash; the handle only
-  - `bio` &mdash; start with a verb like "is" as the organizer's name will automatically start this paragraph off
-* Save organizer images in the [/images/organizers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/organizers) folder.
+* The bio goes directly in the post content area (below the front matter)
+* Save organizer images in the [/images/organizer/](https://github.com/elaconf/elaconf.github.io/tree/master/images/organizers) folder.
 
 
 ### Sponsors
@@ -39,9 +39,12 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
   - `title` &mdash; first and last name
   - `image` &mdash; the name and extension of the image
   - `twitter` &mdash; the handle only
-  - `topic` &mdash; topic of talk/role
+  - `topic` &mdash; this field is optional
 * The bio goes directly in the post content area (below the front matter)
 * Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
+
+![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
+
 
 
 ### Talks
@@ -54,4 +57,7 @@ The data for all three is saved in a yaml file in the `_data/` folder. As soon a
   - `room` &mdash; the room assigned
   - `speakers` &mdash; list of speakers givin the talk
   - `date` &mdash; the date and time in 24-hour format
+  - `breakout` &mdash; if the talk is during a breakout session add the number `breakout: 1` or `breakout: 2`
 * The talk abstract goes directly in the post content area (below the front matter)
+
+![image](https://cloud.githubusercontent.com/assets/2180540/10857537/07e55e1a-7f25-11e5-8604-b4d5eee38c28.png)

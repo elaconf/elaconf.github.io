@@ -1,0 +1,67 @@
+/* Sticky navigation
+------------------------------------------------------- */
+
+.sticky-nav {
+  transition: .2s;
+}
+
+.sticky-nav ul {
+  text-align: center;
+  padding: 0 1em;
+  list-style: none;
+}
+
+.sticky-nav ul li {  
+  
+  
+  @include breakpoint(medium) {
+    
+    font-size: .9em;
+    
+    display: inline-block; 
+    position: relative;
+    padding-right: 1.5em;
+    padding-left: .75em;
+    margin: 0;
+    
+    &:not(:first-of-type):before {
+      content: "";
+      position: absolute;
+      width: .7em;
+      height: .7em;
+      border: .15em solid $cyan;
+      left: -1em;
+      top: .3em;
+    }
+    &:nth-child(odd):before {
+      border-radius: .7em;
+    }
+  }
+  
+}
+
+.sticky-nav.sticky ul li a { 
+  color: $light;
+  transition: .2s;
+  &:hover {
+    color: $salmon;
+  }
+}
+.sticky-nav ul li a.active { 
+  color: $salmon;
+  transition: .2s;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  border-top: 0;
+  background: $text-color;
+  transition: .2s;
+}
+
+
+

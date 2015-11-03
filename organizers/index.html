@@ -1,0 +1,15 @@
+---
+layout: page-wide
+title: Organizers
+---
+
+
+<div class="speakers">
+  {% assign organizers = (site.posts | where: "category", "organizers" ) %}
+  {% for organizer in organizers reversed %}{% if organizer.image %}
+  <a href="{{organizer.url}}" class="speaker">
+    <div class="speaker-img" style="background-image:url(/images/organizers/{{organizer.image}})"></div>
+    <div class="speaker-name">{{organizer.title}}</div>
+  </a>
+  {% endif %}{% endfor %}
+</div>

@@ -36,10 +36,14 @@ section ul li:before {
   position: absolute;
   width: .7em;
   height: .7em;
-  border-radius: .7em;
+  
   border: .15em solid $light;
   left: -2.25em;
   top: .3em;
+}
+
+section ul li:nth-child(odd):before {
+  border-radius: .7em;
 }
 
 /* cyan sections */
@@ -49,7 +53,7 @@ section:nth-of-type(odd):not(.main):not(.page-wide) {
 
 section:nth-of-type(odd) h1,
 section:nth-of-type(odd) a {
-  color: #5C63A9;
+  color: $periwinkle;
 }
 
 section:nth-of-type(odd) h2 {
@@ -83,21 +87,22 @@ section:nth-of-type(even) a:hover {
   }
 
   .section-agenda,
-  .section-sponsor-spotlight {
+  .section-sponsors {
     background-image: url(/images/bg-agenda.svg);
     background-position: calc(100% - 2em) calc(100% - 2em);
     background-size: 15%;
   }
 
-  .section-speaker-spotlight,
+  .section-speakers,
   .section-venue {
     background-image: url(/images/bg-conduct.svg);
     background-position: 2em 2em;
     background-size: 15%;
   }
 
-  .section-reasons,
-  .section-tickets {
+  .section-convince-your-boss,
+  .section-tickets,
+  .section-hotel {
     background-image: url(/images/bg-reasons.svg);
     background-position: calc(100% - 2em) 2em;
     background-size: 15%;

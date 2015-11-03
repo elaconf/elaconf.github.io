@@ -5,6 +5,10 @@
   }
 }
 
+.page-inner li {
+  margin-bottom: .5em;
+}
+
 .page-code-of-conduct .main h2 {
   color: $text-color;
 }
@@ -38,6 +42,13 @@
 }
 
 .main .button:hover {
-  color: #A758DC;
+  color: $fuscia;
 }
 
+
+.page-speakers-single,
+.page-agenda-single {
+  .button {
+    margin-top: 2em;
+  }
+}
