@@ -27,3 +27,8 @@
   site: http://communicatehealth.com/
   image: ch.png
   type: Community Builder
+
+- name: Happy Cog
+  site: http://happycog.com/
+  image:
+  type: Company Sponsor
