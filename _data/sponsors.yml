@@ -27,3 +27,13 @@
   site: http://communicatehealth.com/
   image: ch.png
   type: Community Builder
+
+- name: DramaFever
+  site: http://www.dramafever.com/
+  image: dramafever.jpg
+  type: Swag Bag Sponsor
+  
+- name: Happy Cog
+  site: http://happycog.com/
+  image: happycog.jpg
+  type: Company Sponsor
