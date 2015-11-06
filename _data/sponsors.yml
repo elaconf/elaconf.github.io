@@ -28,12 +28,12 @@
   image: ch.png
   type: Community Builder
 
-- name: Happy Cog
-  site: http://happycog.com/
-  image:
-  type: Company Sponsor
-
 - name: DramaFever
   site: http://www.dramafever.com/
-  image: 
+  image: dramafever.jpg
   type: Swag Bag Sponsor
+  
+- name: Happy Cog
+  site: http://happycog.com/
+  image: happycog.jpg
+  type: Company Sponsor
