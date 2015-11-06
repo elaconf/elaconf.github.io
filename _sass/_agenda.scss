@@ -69,7 +69,7 @@
     border-right: .2em solid $text-color;
     text-align: right;
     position: relative;
-    min-width: 6.15em;
+    //min-width: 6.15em;
     &:not(th):before {
       content: "";
       position: absolute;
