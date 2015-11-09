@@ -3,11 +3,11 @@
 <p>ELA Conf will kick off with a meet and greet on Friday evening, November 20th. The conference itself will be held on Saturday November 21st. There will be food, small breakout sessions, panel discussions, and presentations.</p>
 <p class="text-center"><a href="/agenda/" class="button">Full agenda</a></p>
 <h2 id="friday">Friday</h2>
-
+<p>Join us from 6 - 8:30 PM for a meet and greet and lightning talks.</p>
 <table class="agenda-table">
   <thead>
     <tr>
-      <th class="agenda-time">Time</th>
+      <th class="agenda-time"></th>
       <th>Lightning Talks</th>
     </tr>
   </thead>
@@ -18,7 +18,7 @@
     {% for x in items reversed %}{% assign day = x.date | date: "%A"  %}{% if day == 'Friday' %}
     {% assign first_break = x.breakout %}
     <tr>
-      <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} TBD</td>
+      <td class="agenda-time"></td>
       <td><a href="{{x.url}}" class="agenda-title">{{ x.title }}</a>
       </tr>
       {% assign prev_break = x.breakout %}
