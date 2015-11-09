@@ -1,8 +1,7 @@
 ---
 time: 
-date: 2015-11-20
+date: 2015-11-20 19:30
 room:
-
 title: The Two Faces of Mentorship
 speakers: 
   - Constance Ip

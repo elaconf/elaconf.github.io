@@ -1,6 +1,6 @@
 ---
 time: 
-date: 2015-11-20
+date: 2015-11-20 19:30
 room:
 title: "Open Source: Just Do it"
 speakers: 
