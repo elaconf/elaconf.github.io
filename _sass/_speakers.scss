@@ -68,7 +68,8 @@
   min-height: 50px;
 }
 
-.page-speakers-single {
+.page-speakers-single,
+.page-organizers-single {
   li:before {
     border-color: $cyan;
   }
