@@ -7,4 +7,5 @@ title: Redefining Women in Tech Panel
 speakers:
  - Dawn McDougall
  - Gloria Bell
+ - Kara Lindstrom
 ---
