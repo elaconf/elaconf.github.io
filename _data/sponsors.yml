@@ -2,38 +2,59 @@
   site: https://nvite.com/
   image: nvite.png
   type: In-kind Sponsor
+  twitter: nvite
   
 - name: NowSecure
   site: https://www.nowsecure.com
   image: nowsecure.svg
   type: Ecosystem Supporter
+  twitter: NowSecureMobile
   
 - name: Mapbox
   site: https://www.mapbox.com
   image: mapbox.png
   type: Ecosystem Supporter
+  twitter: mapbox
 
 - name: Wharton
   site: http://wcai.wharton.upenn.edu/
   image: wharton.png
   type: In-kind Sponsor
+  twitter: Wharton
 
 - name: devbootcamp
   site: http://devbootcamp.com/
   image: devbootcamp.jpg
   type: Company Sponsor
+  twitter: devbootcamp
 
 - name: CommunicateHealth
   site: http://communicatehealth.com/
   image: ch.png
   type: Community Builder
+  twitter: CommunicateHlth
 
 - name: DramaFever
   site: http://www.dramafever.com/
   image: dramafever.jpg
   type: Swag Bag Sponsor
+  twitter: dramafever
   
 - name: Happy Cog
   site: http://happycog.com/
   image: happycog.jpg
   type: Company Sponsor
+  twitter: happycog
+
+- name: Digitas Health
+  site: https://www.digitashealth.com/
+  image: digitas-health.jpg
+  type: Women in Tech Signature Sponsor
+  twitter: Digitas_Health
+    
+- name: Sticker Mule
+  site: https://www.stickermule.com/
+  image: stickermule.png
+  type: In-kind Sponsor
+  twitter: stickermule
+  

@@ -15,13 +15,16 @@
 .sponsor-devbootcamp,
 .sponsor-mapbox,
 .sponsor-communicatehealth,
-.sponsor-happy-cog {
+.sponsor-happy-cog,
+.sponsor-digitas-health,
+.sponsor-sticker-mule {
   background-color: $white;
   
 }
 
 .sponsor-mapbox,
-.sponsor-happy-cog {
+.sponsor-happy-cog,
+.sponsor-sticker-mule {
   padding: 5px;
 }
 
@@ -31,6 +34,7 @@
   padding: 30px;
 }
 
-.sponsor-devbootcamp {
+.sponsor-devbootcamp,
+.sponsor-digitas-health {
   padding: 40px;
 }
