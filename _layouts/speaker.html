@@ -16,7 +16,7 @@ layout: default
   {% assign talks = (site.posts | where: "category", "agenda") %}{% assign talk_num = 0 %}{% for talk in talks %}{% if talk.speakers contains page.title or talk.moderator == page.title %}{% assign talk_num = talk_num | plus: 1 %}{% endif %}{% endfor %}
   {% if talk_num > 0 %}<p><strong>{{page.title | split: ' ' | first }}’s {% if moderators[0].moderator %}moderating{% else %}talk{% if talk_num > 1 %}s{% endif %}{% endif %}:</strong></p>
   <ul>
-    {% for talk in talks reverse %}
+    {% for talk in talks reversed %}
     {% if talk.speakers contains page.title or talk.moderator == page.title %}<li><a href="{{talk.url}}">{{talk.title}}</a></li>{% endif %}
     {% endfor %}
   </ul>{% endif %}

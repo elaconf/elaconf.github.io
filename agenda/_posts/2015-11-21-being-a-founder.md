@@ -8,7 +8,6 @@ speakers:
   - Chee-Young Kim
   - Tracy Osborn
   - Sharon McMullen
-moderator: Angie Hilem
 ---
 
 Learn the risks and challenges in becoming a founder from Tracy Osborn (WeddingLovely), Chee-Young Kim (NowSecure) and Sharon McMullen (Ink + Mortar Design Co.). Topics and questions will include, but are not limited to:
