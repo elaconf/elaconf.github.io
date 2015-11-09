@@ -11,10 +11,10 @@ layout: default
   <h1>{{page.title}}</h1>
   
   {% if page.speakers %}
-  <p>{% for s in page.speakers %}{% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}
-    <a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><span style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></span>{{s}}</a>
+  <p>{% for s in page.speakers %}{% assign items = (site.posts | where: "title", s ) %}
+    <a href="/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><span style="background-image:url(/images/{{items[0].category}}/{{items[0].image}})" class="agenda-speaker"></span>{{s}}</a>
     {% endfor %}{% if page.moderator %}
-      {% assign items = (site.posts | where: "category", "speakers" | where: "title", page.moderator ) %}
+      {% assign items = (site.posts | where: "title", page.moderator ) %}
       <a href="/speakers/{{page.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></span>{{ page.moderator}} (moderator)</a>
     {% endif %}</p>
   {% endif %}
