@@ -19,11 +19,14 @@
   &:after {
     clear: both;
   }
+  
 }
 
 .show-mobile {
   display: none;
+  
   @include breakpoint(small) {
     display: inline-block;
   }
+  
 }

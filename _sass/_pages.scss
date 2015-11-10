@@ -1,7 +1,7 @@
 @include breakpoint(medium) {
   .header-small .ela-logo {
-    max-width: 150px;
     margin: 0;
+    max-width: 150px;
   }
 }
 
@@ -14,10 +14,10 @@
 }
 
 .page-sponsorship-packages ul,
-.page-talk-inspiration ul  {
+.page-talk-inspiration ul {
   list-style: disc;
-  padding-left: 2em;
   margin: 2em auto 4em;
+  padding-left: 2em;
 }
 
 .page-sponsorship-packages li {
@@ -26,10 +26,16 @@
 
 
 .main {
-  max-width: 900px;
-  margin: 0 auto;
   
   @include clearfix;
+  
+  margin: 0 auto;
+  max-width: 900px;
+
+  .button:hover {
+    color: $fuscia;
+  }
+  
 }
 
 .main h1,
@@ -37,12 +43,8 @@
 .main h3,
 .main p,
 .main ul {
-  text-align: left;
   max-width: none;
-}
-
-.main .button:hover {
-  color: $fuscia;
+  text-align: left;
 }
 
 
