@@ -23,7 +23,7 @@ title: Agenda
 <td><a href="{{x.url}}" class="agenda-title">{{ x.title }}</a>
 {% if x.room %}{{x.room}}{% else %}{% endif %}
 {% for s in x.speakers %}
-{% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}<a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}
+{% assign items = (site.posts | where: "title", s ) %}<a href="/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/{{items[0].category}}/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}
 </tr>
 {% assign prev_break = x.breakout %}
 {% endif %}{% endfor %}
@@ -55,9 +55,9 @@ title: Agenda
 <td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "AM" %}:sunny: {% endif %}</a>
 {% if x.room %}{{x.room}}{% else %}{% endif %}
 {% for s in x.speakers %}
-{% assign items = (site.posts | where: "category", "speakers" | where: "title", s ) %}<a href="/speakers/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
-  {% assign items = (site.posts | where: "category", "speakers" | where: "title", x.moderator ) %}
-  <a href="/speakers/{{x.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url(/images/speakers/{{items[0].image}})" class="agenda-speaker"></span>{{ x.moderator}} (moderator)</a>
+{% assign items = (site.posts | where: "title", s ) %}<a href="/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/{{items[0].category}}/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
+  {% assign items = (site.posts | where: "title", x.moderator ) %}
+  <a href="/{{items[0].category}}/{{x.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url(/images/{{items[0].category}}/{{items[0].image}})" class="agenda-speaker"></span>{{ x.moderator}} (moderator)</a>
 {% endif %}
 </tr>
 {% assign prev_break = x.breakout %}

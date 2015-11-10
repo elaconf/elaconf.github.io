@@ -8,38 +8,35 @@
   text-align: center;
   
   @include breakpoint(medium) {
-    width: 50%;
     padding: 5%;
-    
+    width: 50%;
   }
   
   @include breakpoint(large) {
-    width: 25%;
     padding: 2em 2%;
-    
+    width: 25%;
   }
   
 }
 
 .speaker-img {
+  background-size: cover;
   border: .4em solid $light;
-  //max-width: 250px;
-  width: 100%;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 100%;
-  background-size: cover;
-  margin-bottom: 1em;
+  width: 100%;
 }
 
 .speaker-img-page {
-  max-width: 250px;
   border: .4em solid $text-color;
+  max-width: 250px;
   
   @include breakpoint(medium) {
     float: right;
-    margin-left: 2em;
     margin-bottom: 1em;
+    margin-left: 2em;
   }
 }
 
@@ -59,8 +56,8 @@
 
 
 .speaker-topic {
-  font-weight: bold;
   display: block;
+  font-weight: bold;
 }
 
 
@@ -68,7 +65,8 @@
   min-height: 50px;
 }
 
-.page-speakers-single {
+.page-speakers-single,
+.page-organizers-single {
   li:before {
     border-color: $cyan;
   }

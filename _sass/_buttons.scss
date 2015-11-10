@@ -1,20 +1,20 @@
-
 .button {
-  color: $light;
-  border: .2em solid;
-  padding: .6em 1.2em;
   background: none;
+  border: .2em solid;
+  color: $light;
   display: inline-block;
   margin-bottom: .5em;
-}
-
-.button:hover {
-  text-decoration: none;
+  padding: .6em 1.2em;
+  
+  &:hover {
+    text-decoration: none;
+  }
+  
 }
 
 .primary-header .nvite-rsvp-widget-button {
-  margin-top: 3em;
   margin-bottom: 3em;
+  margin-top: 3em;
 }
 
 .page .nvite-rsvp-widget-button {

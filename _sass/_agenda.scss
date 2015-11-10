@@ -1,7 +1,7 @@
 .page-agenda {
   
   table {
-      max-width: 100%;
+    max-width: 100%;
   }
   
   .main h1, 
@@ -19,39 +19,39 @@
     border-bottom: .2em solid $cyan;
   }
   
-  tbody tr:nth-child(even) td,
+  tr:nth-child(even) td,
   .row-breakout td {
     background: rgba($white, .4);
   }
   
   td {
     vertical-align: text-top;
+    
     @include breakpoint(small) {
       padding: .25em 1em;
     }
     
   }
+  
 }
 
 .agenda-speaker-link {
   display: block;
-  min-width: 9em;
-  position: relative;
-  padding-left: 1.5em;
   margin-bottom: .5em;
+  min-width: 9em;
+  padding-left: 1.5em;
+  position: relative;
 }
 
 .agenda-speaker {
-  width: 25px;
-  height: 25px;
-  
+  background-size: cover;
+  border: 1px solid $text-color;
   display: inline-block;
+  height: 25px;
+  left: 0;
   position: absolute;
   top: 3px;
-  left: 0;
-  background-size: cover;
-  
-  border: 1px solid $text-color;
+  width: 25px;
   
   .agenda-speaker-link:nth-child(odd) & {
     border-radius: 100%;
@@ -59,28 +59,31 @@
 }
 
 .agenda-title {
-  margin-bottom: .5em;
   display: block;
   font-weight: bold;
+  margin-bottom: .5em;
 }
 
 @include breakpoint(medium) {
   .agenda-time {
     border-right: .2em solid $text-color;
-    text-align: right;
     position: relative;
+    text-align: right;    
     //min-width: 6.15em;
+    
     &:not(th):before {
-      content: "";
-      position: absolute;
-      width: .7em;
-      height: .7em;
+      border: .15em solid $salmon;
       border-radius: .7em;
-      border: 0.15em solid $salmon;
-      right: -0.6em;
+      content: '';
+      height: .7em;
+      position: absolute;
+      right: -.6em;
       top: 1em;
+      width: .7em;
     }
+    
   }
+  
 }
 
 .allow-bullets ul {
