@@ -20,5 +20,5 @@ layout: default
     {% if talk.speakers contains page.title or talk.moderator == page.title %}<li><a href="{{talk.url}}">{{talk.title}}</a></li>{% endif %}
     {% endfor %}
   </ul>{% endif %}
-  <p><a href="/{{page.category}}/" class="button">&larr; {{page.category | capitalize}}</a></p>
+  <p><a href="/{{page.category}}/" class="button">&#9664; {{page.category | capitalize}}</a></p>
 </section>
