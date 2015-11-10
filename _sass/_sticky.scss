@@ -1,67 +1,66 @@
-/* Sticky navigation
-------------------------------------------------------- */
-
 .sticky-nav {
   transition: .2s;
-}
-
-.sticky-nav ul {
-  text-align: center;
-  padding: 0 1em;
-  list-style: none;
-}
-
-.sticky-nav ul li {  
   
-  
-  @include breakpoint(medium) {
-    
-    font-size: .9em;
-    
-    display: inline-block; 
-    position: relative;
-    padding-right: 1.5em;
-    padding-left: .75em;
-    margin: 0;
-    
-    &:not(:first-of-type):before {
-      content: "";
-      position: absolute;
-      width: .7em;
-      height: .7em;
-      border: .15em solid $cyan;
-      left: -1em;
-      top: .3em;
-    }
-    &:nth-child(odd):before {
-      border-radius: .7em;
-    }
-  }
-  
-}
-
-.sticky-nav.sticky ul li a { 
-  color: $light;
-  transition: .2s;
-  &:hover {
+  .active { 
     color: $salmon;
+    transition: .2s;
   }
-}
-.sticky-nav ul li a.active { 
-  color: $salmon;
-  transition: .2s;
+  
+  ul {
+    list-style: none;
+    padding: 0 1em;
+    text-align: center;
+  }
+  
+  li {  
+    
+    @include breakpoint(medium) {
+      display: inline-block; 
+      font-size: .9em;
+      margin: 0;
+      padding-left: .75em;
+      padding-right: 1.5em;
+      position: relative;
+      
+      &:not(:first-of-type):before {
+        border: .15em solid $cyan;
+        content: '';
+        height: .7em;
+        left: -1em;
+        position: absolute;
+        top: .3em;
+        width: .7em;
+      }
+      
+      &:nth-child(odd):before {
+        border-radius: .7em;
+      }
+      
+    }
+    
+  }
+  
 }
 
 .sticky {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  border-top: 0;
   background: $text-color;
+  border-top: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
   transition: .2s;
+  width: 100%;
+  z-index: 10000;
+  
+  a { 
+    color: $light;
+    transition: .2s;
+    
+    &:hover {
+      color: $salmon;
+    }
+    
+  }
+  
 }
-
-
 
