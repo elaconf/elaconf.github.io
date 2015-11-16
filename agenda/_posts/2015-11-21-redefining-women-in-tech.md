@@ -8,4 +8,5 @@ speakers:
  - Dawn McDougall
  - Gloria Bell
  - Kara Lindstrom
+moderator: Juliana Reyes
 ---
