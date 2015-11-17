@@ -63,4 +63,9 @@
   image: istrategylabs.png
   type:
   twitter: istrategylabs
-  
+
+- name: Django Foundation
+  site: https://www.djangoproject.com/foundation/
+  image: django.png
+  type:
+  twitter: djangoproject
