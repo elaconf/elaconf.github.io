@@ -3,13 +3,13 @@
   image: nvite.png
   type: In-kind Sponsor
   twitter: nvite
-  
+
 - name: NowSecure
   site: https://www.nowsecure.com
   image: nowsecure.svg
   type: Ecosystem Supporter
   twitter: NowSecureMobile
-  
+
 - name: Mapbox
   site: https://www.mapbox.com
   image: mapbox.png
@@ -39,7 +39,7 @@
   image: dramafever.jpg
   type: Swag Bag Sponsor
   twitter: dramafever
-  
+
 - name: Happy Cog
   site: http://happycog.com/
   image: happycog.jpg
@@ -51,21 +51,21 @@
   image: digitas-health.jpg
   type: Women in Tech Signature Sponsor
   twitter: Digitas_Health
-    
+
 - name: Sticker Mule
   site: https://www.stickermule.com/
   image: stickermule.png
   type: In-kind Sponsor
   twitter: stickermule
-  
+
 - name: iStrategyLabs
   site: https://isl.co/
   image: istrategylabs.png
   type:
   twitter: istrategylabs
 
-- name: Django Foundation
-  site: https://www.djangoproject.com/foundation/
-  image: django.png
+- name: DEFNA
+  site: http://defna.org/
+  image: defna.jpg
   type:
-  twitter: djangoproject
+  twitter: djangocon
