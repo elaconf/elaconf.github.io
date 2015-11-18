@@ -1,8 +1,7 @@
 ---
 time: "1:30 - 2:30"
 date: 2015-11-21 13:30
-room: 
-
+room: F92
 breakout: 2
 title: Choose Your Own (Career) Adventure!
 speakers:

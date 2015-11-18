@@ -1,7 +1,7 @@
 ---
 time: "11:20 - 12:20"
 date: 2015-11-21 11:20
-room:
+room: F94
 breakout: 1
 title: Share Your Writing With Confidence
 speakers:

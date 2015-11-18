@@ -1,8 +1,7 @@
 ---
 time: "4:40 - 5:15"
 date: 2015-11-21 16:40
-room:
-
+room: Auditorium
 title:  Closing remarks
 speakers:
 - Chanelle Henry

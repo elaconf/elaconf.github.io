@@ -1,7 +1,7 @@
 ---
 time: "11:20 - 12:20"
 date: 2015-11-21 11:20
-room: 
+room: F38
 breakout: 1
 title: Overcoming Imposter Syndrome Panel
 speakers:

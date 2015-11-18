@@ -25,6 +25,7 @@
   }
   
   td {
+    position: relative;
     vertical-align: text-top;
     
     @include breakpoint(small) {
@@ -88,4 +89,17 @@
 
 .allow-bullets ul {
   list-style: disc;
+}
+
+.agenda-room {
+  color: $salmon;
+  margin-bottom: 1em;
+
+  @include breakpoint(medium) {
+    font-size: .75em;
+    left: -5.6em;
+    position: absolute;
+    text-align: right;
+  }
+  
 }

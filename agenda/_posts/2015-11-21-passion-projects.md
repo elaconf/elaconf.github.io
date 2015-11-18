@@ -1,8 +1,7 @@
 ---
 time: "10:45 - 11:05"
 date: 2015-11-21 10:45
-room:
-
+room: Auditorium
 title: How to leverage your passion project to achieve your career goals
 speakers: 
 - Eleanor Whitney

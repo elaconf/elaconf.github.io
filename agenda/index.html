@@ -53,7 +53,7 @@ title: Agenda
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
 {% endif %}
 <td><a href="{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "AM" %}:sunny: {% endif %}</a>
-{% if x.room %}{{x.room}}{% else %}{% endif %}
+{% if x.breakout %}<div class="agenda-room">Room {{x.room}}</div>{% endif %}
 {% for s in x.speakers %}
 {% assign items = (site.posts | where: "title", s ) %}<a href="/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url(/images/{{items[0].category}}/{{items[0].image}})" class="agenda-speaker"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
   {% assign items = (site.posts | where: "title", x.moderator ) %}
