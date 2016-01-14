@@ -12,8 +12,10 @@ layout: default
 </section>
 
 
+{% if page.title != 'Videos' %}
 <script>
 $("h2,h3").each(function(){
   $(this).wrap("<a href='#"+$(this).attr('id')+"'></a>");
 });
 </script>
+{% endif %}

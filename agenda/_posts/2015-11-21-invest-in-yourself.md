@@ -3,6 +3,7 @@ time: "4:20 - 4:40"
 date: 2015-11-21 16:20
 room: Auditorium
 title:  To Invest in Yourself is to Invest in Others
+video: https://youtu.be/LpUuS30_miM?t=1m30s
 speakers: 
 - Alicia Raciti
 ---
