@@ -3,6 +3,7 @@ time: "10:05 - 10:40"
 date: 2015-11-21 10:05
 room: Auditorium
 title: Addressing the Pay Discrepancy in Tech
+video: https://youtu.be/oNN0EjJ6o90?t=2m43s
 speakers: 
   - Tracy Osborn
 ---

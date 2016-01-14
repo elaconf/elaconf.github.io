@@ -3,6 +3,7 @@ time: "3:30 - 3:50"
 date: 2015-11-21 15:30 
 room: Auditorium
 title: Preparing for Your First Talk
+video: https://youtu.be/zzjoPxCU3ts?t=2m32s
 speakers:
   - Yash Prabhu
 ---

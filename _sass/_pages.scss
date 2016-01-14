@@ -5,7 +5,7 @@
   }
 }
 
-.page-inner li {
+.page-inner:not(.page-videos) li {
   margin-bottom: .5em;
 }
 

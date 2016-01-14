@@ -2,7 +2,8 @@
 time: "10:45 - 11:05"
 date: 2015-11-21 10:45
 room: Auditorium
-title: How to leverage your passion project to achieve your career goals
+title: How to Leverage Your Passion Project to Achieve Your Career Goals
+video: https://youtu.be/DvFirMemgT4?t=2m40s
 speakers: 
 - Eleanor Whitney
 ---
