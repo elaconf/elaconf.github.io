@@ -3,6 +3,7 @@ time: "3:05 - 3:25"
 date: 2015-11-21 15:05
 room: Auditorium
 title:  Understanding by Design
+video: https://youtu.be/pD_QGAiiDmE?t=43s
 speakers:
 - Katherine McClintic
 ---

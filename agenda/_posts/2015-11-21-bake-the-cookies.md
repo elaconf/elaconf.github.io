@@ -3,6 +3,7 @@ time: "3:55 - 4:15"
 date: 2015-11-21 15:55
 room: Auditorium
 title: "Bake The Cookies, Wear The Dress: Bringing Confident Authenticity to Your Tech Talk"
+video: https://youtu.be/gtsZJpzOuFQ?t=1m41s
 speakers:
 - Adrienne Lowe
 ---

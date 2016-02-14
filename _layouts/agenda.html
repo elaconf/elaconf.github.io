@@ -19,6 +19,7 @@ layout: default
     {% endif %}</p>
   {% endif %}
   <p>{% if page.room %}<strong>{% if page.breakout %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}}{% endif %}</p>
+  {% if page.video %}<p><a href="{{page.video}}">Watch on YouTube</a></p>{% endif %}
   
   {{content}}
   <p><a href="/agenda/" class="button">&#9664; Agenda</a></p>
