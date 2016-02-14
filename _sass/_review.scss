@@ -1,0 +1,18 @@
+.main.main-review {
+  
+  h1, 
+  h2, 
+  h3 {
+    text-align: center;
+  }
+  
+  li:before {
+    border-color: $salmon;
+  }
+  
+  table {
+    background: $white;
+    border: 3px solid $salmon;
+  }
+
+}
