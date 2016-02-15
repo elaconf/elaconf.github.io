@@ -6,6 +6,12 @@ layout: default
   <a href="{{site.url}}"><img class="ela-logo" src="/images/elalogo2.svg" alt="Ela Conf logo in basic shapes" /></a>
 </header>
 
+<aside class="sidebar">
+{% for heading in page.toc %}
+<a class="sidebar-link" href="#{{heading | slugify}}">{{heading}}</a>
+{% endfor %}
+</aside>
+
 <section class="main main-review">
   <h1>{{page.title}}</h1>
   {{content}}

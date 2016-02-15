@@ -14,5 +14,39 @@
     background: $white;
     border: 3px solid $salmon;
   }
+  
+}
 
+.sidebar {
+  position: fixed;
+  
+  .sidebar-link {
+    display: block;
+    padding-left: 1.5em;
+    position: relative;
+    
+    &:before {
+      border: 0.15em solid $cyan;
+      content: '';
+      height: .7em;
+      left: 0;
+      position: absolute;
+      top: .3em;
+      width: .7em;
+    }
+    
+    &:nth-child(odd):before {
+      border-radius: 100%;
+    }
+    
+  }
+}
+
+.photos {
+  margin-bottom: 1em;
+  
+  img:not(.img-wide) {
+    width: 49%;
+    display: inline-block;
+  }
 }
