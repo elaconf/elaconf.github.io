@@ -6,13 +6,22 @@ layout: default
   <a href="{{site.url}}"><img class="ela-logo" src="/images/elalogo2.svg" alt="Ela Conf logo in basic shapes" /></a>
 </header>
 
-<aside class="sidebar">
-{% for heading in page.toc %}
-<a class="sidebar-link" href="#{{heading | slugify}}">{{heading}}</a>
-{% endfor %}
-</aside>
+<!-- ///////////////////////////////////////////////////// -->
+<!-- Sticky Nav -->
+<!-- ///////////////////////////////////////////////////// -->
+<div class="sticky-nav hide-mobile hide-tablet">
+  <div class="clearfix center">
+    <ul class="">
+      {% for section in page.toc %}
+      <li><a href="#{{section | slugify}}" class="{{section | slugify}}">{{section}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
-<section class="main main-review">
-  <h1>{{page.title}}</h1>
-  {{content}}
-</section>
+
+
+{{content}}
+
+
+<script src="/js/sticky.js"></script>
