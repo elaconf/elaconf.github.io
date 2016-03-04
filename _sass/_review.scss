@@ -1,0 +1,49 @@
+
+.section-bottom.section-bottom {
+  background: $body-bg;
+  color: $text-color;
+  
+  li:before {
+    border-color: $cyan;
+  }
+  
+  h2 {
+    color: $text-color;
+  }
+  
+  a {
+    color: $blue;
+  }
+
+}
+
+.photos {
+  @extend %center;
+  
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  
+  @include breakpoint(medium) {
+    
+    img:not(.img-wide) {
+      display: inline-block;
+      width: 48%;
+    }
+    
+    img {
+      margin: 1%;
+    }
+    
+  }
+}
+
+@include breakpoint(small) {
+  .speaker-img { display: none;}
+  .speaker { 
+    padding: 0;
+    text-align: left;
+  }
+}
+
+

@@ -30,6 +30,7 @@
   <link href='http://fonts.googleapis.com/css?family=Strait|Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  {{page.head}}
 </head>
 <body>
   <div class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">

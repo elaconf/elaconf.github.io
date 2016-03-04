@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<header class="header-small">
+  <a href="{{site.url}}"><img class="ela-logo" src="/images/elalogo2.svg" alt="Ela Conf logo in basic shapes" /></a>
+</header>
+
+<!-- ///////////////////////////////////////////////////// -->
+<!-- Sticky Nav -->
+<!-- ///////////////////////////////////////////////////// -->
+<div class="sticky-nav hide-mobile hide-tablet">
+  <div class="clearfix center">
+    <ul class="">
+      {% for section in page.toc %}
+      <li><a href="#{{section | slugify}}" class="{{section | slugify}}">{{section}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+
+{{content}}
+
+
+<script src="/js/sticky.js"></script>
