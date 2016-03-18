@@ -17,84 +17,16 @@ body {
   
 }
 
-.page {
-  padding: .5em;
+.container {
   
-  @include breakpoint(medium) {
-    padding: 1em;
-  }
+  @include clearfix;
   
-}
-
-@include breakpoint(medium) {
-  
-  .primary-header {
-    background-attachment: fixed;
-    background-color: $text-color;
-    background-image: url('/images/bg-header-left.svg'), url('/images/bg-header-right.svg');
-    background-position: 2em 2em, calc(100% - 2em) 2em;
-    background-repeat: no-repeat;
-    background-size: 24%;
-    
-  }
-  
-}
-
-
-header,
-footer {
-  background-color: $text-color;
-  color: $light;
+  margin: 0 auto;
+  max-width: 900px;
   padding: 1em;
   
-  @include breakpoint(medium) {
-    padding: 2em;
-  }
-  
 }
 
-header {
-  text-align: center;
-  
-  .button {
-    font-size: 1.5em;
-    margin-bottom: 3em;
-    margin-top: 3em;
-  }
-  
-  p {
-    color: $body-bg;
-    font-size: 1.5em;
-  }
-  
-}
-
-
-
-header a,
-footer a {
-  color: $body-bg;
-  
-  &:hover {
-    color: $periwinkle;
-  }
-  
-}
-
-
-
-
-.about-stand-for {
-  font-size: 1.5em;
-}
-
-footer {
-  padding-bottom: 4em;
-  
-  .third p {
-    margin-bottom: .4em;
-  }
-}
 
 .ela-logo {
   display: block;
@@ -108,9 +40,8 @@ footer {
   
 }
 
-
 hr {
-  border-color: $cyan transparent $blue;
+  border-color: $turquoise transparent $violet;
   border-style: dashed;
   border-width: 5px 0;
   margin-bottom: 3em;
@@ -120,11 +51,4 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-.columns {
-  -webkit-column-gap: 5em;
-  -moz-columns: 2 300px;
-  -webkit-columns: 2 300px;
-  columns: 2 300px;
 }

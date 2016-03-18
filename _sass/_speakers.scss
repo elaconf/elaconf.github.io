@@ -30,7 +30,8 @@
 }
 
 .speaker-img-page {
-  border: .4em solid $text-color;
+  border-style: solid;
+  border-width: .4em;
   max-width: 250px;
   
   @include breakpoint(medium) {
@@ -46,11 +47,9 @@
 }
 
 .page-speakers .speaker-img,
-.page-organizers .speaker-img {
-  border-color: $text-color;
-}
-
-.speaker:nth-of-type(even) .speaker-img {
+.page-organizers .speaker-img,
+.speaker-img-page {
+  border-color: $border-color;
   border-radius: 100%;
 }
 
@@ -69,6 +68,6 @@
 .page-speakers-single,
 .page-organizers-single {
   li:before {
-    border-color: $cyan;
+    border-color: $border-color;
   }
 }

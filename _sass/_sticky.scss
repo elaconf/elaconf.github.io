@@ -2,7 +2,7 @@
   transition: .2s;
   
   .active { 
-    color: $salmon;
+    color: $accent-secondary;
     transition: .2s;
   }
   
@@ -23,7 +23,7 @@
       position: relative;
       
       &:not(:first-of-type):before {
-        border: .15em solid $cyan;
+        border: .15em solid $turquoise;
         content: '';
         height: .7em;
         left: -1em;
@@ -57,7 +57,7 @@
     transition: .2s;
     
     &:hover {
-      color: $salmon;
+      color: $accent-secondary;
     }
     
   }

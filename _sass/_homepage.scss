@@ -2,9 +2,13 @@
   
   // scss-lint:disable VendorPrefixes, PropertySortOrder
   html,
-  body {
+  body,
+  .page-details-coming-soon {
     width: 100%;
     height: 100%;
+  }
+  
+  .page-details-coming-soon {
     
     -webkit-box-align: center;
     -webkit-align-items: center;

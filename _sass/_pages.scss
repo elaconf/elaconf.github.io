@@ -1,3 +1,4 @@
+
 @include breakpoint(medium) {
   .header-small .ela-logo {
     margin: 0;
@@ -5,53 +6,3 @@
   }
 }
 
-.page-inner:not(.page-videos) li {
-  margin-bottom: .5em;
-}
-
-.page-code-of-conduct .main h2 {
-  color: $text-color;
-}
-
-.page-sponsorship-packages ul,
-.page-talk-inspiration ul {
-  list-style: disc;
-  margin: 2em auto 4em;
-  padding-left: 2em;
-}
-
-.page-sponsorship-packages li {
-  margin-bottom: .25em;
-}
-
-
-.main {
-  
-  @include clearfix;
-  
-  margin: 0 auto;
-  max-width: 900px;
-
-  .button:hover {
-    color: $fuscia;
-  }
-  
-}
-
-.main h1,
-.main h2,
-.main h3,
-.main p,
-.main ul {
-  max-width: none;
-  text-align: left;
-}
-
-
-.page-speakers-single,
-.page-organizers-single,
-.page-agenda-single {
-  .button {
-    margin-top: 2em;
-  }
-}
