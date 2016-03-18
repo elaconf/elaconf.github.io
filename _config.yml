@@ -36,7 +36,6 @@ author:
 exclude:
 - Gemfile
 - README.md
-- test/
 - package.json
 - CNAME
 - node_modules
