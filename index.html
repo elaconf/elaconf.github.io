@@ -1,46 +1,11 @@
 ---
 layout: default
-# section names refer to the un-slugified file name in _includes/home/
-sections:
-- About
-- Speakers
-- Agenda
-- Tickets
-- Sponsors
-- Venue
-- Hotel
-- Organizers
-- Convince your boss
 ---
 
-<header class="primary-header" id="ela-conf">
-  <img class="ela-logo" src="images/elalogo2.svg" alt="ELA Conf logo in basic shapes" />
-  <p>{{site.date}}<br>{{site.location}}</p>
-</header>
-
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Sticky Nav -->
-<!-- ///////////////////////////////////////////////////// -->
-<div class="sticky-nav hide-mobile hide-tablet">
-  <div class="clearfix center">
-    <ul class="">
-      {% for section in page.sections %}
-      <li><a href="#{{section | slugify}}" class="{{section | slugify}}">{{section}}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+<div style="padding: 10px;">
+<img src="logo_fun.svg" class="img-center" width="400px" alt="ELA Conf 2016" />
+<h2>Details coming soon!</h2>
+<p class="text-center">Follow <a href="https://www.twitter.com/elaconf">@elaconf</a> for updates.</p>
+<p class="text-center"><a href="/2015/">Did you miss ELA Conf 2015 or want to reminisce?</a></p>
+<!--<p class="text-center"><a href="/2015" class="button">Show me ELA Conf 2015!</a></p>-->
 </div>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Sections: see _includes/home/ for each section's -->
-<!-- Change the order of the sections in the front matter -->
-<!-- ///////////////////////////////////////////////////// -->
-{% for section in page.sections %}
-<section class="section-{{section | slugify}}" id="{{section | slugify}}">
-  {% include {{section | slugify | append:".html" | prepend:"home/"}} %}
-</section>
-{% if section == 'Venue' %}{% include home/map.html %}{% endif %}
-{% endfor %}
-
-<script src="/js/sticky.js"></script>
