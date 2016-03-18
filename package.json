@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "scss-lint _sass/*.scss && htmlproof ./_site"
+    "test": "scss-lint _sass/*.scss"
   },
   "dependencies": {
     "scsslint": "0.0.3"
