@@ -1,1 +1,0 @@
-{% assign start = x.time | split:"-" | first | replace:':','.' | times: 1 %}{% if start < 7 %}{% assign start = start | plus: 12 %}{% endif %}{% assign end = x.time | split:"-" | last  | replace:':','.' | times: 1 %}{% if end < 7 %}{% assign end = end | plus: 12 %}{% endif %}{% assign duration = end | minus: start %}{% if duration == 0.85 %}{% assign duration = 0.45 %}{% endif %}

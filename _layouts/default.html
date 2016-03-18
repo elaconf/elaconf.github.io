@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}} 2015</title>
+  <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}} 2016</title>
   <meta name="description" content="{{site.mission}}">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="keywords" content="web design,design,designer,developer,front-end,tech,technology,women,female,girls,conference,empower,web,women in tech">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="fwQlP4L8TVoaRJctoltAtyp9zrdfeOkm1NNSAVENMdk" />
@@ -24,9 +25,9 @@
   <meta property="og:image:width" content="500" /> 
   <meta property="og:image:height" content="500" />
   {% feed_meta %}
-  <link rel="shortcut icon" href="/images/elafav.png" type="image/x-icon">
-  <link rel="icon" href="/images/elafav.png" type="image/x-icon">
-  <link type="text/css" rel="stylesheet" href="/css/elaconf.css" />
+  <link rel="shortcut icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
+  <link rel="icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="{{site.baseurl}}/css/elaconf.css" />
   <link href='http://fonts.googleapis.com/css?family=Strait|Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -35,28 +36,6 @@
 <body>
   <div class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
     {{content}}
-    <footer id="footer">
-      <div class="grid">
-        <div class="two-thirds">
-          <p>Twitter: <a href="https://www.twitter.com/{{site.twitter}}">@{{site.twitter}}</a><br>Email: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
-        </div>
-        <div class="third">
-          <p>Our Newsletter:</p>
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form action="//elaconf.us11.list-manage.com/subscribe/post?u=35575c3d011d3489cb7c3c214&amp;id=e88ae52852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <input type="email" value="" name="EMAIL" class="email input-email" id="mce-EMAIL" placeholder="email address" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_35575c3d011d3489cb7c3c214_e88ae52852" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" class="button button-subscribe"></div>
-              </div>
-            </form>
-          </div>
-          <!--End mc_embed_signup-->
-        </div>
-      </div>
-    </footer>
   </div>
 </body>
 </html>

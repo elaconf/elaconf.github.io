@@ -1,8 +1,9 @@
 title: ELA Conf
 url: http://elaconf.com
-date: "November 20th &amp; 21st"
-building: Huntsman Hall, Wharton
-address: "3730 Walnut St, Philadelphia, PA"
+baseurl:
+date: 
+building: 
+address:
 location: "Philadelphia, Pennsylvania"
 mission: "We are a not-for-profit event with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for women to gain the confidence needed to become leaders, open source contributors, speakers, and teachers in the world of tech."
 
@@ -32,6 +33,14 @@ author:
   email: hello@elaconf.com
   uri: http://elaconf.com
 
+exclude:
+- Gemfile
+- README.md
+- test/
+- package.json
+- CNAME
+- node_modules
+
 defaults:
   -
     scope:
@@ -40,13 +49,6 @@ defaults:
     values:
       layout: "speaker"
       category: "speakers"
-  -
-    scope:
-      path: "agenda"
-      type: "posts"
-    values:
-      layout: "agenda"
-      category: "agenda"
   -
     scope:
       path: "organizers"
