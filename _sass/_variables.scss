@@ -1,14 +1,21 @@
 $body-bg: #fff;
-$text-color: #231947;
-$light: #faecce;
+$text-color: #333;
+$light: #fff;
 
+// main color accents
+$accent-main: #62c;
+$accent-secondary: #f7b32b;
 
-$cyan: #57dddd;
-$fuscia: #62c;
-$periwinkle: #4056f4;
-$salmon: #f7b32b;
-$blue: #c200fb;
+// secondary colors
+$turquoise: #57dddd;
+$blue: #4056f4;
+$violet: #c200fb;
+
 $white: #fff;
+
+$link-color: $blue;
+$button-color: $violet;
+$border-color: $accent-secondary;
 
 
 $font-headings: 'Questrial', sans-serif;

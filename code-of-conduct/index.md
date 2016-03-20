@@ -29,5 +29,3 @@ Staff will be happy to help participants contact venue security or local law enf
 We expect participants, volunteers, mentors, and mentees to follow these rules at all Elanor Community events and programs, including conferences, workshops, social events, and throughout the duration of a mentorship relationship.
 
 *This Code of Conduct was adapted from [The Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy)*
-
-[Download the Code of Conduct](../docs/code-of-conduct.pdf)

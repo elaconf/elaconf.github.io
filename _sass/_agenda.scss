@@ -16,7 +16,7 @@
   border: 0;
   
   th {
-    border-bottom: .2em solid $cyan;
+    border-bottom: .2em solid $turquoise;
   }
   
   tr:nth-child(even) td,
@@ -73,7 +73,7 @@
     //min-width: 6.15em;
     
     &:not(th):before {
-      border: .15em solid $salmon;
+      border: .15em solid $accent-secondary;
       border-radius: .7em;
       content: '';
       height: .7em;
@@ -92,7 +92,7 @@
 }
 
 .agenda-room {
-  color: $salmon;
+  color: $accent-secondary;
   margin-bottom: 1em;
 
   @include breakpoint(medium) {
