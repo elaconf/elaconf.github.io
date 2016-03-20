@@ -7,6 +7,12 @@ address:
 location: "Philadelphia, Pennsylvania"
 mission: "We are a not-for-profit event with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for women to gain the confidence needed to become leaders, open source contributors, speakers, and teachers in the world of tech."
 
+collections:
+  organizers:
+    output: true
+    permalink: /organizers/:path/
+
+
 sass:
   style: :compressed
   
@@ -41,17 +47,15 @@ exclude:
 - node_modules
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "speakers"
       type: "posts"
     values:
       layout: "speaker"
       category: "speakers"
-  -
-    scope:
-      path: "organizers"
-      type: "posts"
+  - scope:
+      path: ""
+      type: "organizers"
     values:
       layout: "speaker"
       category: "organizers"
