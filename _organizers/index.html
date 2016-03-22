@@ -6,7 +6,8 @@ permalink: /organizers/index.html
 
 
 <div class="speakers">
-  {% for organizer in site.organizers reversed %}{% if organizer.image %}
+  {% assign organizers = site.organizers | sort: 'order' %}
+  {% for organizer in organizers %}{% if organizer.image %}
   <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
     <div class="speaker-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></div>
     <div class="speaker-name">{{organizer.title}}</div>
