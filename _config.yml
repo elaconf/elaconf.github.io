@@ -10,6 +10,12 @@ tagline: Empowering more women to be leaders in tech.
 
 gradient: "radial-gradient(farthest-corner at 2em 2em, #f7b22d, #c201f9)"
 
+collections:
+  organizers:
+    output: true
+    permalink: /organizers/:path/
+
+
 sass:
   style: :compressed
   
@@ -44,17 +50,15 @@ exclude:
 - node_modules
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "speakers"
       type: "posts"
     values:
       layout: "speaker"
       category: "speakers"
-  -
-    scope:
-      path: "organizers"
-      type: "posts"
+  - scope:
+      path: ""
+      type: "organizers"
     values:
       layout: "speaker"
       category: "organizers"
