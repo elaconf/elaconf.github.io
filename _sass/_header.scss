@@ -1,7 +1,7 @@
 
 header {
-  background: radial-gradient(farthest-corner at 2em 2em, #f7b22d, #c201f9);
-  color: #fff;
+  background: radial-gradient(farthest-corner at 2em 2em, $gradient-light, $gradient-dark);
+  color: $white;
   
   img {
     display: block;
