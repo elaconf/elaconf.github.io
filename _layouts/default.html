@@ -33,11 +33,9 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   {{page.head}}
 </head>
-<body>
-  <div class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
-    <div class="container">
-      {{content}}
-    </div>
-  </div>
+<body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
+{% include header.html %}
+{{content}}
+{% include footer.html %}
 </body>
 </html>

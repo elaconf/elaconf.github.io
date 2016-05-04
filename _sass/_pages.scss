@@ -1,8 +1,10 @@
 
-@include breakpoint(medium) {
-  .header-small .ela-logo {
-    margin: 0;
-    max-width: 150px;
+.page-inner {
+  
+  h1,
+  h2 {
+    color: $accent-main;
   }
+  
 }
 

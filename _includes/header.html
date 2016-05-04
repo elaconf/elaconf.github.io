@@ -1,0 +1,15 @@
+<header>
+  <div class="limiter">
+    <a href="/" class="ela-logo">{% include svg/logo.svg %}</a>
+    {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
+  </div>
+  {% unless page.title %}
+  <img src="{{site.baseurl}}/images/hero.jpg" alt="{{site.title}}" />
+  
+  <div class="ela-location">
+    <div class="limiter">
+      Philadelphia, PA this fall
+    </div>
+  </div>
+  {% endunless %}
+</header>

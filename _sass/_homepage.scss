@@ -1,29 +1,19 @@
-@media (min-width: 640px) {
+
+.fill-gradient {
+  background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
+  color: $white;
+}
+
+
+.fill-light {
   
-  // scss-lint:disable VendorPrefixes, PropertySortOrder
-  html,
-  body,
-  .page-details-coming-soon {
-    width: 100%;
-    height: 100%;
+  h2 {
+    color: $accent-main;
   }
   
-  .page-details-coming-soon {
-    
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
+}
+
+.fill-dark {
+  background-color: $accent-main-light;
+  color: $white;
 }
