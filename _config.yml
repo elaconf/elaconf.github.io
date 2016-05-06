@@ -1,14 +1,14 @@
 title: Ela Conf
 url: http://elaconf.com
 baseurl: ''
-date: 
-building: 
-address:
+date: November 4-5, 2016
+building: The University of the Arts
+address: 320 S Broad St, Philadelphia, PA 19102
 location: "Philadelphia, Pennsylvania"
 mission: "We are a not-for-profit event with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for women to gain the confidence needed to become leaders, open source contributors, speakers, and teachers in the world of tech."
 tagline: Empowering more women to be leaders in tech.
 
-gradient: "radial-gradient(farthest-corner at 2em 2em, #f7b22d, #c201f9)"
+gradient: "radial-gradient(farthest-corner at 2em 2em, rgba(247, 178, 45, .5), rgba(194, 1, 249, .5))"
 
 collections:
   organizers:

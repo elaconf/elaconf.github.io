@@ -32,4 +32,21 @@ header {
   font-size: 1.5em;
   padding-bottom: .25em;
   padding-top: .25em;
+  
+  svg {
+    display: inline-block;
+    height: 1em;
+    margin-right: .5em;
+    vertical-align: text-top;
+    width: 1em;
+  }
+  
+}
+
+
+.ela-hero {
+  background-blend-mode: overlay;
+  background-position: bottom;
+  background-size: 100%;
+  padding-bottom: 50%;
 }
