@@ -1,3 +1,14 @@
+.float-header {
+  padding: 1em;
+
+  @include breakpoint(medium) {
+    left: 3%;
+    max-width: 26em;
+    position: absolute;
+    top: 1em;
+    width: 60%;
+  }
+}
 
 .fill-gradient {
   background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
@@ -6,14 +17,34 @@
 
 
 .fill-light {
-  
+
   h2 {
     color: $accent-main;
   }
-  
+
 }
 
 .fill-dark {
   background-color: $accent-main-light;
   color: $white;
+}
+
+section {
+  min-height: 70vh;
+}
+
+.fill-dots,
+.fill-circles {
+  background-position: -250px;
+  background-repeat: repeat-y;
+}
+
+.fill-dots {
+  background-image: url(/images/svg/pattern-dots.svg);
+  background-size: contain;
+}
+
+.fill-circles {
+  background-image: url(/images/svg/pattern-circles.svg);
+  background-size: contain;
 }

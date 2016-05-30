@@ -1,38 +1,47 @@
-
 header {
-  background: radial-gradient(farthest-corner at 2em 2em, $gradient-light, $gradient-dark);
+  background-image: radial-gradient(farthest-corner at 2em 2em, $gradient-light, $gradient-dark);
   color: $white;
-  
+  position: relative;
+
   img {
     display: block;
   }
+
+  .page-inner & {
+    background-size: 150%;
+  }
+
 }
 
 .ela-logo {
   display: block;
   margin-bottom: 1em;
-  max-width: 10em;
-  
+  max-width: 6em;
+
   path,
   rect {
     fill: $white;
   }
-  
+
 }
 
 .tagline {
-  font-size: 2.5em;
+  font-size: 1.5em;
   line-height: 1.2;
-  margin-bottom: 1em;
   margin-top: 1em;
+
+  @include breakpoint(medium) {
+    font-size: 1.5em;
+  }
+
 }
 
 .ela-location {
   background: $accent-main;
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding-bottom: .25em;
   padding-top: .25em;
-  
+
   svg {
     display: inline-block;
     height: 1em;
@@ -40,13 +49,25 @@ header {
     vertical-align: text-top;
     width: 1em;
   }
-  
+
 }
 
 
 .ela-hero {
   background-blend-mode: overlay;
   background-position: bottom;
+  background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 50%;
+
+  @include breakpoint(medium) {
+    height: calc(100vh - 75.88px);
+    min-height: 300px;
+    padding-bottom: 0;
+  }
+
+  .no-backgroundblendmode & {
+    background-image: url('/images/hero.jpg');
+  }
+
 }

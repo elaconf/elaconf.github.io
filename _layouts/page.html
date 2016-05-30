@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<section class="limiter">
-  <h1>{{page.title}}</h1>
-  {{content}}
+<section>
+  <div class="limiter">
+    <h1>{{page.title}}</h1>
+  </div>
+    <div class="limiter{% if page.wide %}  limiter-large{% endif %}">
+      {{content}}
+    </div>
+  </div>
 </section>

@@ -4,11 +4,11 @@ layout: default
 
 <section class="limiter">
   <h1>{{page.title}}</h1>
-  <img src="/images/{{page.category}}/{{page.image}}" alt="{{page.title}}" class="speaker-img-page" style="background-image:{{site.gradient}}">
+  <div alt="{{page.title}}" class="speaker-img-page" style="background-image: url(/images/{{page.category}}/{{page.image}}),{{site.gradient}}"></div>
   <p>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %} {% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
   {{content}}
-  
-  <p><a href="/{{page.category}}/" class="button">&#9664; {{page.category | capitalize}}</a></p>
+
+  <p><a href="/{{page.category}}/" class="button">&larr; {{page.category | capitalize}}</a></p>
 
 </section>
 

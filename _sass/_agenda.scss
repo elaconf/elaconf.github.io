@@ -1,39 +1,39 @@
 .page-agenda {
-  
+
   table {
     max-width: 100%;
   }
-  
-  .main h1, 
+
+  .main h1,
   .main h2 {
     text-align: center;
   }
-  
+
 }
 
 .agenda-table {
-  
+
   border: 0;
-  
+
   th {
     border-bottom: .2em solid $turquoise;
   }
-  
+
   tr:nth-child(even) td,
   .row-breakout td {
     background: rgba($white, .4);
   }
-  
+
   td {
     position: relative;
     vertical-align: text-top;
-    
+
     @include breakpoint(small) {
       padding: .25em 1em;
     }
-    
+
   }
-  
+
 }
 
 .agenda-speaker-link {
@@ -53,7 +53,7 @@
   position: absolute;
   top: 3px;
   width: 25px;
-  
+
   .agenda-speaker-link:nth-child(odd) & {
     border-radius: 100%;
   }
@@ -69,10 +69,10 @@
   .agenda-time {
     border-right: .2em solid $text-color;
     position: relative;
-    text-align: right;    
+    text-align: right;
     //min-width: 6.15em;
-    
-    &:not(th):before {
+
+    &:not(th)::before {
       border: .15em solid $accent-secondary;
       border-radius: .7em;
       content: '';
@@ -82,9 +82,9 @@
       top: 1em;
       width: .7em;
     }
-    
+
   }
-  
+
 }
 
 .allow-bullets ul {
@@ -101,5 +101,5 @@
     position: absolute;
     text-align: right;
   }
-  
+
 }

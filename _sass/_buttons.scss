@@ -6,17 +6,29 @@
   display: inline-block;
   margin-bottom: .5em;
   padding: .6em 1.2em;
-  
+
   .page-inner & {
     color: $accent-secondary;
+
+    &:hover {
+      background: $accent-secondary;
+      border-color: $accent-secondary;
+      color: $white;
+    }
+
   }
-  
+
   &:hover {
     text-decoration: none;
   }
-  
+
 }
 
 .button-compact {
   padding: .25em 1em;
+}
+
+
+.button-large {
+  font-size: 1.2em;
 }
