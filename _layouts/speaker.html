@@ -2,13 +2,14 @@
 layout: default
 ---
 
+{% capture image %}<div alt="{{page.title}}" class="speaker-img-page" style="background-image:url(https://avatars.io/twitter/{{page.twitter}}),{{site.gradient}}"></div>{% endcapture %}
+
+<div class="speaker-sidebar">{{image}}</div>
+
 <section class="limiter">
   <h1>{{page.title}}</h1>
-  <div alt="{{page.title}}" class="speaker-img-page" style="background-image: url(/images/{{page.category}}/{{page.image}}),{{site.gradient}}"></div>
-  <p>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %} {% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
+  <p> <div class="speaker-img-small">{{image}}</div>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
   {{content}}
-
   <p><a href="/{{page.category}}/" class="button">&larr; {{page.category | capitalize}}</a></p>
-
 </section>
 

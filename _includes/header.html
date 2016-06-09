@@ -3,13 +3,13 @@
     <a href="/" class="ela-logo">{% include svg/logo.svg %}</a>
     {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
   </div>
-  {% unless page.title %}
   <div class="ela-hero" style="background-image:url({{site.baseurl}}/images/hero.jpg), {{site.gradient}}"></div>
+  {% unless page.title %}
 
   <div class="ela-location">
     <div class="limiter">
       <div>{% include svg/calendar.svg %} {{site.date}}</div>
-      {%comment %}<div>{% include svg/marker.svg %} {{site.building}}, Philadelphia</div>{% endcomment %}
+      <div>{% include svg/marker.svg %} {{site.building}}, Philadelphia</div>
     </div>
   </div>
   {% endunless %}

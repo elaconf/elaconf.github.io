@@ -5,4 +5,4 @@ twitter: JoniTrythall
 order: 1
 ---
 
-Joni Trythall is a designer at [NowSecure](https://www.nowsecure.com/), teacher, and author. Joni's passion for design and teaching began when she wrote and illustrated a children's book. Since then she has been obsessed with learning about using graphics on the web and writing about everything in the process. She currently lives deep in the quiet Philadelphia suburbs with her husband and three year old son.
+Joni Trythall is a designer, author, occasional teacher, and all the time mom. Joni got started in tech because she wanted to bring her colorful illustrations to life on the screen and hasn’t looked back since. Years later she works to give back to the community that has taught and supported her so much. She lives at the tip top of Delaware and is known for making gluten free cookies that don’t taste gluten free. 

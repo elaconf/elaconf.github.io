@@ -18,12 +18,16 @@ collections:
   organizers:
     output: true
     permalink: /organizers/:path/
+  speakers:
+    output: true
+    permalink: /speakers/:path/    
 
 
 sass:
   style: :compressed
 
 markdown: kramdown
+
 kramdown:
   auto_ids:       true
   toc_levels:     1..6
@@ -39,7 +43,6 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
-- jekyll-feed
 
 author:
   name: ELA Conf
@@ -55,8 +58,8 @@ exclude:
 
 defaults:
   - scope:
-      path: "speakers"
-      type: "posts"
+      path: ""
+      type: "speakers"
     values:
       layout: "speaker"
       category: "speakers"
@@ -66,3 +69,4 @@ defaults:
     values:
       layout: "speaker"
       category: "organizers"
+      topic: Organizer

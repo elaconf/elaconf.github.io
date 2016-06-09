@@ -18,10 +18,10 @@ $violet: #c200fb;
 
 $white: #fff;
 
-$max-width: 750px;
+$max-width: 700px;
 
 $link-color: $blue;
-$link-hover: darken($link-color, 15%);
+$link-hover: adjust-hue($link-color, 15deg);
 $button-color: $violet;
 $border-color: $accent-secondary;
 

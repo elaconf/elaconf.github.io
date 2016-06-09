@@ -5,6 +5,8 @@
     @media (max-width: 600px) { @content; }
   } @else if $point == large {
     @media (min-width: 900px) { @content; }
+  } @else if $point == xlarge {
+    @media (min-width: 1150px) { @content; }
   }
 }
 
