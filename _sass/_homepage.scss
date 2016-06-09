@@ -13,10 +13,11 @@
 .fill-gradient {
   background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
   color: $white;
-  
+
   a {
     color: $white;
     text-decoration: underline;
+
     &:hover {
       text-decoration: none;
     }
@@ -49,11 +50,11 @@ section {
 }
 
 .fill-dots {
-  background-image: url(/images/svg/pattern-dots.svg);
+  background-image: url('/images/svg/pattern-dots.svg');
   background-size: contain;
 }
 
 .fill-circles {
-  background-image: url(/images/svg/pattern-circles.svg);
+  background-image: url('/images/svg/pattern-circles.svg');
   background-size: contain;
 }

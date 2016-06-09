@@ -4,26 +4,26 @@
   padding: 1%;
   text-align: center;
   width: 49%;
-  
+
   @include breakpoint(medium) {
     padding: 5%;
     width: 50%;
   }
-  
+
   @include breakpoint(large) {
     padding: 1em .25em;
     width: 25%;
   }
-  
+
   &:hover {
-    
+
     color: $link-hover;
-    
+
     .speaker-img {
       background-blend-mode: luminosity;
     }
   }
-  
+
 }
 
 .speaker-img-page,
@@ -48,27 +48,27 @@
 }
 
 .speaker-img-small {
-  
+
   display: inline-block;
   vertical-align: middle;
-  
+
   @include breakpoint(xlarge) {
     display: none;
   }
-  
+
   .speaker-img-page {
     border-radius: 100%;
     height: 40px;
     margin: 0 .5em 0 0;
     width: 40px;
   }
-  
+
 }
 
 .speaker-sidebar {
-  
+
   display: none;
-  
+
   @include breakpoint(xlarge) {
     display: block;
     left: 3.34%;
@@ -90,7 +90,7 @@
 }
 
 .speaker-topic {
-  color: rgba( $white, .8);
+  color: rgba($white, .8);
   display: block;
 }
 
@@ -102,7 +102,7 @@
 .page-videos,
 .page-speakers-single,
 .page-organizers-single {
-  
+
   li::before {
     border-color: $border-color;
   }
