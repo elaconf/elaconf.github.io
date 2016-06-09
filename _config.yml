@@ -10,6 +10,7 @@ tagline: Empowering more women to be leaders in tech.
 
 gradient: "radial-gradient(farthest-corner at 2em 2em, rgba(247, 178, 45, .7), rgba(194, 1, 249, .7))"
 
+token: pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiY2lwOGJsbjR2MDBweGVhbnJyOHUxd3BmciJ9.RmDyfo38D_xPFdDst05n-g
 
 modernizr: 2.8.3
 jquery: 2.2.3
@@ -20,7 +21,7 @@ collections:
     permalink: /organizers/:path/
   speakers:
     output: true
-    permalink: /speakers/:path/    
+    permalink: /speakers/:path/
 
 
 sass:

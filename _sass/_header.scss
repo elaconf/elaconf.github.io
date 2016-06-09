@@ -63,6 +63,10 @@ header {
     margin-right: .5em;
     vertical-align: text-top;
     width: 1em;
+
+    path {
+      fill: $white;
+    }
   }
 
 }

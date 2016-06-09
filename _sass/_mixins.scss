@@ -38,6 +38,15 @@
 
 }
 
+.show-desktop {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: inline-block;
+  }
+
+}
+
 // scss-lint:disable VendorPrefixes, PropertySortOrder
 
 %center {
