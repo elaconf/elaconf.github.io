@@ -1,12 +1,12 @@
 @include breakpoint(medium) {
-  
+
   .half,
   .fourth,
   .third,
   .two-thirds {
     width: 50%;
   }
-  
+
   // scss-lint:disable VendorPrefixes, PropertySortOrder
   .grid,
   .organizer,
@@ -30,12 +30,12 @@
     -ms-flex-pack: left;
     justify-content: left;
   }
-  
+
   // scss-lint:disable VendorPrefixes, PropertySortOrder
   footer .third {
     display: flex;
     display: -webkit-flex;
-    flex-direction: column;      
+    flex-direction: column;
     -webkit-flex-direction: column;
     align-items: flex-end;
     align-items: -webkit-flex-end;
@@ -45,17 +45,17 @@
 
 
 @include breakpoint(large) {
-  
+
   .third {
     width: 33.33%;
   }
-  
+
   .fourth {
     width: 25%;
   }
-  
+
   .two-thirds {
     width: 66.66%;
   }
-  
+
 }

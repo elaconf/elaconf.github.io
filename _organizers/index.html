@@ -1,0 +1,18 @@
+---
+layout: page
+title: Organizers
+permalink: /organizers/
+#wide: true
+---
+
+
+<div class="speakers">
+  {% assign organizers = site.organizers | sort: 'order' %}
+  {% for organizer in organizers %}{% if organizer.image %}
+  <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
+    <div class="speaker-img" style="background-image:url(https://avatars.io/twitter/{{organizer.twitter}}), {{site.gradient}}">
+      <div class="speaker-name">{{organizer.title}}</div>
+    </div>
+  </a>
+  {% endif %}{% endfor %}
+</div>

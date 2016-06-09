@@ -1,28 +1,28 @@
 .sticky-nav {
   transition: .2s;
-  
-  .active { 
+
+  .active {
     color: $accent-secondary;
     transition: .2s;
   }
-  
+
   ul {
     list-style: none;
     padding: 0 1em;
     text-align: center;
   }
-  
-  li {  
-    
+
+  li {
+
     @include breakpoint(medium) {
-      display: inline-block; 
+      display: inline-block;
       font-size: .9em;
       margin: 0;
       padding-left: .75em;
       padding-right: 1.5em;
       position: relative;
-      
-      &:not(:first-of-type):before {
+
+      &:not(:first-of-type)::before {
         border: .15em solid $turquoise;
         content: '';
         height: .7em;
@@ -31,15 +31,15 @@
         top: .3em;
         width: .7em;
       }
-      
-      &:nth-child(odd):before {
+
+      &:nth-child(odd)::before {
         border-radius: .7em;
       }
-      
+
     }
-    
+
   }
-  
+
 }
 
 .sticky {
@@ -51,16 +51,16 @@
   transition: .2s;
   width: 100%;
   z-index: 10000;
-  
-  a { 
+
+  a {
     color: $light;
     transition: .2s;
-    
+
     &:hover {
       color: $accent-secondary;
     }
-    
+
   }
-  
+
 }
 

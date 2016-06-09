@@ -4,12 +4,12 @@
 
 .organizer-bio {
   max-width: 675px;
-  
+
   @include breakpoint(medium) {
     margin: 0 auto;
     padding: 1em .5em;
   }
-  
+
 }
 
 .organizer-img {
@@ -23,11 +23,11 @@
     margin-bottom: 0;
     width: 40%;
   }
-  
+
   @include breakpoint(large) {
     width: 25%;
   }
-  
+
 }
 
 .organizer:nth-of-type(even) .organizer-img {

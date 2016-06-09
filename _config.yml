@@ -1,16 +1,33 @@
-title: ELA Conf
+title: Ela Conf
 url: http://elaconf.com
-baseurl:
-date: 
-building: 
-address:
+baseurl: ''
+date: November 4-5, 2016
+building: The University of the Arts
+address: 320 S Broad St, Philadelphia, PA 19102
 location: "Philadelphia, Pennsylvania"
 mission: "We are a not-for-profit event with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for women to gain the confidence needed to become leaders, open source contributors, speakers, and teachers in the world of tech."
+tagline: Empowering more women to be leaders in tech.
+
+gradient: "radial-gradient(farthest-corner at 2em 2em, rgba(247, 178, 45, .7), rgba(194, 1, 249, .7))"
+
+
+modernizr: 2.8.3
+jquery: 2.2.3
+
+collections:
+  organizers:
+    output: true
+    permalink: /organizers/:path/
+  speakers:
+    output: true
+    permalink: /speakers/:path/    
+
 
 sass:
   style: :compressed
-  
+
 markdown: kramdown
+
 kramdown:
   auto_ids:       true
   toc_levels:     1..6
@@ -26,9 +43,8 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
-- jekyll-feed
 
-author: 
+author:
   name: ELA Conf
   email: hello@elaconf.com
   uri: http://elaconf.com
@@ -41,17 +57,16 @@ exclude:
 - node_modules
 
 defaults:
-  -
-    scope:
-      path: "speakers"
-      type: "posts"
+  - scope:
+      path: ""
+      type: "speakers"
     values:
       layout: "speaker"
       category: "speakers"
-  -
-    scope:
-      path: "organizers"
-      type: "posts"
+  - scope:
+      path: ""
+      type: "organizers"
     values:
       layout: "speaker"
       category: "organizers"
+      topic: Organizer

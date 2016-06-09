@@ -1,27 +1,39 @@
-.speakers:not(a) {
-  margin-bottom: 2em;
-}
 
 .speaker {
-  display: block;
-  padding: 1em 20% 2em;
+  display: inline-block;
+  padding: 1%;
   text-align: center;
-  
+  width: 49%;
+
   @include breakpoint(medium) {
     padding: 5%;
     width: 50%;
   }
-  
+
   @include breakpoint(large) {
-    padding: 2em 2%;
+    padding: 1em .25em;
     width: 25%;
   }
-  
+
+  &:hover {
+
+    color: $link-hover;
+
+    .speaker-img {
+      background-blend-mode: luminosity;
+    }
+  }
+
+}
+
+.speaker-img-page,
+.speaker-img {
+  background-blend-mode: overlay;
+  background-size: cover;
+  position: relative;
 }
 
 .speaker-img {
-  background-size: cover;
-  border: .4em solid $light;
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -30,33 +42,56 @@
 }
 
 .speaker-img-page {
-  border-style: solid;
-  border-width: .4em;
-  max-width: 250px;
-  
-  @include breakpoint(medium) {
-    float: right;
-    margin-bottom: 1em;
-    margin-left: 2em;
+  height: 200px;
+  margin-bottom: .5em;
+  width: 200px;
+}
+
+.speaker-img-small {
+
+  display: inline-block;
+  vertical-align: middle;
+
+  @include breakpoint(xlarge) {
+    display: none;
+  }
+
+  .speaker-img-page {
+    border-radius: 100%;
+    height: 40px;
+    margin: 0 .5em 0 0;
+    width: 40px;
+  }
+
+}
+
+.speaker-sidebar {
+
+  display: none;
+
+  @include breakpoint(xlarge) {
+    display: block;
+    left: 3.34%;
+    position: absolute;
+    top: 9.7em;
   }
 }
 
 .speaker-name {
+  bottom: 1px;
+  color: $white;
   font-family: $font-headings;
   font-size: 1.2em;
+  left: 1px;
+  letter-spacing: -1px;
+  line-height: 1;
+  position: absolute;
+  text-align: left;
 }
-
-.page-speakers .speaker-img,
-.page-organizers .speaker-img,
-.speaker-img-page {
-  border-color: $border-color;
-  border-radius: 100%;
-}
-
 
 .speaker-topic {
+  color: rgba($white, .8);
   display: block;
-  font-weight: bold;
 }
 
 
@@ -67,7 +102,8 @@
 .page-videos,
 .page-speakers-single,
 .page-organizers-single {
-  li:before {
+
+  li::before {
     border-color: $border-color;
   }
 }

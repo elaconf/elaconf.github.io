@@ -1,29 +1,60 @@
-@media (min-width: 640px) {
-  
-  // scss-lint:disable VendorPrefixes, PropertySortOrder
-  html,
-  body,
-  .page-details-coming-soon {
-    width: 100%;
-    height: 100%;
+.float-header {
+  padding: 1em;
+
+  @include breakpoint(medium) {
+    left: 3%;
+    max-width: 26em;
+    position: absolute;
+    top: 1em;
+    width: 60%;
   }
-  
-  .page-details-coming-soon {
-    
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+}
+
+.fill-gradient {
+  background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
+  color: $white;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
+}
+
+
+.fill-light {
+
+  h2 {
+    color: $accent-main;
+  }
+
+}
+
+.fill-dark {
+  background-color: $accent-main-light;
+  color: $white;
+}
+
+section {
+  min-height: 70vh;
+  padding-bottom: 2em;
+}
+
+.fill-dots,
+.fill-circles {
+  background-position: -250px;
+  background-repeat: repeat-y;
+}
+
+.fill-dots {
+  background-image: url('/images/svg/pattern-dots.svg');
+  background-size: contain;
+}
+
+.fill-circles {
+  background-image: url('/images/svg/pattern-circles.svg');
+  background-size: contain;
 }

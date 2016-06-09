@@ -1,8 +1,26 @@
 
-@include breakpoint(medium) {
-  .header-small .ela-logo {
-    margin: 0;
-    max-width: 150px;
+.page-inner {
+
+  .ela-logo:hover {
+    path,
+    rect {
+      fill: rgba($white, .8);
+    }
   }
+
+  h1,
+  h2 {
+    color: $accent-main;
+  }
+
+  h1 {
+    padding-top: .5em;
+
+    @include breakpoint(xlarge) {
+      padding-top: 1.8em;
+    }
+
+  }
+
 }
 

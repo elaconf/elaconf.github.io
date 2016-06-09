@@ -6,57 +6,57 @@ table {
   empty-cells: show;
   margin-bottom: 1.3em;
   width: 100%;
-  
+
   @include breakpoint(medium) {
     border: 1px solid $light;
   }
-  
+
   .text-right {
     @include breakpoint(medium) { min-width: 117px; }
     @include breakpoint(small) { text-align: left; }
   }
-  
+
   td,
   th {
     font-size: inherit;
     margin: 0;
-    overflow: visible; 
-    
+    overflow: visible;
+
     @include breakpoint(medium) {
       border-left: 1px solid $light;
       border-width: 0 0 0 1px;
-      padding: .75em 1em; 
+      padding: .75em 1em;
     }
-    
+
     @include breakpoint(small) {
       display: block;
       padding-bottom: 1em;
       width: 100%;
     }
-    
+
   }
-  
-  
+
+
   td:first-child,
   th:first-child {
     border-left-width: 0;
   }
-  
+
   thead {
     text-align: left;
     vertical-align: bottom;
-    
+
     @include breakpoint(medium) {
       background-color: $light;
       color: $text-color;
     }
-    
+
     @include breakpoint(small) {
       display: none;
     }
   }
 
-  
-  
+
+
 }
 

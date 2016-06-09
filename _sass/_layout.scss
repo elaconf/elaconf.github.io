@@ -2,43 +2,58 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: $accent-tertiary;
+}
+
 body {
   background: $body-bg;
   color: $text-color;
   font-family: $font-body;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.45;
   position: relative;
-  
-  @include breakpoint(medium) {
-    font-size: 17px;
-  }
-  
 }
 
-.container {
-  
+.limiter {
+
   @include clearfix;
-  
+
   margin: 0 auto;
-  max-width: 900px;
-  padding: 1em;
-  
+  max-width: $max-width;
+  padding: 15px;
+
 }
 
+.limiter-large {
+  max-width: $max-width * 1.3;
+}
 
-.ela-logo {
-  display: block;
-  margin: 1em auto 2em;
-  max-width: 25em;
-  
-  @include breakpoint(medium) {
-    margin: 4em auto 3em;
-    max-width: 40%;
+footer {
+  background: $accent-tertiary;
+  color: $white;
+  padding-bottom: .25em;
+  padding-top: .25em;
+}
+
+.footer-social-link {
+
+  &:hover {
+
+    path {
+      // refactor this
+      //fill: rgba($white, .8) !important;
+    }
+
   }
-  
+
+  svg {
+    height: 2em;
+    padding: .25em;
+  }
 }
+
 
 hr {
   border-color: $turquoise transparent $violet;

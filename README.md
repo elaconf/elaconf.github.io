@@ -12,8 +12,7 @@ Recommended build: `bundle exec jekyll serve -w`
 
 ### Organizers
 
-* Each organizer has her own page located in `/organizer/_posts/`
-* Each file is named: `0000-01-0#-first-last.md` (where # is incremented).
+* Each organizer has her own page located in `/_organizers/`
 * In the front matter of each file, please include:
   - `title` &mdash; first and last name
   - `image` &mdash; the name and extension of the image
@@ -21,7 +20,7 @@ Recommended build: `bundle exec jekyll serve -w`
 * The bio goes directly in the post content area (below the front matter)
 * Save organizer images in the [/images/organizer/](https://github.com/elaconf/elaconf.github.io/tree/master/images/organizers) folder.
 
-
+<!--
 ### Sponsors
 
 * You can add or update sponsors from the [sponsors.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/sponsors.yml) file. Please include:
@@ -45,8 +44,6 @@ Recommended build: `bundle exec jekyll serve -w`
 
 ![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
 
-
-
 ### Talks
 
 * Each talk has its own page located in `/agenda/_posts/`
@@ -61,3 +58,5 @@ Recommended build: `bundle exec jekyll serve -w`
 * The talk abstract goes directly in the post content area (below the front matter)
 
 ![image](https://cloud.githubusercontent.com/assets/2180540/10857537/07e55e1a-7f25-11e5-8604-b4d5eee38c28.png)
+
+-->
