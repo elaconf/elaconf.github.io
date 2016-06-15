@@ -17,7 +17,7 @@
   background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
   color: $white;
 
-  a {
+  a:not(.button) {
     color: $white;
     text-decoration: underline;
 

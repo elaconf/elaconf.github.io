@@ -12,11 +12,11 @@ header {
     background-size: 150%;
 
     @include breakpoint(xlarge) {
-      height: 362px;
+      height: 302px;
       left: 3.34%;
       position: absolute;
       top: 1.23em;
-      width: 200px;
+      width: 142px;
 
       .limiter {
         border-bottom: 1em solid $white;
@@ -36,7 +36,7 @@ header {
 
 .ela-logo {
   display: block;
-  margin-bottom: 1em;
+  margin: .25em 0;
   max-width: 6em;
 
   path,
@@ -94,8 +94,8 @@ header {
   .page-inner & {
     background-size: cover;
     display: none;
-    height: 200px;
-    min-height: 200px;
+    height: 142px;
+    min-height: 142px;
 
     @include breakpoint(xlarge) {
       display: block;

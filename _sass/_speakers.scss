@@ -29,6 +29,7 @@
 .speaker-img-page,
 .speaker-img {
   background-blend-mode: overlay;
+  background-position: center;
   background-size: cover;
   position: relative;
 }
@@ -42,9 +43,9 @@
 }
 
 .speaker-img-page {
-  height: 200px;
+  height: 142px;
   margin-bottom: .5em;
-  width: 200px;
+  width: 142px;
 }
 
 .speaker-img-small {
@@ -73,7 +74,7 @@
     display: block;
     left: 3.34%;
     position: absolute;
-    top: 9.7em;
+    top: 174px;
   }
 }
 
