@@ -12,13 +12,16 @@ Recommended build: `bundle exec jekyll serve -w`
 
 ### Organizers
 
-* Each organizer has her own page located in `/_organizers/`
+* Each organizer has her own page located in `_organizers/`
 * In the front matter of each file, please include:
   - `title` &mdash; first and last name
   - `image` &mdash; the name and extension of the image
   - `twitter` &mdash; the handle only
 * The bio goes directly in the post content area (below the front matter)
-* Save organizer images in the [/images/organizer/](https://github.com/elaconf/elaconf.github.io/tree/master/images/organizers) folder.
+
+### Sponsorship levels
+
+To update or change a sponsorship level, edit: `_data/levels.yml`.
 
 <!--
 ### Sponsors
@@ -47,7 +50,7 @@ Recommended build: `bundle exec jekyll serve -w`
 ### Talks
 
 * Each talk has its own page located in `/agenda/_posts/`
-* Each file is named: `yyyy-mm-dd-talk-title.md` 
+* Each file is named: `yyyy-mm-dd-talk-title.md`
 * In the front matter of each file, please include:
   - `title` &mdash; title of the talk
   - `time` &mdash; start and end time of the talk

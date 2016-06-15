@@ -10,6 +10,9 @@
   }
 }
 
+.fill-shiny,
+.fill-dark,
+.fill-bright,
 .fill-gradient {
   background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
   color: $white;
@@ -33,9 +36,18 @@
 
 }
 
+.fill-shiny {
+  background: $accent-secondary;
+}
+
+
 .fill-dark {
-  background-color: $accent-main-light;
+  background: $accent-main-light;
   color: $white;
+}
+
+.fill-bright {
+  background: $accent-tertiary;
 }
 
 section {

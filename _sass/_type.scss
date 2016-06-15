@@ -51,20 +51,14 @@ small,
 .small,
 %small {font-size: .8em;}
 
-a:not(.button) {
+a {
   color: $link-color;
-  -webkit-text-decoration-color: $link-color;
-  text-decoration-color: $link-color;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: wavy;
-  text-decoration-style: wavy;
+  text-decoration: underline;
 }
 
 a:hover {
   color: $link-hover;
-  -webkit-text-decoration-color: $link-hover;
-  text-decoration-color: $link-hover;
+  text-decoration: none;
 }
 
 ::selection {

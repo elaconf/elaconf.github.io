@@ -43,3 +43,73 @@
 .sponsor-digitas-health {
   padding: 40px;
 }
+
+
+.levels {
+  //border: 1px solid $accent-secondary;
+}
+
+.levels-contact {
+  //background: $accent-secondary;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.level {
+  border-radius: .25em;
+  padding: .25em;
+
+}
+
+.level-no {
+  text-decoration: line-through;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+  @include breakpoint(medium) {
+    visibility: hidden;
+  }
+
+}
+
+.level-header {
+  font-family: $font-headings;
+}
+
+.level-name {
+
+  font-size: 1.25em;
+  line-height: 1.25;
+
+  @include breakpoint(medium) {
+    min-height: 4em;
+    padding: 1em .5em .5em;
+  }
+
+}
+
+.level-amount {
+  //background: $accent-secondary;
+  margin-top: .25em;
+  padding: .25em 0;
+}
+
+
+
+.level-rewards {
+  padding: 0 .5em;
+
+  .level-item {
+    @extend %small;
+
+    border-bottom: 1px solid $white;
+    padding: .5em 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+  }
+}

@@ -26,6 +26,12 @@ header {
 
   }
 
+  .page-wide & {
+    @include breakpoint(xlarge) {
+      height: 142px;
+    }
+  }
+
 }
 
 .ela-logo {

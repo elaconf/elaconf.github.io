@@ -3,7 +3,7 @@
     <a href="/" class="ela-logo">{% include svg/logo.svg %}</a>
     {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
   </div>
-  <div class="ela-hero" style="background-image:url({{site.baseurl}}/images/hero.jpg), {{site.gradient}}"></div>
+  {% unless page.wide %}<div class="ela-hero" style="background-image:url({{site.baseurl}}/images/hero.jpg), {{site.gradient}}"></div>{% endunless %}
   {% unless page.title %}
 
   <div class="ela-location">

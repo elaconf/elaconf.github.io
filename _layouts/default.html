@@ -27,12 +27,12 @@
   <link rel="shortcut icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
   <link rel="icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
   <link type="text/css" rel="stylesheet" href="{{site.baseurl}}/css/elaconf.css" />
-  <link href='https://fonts.googleapis.com/css?family=Questrial|Lato:400,400italic,700|Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/{{site.jquery}}/jquery.min.js"></script>
   <script type="text/javascript" src="/js/modernizr.js"></script>
   {{page.head}}
 </head>
-<body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
+<body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}{% if page.wide %} page-wide{% endif %}">
 {% include header.html %}
 {{content}}
 {% include footer.html %}

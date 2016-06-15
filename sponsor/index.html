@@ -1,0 +1,54 @@
+---
+layout: page
+title: Become a sponsor
+wide: true
+---
+
+</div>
+
+<section class="fill-bright">
+
+  <div class="grid levels">
+    {% for level in site.data.levels %}
+    <div class="level fourth">
+      <div class="level-header text-center">
+        <div class="level-name">{{level.name}}</div>
+        <div class="level-amount">{{level.amount}}</div>
+      </div>
+      <div class="level-rewards">
+        <div class="level-item">{{level.tickets}} tickets</div>
+        <div class="level-item">{{level.tickets}} Twitter mentions from @elaconf</div>
+        <div class="level-item">{{level.tickets}} job listings on Ela Conf slideshow &amp; website</div>
+        <div class="level-item{% unless level.website %} level-no{% endunless %}">Logo on Ela Conf website</div>
+        <div class="level-item{% unless level.slideshow %} level-no{% endunless %}">Logo on slideshow played during Ela Conf</div>
+        <div class="level-item{% unless level.signage %} level-no{% endunless %}">Logo on signage at Ela Conf</div>
+        <!--<div class="level-item{% unless level.verbal %} level-no{% endunless %}">Verbal recognition during Ela Conf welcome</div>-->
+        <div class="level-item{% unless level.swag %} level-no{% endunless %}">Swag bag giveaway</div>
+        <div class="level-item{% unless level.top %} level-no{% endunless %}">Recognition as a top sponsor</div>
+        <div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute session during Friday night's lightning talks</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="levels-contact fill-shiny">Email us at <a href="mailto:hello@elaconf.com">hello@elaconf.com</a> to be become a sponsor!</div>
+
+<section class="fill-light">
+  <div class="limiter">
+
+    <h2>Sponsorship materials</h2>
+    <p>Learn more about Ela Conf and how important your sponsorship is to helping us build an amazing event.</p>
+    <ul>
+      <li><a href="https://drive.google.com/a/elaconf.com/file/d/0BzvnnTcBWpuTYk42MWJqaWFVaXM/view?usp=sharing">Ela Conf 2015 at a glance</a></li>
+      <li><a href="https://docs.google.com/presentation/d/1bl0JYTEKgaNCnR0i7835YT3aIUf5myPk234xS-5lc58/edit?usp=sharing">Sponsorship deck</a></li>
+    </ul>
+    <p>Have another idea for sponsorships, such as some sort of in-kind exchange? We’d love to hear from you. For inquiries and more information regarding sponsorship opportunities, please email <a href="mailto:hello@elaconf.com">hello@elaconf.com</a></p>
+    <h3>Note on sponsorship benefits</h3>
+    <ul>
+      <li>Tickets as part of sponsorship must identify as a woman in a way that is significant to them.</li>
+      <li>The slideshow will be shown at the beginning and end of day as well as during breakfast and lunch.</li>
+      <li>Social media mentions will take place before, during, and up to 3 months after the conference.</li>
+    </ul>
+  </div>
+</section>
