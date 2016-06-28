@@ -9,11 +9,11 @@
   text-decoration: none;
 
   .page-inner & {
-    color: $accent-secondary;
+    color: $accent-tertiary;
 
     &:hover {
-      background: $accent-secondary;
-      border-color: $accent-secondary;
+      background: $accent-tertiary;
+      border-color: $accent-tertiary;
       color: $white;
     }
 
