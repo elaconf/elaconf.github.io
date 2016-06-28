@@ -31,6 +31,16 @@
     color: $accent-main;
   }
 
+  .button {
+    color: $accent-main;
+
+    &:hover {
+      background: $accent-main;
+      border-color: $accent-main;
+      color: $white;
+    }
+  }
+
 }
 
 .fill-dark {
@@ -39,7 +49,7 @@
 }
 
 section {
-  min-height: 70vh;
+  #min-height: 70vh;
   padding-bottom: 2em;
 }
 
