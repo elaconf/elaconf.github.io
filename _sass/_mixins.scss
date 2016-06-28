@@ -38,6 +38,15 @@
 
 }
 
+.show-mobile-block {
+  display: none;
+
+  @include breakpoint(small) {
+    display: block;
+  }
+
+}
+
 .show-desktop {
   display: none;
 

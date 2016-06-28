@@ -35,9 +35,40 @@ footer {
   color: $white;
   padding-bottom: .25em;
   padding-top: .25em;
+
+  a {
+    color: $white;
+  }
+}
+
+.footer-logo {
+  svg {
+    height: 4em;
+
+    path,
+    rect {
+      fill: $white;
+    }
+  }
+}
+
+.footer-social-links {
+  text-align: center;
+
+  @include breakpoint(medium) {
+    text-align: right;
+  }
+
+  @include breakpoint(small) {
+    div {
+      display: inline-block;
+    }
+  }
 }
 
 .footer-social-link {
+  color: $white;
+  margin-bottom: .25em;
 
   &:hover {
 
@@ -48,11 +79,37 @@ footer {
       //fill: rgba($white, .8) !important;
     }
 
+    span {
+      text-decoration: underline;
+    }
+
   }
 
   svg {
     height: 2em;
     padding: .25em;
+    width: 2em;
+
+    @include breakpoint(medium) {
+      height: 1.5em;
+      vertical-align: bottom;
+      width: 1.5em;
+    }
+
+  }
+
+  span {
+    margin-right: .5em;
+  }
+
+}
+
+.footer-links {
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  @media (max-width: 900px) {
+    display: none;
   }
 }
 
