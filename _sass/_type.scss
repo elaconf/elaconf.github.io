@@ -53,18 +53,12 @@ small,
 
 a:not(.button) {
   color: $link-color;
-  -webkit-text-decoration-color: $link-color;
-  text-decoration-color: $link-color;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: wavy;
-  text-decoration-style: wavy;
+  text-decoration: none;
 }
 
 a:hover {
   color: $link-hover;
-  -webkit-text-decoration-color: $link-hover;
-  text-decoration-color: $link-hover;
+  text-decoration: underline;
 }
 
 ::selection {
