@@ -6,7 +6,7 @@ wide: true
 
 </div>
 
-<section class="fill-bright">
+<section class="fill-bright" style="margin-top: 3em;">
 
   <div class="grid levels">
     {% for level in site.data.levels %}
@@ -25,7 +25,7 @@ wide: true
         <!--<div class="level-item{% unless level.verbal %} level-no{% endunless %}">Verbal recognition during Ela Conf welcome</div>-->
         <div class="level-item{% unless level.swag %} level-no{% endunless %}">Swag bag giveaway</div>
         <div class="level-item{% unless level.top %} level-no{% endunless %}">Recognition as a top sponsor</div>
-        <div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute session during Friday night's lightning talks</div>
+        {% comment %}<div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute session during Friday night's lightning talks</div>{% endcomment %}
       </div>
     </div>
     {% endfor %}

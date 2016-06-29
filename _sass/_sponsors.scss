@@ -59,6 +59,11 @@
   border-radius: .25em;
   padding: .25em;
 
+  @include breakpoint(small) {
+    margin: 1em 0 2em;
+    padding: .5em .25em;
+  }
+
 }
 
 .level-no {
@@ -76,16 +81,15 @@
 
 .level-header {
   font-family: $font-headings;
-}
-
-.level-name {
-
-  font-size: 1.25em;
+  //font-size: 1.25em;
   line-height: 1.25;
 
   @include breakpoint(medium) {
+    background: $accent-main;
     min-height: 4em;
     padding: 1em .5em .5em;
+    position: relative;
+    top: -1em;
   }
 
 }
