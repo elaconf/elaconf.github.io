@@ -1,14 +1,4 @@
-.float-header {
-  padding: 1em;
 
-  @include breakpoint(medium) {
-    left: 3%;
-    max-width: 26em;
-    position: absolute;
-    top: 1em;
-    width: 60%;
-  }
-}
 
 .fill-shiny,
 .fill-dark,

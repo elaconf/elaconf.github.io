@@ -32,7 +32,7 @@
   <script type="text/javascript" src="/js/modernizr.js"></script>
   {{page.head}}
 </head>
-<body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}{% if page.wide %} page-wide{% endif %}">
+<body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% else %} page-main{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
 {% include header.html %}
 {{content}}
 {% include footer.html %}

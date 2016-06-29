@@ -1,43 +1,57 @@
 header {
   background-image: radial-gradient(farthest-corner at 2em 2em, $gradient-light, $gradient-dark);
   color: $white;
+
   position: relative;
+
 
   img {
     display: block;
   }
 
-  .page-inner & {
+}
 
-    background-size: 150%;
+.float-header {
+  padding: 1em;
 
-    @include breakpoint(xlarge) {
-      height: 302px;
-      left: 3.34%;
-      position: absolute;
-      top: 1.23em;
-      width: 142px;
-
-      .limiter {
-        border-bottom: 1em solid $white;
-      }
-
-    }
-
+  @include breakpoint(medium) {
+    left: 48px;
+    max-width: 26em;
+    position: absolute;
+    width: 60%;
   }
-
-  .page-wide & {
-    @include breakpoint(xlarge) {
-      height: 142px;
-    }
-  }
-
 }
 
 .ela-logo {
   display: block;
-  margin: .25em 0;
-  max-width: 6em;
+  position: relative;
+  z-index: 1;
+
+  @include breakpoint(medium) {
+    left: 50px;
+    padding: .35em .5em;
+    position: absolute;
+    top: 25px;
+  }
+
+  @include breakpoint(small) {
+    .page-main & {
+      background: $accent-tertiary;
+    }
+
+    svg {
+      margin-left: 1em;
+    }
+  }
+
+  svg {
+    height: 6em;
+    width: 6em;
+  }
+
+  &.ela-logo-fill {
+    background: $accent-tertiary;
+  }
 
   path,
   rect {
@@ -49,10 +63,11 @@ header {
 .tagline {
   font-size: 1.5em;
   line-height: 1.2;
-  margin-top: 1em;
 
   @include breakpoint(medium) {
     font-size: 1.5em;
+    margin-top: 1em;
+    padding-top: 4em;
   }
 
 }
@@ -89,17 +104,6 @@ header {
     height: calc(100vh - 110px);
     min-height: 300px;
     padding-bottom: 0;
-  }
-
-  .page-inner & {
-    background-size: cover;
-    display: none;
-    height: 142px;
-    min-height: 142px;
-
-    @include breakpoint(xlarge) {
-      display: block;
-    }
   }
 
   .no-backgroundblendmode & {

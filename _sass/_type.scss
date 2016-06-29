@@ -51,14 +51,14 @@ small,
 .small,
 %small {font-size: .8em;}
 
-a:not(.button) {
+a {
   color: $link-color;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
   color: $link-hover;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 ::selection {
