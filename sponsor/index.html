@@ -2,6 +2,34 @@
 layout: page
 title: Become a sponsor
 wide: true
+levels:
+- name: Community builder
+  amount: '$1,000'
+  tickets: 2
+  slideshow: true
+  website: true
+
+- name: Conference supporter
+  amount: '$2,500'
+  tickets: 3
+  slideshow: true
+  website: true
+
+- name: Ecosystem supporter
+  amount: '$3,500'
+  tickets: 3
+  slideshow: true
+  website: true
+  signage: true
+
+- name: Women in tech signature
+  amount: '$5,000'
+  tickets: 6
+  slideshow: true
+  website: true
+  signage: true
+  talk: true
+  top: true
 ---
 
 </div>
@@ -9,7 +37,7 @@ wide: true
 <section class="fill-bright" style="margin-top: 3em;">
 
   <div class="grid levels">
-    {% for level in site.data.levels %}
+    {% for level in page.levels %}
     <div class="level fourth">
       <div class="level-header text-center">
         <div class="level-name">{{level.name}}</div>
@@ -23,7 +51,7 @@ wide: true
         <div class="level-item{% unless level.slideshow %} level-no{% endunless %}">Logo on slideshow played during Ela Conf</div>
         <div class="level-item{% unless level.signage %} level-no{% endunless %}">Logo on signage at Ela Conf</div>
         <!--<div class="level-item{% unless level.verbal %} level-no{% endunless %}">Verbal recognition during Ela Conf welcome</div>-->
-        <div class="level-item{% unless level.swag %} level-no{% endunless %}">Swag bag giveaway</div>
+        <div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute talk at Friday night event</div>
         <div class="level-item{% unless level.top %} level-no{% endunless %}">Recognition as a top sponsor</div>
         {% comment %}<div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute session during Friday night's lightning talks</div>{% endcomment %}
       </div>
