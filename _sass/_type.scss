@@ -51,7 +51,7 @@ small,
 .small,
 %small {font-size: .8em;}
 
-a:not(.button) {
+a {
   color: $link-color;
   text-decoration: none;
 }

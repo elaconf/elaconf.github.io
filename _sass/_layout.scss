@@ -3,7 +3,7 @@
 }
 
 html {
-  background-color: $accent-tertiary;
+  background-color: $accent-secondary;
 }
 
 body {
@@ -26,18 +26,71 @@ body {
 
 }
 
+.limiter-side {
+  padding: 15px;
+
+  @include breakpoint(medium) {
+    margin: 0;
+    max-width: $max-width + 225px;
+    padding-left: 225px;
+    padding-right: 15px;
+  }
+}
+
 .limiter-large {
   max-width: $max-width * 1.3;
 }
 
 footer {
-  background: $accent-tertiary;
+  background: $accent-secondary;
   color: $white;
   padding-bottom: .25em;
   padding-top: .25em;
+
+  a {
+    color: $white;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+
+  &:hover {
+
+    path,
+    rect {
+      fill: $accent-main;
+    }
+
+  }
+
+  svg {
+    height: 4em;
+
+    path,
+    rect {
+      fill: $white;
+    }
+  }
+}
+
+.footer-social-links {
+  text-align: center;
+
+  @include breakpoint(medium) {
+    text-align: right;
+  }
+
+  @include breakpoint(small) {
+    div {
+      display: inline-block;
+    }
+  }
 }
 
 .footer-social-link {
+  color: $white;
+  margin-bottom: .25em;
 
   &:hover {
 
@@ -45,7 +98,11 @@ footer {
 
     path {
       // refactor this
-      //fill: rgba($white, .8) !important;
+      fill: $accent-main;
+    }
+
+    span {
+      text-decoration: underline;
     }
 
   }
@@ -53,6 +110,28 @@ footer {
   svg {
     height: 2em;
     padding: .25em;
+    width: 2em;
+
+    @include breakpoint(medium) {
+      height: 1.5em;
+      vertical-align: bottom;
+      width: 1.5em;
+    }
+
+  }
+
+  span {
+    margin-right: .5em;
+  }
+
+}
+
+.footer-links {
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  @media (max-width: 900px) {
+    display: none;
   }
 }
 

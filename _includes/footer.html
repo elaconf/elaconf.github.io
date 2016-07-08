@@ -1,9 +1,22 @@
 <footer>
-  <div class="limiter">
-    <p class="text-center">
-    <a href="https://elaconf.slack.com" class="footer-social-link">{% include svg/slack.svg %}</a>
-    <a href="mailto:hello@elaconf.com" class="footer-social-link">{% include svg/email.svg %}</a>
-    <a href="https://twitter.com/elaconf" class="footer-social-link">{% include svg/twitter.svg %}</a>
-  </p>
+  <div class="limiter footer">
+
+    <div class="show-desktop third">
+      <a href="{{site.url}}" class="footer-logo">{% include svg/logo.svg %}</a>
+    </div>
+
+    <div class="footer-links third text-center">
+      {% for page in site.pages %}
+      <div><a href="{{page.url}}" class="footer-link small">{{page.title}}</a></div>
+      {% endfor %}
+    </div>
+
+    <div class="third footer-social-links">
+        <div><a href="https://elaconf.slack.com" class="footer-social-link"><span class="show-desktop small">Slack</span> {% include svg/slack.svg %}</a></div>
+        <div><a href="mailto:hello@elaconf.com" class="footer-social-link"><span class="show-desktop small">Email</span> {% include svg/email.svg %}</a></div>
+        <div><a href="https://twitter.com/elaconf" class="footer-social-link"><span class="show-desktop small">Twitter</span> {% include svg/twitter.svg %}</a></div>
+    </div>
+
   </div>
+
 </footer>

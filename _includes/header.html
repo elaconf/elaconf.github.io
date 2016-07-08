@@ -1,10 +1,10 @@
+<a href="/" class="ela-logo{% if page.title %} ela-logo-fill{% endif %}">{% include svg/logo.svg %}</a>
+{% unless page.title %}
 <header>
-  <div class="{% if page.title %}limiter{% else %}float-header{% endif %}">
-    <a href="/" class="ela-logo">{% include svg/logo.svg %}</a>
+  <div class="float-header">
     {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
   </div>
   <div class="ela-hero" style="background-image:url({{site.baseurl}}/images/hero.jpg), {{site.gradient}}"></div>
-  {% unless page.title %}
 
   <div class="ela-location">
     <div class="limiter">
@@ -12,5 +12,5 @@
       <div>{% include svg/marker.svg %} {{site.building}}, Philadelphia</div>
     </div>
   </div>
-  {% endunless %}
 </header>
+{% endunless%}

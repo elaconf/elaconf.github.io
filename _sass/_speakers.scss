@@ -27,7 +27,8 @@
 }
 
 .speaker-img-page,
-.speaker-img {
+.speaker-img,
+.speaker-img-small {
   background-blend-mode: overlay;
   background-size: cover;
   position: relative;
@@ -41,28 +42,13 @@
   width: 100%;
 }
 
-.speaker-img-page {
-  height: 200px;
-  margin-bottom: .5em;
-  width: 200px;
-}
-
 .speaker-img-small {
-
+  border-radius: 100%;
   display: inline-block;
+  height: 40px;
+  margin: 0 .5em 0 0;
   vertical-align: middle;
-
-  @include breakpoint(xlarge) {
-    display: none;
-  }
-
-  .speaker-img-page {
-    border-radius: 100%;
-    height: 40px;
-    margin: 0 .5em 0 0;
-    width: 40px;
-  }
-
+  width: 40px;
 }
 
 .speaker-sidebar {

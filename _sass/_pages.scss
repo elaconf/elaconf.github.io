@@ -2,23 +2,16 @@
 .page-inner {
 
   .ela-logo:hover {
-    path,
-    rect {
-      fill: rgba($white, .8);
-    }
+    background: $accent-main;
   }
 
   h1,
   h2 {
-    color: $accent-main;
+    color: $accent-tertiary;
   }
 
   h1 {
     padding-top: .5em;
-
-    @include breakpoint(xlarge) {
-      padding-top: 1.8em;
-    }
 
   }
 
