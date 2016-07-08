@@ -2,10 +2,7 @@
 .page-inner {
 
   .ela-logo:hover {
-    path,
-    rect {
-      fill: rgba($white, .8);
-    }
+    background: $accent-main;
   }
 
   h1,

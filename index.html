@@ -28,8 +28,8 @@ layout: default
     <div class="speakers">
       {% assign speakers = (site.speakers | sort: 'order') %}
       {% for speaker in speakers %}{% if speaker.twitter %}
-      <a href="https://twitter.com/{{speaker.twitter}}" class="speaker">
-        <div class="speaker-img" style="background-image:url(https://avatars.io/twitter/{{speaker.twitter}}), {{site.gradient}}">
+      <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
+        <div class="speaker-img" style="background-image:url({% if speaker.image %}/images/speakers/{{speaker.image}}{% else %}https://avatars.io/twitter/{{speaker.twitter}}{% endif %}), {{site.gradient}}">
           <div class="speaker-name">{{speaker.title}}<div class="speaker-topic">{{speaker.topic}}</div></div>
         </div>
       </a>
