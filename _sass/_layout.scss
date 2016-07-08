@@ -53,6 +53,17 @@ footer {
 }
 
 .footer-logo {
+  display: inline-block;
+
+  &:hover {
+
+    path,
+    rect {
+      fill: $accent-main;
+    }
+
+  }
+
   svg {
     height: 4em;
 
@@ -87,7 +98,7 @@ footer {
 
     path {
       // refactor this
-      //fill: rgba($white, .8) !important;
+      fill: $accent-main;
     }
 
     span {
