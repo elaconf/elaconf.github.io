@@ -23,14 +23,13 @@ fs.readdirSync('agenda/_posts/').forEach(function(i) {
 agenda.push('agenda/_posts/' + i);
 posts.push('agenda/_posts/' + i);
 });
-
-var speakers = []
-fs.readdirSync('speakers/_posts/').forEach(function(i) {
-speakers.push('speakers/_posts/' + i);
-posts.push('speakers/_posts/' + i);
-});
 */
 
+var speakers = []
+fs.readdirSync('_speakers/').forEach(function(i) {
+  speakers.push('_speakers/' + i);
+  //posts.push('_speakers/' + i);
+});
 
 // build array of permalinks
 var permalinks = posts.reduce(function(prev, post, index, list) {
@@ -150,34 +149,26 @@ t.end();
 });
 */
 
-/*
+
 speakers.forEach(function(post) {
-var file = readPost(post);
-
-var metadata = file.metadata;
-var content = file.content;
-
-test(post, function(t) {
-
-t.ok(metadata.title,"post must have a title");
-t.ok(metadata.image,"post must have a image");
-
-if (metadata.instagram) t.ok(metadata.instagram,"post can have an instagram");
-else t.ok(metadata.twitter,"post must have a twitter");
-
-if (!metadata.permalink) {
-var permalink = post.replace('_posts','').replace('.md','/').replace(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-/,'').replace('//','/');
-} else {
-var permalink = metadata.permalink;
-}
-
-t.equal(permalinks[permalink].length, 1, 'permalink must not already exist ' + permalink);
-
-t.end();
+  var file = readPost(post);
+  
+  var metadata = file.metadata;
+  var content = file.content;
+  
+  test(post, function(t) {
+    
+    t.ok(metadata.title,"post must have a title");
+    //t.ok(metadata.image,"post must have a image");
+    
+    if (metadata.instagram) t.ok(metadata.instagram,"post can have an instagram");
+    else t.ok(metadata.twitter,"post must have a twitter");
+        
+    t.end();
+  });
+  
 });
 
-});
-*/
 
 /*
 data.sponsors.metadata.forEach(function(post) {
