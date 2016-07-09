@@ -17,6 +17,14 @@
   }
 }
 
+.fill-gradient {
+  .button:hover {
+    background: $white;
+    border-color: $white;
+    color: $accent-main;
+  }
+}
+
 
 .fill-light {
 
