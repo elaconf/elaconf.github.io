@@ -17,11 +17,29 @@
   }
 }
 
+.fill-gradient {
+  .button:hover {
+    background: $white;
+    border-color: $white;
+    color: $accent-main;
+  }
+}
+
 
 .fill-light {
 
   h2 {
     color: $accent-main;
+  }
+
+  .button {
+    color: $accent-main;
+
+    &:hover {
+      background: $accent-main;
+      border-color: $accent-main;
+      color: $white;
+    }
   }
 
 }
