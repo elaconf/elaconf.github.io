@@ -23,6 +23,22 @@ Recommended build: `bundle exec jekyll serve -w`
 
 To update or change a sponsorship level, edit: `_data/levels.yml`.
 
+
+### Speakers
+
+* Each speaker has her own page located in `/_speakers/`
+* Each file is named: `first-last.md`.
+* In the front matter of each file, please include:
+  - `title` &mdash; first and last name
+  - `image` &mdash; the name and extension of the image. This is optional, if no image specified the Twitter image will be used.
+  - `twitter` &mdash; the handle only
+  - `topic` &mdash; this field is optional
+* The bio goes directly in the post content area (below the front matter)
+* Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
+
+![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
+
+
 <!--
 ### Sponsors
 
@@ -32,20 +48,6 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
   - `image` &mdash; file name and extension of the sponsor's logo
   - `type` &mdash; the level of sponsorship taken from the [Sponsorship Packages](http://elaconf.com/sponsorship-packages/) page
 * Save sponsor images in the [/images/sponsors/](https://github.com/elaconf/elaconf.github.io/tree/master/images/sponsors) folder.
-
-### Speakers
-
-* Each speaker has her own page located in `/speakers/_posts/`
-* Each file is named: `0000-01-0#-first-last.md` (where # is incremented).
-* In the front matter of each file, please include:
-  - `title` &mdash; first and last name
-  - `image` &mdash; the name and extension of the image
-  - `twitter` &mdash; the handle only
-  - `topic` &mdash; this field is optional
-* The bio goes directly in the post content area (below the front matter)
-* Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
-
-![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
 
 ### Talks
 

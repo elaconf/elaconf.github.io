@@ -104,13 +104,13 @@ layout: default
   <div class="limiter limiter-large">
     <div class="speakers">
       {% assign organizers = site.organizers | sort: 'order' %}
-      {% for organizer in organizers %}{% if organizer.image %}
+      {% for organizer in organizers %}
       <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
         <div class="speaker-img" style="background-image:url(https://avatars.io/twitter/{{organizer.twitter}}), {{site.gradient}}">
           <div class="speaker-name">{{organizer.title}}</div>
         </div>
       </a>
-      {% endif %}{% endfor %}
+      {% endfor %}
     </div>
   </div>
 </section>
