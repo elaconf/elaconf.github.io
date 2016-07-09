@@ -113,8 +113,8 @@ organizers.forEach(function(post) {
   test(post, function(t) {
     
     t.ok(metadata.title,"post must have a title");
-    t.ok(metadata.image,"post must have a image");
-    t.notEqual(organizersImg.indexOf(metadata.image), -1, 'image must exist in images/organizers/ folder');
+    //t.ok(metadata.image,"post must have a image");
+    //t.notEqual(organizersImg.indexOf(metadata.image), -1, 'image must exist in images/organizers/ folder');
     t.ok(metadata.order,"post must have an order");
     t.equal(typeof metadata.order, "number","order must be a number");
     t.ok(metadata.twitter,"post must have a twitter");
