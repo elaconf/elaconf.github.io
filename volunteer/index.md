@@ -7,12 +7,12 @@ title: Volunteer
 All Ela Conf volunteers will receive a ticket to the event at no cost. Positions are limited, so please sign up below as soon as possible!
 
 ## Speaker Mentors
-We are looking for experienced women mentors to help first time speakers prepare for their presentations and panels! The time commitment here will vary, but likely involve two half hour meetings with your mentee (so 1-2 hours total); which also doesn’t have to be in person (we love Hangouts too!).
+We are looking for experienced women mentors to help first-time speakers prepare for their presentations and panels! The time commitment here will vary, but likely involve two half-hour meetings with your mentee (so 1-2 hours total); which also doesn’t have to be in person (we love Hangouts too!).
 
 [I want to be a speaker mentor &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+speaker+mentor+because...)
 
 ## Panel Moderators
-There will be a number of panels during the conference and moderators are needed to lead these panels by introducing panel participants, asking a set of established questions, and keeping the group on track.
+There will be some panels during the conference and moderators are needed to lead these panels by introducing panel participants, asking a set of established questions, and keeping the group on track.
 
 [I want to be a panel moderator &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+panel+moderator+because...)
 
