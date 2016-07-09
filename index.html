@@ -68,7 +68,8 @@ layout: default
       <li>Cover the ticket costs for women who would ordinarily be unable to attend.</li>
       <li>Connect women with new career opportunities and a support system.</li>
     </ul>
-    <p><strong>Your sponsorship can help make Ela Conf even better.</strong> Email us at <a href="mailto:{{site.author.email}}">{{site.author.email}}</a> to become a sponsor.</p>
+    <p><strong>Your sponsorship can help make Ela Conf even better.</strong></p>
+    <p><a href="/sponsor" class="button">Become a sponsor</a></p>
   </div>
 </section>
 
@@ -104,13 +105,13 @@ layout: default
   <div class="limiter limiter-large">
     <div class="speakers">
       {% assign organizers = site.organizers | sort: 'order' %}
-      {% for organizer in organizers %}{% if organizer.image %}
+      {% for organizer in organizers %}
       <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
         <div class="speaker-img" style="background-image:url(https://avatars.io/twitter/{{organizer.twitter}}), {{site.gradient}}">
           <div class="speaker-name">{{organizer.title}}</div>
         </div>
       </a>
-      {% endif %}{% endfor %}
+      {% endfor %}
     </div>
   </div>
 </section>

@@ -30,6 +30,7 @@
 .speaker-img,
 .speaker-img-small {
   background-blend-mode: overlay;
+  background-position: center;
   background-size: cover;
   position: relative;
 }
@@ -59,7 +60,7 @@
     display: block;
     left: 3.34%;
     position: absolute;
-    top: 9.7em;
+    top: 174px;
   }
 }
 
