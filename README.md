@@ -15,7 +15,7 @@ Recommended build: `bundle exec jekyll serve -w`
 * Each organizer has her own page located in `_organizers/`
 * In the front matter of each file, please include:
   - `title` &mdash; first and last name
-  - `image` &mdash; the name and extension of the image
+  - `image` &mdash; the name and extension of the image. Save images in the `images/organizers/` folder.
   - `twitter` &mdash; the handle only
 * The bio goes directly in the post content area (below the front matter)
 
@@ -30,11 +30,10 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
 * Each file is named: `first-last.md`.
 * In the front matter of each file, please include:
   - `title` &mdash; first and last name
-  - `image` &mdash; the name and extension of the image. This is optional, if no image specified the Twitter image will be used.
+  - `image` &mdash; the name and extension of the image. Save images in the `/images/speakers/` folder.
   - `twitter` &mdash; the handle only
   - `topic` &mdash; this field is optional
 * The bio goes directly in the post content area (below the front matter)
-* Save speakers images in the [/images/speakers/](https://github.com/elaconf/elaconf.github.io/tree/master/images/speakers) folder.
 
 ![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
 

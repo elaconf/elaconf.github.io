@@ -28,7 +28,12 @@ posts.push('agenda/_posts/' + i);
 var speakers = []
 fs.readdirSync('_speakers/').forEach(function(i) {
   speakers.push('_speakers/' + i);
-  //posts.push('_speakers/' + i);
+  posts.push('_speakers/' + i);
+});
+
+var speakersImg = []
+fs.readdirSync('images/speakers/').forEach(function(i) {
+  speakersImg.push(i);
 });
 
 // build array of permalinks
@@ -113,8 +118,8 @@ organizers.forEach(function(post) {
   test(post, function(t) {
     
     t.ok(metadata.title,"post must have a title");
-    //t.ok(metadata.image,"post must have a image");
-    //t.notEqual(organizersImg.indexOf(metadata.image), -1, 'image must exist in images/organizers/ folder');
+    t.ok(metadata.image,"post must have a image");
+    t.notEqual(organizersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/organizers/ folder');
     t.ok(metadata.order,"post must have an order");
     t.equal(typeof metadata.order, "number","order must be a number");
     t.ok(metadata.twitter,"post must have a twitter");
@@ -159,8 +164,8 @@ speakers.forEach(function(post) {
   test(post, function(t) {
     
     t.ok(metadata.title,"post must have a title");
-    //t.ok(metadata.image,"post must have a image");
-    
+    t.ok(metadata.image,"post must have a image");
+    t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
     if (metadata.instagram) t.ok(metadata.instagram,"post can have an instagram");
     else t.ok(metadata.twitter,"post must have a twitter");
         

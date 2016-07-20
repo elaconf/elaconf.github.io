@@ -1,6 +1,7 @@
 ---
 title: Adrienne Lowe
 twitter: adriennefriend
+image: adrienne.png
 topic: MC + closing keynote
 order: 2
 ---
