@@ -27,14 +27,16 @@ body {
 }
 
 .limiter-side {
-  padding: 15px;
-
-  @include breakpoint(medium) {
-    margin: 0;
-    max-width: $max-width + 225px;
-    padding-left: 225px;
-    padding-right: 15px;
+  
+  @media (max-width: 1055px) {
+    margin: 0 0 0 200px;
   }
+  
+  @include breakpoint(small) {
+    margin: 0;
+  }
+
+
 }
 
 .limiter-large {
