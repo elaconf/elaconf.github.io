@@ -27,15 +27,14 @@ body {
 }
 
 .limiter-side {
-  
+
   @media (max-width: 1055px) {
     margin: 0 0 0 200px;
   }
-  
+
   @include breakpoint(small) {
     margin: 0;
   }
-
 
 }
 
