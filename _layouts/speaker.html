@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="limiter limiter-side">
+<section class="limiter limiter-side pull-up">
   <h1>{{page.title}}</h1>
   <p><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url(/images/{{page.category}}/{{page.image}}),{{site.gradient}}"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
   {{content}}
