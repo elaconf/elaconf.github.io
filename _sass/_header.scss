@@ -44,6 +44,14 @@ header {
     }
   }
 
+  @include breakpoint(medium) {
+    .page-inner & {
+      left: -170px;
+      position: relative;
+      width: 134px;
+    }
+  }
+
   svg {
     height: 6em;
     width: 6em;
@@ -108,6 +116,80 @@ header {
 
   .no-backgroundblendmode & {
     background-image: url('/images/hero.jpg');
+  }
+
+}
+
+.menu {
+  display: none;
+}
+
+.button-menu {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 100;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+
+}
+
+
+.header-nav {
+
+  position: relative;
+
+  @include breakpoint(small) {
+    background: $accent-tertiary;
+    display: none;
+    padding-bottom: .5em;
+  }
+
+  @include breakpoint(medium) {
+    top: -113px;
+
+    .page-main & {
+      display: none;
+    }
+
+  }
+
+  .menu:checked + & {
+    display: block;
+  }
+
+  .header-nav-item {
+    border-bottom: .25em solid transparent;
+    display: inline-block;
+    font-size: .85em;
+    margin-bottom: .25em;
+    margin-right: .4em;
+
+    @include breakpoint(small) {
+      color: $white;
+      display: block;
+      padding: 5px 25px;
+    }
+
+    @include breakpoint(medium) {
+      &.active {
+        border-bottom-color: $accent-main;
+      }
+    }
+
+    &:hover {
+      border-bottom-color: $accent-tertiary;
+      text-decoration: none;
+    }
+
+    &:empty {
+      display: none;
+    }
+
   }
 
 }

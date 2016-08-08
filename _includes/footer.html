@@ -6,9 +6,10 @@
     </div>
 
     <div class="footer-links third text-center">
-      {% for page in site.pages %}
-      <div><a href="{{page.url}}" class="footer-link small">{{page.title}}</a></div>
-      {% endfor %}
+      {% assign pages = site.pages | sort:'title' %}
+      {% for item in pages %}{% if page.layout == 'page' or page.layout == 'speaker' %}
+      <div><a href="{{item.url}}" class="footer-link small">{{item.title}}</a></div>
+      {% endif %}{% endfor %}
     </div>
 
     <div class="third footer-social-links">

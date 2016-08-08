@@ -22,7 +22,7 @@ body {
 
   margin: 0 auto;
   max-width: $max-width;
-  padding: 15px;
+  padding: 0 15px;
 
 }
 
@@ -36,6 +36,12 @@ body {
     margin: 0;
   }
 
+}
+
+@include breakpoint(small) {
+  .limiter-header {
+    padding: 0;
+  }
 }
 
 .limiter-large {
@@ -147,4 +153,10 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+@include breakpoint(medium) {
+  .pull-up {
+    margin-top: -4.5em;
+  }
 }

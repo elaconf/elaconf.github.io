@@ -5,6 +5,10 @@
     background: $accent-main;
   }
 
+  section {
+    min-height: 450px;
+  }
+
   h1,
   h2 {
     color: $accent-tertiary;
