@@ -26,10 +26,10 @@ We need a friendly someone to assist with the check-in process for both the Frid
 
 [I want to work registration &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+work+registration+because...)
 
-## Photography/Videographer
+## Photography and/or Videographer
 We are looking to team up with a local photographer and videographer to help capture the event. A photographer is needed to take photographs during the event but also to take participant headshots.
 
-[I want to be a photographer/videographer &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+photographer/videographer+because...)
+[I want to be a photographer and/or videographer &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+photographer/videographer+because...)
 
 ## Live Sketch Notes
 Last year, we had an amazing opportunity where some designers drew sketch notes of some of the panel discussions and talks. We’d love once again to have this at this year’s conference, with the goal of putting the prints up for sale to fund future Ela Confs. Contact us if you’re interested!
