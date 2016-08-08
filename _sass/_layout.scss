@@ -138,12 +138,11 @@ footer {
 
 
 hr {
-  border-color: $turquoise transparent $violet;
-  border-style: dashed;
-  border-width: 5px 0;
+  border: 0;
+  border-bottom: 1px solid $accent-main;
   margin-bottom: 3em;
   margin-top: 3em;
-  max-width: 750px;
+  max-width: 600px;
 }
 
 img {
