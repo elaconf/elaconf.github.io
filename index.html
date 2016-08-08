@@ -67,7 +67,7 @@ layout: default
 
 <section class="fill-gradient">
   <div class="limiter">
-    <h2 id="sponsor">Sponsor</h2>
+    <h2 id="sponsor">Sponsors</h2>
     <p>Last year our sponsors helped us:</p>
     <ul>
       <li>Provide breakfast, lunch, snacks, and coffee breaks to keep us going.</li>
@@ -77,6 +77,13 @@ layout: default
     </ul>
     <p><strong>Your sponsorship can help make Ela Conf even better.</strong></p>
     <p><a href="/sponsor" class="button">Become a sponsor</a></p>
+    <h3>Thank you!</h3>
+    <p>Big thank you to this year's sponsors!</p>
+    <div class="sponsors">
+      {% for sponsor in site.data.sponsors %}
+      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
