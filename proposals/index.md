@@ -4,7 +4,7 @@ title: Call for Proposals
 ---
 
 
-This year, we’d like the Ela Conf to cover an even more wide ranging set of topics than we did last year. As you’re thinking of what you might submit, take a look at the following list of suggestions/inspiration for topics that are core to the Ela Conf’s mission. Think we’ve missed an important topic? Submit a proposal for a topic you’re passionate about! We’d love to have you present it at this year’s conference! 
+This year, we’d like Ela Conf to cover an even more wide ranging set of topics than we did last year. As you’re thinking of what you might submit, take a look at the following list of suggestions/inspiration for topics that are core to Ela Conf’s mission. Think we’ve missed an important topic? Submit a proposal for a topic you’re passionate about! We’d love to have you present it at this year’s conference! 
 
 **Important Dates to Remember:**
 
