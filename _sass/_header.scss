@@ -165,7 +165,6 @@ header {
   .header-nav-item {
     border-bottom: .25em solid transparent;
     display: inline-block;
-    font-size: .75em;
     margin-bottom: .25em;
     margin-right: .4em;
 
@@ -176,6 +175,8 @@ header {
     }
 
     @include breakpoint(medium) {
+      font-size: .75em;
+
       &.active {
         border-bottom-color: $accent-main;
       }
