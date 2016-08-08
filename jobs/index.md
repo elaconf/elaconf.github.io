@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Job board
+title: Job Board
 jobs:
 #- position: Designer
 #  company: Mapbox
