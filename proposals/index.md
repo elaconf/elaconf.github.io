@@ -4,7 +4,7 @@ title: Call for Proposals
 ---
 
 
-This year, we’d like Ela Conf to cover an even more wide ranging set of topics than we did last year. As you’re thinking of what you might submit, take a look at the following list of suggestions/inspiration for topics that are core to Ela Conf’s mission. Think we’ve missed an important topic? Submit a proposal for a topic you’re passionate about! We’d love to have you present it at this year’s conference! 
+This year, we’d like Ela Conf to cover an even more wide-ranging set of topics than we did last year. As you’re thinking of what you might submit, take a look at the following list of suggestions/inspiration for topics that are core to Ela Conf’s mission. Think we’ve missed an important topic? Submit a proposal for a topic you’re passionate about! We’d love to have you present it at this year’s conference!
 
 **Important Dates to Remember:**
 
@@ -28,11 +28,11 @@ Each speaker receives a complimentary ticket to the conference!
 
 ## Potential CFP Topics
 
-We've created a list of potential topics that you can present at Ela Conf. This list is certainly not exhaustive, we'd love to hear what you have to say.
+We've created a list of potential topics that you can present at Ela Conf. This list is certainly not exhaustive; we'd love to hear what you have to say.
 
 ### Discovering And Embracing Your Limitations
 
-In our quest to conquer everything that comes in our way, we sometimes don’t honor the fact that there are truly some things that limit us from maybe achieving those dreams we’ve held for so long. The realization that this is okay, that we can’t all be rockstars at everything we try and do, and the freedom that can come from that is important to talk about. 
+In our quest to conquer everything that comes in our way, we sometimes don’t honor the fact that there are truly some things that limit us from maybe achieving those dreams we’ve held for so long. The realization that this is okay, that we can’t all be rockstars at everything we try and do, and the freedom that can come from that is important to talk about.
 
 ### Talking, Mentoring, Writing
 
@@ -44,29 +44,29 @@ It’s well known that women get paid, on average 79 cents for every dollar earn
 
 ### Gaining That Confidence When You’re Just Starting Out
 
-The tech industry can be especially intimidating and difficult to break into. What sort of obstacles have you had to overcome? What does your educational path look like? What was your first job or what would you like your first job to look like? How did you find your voice, and the strength to speak up and use it? The story around how you got started and the struggles you went through can often be an inspiration to others in similar situations. 
+The tech industry can be especially intimidating and difficult to break into. What sort of obstacles have you had to overcome? What does your educational path look like? What was your first job or what would you like your first job to look like? How did you find your voice, and the strength to speak up and use it? The story around how you got started and the struggles you went through can often be an inspiration to others in similar situations.
 
-### Building The Most Important Brand: You! 
+### Building The Most Important Brand: You!
 
-When it comes to self-promotion it’s sometimes harder for women to gather the courage needed to build a website, put their information out there for the world to see, and navigate the internet world. So how did you do it? What tools did you use to start publishing your writing, creating your online portfolio, ignoring any negative comments, and push the release button? 
+When it comes to self-promotion, it’s sometimes harder for women to gather the courage needed to build a website, put their information out there for the world to see, and navigate the internet world. So how did you do it? What tools did you use to start publishing your writing, creating your online portfolio, ignoring any negative comments, and push the release button?
 
 ### Navigating Toxic Workplace Culture
 
-Ever find yourself in a situation where someone says something inappropriate/offensive at work and you feel like you have to laugh it off because you are outnumbered or in a position of subordination? How do we gain the confidence needed to speak out against these injustices without feeling that our job is a risk? How do we survive a toxic work culture while also working to replace this same culture with one of empathy and respect? 
+Ever find yourself in a situation where someone says something inappropriate/offensive at work and you feel like you have to laugh it off because you are outnumbered or in a position of subordination? How do we gain the confidence needed to speak out against these injustices without feeling that our job is a risk? How do we survive a toxic work culture while also working to replace this same culture with one of empathy and respect?
 
 <!--
 ### Management Styles For A Healthy, Happy Team
 
-### Writing Inclusive And Welcoming Job Postings 
+### Writing Inclusive And Welcoming Job Postings
 
---> 
+-->
 
-### Have we overlooked anything? 
+### Have we overlooked anything?
 
-Submit a talk application with your abstract! 
+Submit a talk application with your abstract!
 
 ---
 
-[^1]: Institue for Women’s Policy Research, http://www.iwpr.org/initiatives/pay-equity-and-discrimination
+[^1]: Institute for Women’s Policy Research, http://www.iwpr.org/initiatives/pay-equity-and-discrimination
 
 
