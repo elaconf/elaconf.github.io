@@ -50,8 +50,14 @@
 
 
 .fill-dark {
-  background: $accent-main-light;
+  background: $accent-main;
   color: $white;
+
+  .button:hover {
+    background: $white;
+    border-color: $white;
+    color: $accent-main;
+  }
 }
 
 .fill-bright {
