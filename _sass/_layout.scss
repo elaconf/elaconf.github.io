@@ -56,6 +56,10 @@ footer {
 
   a {
     color: $white;
+
+    &:hover {
+      color: $accent-secondary;
+    }
   }
 }
 
@@ -72,7 +76,7 @@ footer {
 
     path,
     rect {
-      fill: $accent-main;
+      fill: $accent-secondary;
     }
 
   }
@@ -111,7 +115,7 @@ footer {
 
     path {
       // refactor this
-      fill: $accent-main;
+      fill: $accent-secondary;
     }
 
     span {
