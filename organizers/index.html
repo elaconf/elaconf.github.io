@@ -11,8 +11,8 @@ nav: false
   {% for organizer in organizers %}{% if organizer.image %}
   <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
     <div class="speaker-img" style="background-image:url(/images/organizers/{{organizer.image}}), {{site.gradient}}">
-      <div class="speaker-name">{{organizer.title}}</div>
     </div>
+    <div class="speaker-name">{{organizer.title}}</div>
   </a>
   {% endif %}{% endfor %}
 </div>

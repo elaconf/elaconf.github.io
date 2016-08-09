@@ -30,8 +30,8 @@ layout: default
       {% for speaker in speakers %}{% if speaker.twitter %}
       <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
         <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}}), {{site.gradient}}">
-          <div class="speaker-name">{{speaker.title}}<div class="speaker-topic">{{speaker.topic}}</div></div>
         </div>
+        <div class="speaker-name">{{speaker.title}}<div class="speaker-topic">{{speaker.topic}}</div></div>
       </a>
       {% endif %}{% endfor %}
     </div>
@@ -114,8 +114,8 @@ layout: default
       {% for organizer in organizers %}
       <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
         <div class="speaker-img" style="background-image:url(images/organizers/{{organizer.image}}), {{site.gradient}}">
-          <div class="speaker-name">{{organizer.title}}</div>
         </div>
+        <div class="speaker-name">{{organizer.title}}</div>
       </a>
       {% endfor %}
     </div>

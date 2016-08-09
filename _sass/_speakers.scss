@@ -2,6 +2,7 @@
 .speaker {
   display: inline-block;
   padding: 1%;
+  position: relative;
   text-align: center;
   width: 49%;
 
@@ -65,18 +66,15 @@
 }
 
 .speaker-name {
-  bottom: 1px;
-  color: $white;
+  color: $accent-main;
   font-family: $font-headings;
-  font-size: 1.2em;
-  left: 1px;
   line-height: 1;
-  position: absolute;
-  text-align: left;
+  min-height: 2em;
+  //position: absolute;
+  text-align: center;
 }
 
 .speaker-topic {
-  color: rgba($white, .8);
   display: block;
 }
 
