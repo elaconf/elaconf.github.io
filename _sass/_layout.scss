@@ -51,11 +51,17 @@ body {
 footer {
   background: $accent-secondary;
   color: $white;
-  padding-bottom: .25em;
-  padding-top: .25em;
+  padding-bottom: 1em;
+  padding-top: 1em;
 
   a {
     color: $white;
+  }
+}
+
+@include breakpoint(small) {
+  .footer-location {
+    margin-bottom: 1em;
   }
 }
 
@@ -134,10 +140,15 @@ footer {
 }
 
 .footer-links {
-  margin-bottom: 1em;
+  border-top: 1px solid rgba($white, .5);
+  -moz-columns: 4;
+  -webkit-columns: 4;
+  columns: 4;
   margin-top: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
 
-  @media (max-width: 900px) {
+  @include breakpoint(small) {
     display: none;
   }
 }

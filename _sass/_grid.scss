@@ -1,8 +1,19 @@
+@include breakpoint(small) {
+
+  .third {
+    width: 100%;
+  }
+
+}
+
 @include breakpoint(medium) {
+
+  .third {
+    width: 33.33%;
+  }
 
   .half,
   .fourth,
-  .third,
   .two-thirds {
     width: 50%;
   }
@@ -36,10 +47,6 @@
 
 
 @include breakpoint(large) {
-
-  .third {
-    width: 33.33%;
-  }
 
   .fourth {
     width: 25%;
