@@ -67,6 +67,6 @@ Submit a talk application with your abstract!
 
 ---
 
-[^1]: Institute for Women’s Policy Research, http://www.iwpr.org/initiatives/pay-equity-and-discrimination
+[^1]: Institute for Women’s Policy Research, <http://www.iwpr.org/initiatives/pay-equity-and-discrimination>
 
 
