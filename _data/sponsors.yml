@@ -3,3 +3,9 @@
   image: nvite.png
   type: In-kind Sponsor
   twitter: nvite
+
+- name: Mapbox
+  site: https://www.mapbox.com/
+  image: mapbox.png
+  type: Ecosystem supporter
+  twitter: mapbox
