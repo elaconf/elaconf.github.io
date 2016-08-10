@@ -58,7 +58,7 @@ footer {
     color: $white;
 
     &:hover {
-      color: $accent-secondary;
+      color: $gold;
     }
   }
 }
@@ -80,7 +80,7 @@ footer {
 
     path,
     rect {
-      fill: $accent-secondary;
+      fill: $gold;
     }
 
   }
@@ -118,8 +118,7 @@ footer {
     text-decoration: none;
 
     path {
-      // refactor this
-      fill: $accent-secondary;
+      fill: $gold;
     }
 
     span {
