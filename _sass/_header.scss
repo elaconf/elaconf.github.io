@@ -103,7 +103,7 @@ header {
 
 .ela-location-item {
   margin-bottom: .25em;
-  margin-top: 0.25em;
+  margin-top: .25em;
 }
 
 
@@ -189,11 +189,11 @@ header {
 
     margin-right: 1em;
 
-    &:last-child:before {
+    &:last-child::before {
       display: none;
     }
 
-    &:before {
+    &::before {
       background: $accent-secondary;
       border-radius: 10px;
       content: '';
