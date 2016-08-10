@@ -11,8 +11,8 @@ permalink: /speakers/
   {% for speaker in speakers %}{% if speaker.twitter %}
   <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
     <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}}), {{site.gradient}}">
-      <div class="speaker-name">{{speaker.title}}</div>
     </div>
+    <div class="speaker-name">{{speaker.title}}</div>
   </a>
   {% endif %}{% endfor %}
 </div>

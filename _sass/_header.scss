@@ -83,6 +83,7 @@ header {
 .ela-location {
   background: $accent-main;
   font-size: 1.25em;
+  margin-bottom: 1em;
   padding-bottom: .25em;
   padding-top: .25em;
 
@@ -98,6 +99,11 @@ header {
     }
   }
 
+}
+
+.ela-location-item {
+  margin-bottom: .25em;
+  margin-top: .25em;
 }
 
 
@@ -150,47 +156,81 @@ header {
   }
 
   @include breakpoint(medium) {
-    top: -113px;
-
-    .page-main & {
-      display: none;
+    .page-inner & {
+      top: -113px;
     }
-
   }
 
   .menu:checked + & {
     display: block;
   }
 
-  .header-nav-item {
-    border-bottom: .25em solid transparent;
-    display: inline-block;
-    margin-bottom: .25em;
-    margin-right: .4em;
+}
 
-    @include breakpoint(small) {
-      color: $white;
-      display: block;
-      padding: 5px 25px;
-    }
+.header-nav-item {
+  border-bottom: .25em solid transparent;
+  display: inline-block;
+  margin-bottom: .25em;
+  position: relative;
 
-    @include breakpoint(medium) {
-      font-size: .85em;
-
-      &.active {
-        border-bottom-color: $accent-main;
-      }
-    }
+  @include breakpoint(small) {
+    color: $white;
+    display: block;
+    padding: 5px 25px;
 
     &:hover {
-      border-bottom-color: $accent-tertiary;
-      text-decoration: none;
-    }
-
-    &:empty {
-      display: none;
+      background: $accent-main;
+      color: $white;
     }
 
   }
 
+  @include breakpoint(medium) {
+
+    margin-right: 1em;
+
+    &:last-child::before {
+      display: none;
+    }
+
+    &::before {
+      background: $gold;
+      border-radius: 10px;
+      content: '';
+      display: block;
+      height: 7px;
+      position: absolute;
+      right: -15px;
+      top: 8px;
+      width: 7px;
+    }
+
+    &.active {
+      border-bottom-color: $accent-main;
+    }
+  }
+
+  &:hover {
+    border-bottom-color: $accent-tertiary;
+    text-decoration: none;
+  }
+
+  &:empty {
+    display: none;
+  }
+
 }
+
+
+
+.second-nav {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+
+
+  @include breakpoint(small) {
+    display: none;
+  }
+}
+
+

@@ -3,7 +3,6 @@ layout: default
 ---
 <section class="fill-light">
   <div class="limiter">
-    <h2 id="about">About</h2>
     <p>Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech. All profits from this event will be donated to <a href="https://www.girldevelopit.com/">Girl Develop It</a>.</p>
     <p>In an industry where women are so often marginalized, leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When women become leaders, the entire tech community benefits.
     </p>
@@ -33,8 +32,8 @@ layout: default
       {% for speaker in speakers %}{% if speaker.twitter %}
       <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
         <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}}), {{site.gradient}}">
-          <div class="speaker-name">{{speaker.title}}<div class="speaker-topic">{{speaker.topic}}</div></div>
         </div>
+        <div class="speaker-name">{{speaker.title}}<div class="speaker-topic">{{speaker.topic}}</div></div>
       </a>
       {% endif %}{% endfor %}
     </div>
@@ -50,21 +49,7 @@ layout: default
 
 <section class="fill-light">
   <div class="limiter">
-    <h2 id="venue">Venue</h2>
-    <p>We're pleased to be hosting Ela Conf at <a href="http://www.uarts.edu/">The University of the Arts</a> in Terra Hall!</p>
-
-    <p><a href="http://www.uarts.edu/locations/campus/terra-hall">Terra Hall</a> is located at Broad and Walnut Streets in Philadelphia.</p>
-
-    <p><address>211 South Broad Street<br>Philadelphia, PA 19107</address></p>
-
-  </div>
-    <a href="https://api.mapbox.com/styles/v1/katydecorah/cip4sx34c0000bmm7n22s4dnz.html?title=false&access_token={{site.token}}#14.5/39.949089/-75.163937"><img src="https://api.mapbox.com/styles/v1/katydecorah/cip4sx34c0000bmm7n22s4dnz/static/-75.163937,39.949089,14.5,0/1280x500@2x?access_token={{site.token}}" alt="map of Terra Hall" style="margin-bottom: -3.2em; position: relative" class="show-desktop" /><img src="https://api.mapbox.com/styles/v1/katydecorah/cip4sx34c0000bmm7n22s4dnz/static/-75.163937,39.949089,14.5,0/500x500@2x?access_token={{site.token}}" alt="map of Terra Hall" style="margin-bottom: -3.2em; position: relative" class="show-mobile" /></a>
-  </div>
-</section>
-
-<section class="fill-gradient">
-  <div class="limiter">
-    <h2 id="sponsor">Sponsors</h2>
+    <h2 id="sponsor">Sponsor</h2>
     <p>Last year our sponsors helped us:</p>
     <ul>
       <li>Provide breakfast, lunch, snacks, and coffee breaks to keep us going.</li>
@@ -81,14 +66,6 @@ layout: default
       <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
       {% endfor %}
     </div>
-  </div>
-</section>
-
-<section class="fill-light">
-  <div class="limiter">
-    <h2 id="volunteer">Volunteer</h2>
-    <p>We're looking for volunteers to help us make Ela Conf a success. We have volunteer positions before and during the event. All volunteers receive a complimentary ticket to Ela Conf!</p>
-    <p><a href="/volunteer/" class="button">Become a volunteer</a></p>
   </div>
 </section>
 
@@ -112,23 +89,3 @@ layout: default
     <p><a href="/docs/convincer.pdf" class="button">Download the Boss Convincer</a>
   </div>
 </section>
-
-<section class="fill-light">
-  <div class="limiter">
-    <h2 id="organizers">Organizers</h2>
-  </div>
-  <div class="limiter limiter-large">
-    <div class="speakers">
-      {% assign organizers = site.organizers | sort: 'order' %}
-      {% for organizer in organizers %}
-      <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
-        <div class="speaker-img" style="background-image:url(images/organizers/{{organizer.image}}), {{site.gradient}}">
-          <div class="speaker-name">{{organizer.title}}</div>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-

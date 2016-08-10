@@ -5,7 +5,7 @@ $light: #fff;
 // main color accents
 $accent-main: #4056f4;
 $accent-main-light: #57dddd;
-$accent-secondary: #f7b32b;
+$accent-secondary: #890e5b;
 $accent-tertiary: #62c;
 
 $gradient-light: #f7b32b;
@@ -14,11 +14,14 @@ $gradient-dark: #c200fb;
 // secondary colors
 $turquoise: #57dddd;
 $blue: #4056f4;
-$violet: #c200fb;
+$violet: #c100fa;
+$gold: #f7b32b;
+
+$footer-bg: $accent-secondary;
 
 $white: #fff;
 
-$max-width: 700px;
+$max-width: 800px;
 
 $link-color: $blue;
 $link-hover: adjust-hue($link-color, 15deg);

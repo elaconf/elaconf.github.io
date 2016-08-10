@@ -3,7 +3,7 @@
 }
 
 html {
-  background-color: $accent-secondary;
+  background-color: $footer-bg;
 }
 
 body {
@@ -49,14 +49,22 @@ body {
 }
 
 footer {
-  background: $accent-secondary;
+  background: $footer-bg;
   color: $white;
   padding-bottom: 1em;
   padding-top: 1em;
 
   a {
     color: $white;
+
+    &:hover {
+      color: $gold;
+    }
   }
+}
+
+.footer-pattern {
+  margin-bottom: 2em;
 }
 
 @include breakpoint(small) {
@@ -72,7 +80,7 @@ footer {
 
     path,
     rect {
-      fill: $accent-main;
+      fill: $gold;
     }
 
   }
@@ -110,8 +118,7 @@ footer {
     text-decoration: none;
 
     path {
-      // refactor this
-      fill: $accent-main;
+      fill: $gold;
     }
 
     span {
@@ -141,9 +148,9 @@ footer {
 
 .footer-links {
   border-top: 1px solid rgba($white, .5);
-  -moz-columns: 4;
-  -webkit-columns: 4;
-  columns: 4;
+  -moz-columns: 3;
+  -webkit-columns: 3;
+  columns: 3;
   margin-top: 1em;
   padding-bottom: 1em;
   padding-top: 1em;

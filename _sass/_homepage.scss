@@ -4,7 +4,7 @@
 .fill-dark,
 .fill-bright,
 .fill-gradient {
-  background: radial-gradient(farthest-corner at 2em 2em, $accent-main-light, $accent-main);
+  background: radial-gradient(farthest-corner at 2em 2em, $accent-tertiary, $accent-main);
   color: $white;
 
   a:not(.button) {
@@ -50,8 +50,23 @@
 
 
 .fill-dark {
-  background: $accent-main-light;
+  background: $accent-main;
   color: $white;
+
+  .button:hover {
+    background: $white;
+    border-color: $white;
+    color: $accent-main;
+  }
+
+  .speaker-name {
+    color: $white;
+  }
+
+  .speaker {
+    text-decoration: none;
+  }
+
 }
 
 .fill-bright {
