@@ -52,7 +52,7 @@ footer {
   background: $footer-bg;
   color: $white;
   padding-bottom: 1em;
-  padding-top: 1em;
+  //padding-top: 1em;
 
   a {
     color: $white;
@@ -61,6 +61,10 @@ footer {
       color: $accent-secondary;
     }
   }
+}
+
+.footer-pattern {
+  margin-bottom: 2em;
 }
 
 @include breakpoint(small) {
@@ -145,9 +149,9 @@ footer {
 
 .footer-links {
   border-top: 1px solid rgba($white, .5);
-  -moz-columns: 4;
-  -webkit-columns: 4;
-  columns: 4;
+  -moz-columns: 3;
+  -webkit-columns: 3;
+  columns: 3;
   margin-top: 1em;
   padding-bottom: 1em;
   padding-top: 1em;

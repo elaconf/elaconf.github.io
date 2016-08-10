@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Code of Conduct
+nav: false
 ---
+
 All attendees, speakers, sponsors, and volunteers at {{site.title}} and throughout a mentorship are required to agree with the following code of conduct. Organizers will enforce this code throughout {{site.title}} and for the duration of a mentorship. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
 ## Need Help?
