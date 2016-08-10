@@ -1,10 +1,24 @@
 
 {% if page.title %}
 <div class="limiter limiter-side limiter-header">
-{% include nav.html %}
+  <nav>
+  <a href="/" class="ela-logo{% if page.title %} ela-logo-fill{% endif %}">{% include svg/logo.svg %}</a>
+  <label for="menu" class="button-menu">{% include svg/menu.svg %}</label>
+  <input id="menu" type="checkbox" name="name" value="" class="menu">
+  <div class="header-nav">
+    {% include nav-pages.html %}
+  </div>
+  </nav>
 </div>
 {% else %}
-{% include nav.html %}
+<nav>
+<a href="/" class="ela-logo{% if page.title %} ela-logo-fill{% endif %}">{% include svg/logo.svg %}</a>
+<label for="menu" class="button-menu">{% include svg/menu.svg %}</label>
+<input id="menu" type="checkbox" name="name" value="" class="menu">
+<div class="header-nav show-mobile">
+  {% include nav-pages.html %}
+</div>
+</nav>
 <header>
   <div class="float-header">
     {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
@@ -13,9 +27,10 @@
 
   <div class="ela-location">
     <div class="limiter">
-      <div>{% include svg/calendar.svg %} {{site.date}}</div>
-      <div>{% include svg/marker.svg %} {{site.building}}, Philadelphia</div>
+      <div class="ela-location-item">{% include svg/calendar.svg %} {{site.date}}</div>
+      <div class="ela-location-item">{% include svg/marker.svg %} {{site.building}}, Philadelphia</div>
     </div>
   </div>
 </header>
+<div class="limiter second-nav">{% include nav-pages.html %}</div>
 {% endif %}
