@@ -2,7 +2,7 @@
 title: Adrienne Lowe
 twitter: adriennefriend
 image: adrienne.png
-topic: MC + closing keynote
+topic: Emcee + closing keynote
 order: 2
 ---
 
