@@ -7,6 +7,18 @@ layout: default
     <p>In an industry where women are so often marginalized, leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When women become leaders, the entire tech community benefits.
     </p>
     <p>Our <a href="code-of-conduct/">code of conduct</a> is the heart of our event. Please <a href="mailto:hello@elaconf.com">reach out to us</a> if you have any concerns or there is something you would like to see included that isn’t.</p>
+
+    <h2 id="tickets">Tickets</h2>
+    {% include tickets.html %}
+    <!--
+    <h3>What&rsquo;s included</h3>
+    <ul>
+    <li><strong>Meals &amp; snacks</strong> &mdash; We'll have snacks on Friday evening and on Saturday we'll serve breakfast, lunch, coffee, and even more snacks.</li>
+    <li><strong>Lightning talks</strong> &mdash; Join us Friday night for fun, casual lightning talks.</li>
+    <li><strong>Meet &amp; greet</strong> &mdash; We want to make sure there are as few unfamilar faces at the conf as possible!</li>
+    <li><strong>Networking</strong> &mdash; We'll wrap up the conference on Saturday afternoon with a networking event.</li>
+  </ul>
+-->
 </div>
 </section>
 
@@ -47,6 +59,13 @@ layout: default
     </ul>
     <p><strong>Your sponsorship can help make Ela Conf even better.</strong></p>
     <p><a href="/sponsor" class="button">Become a sponsor</a></p>
+    <h3>Thank you!</h3>
+    <p>Big thank you to this year's sponsors!</p>
+    <div class="sponsors">
+      {% for sponsor in site.data.sponsors %}
+      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
