@@ -171,16 +171,23 @@ header {
   border-bottom: .25em solid transparent;
   display: inline-block;
   margin-bottom: .25em;
-  margin-right: 1em;
   position: relative;
 
   @include breakpoint(small) {
     color: $white;
     display: block;
     padding: 5px 25px;
+
+    &:hover {
+      background: $accent-main;
+      color: $white;
+    }
+
   }
 
   @include breakpoint(medium) {
+
+    margin-right: 1em;
 
     &:last-child:before {
       display: none;
