@@ -24,7 +24,8 @@ footer,
 table,
 .sticky-nav,
 .sidebar-link,
-.header-nav-item {
+.header-nav-item,
+.sponsors-level-name {
   font-family: $font-headings;
 }
 
@@ -44,7 +45,8 @@ h1 {
 
 h2 {font-size: 1.953em;}
 
-h3 {font-size: 1.563em;}
+h3,
+%h3 {font-size: 1.563em;}
 
 h4 {font-size: 1.25em;}
 

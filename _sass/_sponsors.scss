@@ -1,12 +1,12 @@
 .sponsor-image {
-  border: .4em solid $light;
+  //border: .4em solid $light;
   display: block;
   margin: 2em auto;
 
   @include breakpoint(medium) {
     display: inline-block;
     height: 150px;
-    margin: 0;
+    margin: 0 .5em 0 0;
   }
 
 }
@@ -42,6 +42,33 @@
 .sponsor-devbootcamp,
 .sponsor-digitas-health {
   padding: 40px;
+}
+
+.sponsor-level {
+  margin-bottom: .5em;
+}
+
+
+
+
+.sponsors-level-name {
+
+  @extend %h3;
+
+  @extend %center-medium;
+
+  @include breakpoint(medium) {
+    background: $accent-tertiary;
+    color: $white;
+    font-size: 1em;
+    height: 150px;
+    float: left;
+    margin-right: 1em;
+    padding: .25em;
+    text-align: center;
+    width: 150px;
+  }
+
 }
 
 

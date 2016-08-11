@@ -1,11 +1,11 @@
 - name: nvite
   site: https://nvite.com/
   image: nvite.png
-  type: In-kind Sponsor
+  level: In-kind
   twitter: nvite
 
 - name: Mapbox
   site: https://www.mapbox.com/
   image: mapbox.png
-  type: Ecosystem supporter
+  level: Ecosystem supporter
   twitter: mapbox
