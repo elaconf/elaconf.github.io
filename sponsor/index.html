@@ -10,7 +10,7 @@ title: Sponsor
 <section class="fill-bright" style="margin-top: 2em;">
 
   <div class="grid levels">
-    {% for level in site.data.levels %}{% unless level.hidden %}
+    {% for level in site.data.levels %}{% unless level[1].hidden %}
     <div class="level fourth">
       <div class="level-header text-center">
         <div class="level-name">{{level[0]}}</div>
