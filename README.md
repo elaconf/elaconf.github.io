@@ -23,7 +23,6 @@ Recommended build: `bundle exec jekyll serve -w`
 
 To update or change a sponsorship level, edit: `_data/levels.yml`.
 
-
 ### Speakers
 
 * Each speaker has her own page located in `/_speakers/`
@@ -38,16 +37,17 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
 ![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
 
 
-<!--
+
 ### Sponsors
 
 * You can add or update sponsors from the [sponsors.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/sponsors.yml) file. Please include:
   - `name` &mdash; name of the sponsor
   - `site` &mdash; URL to the sponsor's site
   - `image` &mdash; file name and extension of the sponsor's logo
-  - `type` &mdash; the level of sponsorship taken from the [Sponsorship Packages](http://elaconf.com/sponsorship-packages/) page
+  - `level` &mdash; the level of sponsorship taken from the `_data/levels.yml`
 * Save sponsor images in the [/images/sponsors/](https://github.com/elaconf/elaconf.github.io/tree/master/images/sponsors) folder.
 
+<!--
 ### Talks
 
 * Each talk has its own page located in `/agenda/_posts/`

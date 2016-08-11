@@ -39,9 +39,9 @@ fs.readdirSync('images/speakers/').forEach(function(i) {
 // build array of permalinks
 var permalinks = posts.reduce(function(prev, post, index, list) {
   var permalink;
-  
+
   if (post) {
-    
+
     var file = readPost(post);
     var metadata = file.metadata;
     if (metadata.permalink) {
@@ -49,25 +49,29 @@ var permalinks = posts.reduce(function(prev, post, index, list) {
     } else {
       permalink = post.replace('_posts','').replace('.md','/').replace(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-/,'').replace('//','/');
     }
-    
+
     if (!prev[permalink]) { prev[permalink] = []; }
     prev[permalink].push(permalink);
   }
-  
+
   return prev;
 }, {});
 
 // read data
-/*
+
 var data = {
-sponsors: readData('_data/', 'sponsors.yml')
+  sponsors: readData('_data/', 'sponsors.yml'),
+  levels: readData('_data/', 'levels.yml'),
 };
 // build array of sponsors
 var sponsors = data.sponsors.metadata.map(function(post) {
-return post.name;
+  return post.name;
 });
-*/
-
+// build array of levels
+var levels = [];
+for (var level in data.levels.metadata) {
+  levels.push(level);
+}
 
 function getDir(srcpath) {
   return fs.readdirSync(srcpath).filter(function(file) {
@@ -78,11 +82,11 @@ function getDir(srcpath) {
 function readPost(filename) {
   var buffer = fs.readFileSync(filename),
   file = buffer.toString('utf8');
-  
+
   try {
     var parts = file.split(/---\s*[\n^]/),
     frontmatter = parts[1];
-    
+
     return {
       name: filename,
       file: file,
@@ -97,36 +101,36 @@ function readPost(filename) {
 function readData(dir, filename) {
   var buffer = fs.readFileSync(dir + filename),
   file = buffer.toString('utf8');
-  
+
   try {
-    
+
     return {
       name: filename,
       file: file,
       metadata: jsyaml.load(file)
     };
   } catch(err) {}
-  
+
 }
 
 organizers.forEach(function(post) {
   var file = readPost(post);
-  
+
   var metadata = file.metadata;
   var content = file.content;
-  
+
   test(post, function(t) {
-    
+
     t.ok(metadata.title,"post must have a title");
     t.ok(metadata.image,"post must have a image");
     t.notEqual(organizersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/organizers/ folder');
     t.ok(metadata.order,"post must have an order");
     t.equal(typeof metadata.order, "number","order must be a number");
     t.ok(metadata.twitter,"post must have a twitter");
-    
+
     t.end();
   });
-  
+
 });
 
 /*
@@ -157,38 +161,38 @@ t.end();
 
 speakers.forEach(function(post) {
   var file = readPost(post);
-  
+
   var metadata = file.metadata;
   var content = file.content;
-  
+
   test(post, function(t) {
-    
+
     t.ok(metadata.title,"post must have a title");
     t.ok(metadata.image,"post must have a image");
     t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
     if (metadata.instagram) t.ok(metadata.instagram,"post can have an instagram");
     else t.ok(metadata.twitter,"post must have a twitter");
-        
+
     t.end();
   });
-  
+
 });
 
 
-/*
+
 data.sponsors.metadata.forEach(function(post) {
 
-test(post.name, function(t) {
+  test(post.name, function(t) {
 
-t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
+    t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
 
-t.ok(post.name,'sponsor must have a \'name\'');
-t.ok(post.image,'sponsor must have an \'image\'');
-t.ok(post.site,'sponsor must have a \'site\'');
-//t.ok(post.type,'sponsor must have a \'type\'');
-t.ok(post.twitter,'sponsor must have a \'twitter\'');
+    t.ok(post.name,'sponsor must have a \'name\'');
+    t.ok(post.image,'sponsor must have an \'image\'');
+    t.ok(post.site,'sponsor must have a \'site\'');
+    t.ok(post.level,'sponsor must have a \'type\'');
+    t.ok(post.twitter,'sponsor must have a \'twitter\'');
+    t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
 
-t.end();
+    t.end();
+  });
 });
-});
-*/
