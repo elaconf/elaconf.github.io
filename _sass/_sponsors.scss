@@ -60,9 +60,9 @@
   @include breakpoint(medium) {
     background: $accent-tertiary;
     color: $white;
+    float: left;
     font-size: 1em;
     height: 150px;
-    float: left;
     margin-right: 1em;
     padding: .25em;
     text-align: center;
