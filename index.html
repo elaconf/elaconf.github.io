@@ -61,11 +61,7 @@ layout: default
     <p><a href="/sponsor" class="button">Become a sponsor</a></p>
     <h3>Thank you!</h3>
     <p>Big thank you to this year's sponsors!</p>
-    <div class="sponsors">
-      {% for sponsor in site.data.sponsors %}
-      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
-      {% endfor %}
-    </div>
+    {% include sponsors.html %}
   </div>
 </section>
 

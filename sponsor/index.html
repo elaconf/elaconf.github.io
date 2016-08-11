@@ -1,34 +1,6 @@
 ---
 layout: page
 title: Sponsor
-levels:
-- name: Community builder
-  amount: '$1,000'
-  tickets: 2
-  slideshow: true
-  website: true
-
-- name: Conference supporter
-  amount: '$2,500'
-  tickets: 3
-  slideshow: true
-  website: true
-
-- name: Ecosystem supporter
-  amount: '$3,500'
-  tickets: 4
-  slideshow: true
-  website: true
-  signage: true
-
-- name: Women in tech signature
-  amount: '$5,000'
-  tickets: 6
-  slideshow: true
-  website: true
-  signage: true
-  talk: true
-  top: true
 ---
 
 <p>Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable community for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech. All profits from this event will be donated to Girl Develop It.</p>
@@ -38,26 +10,26 @@ levels:
 <section class="fill-bright" style="margin-top: 2em;">
 
   <div class="grid levels">
-    {% for level in page.levels %}
+    {% for level in site.data.levels %}{% unless level.hidden %}
     <div class="level fourth">
       <div class="level-header text-center">
-        <div class="level-name">{{level.name}}</div>
-        <div class="level-amount">{{level.amount}}</div>
+        <div class="level-name">{{level[0]}}</div>
+        <div class="level-amount">{{level[1].amount}}</div>
       </div>
       <div class="level-rewards">
-        <div class="level-item">{{level.tickets}} tickets</div>
-        <div class="level-item">{{level.tickets}} Twitter mentions from @elaconf</div>
-        <div class="level-item">{{level.tickets}} job listings on Ela Conf slideshow &amp; <a href="/jobs">website</a></div>
-        <div class="level-item{% unless level.website %} level-no{% endunless %}">Logo on Ela Conf website</div>
-        <div class="level-item{% unless level.slideshow %} level-no{% endunless %}">Logo on slideshow played during Ela Conf</div>
-        <div class="level-item{% unless level.signage %} level-no{% endunless %}">Logo on signage at Ela Conf</div>
-        <!--<div class="level-item{% unless level.verbal %} level-no{% endunless %}">Verbal recognition during Ela Conf welcome</div>-->
-        <div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute talk at Friday night event</div>
-        <div class="level-item{% unless level.top %} level-no{% endunless %}">Recognition as a top sponsor</div>
-        {% comment %}<div class="level-item{% unless level.talk %} level-no{% endunless %}">10-minute session during Friday night's lightning talks</div>{% endcomment %}
+        <div class="level-item">{{level[1].tickets}} tickets</div>
+        <div class="level-item">{{level[1].tickets}} Twitter mentions from @elaconf</div>
+        <div class="level-item">{{level[1].tickets}} job listings on Ela Conf slideshow &amp; <a href="/jobs">website</a></div>
+        <div class="level-item{% unless level[1].website %} level-no{% endunless %}">Logo on Ela Conf website</div>
+        <div class="level-item{% unless level[1].slideshow %} level-no{% endunless %}">Logo on slideshow played during Ela Conf</div>
+        <div class="level-item{% unless level[1].signage %} level-no{% endunless %}">Logo on signage at Ela Conf</div>
+        <!--<div class="level-item{% unless level[1].verbal %} level-no{% endunless %}">Verbal recognition during Ela Conf welcome</div>-->
+        <div class="level-item{% unless level[1].talk %} level-no{% endunless %}">10-minute talk at Friday night event</div>
+        <div class="level-item{% unless level[1].top %} level-no{% endunless %}">Recognition as a top sponsor</div>
+        {% comment %}<div class="level-item{% unless level[1].talk %} level-no{% endunless %}">10-minute session during Friday night's lightning talks</div>{% endcomment %}
       </div>
     </div>
-    {% endfor %}
+    {% endunless %}{% endfor %}
   </div>
 </section>
 <div class="fill-shiny levels-contact">Email us at <a href="mailto:hello@elaconf.com">hello@elaconf.com</a> to become a sponsor!</div>
@@ -77,13 +49,9 @@ levels:
       <li>We'll show the slideshow at the beginning and end of the day as well as during breakfast and lunch.</li>
       <li>Social media mentions will take place before, during, and up to 3 months after the conference.</li>
     </ul>
-    
+
     <h2>Sponsors</h2>
     <p>Big thank you to our sponsors!</p>
-    <div class="sponsors">
-      {% for sponsor in site.data.sponsors %}
-      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
-      {% endfor %}
-    </div>
+    {% include sponsors.html %}
   </div>
 </section>

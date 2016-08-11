@@ -1,0 +1,16 @@
+<div class="sponsors">
+{% for level in site.data.levels reversed %}
+{% assign sponsors = site.data.sponsors | where: 'level', level[0] %}
+{% assign sponsorsNum = sponsors | size %}
+  {% if sponsorsNum > 0 %}
+  <div class="sponsor-level">
+    <div class="sponsors-level-name">{{level[0]}}</div>
+    <div class="sponsors-images">
+      {% for sponsor in sponsors %}
+      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>
