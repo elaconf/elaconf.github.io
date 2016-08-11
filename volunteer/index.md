@@ -21,20 +21,10 @@ Conference promoters are all about spreading the Ela word in Philly and beyond. 
 
 [I want to be a promoter/recruiter &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+promoter/recruiter+because...)
 
-## Event Check-In Table (Registration)
-We need a friendly someone to assist with the check-in process for both the Friday meet and greet and the event on Saturday. This role is especially important because you are the very first person attendees will interact with when they arrive.
-
-[I want to work registration &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+work+registration+because...)
-
 ## Photography and/or Videographer
 We are looking to team up with a local photographer and videographer to help capture the event. A photographer is needed to take photographs during the event but also to take participant headshots.
 
 [I want to be a photographer and/or videographer &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+photographer/videographer+because...)
-
-## Live Sketch Notes
-Last year, we had an amazing opportunity where some designers drew sketch notes of some of the panel discussions and talks. We’d love once again to have this at this year’s conference, with the goal of putting the prints up for sale to fund future Ela Confs. Contact us if you’re interested!
-
-[I want to take sketch notes &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+take+sketch+notes+because...)
 
 ## Catering Coordinator
 We’ll be ordering the food for the event, but we’ll still need some help in organizing the food tables, and directing conference attendees to the tables (volunteers will also help ensure that food is only taken by Ela Conf attendees).
