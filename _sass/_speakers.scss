@@ -1,6 +1,11 @@
 
+.speakers {
+  @include clearfix();
+}
+
 .speaker {
-  display: inline-block;
+  display: block;
+  float: left;
   padding: 1%;
   position: relative;
   text-align: center;
