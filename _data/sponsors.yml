@@ -1,11 +1,17 @@
 - name: nvite
   site: https://nvite.com/
-  image: nvite.png
+  image: nvite.svg
   level: In-kind
   twitter: nvite
 
 - name: Mapbox
   site: https://www.mapbox.com/
-  image: mapbox.png
+  image: mapbox.svg
   level: Ecosystem supporter
   twitter: mapbox
+
+# - name: U.S. Cellular
+#   site: https://www.uscellular.com/
+#   image: 
+#   level: Community builder
+#   twitter: USCellular

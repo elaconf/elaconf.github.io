@@ -7,7 +7,7 @@
     <div class="sponsors-level-name">{{level[0]}}</div>
     <div class="sponsors-images">
       {% for sponsor in sponsors %}
-      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image"></a>
+      <a href="{{sponsor.site}}"><img src="/images/sponsors/{{sponsor.image}}" alt="{{sponsor.name}}" class="sponsor-image sponsor-{{sponsor.name | slugify}}"></a>
       {% endfor %}
     </div>
   </div>
