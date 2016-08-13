@@ -10,8 +10,8 @@
   level: Ecosystem supporter
   twitter: mapbox
 
-# - name: U.S. Cellular
-#   site: https://www.uscellular.com/
-#   image: 
-#   level: Community builder
-#   twitter: USCellular
+- name: U.S. Cellular
+  site: https://www.uscellular.com/
+  image: uscellular.svg
+  level: Community builder
+  twitter: USCellular

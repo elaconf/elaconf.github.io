@@ -3,7 +3,7 @@
 {% assign sponsors = site.data.sponsors | where: 'level', level[0] %}
 {% assign sponsorsNum = sponsors | size %}
   {% if sponsorsNum > 0 %}
-  <div class="sponsor-level">
+  <div class="sponsor-level sponsor-level-{{level[0] | slugify}}">
     <div class="sponsors-level-name">{{level[0]}}</div>
     <div class="sponsors-images">
       {% for sponsor in sponsors %}
