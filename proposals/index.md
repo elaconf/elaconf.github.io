@@ -6,6 +6,7 @@ title: Call for Proposals
 
 This year, we’d like Ela Conf to cover an even more wide-ranging set of topics than we did last year. As you’re thinking of what you might submit, take a look at the following list of suggestions/inspiration for topics that are core to Ela Conf’s mission. Think we’ve missed an important topic? Submit a proposal for a topic you’re passionate about! We’d love to have you present it at this year’s conference!
 
+
 **Important Dates to Remember:**
 
 * Speaker Applications Open: August 8th
@@ -23,7 +24,7 @@ This year, we’d like Ela Conf to cover an even more wide-ranging set of topics
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfTwr2JICm1PBAl2Jox5DteARglR8GdJnPJu-CQKumPv_saA/viewform?c=0&w=1" class="button button-large">Submit a talk, workshop, or panel!</a>
 
-Each speaker receives a complimentary ticket to the conference!
+Each speaker receives a complimentary ticket to the conference! We also offer speaker travel and lodging stipends. Let us know in your proposal if your employer does not cover these expenses.
 
 
 ## Potential CFP Topics
