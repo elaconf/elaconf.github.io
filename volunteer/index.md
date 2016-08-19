@@ -6,11 +6,6 @@ title: Volunteer
 
 All Ela Conf volunteers will receive a ticket to the event at no cost. Positions are limited, so please sign up below as soon as possible!
 
-## Speaker Mentors
-We are looking for experienced women mentors to help first-time speakers prepare for their presentations and panels! The time commitment here will vary, but likely involve two half-hour meetings with your mentee (so 1-2 hours total); which also doesn’t have to be in person (we love Hangouts too!).
-
-[I want to be a speaker mentor &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+speaker+mentor+because...)
-
 ## Promoter/Recruiter
 Conference promoters are all about spreading the Ela word in Philly and beyond. We need to make sure that all the amazing women in tech know about Ela Conf. You’ll take to Twitter, drop into area meetups, or send emails to local organizations to help spread the word. Also, we’ll need you to live tweet pictures and thank our sponsors during the event.
 
