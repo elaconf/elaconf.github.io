@@ -6,11 +6,6 @@ title: Volunteer
 
 All Ela Conf volunteers will receive a ticket to the event at no cost. Positions are limited, so please sign up below as soon as possible!
 
-## Promoter/Recruiter
-Conference promoters are all about spreading the Ela word in Philly and beyond. We need to make sure that all the amazing women in tech know about Ela Conf. You’ll take to Twitter, drop into area meetups, or send emails to local organizations to help spread the word. Also, we’ll need you to live tweet pictures and thank our sponsors during the event.
-
-[I want to be a promoter/recruiter &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+promoter/recruiter+because...)
-
 ## Photography and/or Videographer
 We are looking to team up with a local photographer and videographer to help capture the event. A photographer is needed to take photographs during the event but also to take participant headshots.
 
