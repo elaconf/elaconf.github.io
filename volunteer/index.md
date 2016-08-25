@@ -16,13 +16,6 @@ We’ll be ordering the food for the event, but we’ll still need some help in 
 
 [I want to be a catering coordinator &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+catering+coordinator+because...)
 
-## Time Keeper
-
-We're looking for time keepers to help keep the conference moving. You'll hold up cards to let speakers know how much time they have left and help us round up attendees after breaks to let them know the next session is starting.
-
-[I want to be a time keeper &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+time+keeper+because...)
-
-
 ## Anything else?
 
 Not seeing a position for you, but still want to help out? [Fill out our volunteer form and let us know!](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform)
