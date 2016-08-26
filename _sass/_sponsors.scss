@@ -12,24 +12,34 @@
 
 }
 
+.sponsor-level-community-builder .sponsor-image {
+  margin-bottom: .5em;
+  margin-top: 1em;
+  max-height: 75px;
+}
+
 .sponsor-u-s-cellular {
-  padding: 45px 20px 45px 0;
+  padding: 10px 15px 10px 0;
 }
 
 .sponsor-agilebits {
-  padding: 65px 10px 45px 0;
+  padding: 15px 15px 10px 0;
 }
 
+.sponsor-zapier {
+  padding: 10px 15px 10px 0;
+}
+
+
 .sponsor-nvite {
-  padding: 30px 10px 30px 0;
+  padding: 35px 10px 35px 0;
 }
 
 .sponsor-level {
+  @include clearfix();
+
   margin-bottom: .5em;
 }
-
-
-
 
 .sponsors-level-name {
 
@@ -49,6 +59,12 @@
     width: 150px;
   }
 
+}
+
+.sponsor-level-community-builder .sponsors-level-name {
+  @include breakpoint(medium) {
+    height: 250px;
+  }
 }
 
 
