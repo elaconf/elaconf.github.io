@@ -5,26 +5,32 @@
   twitter: nvite
 
 - name: Mapbox
-  site: https://www.mapbox.com/
+  site: https://www.mapbox.com
   image: mapbox.svg
   level: Ecosystem supporter
   twitter: mapbox
 
 - name: U.S. Cellular
-  site: https://www.uscellular.com/
+  site: https://www.uscellular.com
   image: uscellular.svg
   level: Community builder
   twitter: USCellular
 
 - name: AgileBits
-  site: https://agilebits.com/
+  site: https://agilebits.com
   image: agilebits.svg
   level: Community builder
   twitter: 1Password
   
 - name: Zapier
-  site: https://zapier.com/
+  site: https://zapier.com
   image: zapier.svg
   level: Community builder
   twitter: zapier
+  
+- name: GitHub
+  site: https://github.com
+  image: github.svg
+  level: Community builder
+  twitter: github
   
