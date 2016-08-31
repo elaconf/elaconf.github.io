@@ -28,3 +28,9 @@
   level: Community builder
   twitter: zapier
   
+- name: GitHub
+  site: https://github.com/
+  image: github.svg
+  level: Community builder
+  twitter: github
+  
