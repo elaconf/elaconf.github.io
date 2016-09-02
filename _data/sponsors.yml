@@ -33,4 +33,10 @@
   image: github.svg
   level: Community builder
   twitter: github
+
+- name: Braintree
+  site: https://www.braintreepayments.com/
+  image: braintree.jpg
+  level: Ecosystem supporter
+  twitter: braintree
   
