@@ -11,11 +11,6 @@ We are looking to team up with a local photographer and videographer to help cap
 
 [I want to be a photographer and/or videographer &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+photographer/videographer+because...)
 
-## Catering Coordinator
-We’ll be ordering the food for the event, but we’ll still need some help in organizing the food tables, and directing conference attendees to the tables (volunteers will also help ensure that food is only taken by Ela Conf attendees).
-
-[I want to be a catering coordinator &rarr;](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform?entry.971247222&entry.1260049317&entry.601542410&entry.648235370&entry.790087379=I+want+to+be+a+catering+coordinator+because...)
-
 ## Anything else?
 
 Not seeing a position for you, but still want to help out? [Fill out our volunteer form and let us know!](https://docs.google.com/forms/d/1MDbNjY1h4DCkrbrL0zmq6Gg3Q1EMpDEFn1joMIck1Zo/viewform)
