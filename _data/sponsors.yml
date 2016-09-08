@@ -39,4 +39,10 @@
   image: braintree.jpg
   level: Ecosystem supporter
   twitter: braintree
+
+- name: Lincoln Loop
+  site: https://lincolnloop.com/
+  image: lincolnloop.svg
+  level: Community builder
+  twitter: lincolnloop
   
