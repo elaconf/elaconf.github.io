@@ -1,5 +1,9 @@
 @include breakpoint(small) {
 
+  .sixth {
+    width: 50%;
+  }
+
   .third {
     width: 100%;
   }
@@ -8,8 +12,9 @@
 
 @include breakpoint(medium) {
 
+  .sixth,
   .third {
-    width: 33.33%;
+    width: (100% / 3);
   }
 
   .half,
@@ -47,6 +52,10 @@
 
 
 @include breakpoint(large) {
+
+  .sixth {
+    width: (100% / 6);
+  }
 
   .fourth {
     width: 25%;
