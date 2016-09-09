@@ -170,8 +170,8 @@ speakers.forEach(function(post) {
     t.ok(metadata.title,"post must have a title");
     t.ok(metadata.image,"post must have a image");
     t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
-    if (metadata.instagram) t.ok(metadata.instagram,"post can have an instagram");
-    else t.ok(metadata.twitter,"post must have a twitter");
+    t.ok(metadata.social,"post must have a social value defined");
+    t.ok(metadata.handle,"post must have a handle");
 
     t.end();
   });

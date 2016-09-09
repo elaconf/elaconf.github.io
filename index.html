@@ -30,7 +30,7 @@ layout: default
   <div class="limiter limiter-large">
     <div class="speakers">
       {% assign speakers = (site.speakers | sort: 'order') %}
-      {% for speaker in speakers %}{% if speaker.twitter %}
+      {% for speaker in speakers %}{% if speaker.social %}
       <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
         <div class="speaker-img" style="background-image:url(/images/speakers/{{speaker.image}}), {{site.gradient}}">
         </div>

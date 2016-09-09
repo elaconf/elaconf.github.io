@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "scss-lint _sass/*.scss && htmlproofer ./_site && tape test/*.js | tap-min",
-    "update-avatars": "node scripts/avatars.js"
+    "test": "scss-lint _sass/*.scss && htmlproofer ./_site && tape test/*.js | tap-min"
+  },
+  "bin": {
+    "update-avatars": "bin/avatars.js"
   },
   "dependencies": {
     "scsslint": "0.0.3"

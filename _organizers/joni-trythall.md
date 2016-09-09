@@ -1,6 +1,6 @@
 ---
 title: Joni Trythall
-image: joni.png
+image: joni-trythall.png
 twitter: JoniTrythall
 order: 1
 ---
