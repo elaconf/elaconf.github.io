@@ -12,20 +12,49 @@
 
 }
 
+.sponsor-level-community-builder .sponsor-image {
+  margin-bottom: .5em;
+  margin-top: 1em;
+  max-height: 75px;
+}
+
+.sponsor-mapbox {
+  padding: 5px 15px 5px 0;
+}
+
 .sponsor-u-s-cellular {
-  padding: 45px 0;
+  padding: 10px 15px 10px 0;
+}
+
+.sponsor-agilebits {
+  padding: 15px 15px 10px 0;
+}
+
+.sponsor-zapier {
+  padding: 5px 15px 5px 0;
+}
+
+.sponsor-github {
+  padding: 15px 15px 15px 0;
+}
+
+.sponsor-braintree {
+  padding: 40px 15px 40px 0;
+}
+
+.sponsor-lincoln-loop {
+  padding: 5px 15px 5px 0;
 }
 
 .sponsor-nvite {
-  padding: 10px;
+  padding: 35px 10px 35px 0;
 }
 
 .sponsor-level {
+  @include clearfix();
+
   margin-bottom: .5em;
 }
-
-
-
 
 .sponsors-level-name {
 
@@ -45,6 +74,12 @@
     width: 150px;
   }
 
+}
+
+.sponsor-level-community-builder .sponsors-level-name {
+  @include breakpoint(medium) {
+    height: 250px;
+  }
 }
 
 
