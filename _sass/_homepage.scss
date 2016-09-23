@@ -7,7 +7,7 @@
   background: radial-gradient(farthest-corner at 2em 2em, $accent-tertiary, $accent-main);
   color: $white;
 
-  a:not(.button) {
+  a:not(.button):not(.speaker) {
     color: $white;
     text-decoration: underline;
 
