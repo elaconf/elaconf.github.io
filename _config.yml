@@ -57,6 +57,8 @@ exclude:
 - package.json
 - CNAME
 - node_modules
+- bin
+- test
 
 defaults:
   - scope:

@@ -1,190 +1,132 @@
+# https://docs.google.com/spreadsheets/d/1NyDlCntRz4NYiKTzHejeVMBqBb0vZqYhUB6QHLWX-5k/edit#gid=0
 - name: Alex Lash
   social: twitter
   handle: alexandralash
-  confirmed: Ticket confirmed
-  position: Sketch Notes
+
+#- name: Alicia Raciti
+#  social: twitter
+#  handle: acr523
 
 - name: Alisha Miranda
   social: twitter
   handle: makeshiftalisha
-  confirmed: Ticket Confirmed
-  position: Panel Moderators
 
 - name: Alyssa Dill
   social: twitter
   handle: alyssadill
-  confirmed: Ticket confirmed
-  position: Sketch Notes
+
+# - name: Alyssa Ransbury
+#   social: twitter
+#   handle: alyssaran
 
 - name: Angelina Simms
   social: twitter
   handle: angelinasimms
-  confirmed: Ticket Confirmed
-  position: Panel Moderators, Promoter/Recuriter
+
+- name: Becca Nock
+  social: twitter
+  handle: beccanock
 
 - name: Bri Piccari
   social: twitter
   handle: brisayswhaat
-  confirmed: Ticket Confirmed
-  position: Panel Moderators
+
+# - name: Candace Worthen
+#   social: twitter
+#   handle: candaceworthen
 
 - name: Carol Hansen
   social: twitter
   handle: CarolBirgitta
-  confirmed: Ticket confirmed
-  position: Time Keeper
 
 - name: Dawn McDougall
   social: twitter
   handle: de_mcdougs
-  confirmed: Ticket Confirmed
-  position: Speaker Mentors
 
 - name: Dresden Shumaker
   social: twitter
   handle: dresdenplaid
-  confirmed: Ticket confirmed
-  position: Promoter/Recuriter
 
 - name: Eleanor Whitney
   social: twitter
   handle: killerfemme
-  confirmed: Ticket Confirmed
-  position: Speaker Mentors
 
 - name: Erica Gramm
   social: twitter
   handle: erica_gramm
-  confirmed: Ticket confirmed
-  position: Sketch Notes
 
-- name: Gloria Bell 
+- name: Gloria Bell
   social: twitter
   handle: gloriabell
-  confirmed: Ticket Confirmed
-  position: Speaker Mentors
 
 - name: Heather Adams
   social: twitter
-  handle: tundraponds 
-  confirmed: Ticket confirmed
-  position: Promoter/Recuriter
+  handle: tundraponds
 
 - name: Hilary O'Neil
   social: twitter
   handle: ihavenooven
-  confirmed: Ticket confirmed
-  position: Catering Coordinator
 
 - name: Jen Dionisio
   social: twitter
   handle: jddionisio
-  confirmed: Ticket confirmed
-  position: Promoter/Recuriter
 
 - name: K'Shelle Waller
   social: twitter
   handle: kay_shelle
-  confirmed: Ticket confirmed
-  position: Registration Desk
+
+#- name: Kathleen Park
+#  social: facebook
+#  handle: kathyparkphoto
 
 - name: Kristen Gallagher
   social: twitter
   handle: Philovedelphia
-  confirmed: Ticket confirmed
-  position: Time Keeper
 
 - name: Lauren Pittenger
   social: twitter
   handle: laurenpittenger
-  confirmed: Ticket Confirmed
-  position: Speaker Mentors
 
 - name: Mansi Pathak
   social: twitter
   handle: Mansi_1221
-  confirmed: Ticket Confirmed
-  position: Panel Moderators
 
 - name: Melissa Newman
   social: twitter
   handle: Alternagirl7
-  confirmed: Ticket confirmed
-  position: Registration Desk
 
 - name: Nadia Barbosa
   social: twitter
   handle: capnbrbsa
-  confirmed: Ticket confirmed
-  position: Registration Desk
 
 - name: Ronit Shaham
   social: twitter
   handle: ronabalona
-  confirmed: Ticket confirmed
-  position: Time Keeper
 
 - name: Sam Provenza
   social: twitter
   handle: samserif
-  confirmed: Ticket confirmed
-  position: Catering Coordinator
 
 - name: Sarah Johnson
   social: twitter
   handle: johnsons531
-  confirmed: Ticket Confirmed
-  position: Speaker Mentors
 
 - name: Shanise Barona
   social: twitter
   handle: shnsbrn
-  confirmed: Ticket confirmed
-  position: Registration Desk
+
+#- name: Shannon Boon
+#  social: twitter
+#  handle: smohara
+
+#- name: Stephanie Liu
+#  social: twitter
+#  handle: esslew
 
 - name: Talisha Payton
   social: twitter
   handle: lishas_pieces
-  confirmed: Ticket confirmed
-  position: Registration Desk
 
-# - name: Alicia C. Raciti
-#   social: twitter
-#   handle: acr523
-#   confirmed: Email Sent
-#   position: Panel Moderators
-# - name: Alyssa Ransbury
-#   social: twitter
-#   handle: alyssaran
-#   confirmed: Email Sent
-#   position: Panel Moderators
-# - name: Becca Nock
-#   social: twitter
-#   handle: beccanock
-#   confirmed: Email Sent
-#   position: Catering Coordinator
-# - name: Candace Worthen
-#   social: twitter
-#   handle: candaceworthen
-#   confirmed: Email Sent
-#   position: Catering Coordinator
-# - name: Kathleen Park
-#   social: facebook
-#   handle: kathyparkphoto
-#   confirmed: Email sent
-#   position: Photographer
-# - name: Shannon Boon
-#   social: twitter
-#   handle: smohara
-#   confirmed: Email Sent
-#   position: Panel Moderators
-# - name: Stephanie Liu
-#   social: twitter
-#   handle: esslew
-#   confirmed: Email Sent
-#   position: Time Keeper
-# - name: Tracy Osborn
-#   social: twitter
-#   handle: limedaring
-#   confirmed: Email sent
-#   position: Speaker Mentors
+- name: Tracy Osborn
+  social: twitter
+  handle: limedaring

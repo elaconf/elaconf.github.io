@@ -91,10 +91,12 @@ layout: default
   <div class="limiter">
     <h2>We &lt;3 our volunteers!</h2>
     <p>Ela Conf would be a little less magical without our volunteers. We appreciate all your hard work and enthusiasm into making the conference a wonderful experience.</p>
+  </div>
+  <div class="limiter limiter-large">
     <div class="volunteers grid">
       {% assign volunteers = site.data.volunteers | sort:'name' %}
       {% for volunteer in volunteers %}{% if volunteer.social %}
-      <div class="sixth volunteer">
+      <div class="seven volunteer">
         <a href="https://{{volunteer.social}}.com/{{volunteer.handle}}" class="volunteer-img" style="background-image:url(/images/volunteers/{{volunteer.name | slugify}}.png),{{site.gradient}}"></a>
         <div class="speaker-name small">{{volunteer.name}} {{volunteer.social.twitter}}</div>
       </div>

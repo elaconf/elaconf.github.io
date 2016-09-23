@@ -1,5 +1,7 @@
 @include breakpoint(small) {
 
+  .eight,
+  .seven,
   .sixth {
     width: 50%;
   }
@@ -12,6 +14,8 @@
 
 @include breakpoint(medium) {
 
+  .eight,
+  .seven,
   .sixth,
   .third {
     width: (100% / 3);
@@ -52,6 +56,14 @@
 
 
 @include breakpoint(large) {
+
+  .eight {
+    width: (100% / 8);
+  }
+
+  .seven {
+    width: (100% / 7);
+  }
 
   .sixth {
     width: (100% / 6);
