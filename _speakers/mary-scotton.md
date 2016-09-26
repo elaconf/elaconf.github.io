@@ -1,6 +1,7 @@
 ---
 title: Mary Scotton
-twitter: rockchick322004
+social: twitter
+handle: rockchick322004
 topic: Keynote
 order: 1
 image: mary.jpeg

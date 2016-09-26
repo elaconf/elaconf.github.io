@@ -1,6 +1,6 @@
 ---
 title: Katy DeCorah
-image: katy.png
+image: katy-decorah.png
 twitter: katydecorah
 order: 3
 ---
