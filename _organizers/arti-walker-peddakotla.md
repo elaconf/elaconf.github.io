@@ -1,6 +1,6 @@
 ---
 title: Arti Walker-Peddakotla
-image: arti.png
+image: arti-walker-peddakotla.png
 twitter: ajpeddakotla
 order: 4
 ---

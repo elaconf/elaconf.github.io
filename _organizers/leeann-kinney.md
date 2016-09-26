@@ -1,6 +1,6 @@
 ---
 title: LeeAnn Kinney
-image: leann.png
+image: leeann-kinney.png
 twitter: _leekinney
 order: 2
 ---

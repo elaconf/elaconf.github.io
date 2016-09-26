@@ -36,6 +36,11 @@ fs.readdirSync('images/speakers/').forEach(function(i) {
   speakersImg.push(i);
 });
 
+var volunteersImg = []
+fs.readdirSync('images/volunteers/').forEach(function(i) {
+  volunteersImg.push(i);
+});
+
 // build array of permalinks
 var permalinks = posts.reduce(function(prev, post, index, list) {
   var permalink;
@@ -62,7 +67,12 @@ var permalinks = posts.reduce(function(prev, post, index, list) {
 var data = {
   sponsors: readData('_data/', 'sponsors.yml'),
   levels: readData('_data/', 'levels.yml'),
+  volunteers: readData('_data/', 'volunteers.yml')
 };
+// build array of volunteers
+var volunteers = data.volunteers.metadata.map(function(post) {
+  return post.name;
+});
 // build array of sponsors
 var sponsors = data.sponsors.metadata.map(function(post) {
   return post.name;
@@ -170,8 +180,8 @@ speakers.forEach(function(post) {
     t.ok(metadata.title,"post must have a title");
     t.ok(metadata.image,"post must have a image");
     t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
-    if (metadata.instagram) t.ok(metadata.instagram,"post can have an instagram");
-    else t.ok(metadata.twitter,"post must have a twitter");
+    t.ok(metadata.social,"post must have a social value defined");
+    t.ok(metadata.handle,"post must have a handle");
 
     t.end();
   });
@@ -192,6 +202,25 @@ data.sponsors.metadata.forEach(function(post) {
     t.ok(post.level,'sponsor must have a \'type\'');
     t.ok(post.twitter,'sponsor must have a \'twitter\'');
     t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
+
+    t.end();
+  });
+});
+
+data.volunteers.metadata.forEach(function(post) {
+
+  test(post.name, function(t) {
+
+    t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
+
+    var social = ['facebook','twitter','instagram','gravatar']
+
+    t.ok(post.name,'volunteer must have a \'name\'');
+    t.ok(post.social,'volunteer must have a \'social\'');
+    t.notEqual(social.indexOf(post.social), -1, 'value of \'social\' must be one of the following: ' + social.join(', '));
+    t.ok(post.handle,'volunteer must have a \'handle\'');
+    var img = post.name.toLowerCase().replace(' ','-').replace('\'','-') + '.png';
+    t.notEqual(volunteersImg.indexOf(img), -1, img + ' must exist in images/volunteers/ folder');
 
     t.end();
   });
