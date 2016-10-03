@@ -8,7 +8,9 @@ location: "Philadelphia, Pennsylvania"
 mission: "We are a not-for-profit event with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for women to gain the confidence needed to become leaders, open source contributors, speakers, and teachers in the world of tech."
 tagline: Empowering more women to be leaders in tech.
 
-gradient: "radial-gradient(farthest-corner at 2em 2em, rgba(247, 178, 45, .7), rgba(194, 1, 249, .7))"
+gradient: "radial-gradient(farthest-corner at 2em 2em, rgba(247, 178, 45, .3), rgba(194, 1, 249, .3))"
+
+gradientDark: "radial-gradient(farthest-corner at 2em 2em, rgba(247, 178, 45, .7), rgba(194, 1, 249, .7))"
 
 token: pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiY2lwOGJsbjR2MDBweGVhbnJyOHUxd3BmciJ9.RmDyfo38D_xPFdDst05n-g
 
@@ -22,12 +24,17 @@ collections:
   speakers:
     output: true
     permalink: /speakers/:path/
+  agenda:
+    output: true
+    permalink: /agenda/:path/
 
 
 sass:
   style: :compressed
 
 markdown: kramdown
+
+future: true
 
 kramdown:
   auto_ids:       true
@@ -67,6 +74,7 @@ defaults:
     values:
       layout: "speaker"
       category: "speakers"
+      order: 100
   - scope:
       path: ""
       type: "organizers"
@@ -74,3 +82,10 @@ defaults:
       layout: "speaker"
       category: "organizers"
       topic: Organizer
+  - scope:
+      path: ""
+      type: "agenda"
+    values:
+      layout: "agenda"
+      category: "agenda"
+      topic: Agenda

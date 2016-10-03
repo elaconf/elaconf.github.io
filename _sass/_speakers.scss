@@ -50,6 +50,20 @@
   width: 100%;
 }
 
+.page-organizers-single,
+.page-speakers-single {
+  .speaker-img {
+    background-size: cover;
+    float: right;
+    height: 250px;
+    margin: 0 0 1em 1em;
+    padding-bottom: 0;
+    width: 250px;
+  }
+}
+
+
+
 .speaker-img-small {
   border-radius: 100%;
   display: inline-block;

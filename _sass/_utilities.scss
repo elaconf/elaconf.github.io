@@ -1,0 +1,21 @@
+
+@include breakpoint(small) {
+  .hide-small {
+    display: none;
+  }
+}
+
+@include breakpoint(large) {
+  .hide-large {
+    display: none;
+  }
+}
+
+.show-large {
+  display: none;
+
+  @include breakpoint(large) {
+    display: block;
+  }
+
+}

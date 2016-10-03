@@ -2,7 +2,6 @@
 title: Adrienne Lowe
 social: twitter
 handle: adriennefriend
-image: adrienne-lowe.png
 topic: Emcee + closing keynote
 order: 2
 ---

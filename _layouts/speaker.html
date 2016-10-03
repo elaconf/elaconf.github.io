@@ -4,8 +4,19 @@ layout: default
 
 <section class="limiter limiter-side pull-up">
   <h1>{{page.title}}</h1>
-  <p><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url(/images/{{page.category}}/{{page.image}}),{{site.gradient}}"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.twitter %}<a href="https://www.twitter.com/{{page.twitter}}">@{{page.twitter}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
+
+  <div alt="{{page.title}}" class="speaker-img show-large" style="background-image:url(/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.png{% endif %}),{{site.gradient}}"></div>
+
+  <p><span alt="{{page.title}}" class="speaker-img-small hide-large" style="background-image:url(/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.png{% endif %}),{{site.gradient}}"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.social %}<a href="https://www.{{page.social}}.com/{{page.handle}}">@{{page.handle}}</a>{% endif %}{%if page.instagram %} Instagram: <a href="https://instagram.com/{{page.instagram}}/"> {{page.instagram}}</a>{% endif %}</p>
   {{content}}
-  <p><a href="/{% if page.category == 'organizers' %}about#{% endif %}{{page.category}}" class="button">&larr; {{page.category | capitalize}}</a></p>
+  {% assign moderators = (site.agenda | where: "moderator", page.title) %}
+  {% assign talk_num = 0 %}{% for talk in site.agenda %}{% if talk.speakers contains page.title or talk.moderator == page.title %}{% assign talk_num = talk_num | plus: 1 %}{% endif %}{% endfor %}
+  {% if talk_num > 0 %}<p><strong>{{page.title | split: ' ' | first }}’s {% if moderators[0].moderator %}moderating{% else %}talk{% if talk_num > 1 %}s{% endif %}{% endif %}:</strong></p>
+  <ul>
+    {% for talk in site.agenda reversed %}
+    {% if talk.speakers contains page.title or talk.moderator == page.title %}<li><a href="{{site.baseurl}}{{talk.url}}">{{talk.title}}</a></li>{% endif %}
+    {% endfor %}
+  </ul>{% endif %}
+  <p style="margin-top: 2em;"><a href="/{% if page.category == 'organizers' %}about#{% endif %}{{page.category}}" class="button">&larr; {{page.category | capitalize}}</a></p>
 </section>
 

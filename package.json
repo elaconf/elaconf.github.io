@@ -6,13 +6,16 @@
     "test": "scss-lint _sass/*.scss && tape test/*.js | tap-min"
   },
   "bin": {
-    "update-avatars": "bin/avatars.js"
+    "update-avatars": "bin/avatars.js",
+    "get-bios": "bin/get-bios.js"
   },
   "dependencies": {
     "scsslint": "0.0.3"
   },
   "devDependencies": {
+    "js-base64": "^2.1.9",
     "js-yaml": "^2.1.3",
+    "slugify": "^1.0.2",
     "tap-min": "^1.1.0",
     "tape": "^4.6.0"
   }

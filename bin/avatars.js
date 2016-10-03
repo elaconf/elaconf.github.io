@@ -5,6 +5,7 @@ var fs = require('fs'),
 request = require('request'),
 jsyaml = require('js-yaml'),
 path =  require('path');
+var slugify = require('slugify')
 
 
 var data = {
@@ -38,16 +39,20 @@ organizerPages.forEach(function(post) {
   var metadata = file.metadata;
   var content = file.content;
   
-  var name = metadata.title.toLowerCase().split(' ').join('-').replace('\'','-') + '.png';
+  var name = slugify(metadata.title).toLowerCase().replace('.','').replace('\'','-') + '.png';
   var file = 'https://avatars.io/twitter/' + metadata.twitter;
   
-  var download = function(uri, filename, callback) {
-    request.head(uri, function(err, res, body) {
-      request(uri).pipe(fs.createWriteStream('images/organizers/' + filename)).on('close', callback);
-    });
-  };
-  
-  download(file, name, function() {});
+  if (!metadata.image) {
+    
+    var download = function(uri, filename, callback) {
+      request.head(uri, function(err, res, body) {
+        request(uri).pipe(fs.createWriteStream('images/organizers/' + filename)).on('close', callback);
+      });
+    };
+    
+    download(file, name, function() {});
+    
+  }
   
 });
 
@@ -71,16 +76,26 @@ speakerPages.forEach(function(post) {
   var metadata = file.metadata;
   var content = file.content;
   
-  var name = metadata.title.toLowerCase().split(' ').join('-').replace('\'','-') + '.png';
-  var file = 'https://avatars.io/'+metadata.social+'/' + metadata.handle;
+  var socials = ['facebook','twitter','instagram','gravatar'];
   
-  var download = function(uri, filename, callback) {
-    request.head(uri, function(err, res, body) {
-      request(uri).pipe(fs.createWriteStream('images/speakers/' + filename)).on('close', callback);
-    });
-  };
+  var name = slugify(metadata.title).toLowerCase().replace('.','').replace('\'','-') + '.png';
   
-  download(file, name, function(){});
+  // social site must match
+  if (socials.indexOf(metadata.social) > -1) {
+    
+    var file = 'https://avatars.io/'+metadata.social+'/' + metadata.handle;
+    
+    if (!metadata.image) {
+      
+      var download = function(uri, filename, callback) {
+        request.head(uri, function(err, res, body) {
+          request(uri).pipe(fs.createWriteStream('images/speakers/' + filename)).on('close', callback);
+        });
+      };
+      
+      download(file, name, function(){});
+    }
+  }
   
 });
 
@@ -94,16 +109,19 @@ speakerPages.forEach(function(post) {
 ////////////////////////////////////////////////////////
 
 volunteers.forEach(function(file) {
-  var name = file.name.toLowerCase().split(' ').join('-').replace('\'','-') + '.png';
+  var name = slugify(file.name).toLowerCase().replace('.','').replace('\'','-') + '.png';
   var file = 'https://avatars.io/'+file.social+'/' + file.handle;
   
-  var download = function(uri, filename, callback) {
-    request.head(uri, function(err, res, body) {
-      request(uri).pipe(fs.createWriteStream('images/volunteers/' + filename)).on('close', callback);
-    });
-  };
-  
-  download(file, name, function(){});
+  if (!file.image) {
+    
+    var download = function(uri, filename, callback) {
+      request.head(uri, function(err, res, body) {
+        request(uri).pipe(fs.createWriteStream('images/volunteers/' + filename)).on('close', callback);
+      });
+    };
+    
+    download(file, name, function(){});
+  }
 })
 
 ////////////////////////////////////////////////////////
