@@ -16,12 +16,12 @@
   border: 0;
 
   th {
-    border-bottom: .2em solid $turquoise;
+    border-bottom: .2em solid $gold;
   }
 
   tr:nth-child(even) td,
   .row-breakout td {
-    background: rgba($white, .4);
+    background: rgba($gold, .1);
   }
 
   td {
@@ -40,7 +40,6 @@
   display: block;
   margin-bottom: .5em;
   min-width: 9em;
-  padding-left: 1.5em;
   position: relative;
 }
 
@@ -67,20 +66,21 @@
 
 @include breakpoint(medium) {
   .agenda-time {
-    border-right: .2em solid $text-color;
+    border-right: .2em solid $accent-tertiary;
     position: relative;
     text-align: right;
     //min-width: 6.15em;
 
     &:not(th)::before {
-      border: .15em solid $accent-secondary;
+      background: $accent-main;
       border-radius: .7em;
       content: '';
-      height: .7em;
+      height: 1em;
       position: absolute;
       right: -.6em;
       top: 1em;
-      width: .7em;
+      width: 1em;
+      z-index: 100;
     }
 
   }
@@ -102,4 +102,16 @@
     text-align: right;
   }
 
+}
+
+.breakout-type {
+  background: $accent-tertiary;
+  border-radius: 4px;
+  color: $white;
+  padding: .1em .4em .2em;
+  vertical-align: middle;
+}
+
+.session-lunch.session-lunch.session-lunch td {
+  background: transparent;
 }

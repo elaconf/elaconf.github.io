@@ -1,7 +1,8 @@
 ---
 title: LeeAnn Kinney
 image: leeann-kinney.png
-twitter: _leekinney
+social: twitter
+handle: _leekinney
 order: 2
 ---
 

@@ -1,0 +1,65 @@
+---
+layout: page
+title: Agenda
+---
+
+
+<h2 id="friday">Friday</h2>
+<p>Join us Friday evening for a meet and greet and talks.</p>
+<table class="agenda-table">
+<thead>
+<tr>
+  <th class="agenda-time"></th>
+  <th>Talks and Lightning Talks :zap:</th>
+</tr>
+</thead>
+
+<tbody>
+{% assign agenda = site.agenda | sort: 'date'  %}
+{% for x in agenda %}{% assign day = x.date | date: "%A"  %}{% if day == 'Friday' %}
+{% assign first_break = x.breakout %}
+<tr>
+<td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
+<td><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{{ x.title }}</a>
+<!--{% if x.room %}{{x.room}}{% else %}{% endif %}-->
+{% for s in x.speakers %}
+{% assign items = (site.speakers | where: "title", s ) %}<a href="{{site.baseurl}}/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if items[0].image %}{{items[0].image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}
+</tr>
+{% assign prev_break = x.breakout %}
+{% endif %}{% endfor %}
+</tbody>
+</table>
+
+
+<h2 id="saturday">Saturday</h2>
+
+<table class="agenda-table">
+<thead>
+<tr>
+  <th class="agenda-time">Time</th>
+  <th>Talks, Workshops, and Panels</th>
+</tr>
+</thead>
+
+<tbody>
+{% assign agenda = site.agenda | sort: 'date'  %}
+{% for x in agenda %}{% assign day = x.date | date: "%A"  %}{% if day == 'Saturday' %}
+{% assign first_break = x.breakout %}
+<tr class="{{x.title | slugify | prepend:'session-'}}{% if x.breakout %} row-breakout{% endif %}">
+{% if prev_break == null and first_break and x.breakout %}
+<td rowspan="4" class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
+{% elsif x.breakout == null %}
+<td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
+{% endif %}
+<td><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "Breakfast" %}:sunny: {% elsif x.title contains "Break" %}:walking: {% endif %}{% if x.type %} <span class="breakout-type small">{{x.type}}</span>{% endif %}</a>
+{% if x.breakout and x.room %}<div class="agenda-room">Room {{x.room}}</div>{% endif %}
+{% for s in x.speakers %}
+{% assign items = (site.speakers | where: "title", s ) %}<a href="{{site.baseurl}}/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if {{items[0].image}} %}{{items[0].image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
+  {% assign items = (site.speakers | where: "title", x.moderator ) %}
+  <a href="/{{items[0].category}}/{{x.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if {{items[0].image}} %}{{items[0].image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></span>{{ x.moderator}} (moderator)</a>
+{% endif %}
+</tr>
+{% assign prev_break = x.breakout %}
+{% endif %}{% endfor %}
+</tbody>
+</table>

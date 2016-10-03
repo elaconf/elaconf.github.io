@@ -17,13 +17,12 @@ fs.readdirSync('images/organizers/').forEach(function(i) {
   organizersImg.push(i);
 });
 
-/*
+
 var agenda = []
-fs.readdirSync('agenda/_posts/').forEach(function(i) {
-agenda.push('agenda/_posts/' + i);
-posts.push('agenda/_posts/' + i);
+fs.readdirSync('_agenda/').forEach(function(i) {
+  agenda.push('_agenda/' + i);
+  posts.push('_agenda/' + i);
 });
-*/
 
 var speakers = []
 fs.readdirSync('_speakers/').forEach(function(i) {
@@ -136,37 +135,37 @@ organizers.forEach(function(post) {
     t.notEqual(organizersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/organizers/ folder');
     t.ok(metadata.order,"post must have an order");
     t.equal(typeof metadata.order, "number","order must be a number");
-    t.ok(metadata.twitter,"post must have a twitter");
+    t.ok(metadata.handle,"post must have a handle");
+    t.ok(metadata.social,"post must have a social");
 
     t.end();
   });
 
 });
 
-/*
+
 agenda.forEach(function(post) {
-var file = readPost(post);
+  var file = readPost(post);
 
-var metadata = file.metadata;
-var content = file.content;
+  var metadata = file.metadata;
+  var content = file.content;
 
-test(post, function(t) {
+  test(post, function(t) {
 
-t.ok(metadata.title,"post must have a title");
+    t.ok(metadata.title,"post must have a title");
 
-if (!metadata.permalink) {
-var permalink = post.replace('_posts','').replace('.md','/').replace(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-/,'').replace('//','/');
-} else {
-var permalink = metadata.permalink;
-}
+    if (!metadata.permalink) {
+      var permalink = post.replace('.md','/').replace(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-/,'').replace('//','/');
+    } else {
+      var permalink = metadata.permalink;
+    }
 
-t.equal(permalinks[permalink].length, 1, 'permalink must not already exist ' + permalink);
+    t.equal(permalinks[permalink].length, 1, 'permalink must not already exist ' + permalink);
 
-t.end();
+    t.end();
+  });
+
 });
-
-});
-*/
 
 
 speakers.forEach(function(post) {
@@ -178,8 +177,12 @@ speakers.forEach(function(post) {
   test(post, function(t) {
 
     t.ok(metadata.title,"post must have a title");
-    t.ok(metadata.image,"post must have a image");
-    t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
+
+    var tempImg = metadata.title.replace(/\s+/g, '-').replace('\'','-').replace('.','').toLowerCase() + '.png';
+
+    if (metadata.image) t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
+    else t.notEqual(speakersImg.indexOf(tempImg), -1, tempImg + ' must exist in images/speakers/ folder');
+
     t.ok(metadata.social,"post must have a social value defined");
     t.ok(metadata.handle,"post must have a handle");
 
