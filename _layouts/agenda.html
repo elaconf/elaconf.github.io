@@ -1,24 +1,41 @@
 ---
 layout: default
 ---
-
-
+{% assign handle = '' %}
+{% assign speakers = '' %}
 <section>
   <div class="limiter-side limiter pull-up">
     <h1>{{page.title}}</h1>
     {% if page.speakers %}
-    <p>{% for s in page.speakers %}{% assign items = (site.speakers | where: "title", s ) %}
+    <p>{% for speaker in page.speakers %}{% assign items = (site.speakers | where: "title", speaker ) %}
       {% assign image = items[0].image %}
-      <a href="{{site.baseurl}}/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if image %}{{image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}"></span>{{s}}</a>
+      <a href="{{site.baseurl}}/{{items[0].category}}/{{speaker |slugify}}/" class="agenda-speaker-link"><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if image %}{{image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}"></span>{{speaker}}</a>
+      {% if items[0].social == 'twitter' %}{% assign handle = handle | append: ' @' | append: items[0].handle %}{% else %}{% assign speakers = speakers | append: speaker %}{% endif %}
       {% endfor %}{% if page.moderator %}
       {% assign items = (site.speakers | where: "title", page.moderator ) %}
       {% assign image = items[0].image %}
       <a href="{{site.baseurl}}/speakers/{{page.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url({{site.baseurl}}/images/speakers/{% if image %}{{image}}{% else %}{{items[0].title | slugify}}.png{% endif %})" class="agenda-speaker"></span>{{ page.moderator}} (moderator)</a>
       {% endif %}</p>
       {% endif %}
-      <p>{% if page.room %}<strong>{% if page.breakout %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}}{% endif %}</p>
+
+      {% capture tweet %}Hear "{{page.title}}" {% if handle != '' %}by{{handle}}{% else %}by {{speakers}}{% endif %} at @elaconf on Nov {{page.date | date: '%-d'}} {{site.url}}{{page.url}} 💜 ✨{% endcapture %}
+
+      <p>{% if page.room %}<strong>{% if page.breakout %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}}{% endif %} <a class="twitter-share-button js-tweet" href="https://twitter.com/intent/tweet?text={{tweet | url_encode}}">{% include svg/twitter.svg %}</a></p>
+
       {% if page.video %}<p><a href="{{page.video}}">Watch on YouTube</a></p>{% endif %}
+
       {{content}}
-      <p><a href="{{site.baseurl}}/agenda/" class="button">&larr; Agenda</a></p>
+
+      <div class="button-footer">
+        <p><a href="{{site.baseurl}}/agenda/" class="button">&larr; Agenda</a></p>
+      </div>
   </div>
 </section>
+
+<script>
+$('a.js-tweet').click(function() {
+  window.open(
+    this.href, 'mywindow', 'menubar=no,scrollbars=no,top=20,left=20,resizable=no,width=550,height=300');
+    return false;
+  });
+</script>
