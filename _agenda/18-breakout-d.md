@@ -9,6 +9,7 @@ permalink: /agenda/leadership/
 speakers:
 - Caro Griffin
 - Yash Prabhu
+- Alison Rowland
 moderator:
 ---
 
@@ -16,3 +17,4 @@ In this panel, we'll hear from women who are experienced managers and leaders. Q
 
 * Advice for new managers
 * Transitioning from developer to a tech team lead
+* Being a leader without the title
