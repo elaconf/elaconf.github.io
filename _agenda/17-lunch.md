@@ -17,7 +17,7 @@ Table topics and leaders:
 
 - [Erin Page](/speakers/erin-page/) - Become a mentor
 - [Marianna Morris](/speakers/marianna-morris/) - Take ownership of your career path
-- [Rakia Finley](/speakers/raki-finley/) -  Change your narrative
+- [Rakia Finley](/speakers/rakia-finley/) -  Change your narrative
 - [Lucy Bain](/speakers/lucy-bain) - Community building as an introvert
 
 Lunch menu to be announced.
