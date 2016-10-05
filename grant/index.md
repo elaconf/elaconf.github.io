@@ -2,6 +2,7 @@
 layout: page
 title: Grant Application
 nav: false
+description: Our grant application allows potential attendees to apply to have their ticket cost fully covered based on either financial or diversity based factors.
 ---
 
 Our grant application allows potential attendees to apply to have their ticket cost fully covered based on either financial or diversity based factors. If you belong to a member of any especially under-represented group, we're particularly keen to have you at the event. We'd also dislike for the cost of a ticket to be a barrier for any woman to attend.

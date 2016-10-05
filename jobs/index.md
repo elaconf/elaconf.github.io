@@ -7,6 +7,7 @@ jobs:
 #  company: Mapbox
 #  link: https://www.mapbox.com/jobs
 #  twitter: mapbox
+description: Browse open jobs from our sponsors.
 ---
 
 We're working on collecting the best jobs from our sponsors!

@@ -2,6 +2,7 @@
 layout: page
 title: About
 order: 1
+description: Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable _community_ for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech.
 ---
 
 Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable _community_ for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech. All profits from this event will be donated to [Girl Develop It](https://www.girldevelopit.com/).
