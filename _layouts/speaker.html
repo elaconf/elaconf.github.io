@@ -17,6 +17,8 @@ layout: default
     {% if talk.speakers contains page.title or talk.moderator == page.title %}<li><a href="{{site.baseurl}}{{talk.url}}">{{talk.title}}</a></li>{% endif %}
     {% endfor %}
   </ul>{% endif %}
-  <p style="margin-top: 2em;"><a href="/{% if page.category == 'organizers' %}about#{% endif %}{{page.category}}" class="button">&larr; {{page.category | capitalize}}</a></p>
+  <div class="button-footer">
+    <p><a href="/{% if page.category == 'organizers' %}about#{% endif %}{{page.category}}" class="button">&larr; {{page.category | capitalize}}</a></p>
+  </div>
 </section>
 
