@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}} 2016</title>
-  <meta name="description" content="{% if page.description %}{{page.description %}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %}{{site.date}} &bull; {{site.building}} - {{site.location}} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %}{{site.date}} &bull; {{site.building}} - {{site.location}} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
   <meta name="keywords" content="web design,design,designer,developer,front-end,tech,technology,women,female,girls,conference,empower,web,women in tech">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="fwQlP4L8TVoaRJctoltAtyp9zrdfeOkm1NNSAVENMdk" />
@@ -12,14 +12,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{site.twitter}}">
   <meta name="twitter:title" content="{{site.title}}">
-  <meta name="twitter:description" content="{% if page.description %}{{page.description %}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %}{{site.date}} &bull; {{site.building}} - {{site.location}} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %}{{site.date}} &bull; {{site.building}} - {{site.location}} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
   <meta name="twitter:image" content="http://elaconf.com/logo.png">
   <!-- facebook-->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{site.url}}{{page.url | replace:'index.html',''}}" />
   <meta property="og:title" content="{% if page.title %}{{page.title}} - {% endif %}{{site.title}}" />
   <meta property="og:site_name" content="{{site.title}}" />
-  <meta property="og:description" content="{% if page.description %}{{page.description %}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %}{{site.date}} &bull; {{site.building}} - {{site.location}} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}" />
+  <meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %}{{site.date}} &bull; {{site.building}} - {{site.location}} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}" />
   <meta property="og:image" content="http://elaconf.com/logo.png" />
   <meta property="og:image:width" content="1196" />
   <meta property="og:image:height" content="894" />
