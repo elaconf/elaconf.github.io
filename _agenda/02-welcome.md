@@ -1,5 +1,5 @@
 ---
-time: "7:00 - 7:10"
+time: "7:00 pm"
 date: 2016-11-04 19:00
 room: Auditorium
 title: Welcome
