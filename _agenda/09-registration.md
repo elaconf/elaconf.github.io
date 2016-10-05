@@ -1,5 +1,5 @@
 ---
-time: "8:00 - 9:00"
+time: "8:00 - 9:00 am"
 date: 2016-11-05 08:00
 room: Lobby
 title: AM Registration & Light Breakfast
