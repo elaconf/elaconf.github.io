@@ -9,7 +9,7 @@ speakers:
 - Rocio Delgado
 - Ivana Veliskova
 - Mariam Braimah
-moderator:
+moderator: Mansi Pathak
 ---
 
 Learn advice and tips on this panel to help you prepare for your first talk. Topics and questions may include but are not limited to:

@@ -12,9 +12,10 @@ layout: default
       <a href="{{site.baseurl}}/{{items[0].category}}/{{speaker |slugify}}/" class="agenda-speaker-link"><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if image %}{{image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}"></span>{{speaker}}</a>
       {% if items[0].social == 'twitter' %}{% assign handle = handle | append: ' @' | append: items[0].handle %}{% else %}{% assign speakers = speakers | append: speaker %}{% endif %}
       {% endfor %}{% if page.moderator %}
-      {% assign items = (site.speakers | where: "title", page.moderator ) %}
-      {% assign image = items[0].image %}
-      <a href="{{site.baseurl}}/speakers/{{page.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url({{site.baseurl}}/images/speakers/{% if image %}{{image}}{% else %}{{items[0].title | slugify}}.png{% endif %})" class="agenda-speaker"></span>{{ page.moderator}} (moderator)</a>
+      {% assign items = (site.data.volunteers | where: "name", page.moderator ) %}
+      {% assign volunteer = items[0] %}
+      {% assign image = volunteer.image %}
+      <a href="/#volunteers" class="agenda-speaker-link"><span style="background-image:url({{site.baseurl}}/images/volunteers/{% if image %}{{image}}{% else %}{{volunteer.name | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></span>{{ page.moderator}} (moderator)</a>
       {% endif %}</p>
       {% endif %}
 

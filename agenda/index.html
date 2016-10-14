@@ -24,7 +24,7 @@ description: Join us on the evening of Friday, November 4 for a meet and greet a
 <td><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{{ x.title }}</a>
 <!--{% if x.room %}{{x.room}}{% else %}{% endif %}-->
 {% for s in x.speakers %}
-{% assign items = (site.speakers | where: "title", s ) %}<a href="{{site.baseurl}}/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if items[0].image %}{{items[0].image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}
+{% assign items = (site.speakers | where: "title", s ) %}{% assign speaker = items[0] %}<a href="{{site.baseurl}}/{{speaker.category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{speaker.category}}/{% if speaker.image %}{{speaker.image}}{% else %}{{speaker.title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}
 </tr>
 {% assign prev_break = x.breakout %}
 {% endif %}{% endfor %}
@@ -55,9 +55,9 @@ description: Join us on the evening of Friday, November 4 for a meet and greet a
 <td><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "Breakfast" %}:sunny: {% elsif x.title contains "Break" %}:walking: {% endif %}{% if x.type %} <span class="breakout-type small">{{x.type}}</span>{% endif %}</a>
 {% if x.breakout and x.room %}<div class="agenda-room">Room {{x.room}}</div>{% endif %}
 {% for s in x.speakers %}
-{% assign items = (site.speakers | where: "title", s ) %}<a href="{{site.baseurl}}/{{items[0].category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if {{items[0].image}} %}{{items[0].image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
-  {% assign items = (site.speakers | where: "title", x.moderator ) %}
-  <a href="/{{items[0].category}}/{{x.moderator |slugify}}/" class="agenda-speaker-link"><span style="background-image:url({{site.baseurl}}/images/{{items[0].category}}/{% if {{items[0].image}} %}{{items[0].image}}{% else %}{{items[0].title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></span>{{ x.moderator}} (moderator)</a>
+{% assign items = (site.speakers | where: "title", s ) %}
+{% assign speaker = items[0] %}<a href="{{site.baseurl}}/{{speaker.category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{speaker.category}}/{% if speaker.image %}{{speaker.image}}{% else %}{{speaker.title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
+  {% assign items = (site.data.volunteers | where: "name", x.moderator ) %}{% assign moderator = items[0] %}<a href="/#volunteers" class="agenda-speaker-link"><span style="background-image:url({{site.baseurl}}/images/volunteers/{% if moderator.image %}{{moderator.image}}{% else %}{{moderator.name | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></span>{{ x.moderator}} (moderator)</a>
 {% endif %}
 </tr>
 {% assign prev_break = x.breakout %}
