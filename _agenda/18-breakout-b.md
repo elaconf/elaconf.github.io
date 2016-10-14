@@ -11,7 +11,7 @@ speakers:
 - Louisa Frank
 - Cathryn Stickel
 - Lindsay Rice Silver
-moderator:
+moderator: Angelina Simms
 ---
 
 In this panel, learn from women from different backgrounds in how they landed in tech, advice for applying for jobs, and starting your career.

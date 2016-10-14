@@ -9,7 +9,7 @@ speakers:
 - Ashley A. Bernard
 - Alanna Burke
 - Alicia Sedlock
-moderator:
+moderator: Bri Piccari
 ---
 
 Hear from women in the industry discuss the importance of self care. Topics and questions will include but are not limited to:

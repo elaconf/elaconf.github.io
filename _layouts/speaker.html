@@ -11,7 +11,7 @@ layout: default
   {{content}}
   {% assign moderators = (site.agenda | where: "moderator", page.title) %}
   {% assign talk_num = 0 %}{% for talk in site.agenda %}{% if talk.speakers contains page.title or talk.moderator == page.title %}{% assign talk_num = talk_num | plus: 1 %}{% endif %}{% endfor %}
-  {% if talk_num > 0 %}<p><strong>{{page.title | split: ' ' | first }}’s {% if moderators[0].moderator %}moderating{% else %}talk{% if talk_num > 1 %}s{% endif %}{% endif %}:</strong></p>
+  {% if talk_num > 0 %}<p><strong>{{page.title | split: ' ' | first }}’s sesssion{% if talk_num > 1 %}s{% endif %}:</strong></p>
   <ul>
     {% for talk in site.agenda reversed %}
     {% if talk.speakers contains page.title or talk.moderator == page.title %}<li><a href="{{site.baseurl}}{{talk.url}}">{{talk.title}}</a></li>{% endif %}

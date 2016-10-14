@@ -10,7 +10,7 @@ speakers:
 - Caro Griffin
 - Yash Prabhu
 - Alison Rowland
-moderator:
+moderator: Alisha Miranda
 ---
 
 In this panel, we'll hear from women who are experienced managers and leaders. Questions and topics may include but are not limited to:
