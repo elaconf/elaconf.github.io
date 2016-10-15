@@ -1,5 +1,5 @@
 ---
-time: "6:00 pm"
+time: "6:00"
 date: 2016-11-04 18:00
 room: Lobby
 title: Meet and greet, early registration

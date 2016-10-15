@@ -20,7 +20,7 @@ description: Join us on the evening of Friday, November 4 for a meet and greet a
 {% for x in agenda %}{% assign day = x.date | date: "%A"  %}{% if day == 'Friday' %}
 {% assign first_break = x.breakout %}
 <tr>
-<td class="agenda-time">{{x.time | replace:' ','&nbsp;'}}</td>
+<td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {{x.date | date: '%p' | downcase}}</td>
 <td><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{{ x.title }}</a>
 <!--{% if x.room %}{{x.room}}{% else %}{% endif %}-->
 {% for s in x.speakers %}
