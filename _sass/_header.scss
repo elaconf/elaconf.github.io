@@ -83,9 +83,12 @@ header {
 .ela-location {
   background: $accent-main;
   font-size: 1.25em;
-  margin-bottom: 1em;
   padding-bottom: .25em;
   padding-top: .25em;
+
+  @include breakpoint(small) {
+    margin-bottom: 1em;
+  }
 
   svg {
     display: inline-block;
@@ -224,13 +227,21 @@ header {
 
 
 .second-nav {
+  background: $accent-tertiary;
   margin-bottom: 1.5em;
-  margin-top: 1.5em;
-
+  padding: 1em 0;
+  //margin-top: 1.5em;
 
   @include breakpoint(small) {
     display: none;
   }
+
+  a {
+    color: $white;
+
+    &:hover {
+      border-bottom: .25em solid;
+      color: $white;
+    }
+  }
 }
-
-
