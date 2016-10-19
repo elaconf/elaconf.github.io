@@ -15,6 +15,14 @@ jobs:
   company: GitHub
   link: https://jobs.lever.co/github/baaa9a2c-c249-4d06-b73f-e9bee1a3d147
   image: github.svg
+- position: Frontend Engineer
+  company: Zapier
+  link: https://zapier.com/jobs/frontend-engineer-fall-2016/
+  image: zapier.svg
+- position: Product Engineer
+  company: Zapier
+  link: https://zapier.com/jobs/product-engineer-fall-2016/
+  image: zapier.svg
 description: Browse open jobs from our sponsors.
 ---
 
