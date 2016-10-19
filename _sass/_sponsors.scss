@@ -50,6 +50,10 @@
   padding: 35px 10px 35px 0;
 }
 
+.sponsor-wildbit {
+  padding: 10px 15px 10px 0;
+}
+
 .sponsor-level {
   @include clearfix();
 
@@ -78,7 +82,7 @@
 
 .sponsor-level-community-builder .sponsors-level-name {
   @include breakpoint(medium) {
-    height: 250px;
+    height: 333px;
   }
 }
 
