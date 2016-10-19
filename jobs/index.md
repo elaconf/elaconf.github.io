@@ -10,9 +10,8 @@ jobs:
 description: Browse open jobs from our sponsors.
 ---
 
+Looking for the next step in your career? Check out these listings from our amazing sponsors:
 
 {% for job in page.jobs %}
 * ![](/images/sponsors/{{job.image}}) [{{job.position}} at {{job.company}}]({{job.link}})
 {% endfor %}
-
-**Want to see your job posted here?** [Become a sponsor!](/sponsor/)
