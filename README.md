@@ -25,7 +25,7 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
 
 ### Speakers
 
-* Each speaker has her own page located in `/_speakers/`
+* Each speaker has her own page located in `_speakers/`
 * Each file is named: `first-last.md`.
 * In the front matter of each file, please include:
   - `title` &mdash; first and last name
@@ -41,7 +41,7 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
 
 ### Sponsors
 
-* You can add or update sponsors from the [sponsors.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/sponsors.yml) file. Please include:
+* You can add or update sponsors from the [_data/sponsors.yml](https://github.com/elaconf/elaconf.github.io/blob/master/_data/sponsors.yml) file. Please include:
   - `name` &mdash; name of the sponsor
   - `site` &mdash; URL to the sponsor's site
   - `image` &mdash; file name and extension of the sponsor's logo
@@ -51,7 +51,7 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
 
 ### Talks
 
-* Each talk has its own page located in `/_agenda/`
+* Each talk has its own page located in `_agenda/`
 * Each file is named: `##-title.md`
 * In the front matter of each file, please include:
   - `title` &mdash; title of the talk
@@ -64,3 +64,11 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
 
 ![image](https://cloud.githubusercontent.com/assets/2180540/10857537/07e55e1a-7f25-11e5-8604-b4d5eee38c28.png)
 
+### Jobs
+
+* Each jobs is located in `_data/jobs.yml`
+* Each jobs must have:
+  * `position` &mdash; name of the job
+  * `company` &mdash; name of the company
+  * `link` &mdash; link to the job listing on the company's website
+  * `image` &mdash; file name of sponsor's image found in `images/sponsors/`
