@@ -21,13 +21,13 @@
   image: agilebits.svg
   level: Community builder
   twitter: 1Password
-  
+
 - name: Zapier
   site: https://zapier.com
   image: zapier.svg
   level: Community builder
   twitter: zapier
-  
+
 - name: GitHub
   site: https://github.com
   image: github.svg
@@ -45,4 +45,9 @@
   image: lincolnloop.svg
   level: Community builder
   twitter: lincolnloop
-  
+
+- name: Wildbit
+  site: http://wildbit.com/
+  image: wildbit.svg
+  level: Community builder
+  twitter: wildbit
