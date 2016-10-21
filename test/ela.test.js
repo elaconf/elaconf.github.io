@@ -66,8 +66,13 @@ var permalinks = posts.reduce(function(prev, post, index, list) {
 var data = {
   sponsors: readData('_data/', 'sponsors.yml'),
   levels: readData('_data/', 'levels.yml'),
-  volunteers: readData('_data/', 'volunteers.yml')
+  volunteers: readData('_data/', 'volunteers.yml'),
+  places: readData('_data/', 'places.yml')
 };
+// build array of places
+var places = data.volunteers.metadata.map(function(post) {
+  return post.title;
+});
 // build array of volunteers
 var volunteers = data.volunteers.metadata.map(function(post) {
   return post.name;
@@ -121,6 +126,20 @@ function readData(dir, filename) {
   } catch(err) {}
 
 }
+
+
+function isLongitude(value) {
+  if (value >= -180 && value <= 180) {
+    return true
+  }
+}
+
+function isLatitude(value) {
+  if (value >= -90 && value <= 90) {
+    return true
+  }
+}
+
 
 organizers.forEach(function(post) {
   var file = readPost(post);
@@ -224,6 +243,22 @@ data.volunteers.metadata.forEach(function(post) {
     t.ok(post.handle,'volunteer must have a \'handle\'');
     var img = post.name.toLowerCase().replace(' ','-').replace('\'','-') + '.png';
     t.notEqual(volunteersImg.indexOf(img), -1, img + ' must exist in images/volunteers/ folder');
+
+    t.end();
+  });
+});
+
+data.places.metadata.forEach(function(post) {
+
+  test(post.title, function(t) {
+
+    t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
+
+    t.ok(post.address,'place must have an \'address\'');
+    t.ok(post.title,'place must have a \'title\'');
+    t.ok(post.icon,'place must have an \'icon\'');
+    t.ok(post.link,'place must have a \'link\'');
+    t.ok(post.coordinates,'place must have \'coordinates\'');
 
     t.end();
   });
