@@ -23,12 +23,12 @@ var places = {
   "type": "FeatureCollection"
 }
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiY2ltNnN2eTQ3MDA2cHZibTBwNXE3cm16biJ9.H-aQUqtQpLitV6Phft8uYw';
+mapboxgl.accessToken = '{{site.token}}';
 
 var filterGroup = document.getElementById('filter-group');
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/light-v9',
+  style: 'mapbox://styles/katydecorah/ciuk0gf75005g2is1luza9c5o',
   center: [-75.1640286,39.9489754],
   zoom: 14.2
 });
