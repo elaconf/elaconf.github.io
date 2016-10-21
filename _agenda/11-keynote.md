@@ -8,4 +8,4 @@ speakers:
 permalink: /agenda/keynote/
 ---
 
-Title and abstract coming soon!
+5 things I've learned about leadership from my son (told via Instagram photos).
