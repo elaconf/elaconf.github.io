@@ -1,11 +1,11 @@
 .filter-group {
 
+  color: $white;
+  font: inherit;
+
   @include breakpoint(small) {
     display: none;
   }
-  
-  color: $white;
-  font: inherit;
 
   .small.hide.hide {
     display: none;
@@ -44,12 +44,11 @@
 }
 
 .ela-map {
+  height: 450px;
 
   @include breakpoint(small) {
     display: none;
   }
-
-  height: 450px;
 
   .mapboxgl-popup {
     width: 200px;
