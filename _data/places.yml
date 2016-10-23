@@ -67,8 +67,8 @@
   link: http://www.sumosushiphiladelphia.com/
   phone: (215) 985-1115
   coordinates:
-  - -75.1649721
-  - 39.946130
+  - -75.16426742076872
+  - 39.94705150424565
 
 - address: 131 S 13th St, Philadelphia, PA 19107
   icon: restaurant
@@ -94,8 +94,8 @@
   link: http://www.doubleknotphilly.com/
   phone: (215) 631-3868
   coordinates:
-  - -75.161968
-  - 39.949773
+  - -75.162151
+  - 39.949765
 
 - address: 1234 Locust St, Philadelphia, PA 19107
   icon: lodging
@@ -130,8 +130,8 @@
   link: https://philadelphiabellevue.hyatt.com/en/hotel/home.html
   phone:
   coordinates:
-    - -75.164407
-    - 39.94874
+    - -75.16484677791595
+    - 39.94907074504737
 
 - address: 929 South St, Philadelphia, PA 19147
   icon: grocery
@@ -167,8 +167,8 @@
   link: https://www.riteaid.com/
   phone: (215) 735-3593
   coordinates:
-    - -75.164407
-    - 39.94874
+    - -75.16400992870331
+    - 39.94876231089985
 
 - address: 1 S Broad St, Philadelphia, PA 19110
   title: Walgreens
@@ -261,8 +261,8 @@
   phone: (215) 893-1900
   icon: theatre
   coordinates:
-  - -75.164785
-  - 39.94699
+  - -75.16503989696503
+  - 39.94720366907094
 
 - address: 2030 Sansom St, Philadelphia, PA 19103
   icon: theatre

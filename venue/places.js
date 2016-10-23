@@ -30,7 +30,7 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/katydecorah/ciuk0gf75005g2is1luza9c5o',
   center: [-75.1640286,39.9489754],
-  zoom: 14.2
+  zoom: 15
 });
 
 // Create a popup, but don't add it to the map yet.
