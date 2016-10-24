@@ -1,6 +1,12 @@
 In-kind:
   hidden: true
-  
+
+Friend of Ela Conf:
+  amount: '$500'
+  tickets: 1
+  slideshow: true
+  website: true
+
 Community builder:
   amount: '$1,000'
   tickets: 2

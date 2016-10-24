@@ -54,6 +54,10 @@
   padding: 10px 15px 10px 0;
 }
 
+.sponsor-defna {
+  padding: 30px 15px 30px 0;
+}
+
 .sponsor-level {
   @include clearfix();
 
@@ -89,6 +93,8 @@
 
 .levels {
   //border: 1px solid $accent-secondary;
+  @include clearfix;
+
 }
 
 .levels-contact {
@@ -99,6 +105,7 @@
 
 .level {
   border-radius: .25em;
+  float: left;
   padding: .25em;
 
   @include breakpoint(small) {
@@ -125,7 +132,7 @@
   background: $accent-main;
   font-family: $font-headings;
   line-height: 1.25;
-  min-height: 4em;
+  min-height: 6em;
   padding: 1em .5em .5em;
   position: relative;
   top: -1em;

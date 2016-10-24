@@ -13,17 +13,17 @@ description: Your sponsorship will make Ela Conf 2016 even better and support wo
 
   <div class="grid levels">
     {% for level in site.data.levels %}{% unless level[1].hidden %}
-    <div class="level fourth">
+    <div class="level five">
       <div class="level-header text-center">
         <div class="level-name">{{level[0]}}</div>
         <div class="level-amount">{{level[1].amount}}</div>
       </div>
       <div class="level-rewards">
-        <div class="level-item">{{level[1].tickets}} tickets</div>
-        <div class="level-item">{{level[1].tickets}} Twitter mentions from @elaconf</div>
-        <div class="level-item">{{level[1].tickets}} job listings on Ela Conf slideshow &amp; <a href="/jobs">website</a></div>
+        <div class="level-item">{{level[1].tickets}} Twitter mention{% if level[1].tickets > 1 %}s{% endif %} from @elaconf</div>
+        <div class="level-item">{{level[1].tickets}} job listing{% if level[1].tickets > 1 %}s{% endif %} on Ela Conf slideshow &amp; <a href="/jobs">website</a></div>
         <div class="level-item{% unless level[1].website %} level-no{% endunless %}">Logo on Ela Conf website</div>
         <div class="level-item{% unless level[1].slideshow %} level-no{% endunless %}">Logo on slideshow played during Ela Conf</div>
+        <div class="level-item{% if level[1].tickets == 1 %} level-no{% endif %}">{{level[1].tickets}} tickets to Ela Conf</div>
         <div class="level-item{% unless level[1].signage %} level-no{% endunless %}">Logo on signage at Ela Conf</div>
         <!--<div class="level-item{% unless level[1].verbal %} level-no{% endunless %}">Verbal recognition during Ela Conf welcome</div>-->
         <div class="level-item{% unless level[1].talk %} level-no{% endunless %}">10-minute talk at Friday night event</div>
