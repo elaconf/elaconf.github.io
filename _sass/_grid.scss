@@ -6,7 +6,8 @@
     width: 50%;
   }
 
-  .third {
+  .third,
+  .five {
     width: 100%;
   }
 
@@ -23,6 +24,7 @@
 
   .half,
   .fourth,
+  .five,
   .two-thirds {
     width: 50%;
   }
@@ -67,6 +69,10 @@
 
   .sixth {
     width: (100% / 6);
+  }
+
+  .five {
+    width: (100% / 5);
   }
 
   .fourth {
