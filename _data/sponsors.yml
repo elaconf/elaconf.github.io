@@ -51,3 +51,9 @@
   image: wildbit.svg
   level: Community builder
   twitter: wildbit
+
+- name: DEFNA
+  site: http://defna.org/
+  image: defna.svg
+  level: Friend of Ela Conf
+  twitter: djangocon
