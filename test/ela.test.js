@@ -3,8 +3,8 @@ var fs = require('fs');
 var path =  require('path');
 var jsyaml = require('js-yaml');
 
-var posts = []
-var organizers = []
+var posts = [];
+var organizers = [];
 fs.readdirSync('_organizers/').forEach(function(i) {
   if ( i != 'index.md' && i != 'index.html') {
     organizers.push('_organizers/' + i);
@@ -12,30 +12,30 @@ fs.readdirSync('_organizers/').forEach(function(i) {
   }
 });
 
-var organizersImg = []
+var organizersImg = [];
 fs.readdirSync('images/organizers/').forEach(function(i) {
   organizersImg.push(i);
 });
 
 
-var agenda = []
+var agenda = [];
 fs.readdirSync('_agenda/').forEach(function(i) {
   agenda.push('_agenda/' + i);
   posts.push('_agenda/' + i);
 });
 
-var speakers = []
+var speakers = [];
 fs.readdirSync('_speakers/').forEach(function(i) {
   speakers.push('_speakers/' + i);
   posts.push('_speakers/' + i);
 });
 
-var speakersImg = []
+var speakersImg = [];
 fs.readdirSync('images/speakers/').forEach(function(i) {
   speakersImg.push(i);
 });
 
-var volunteersImg = []
+var volunteersImg = [];
 fs.readdirSync('images/volunteers/').forEach(function(i) {
   volunteersImg.push(i);
 });
@@ -130,13 +130,13 @@ function readData(dir, filename) {
 
 function isLongitude(value) {
   if (value >= -180 && value <= 180) {
-    return true
+    return true;
   }
 }
 
 function isLatitude(value) {
   if (value >= -90 && value <= 90) {
-    return true
+    return true;
   }
 }
 
@@ -173,10 +173,11 @@ agenda.forEach(function(post) {
 
     t.ok(metadata.title,"post must have a title");
 
+    var permalink;
     if (!metadata.permalink) {
-      var permalink = post.replace('.md','/').replace(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-/,'').replace('//','/');
+      permalink = post.replace('.md','/').replace(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-/,'').replace('//','/');
     } else {
-      var permalink = metadata.permalink;
+      permalink = metadata.permalink;
     }
 
     t.equal(permalinks[permalink].length, 1, 'permalink must not already exist ' + permalink);
@@ -219,11 +220,14 @@ data.sponsors.metadata.forEach(function(post) {
     t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
 
     t.ok(post.name,'sponsor must have a \'name\'');
-    t.ok(post.image,'sponsor must have an \'image\'');
-    t.ok(post.site,'sponsor must have a \'site\'');
     t.ok(post.level,'sponsor must have a \'type\'');
-    t.ok(post.twitter,'sponsor must have a \'twitter\'');
     t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
+
+    if (post.level != 'Individuals') {
+      t.ok(post.image,'sponsor must have an \'image\'');
+      t.ok(post.site,'sponsor must have a \'site\'');
+      t.ok(post.twitter,'sponsor must have a \'twitter\'');
+    }
 
     t.end();
   });
@@ -235,7 +239,7 @@ data.volunteers.metadata.forEach(function(post) {
 
     t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
 
-    var social = ['facebook','twitter','instagram','gravatar']
+    var social = ['facebook','twitter','instagram','gravatar'];
 
     t.ok(post.name,'volunteer must have a \'name\'');
     t.ok(post.social,'volunteer must have a \'social\'');

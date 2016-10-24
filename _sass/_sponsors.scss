@@ -84,6 +84,11 @@
 
 }
 
+.sponsor-level-individuals .sponsors-images {
+  font-family: $font-headings;
+  padding: 1em 0;
+}
+
 .sponsor-level-community-builder .sponsors-level-name {
   @include breakpoint(medium) {
     height: 333px;
