@@ -63,3 +63,10 @@
 
 - name: Gabriel Weinberg
   level: Individuals
+
+- name: iStrategyLabs
+  site: https://isl.co/
+  image: isl.svg
+  level: Community builder
+  twitter: istrategylabs
+
