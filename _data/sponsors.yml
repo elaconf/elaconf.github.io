@@ -51,3 +51,9 @@
   image: wildbit.svg
   level: Community builder
   twitter: wildbit
+
+- name: Cerner
+  site: http://www.cerner.com/
+  image: cerner.svg
+  level: Conference supporter
+  twitter: cerner
