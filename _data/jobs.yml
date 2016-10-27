@@ -1,3 +1,23 @@
+- position: Mobile Developer - Android
+  company: Mapbox
+  link: https://www.mapbox.com/jobs/254464/
+  image: mapbox.svg
+
+- position: Unity Platform Engineer
+  company: Mapbox
+  link: https://www.mapbox.com/jobs/467783/
+  image: mapbox.svg
+
+- position: Support Engineer
+  company: Mapbox
+  link: https://www.mapbox.com/jobs/254440/
+  image: mapbox.svg
+
+- position: Customer Success
+  company: Mapbox
+  link: https://www.mapbox.com/jobs/486973/
+  image: mapbox.svg
+
 - position: Software Engineer
   company: Braintree
   link: https://boards.greenhouse.io/braintree/jobs/164179?gh_jid=164179#.WAei15MrKCR
@@ -17,7 +37,7 @@
   company: Braintree
   link: https://boards.greenhouse.io/braintree/jobs/159552?gh_jid=159552#.WAeiz5MrKCR
   image: braintree.svg
-  
+
 - position: Lead Systems Engineer
   company: Wildbit
   link: http://wildbit.com/jobs/senior-systems-engineer
@@ -53,3 +73,7 @@
   link: http://uscellular.jobs/ShowJob/Id/987063/Applications-Development-Engineer/
   image: uscellular.svg
 
+- position: Support
+  company: AgileBits
+  link: https://blog.agilebits.com/2016/06/01/love-1password-were-hiring/
+  image: agilebits.svg

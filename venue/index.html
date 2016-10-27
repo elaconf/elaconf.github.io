@@ -1,16 +1,50 @@
 ---
-title: Venue
+title: Venue and around Philly
 layout: page
 description: Ela Conf will be hosted at The University of the Arts this year in Philadelphia.
 ---
 
 
+<p>We’re pleased to be hosting Ela Conf at <a href="http://www.uarts.edu/">The University of the Arts</a> in Terra Hall! <a href="http://www.uarts.edu/locations/campus/terra-hall">Terra Hall</a> is located at 211 South Broad Street in Philadelphia.</p>
 
-<p>We’re pleased to be hosting Ela Conf at <a href="http://www.uarts.edu/">The University of the Arts</a> in Terra Hall!</p>
-<p><a href="http://www.uarts.edu/locations/campus/terra-hall">Terra Hall</a> is located at Broad and Walnut Streets in Philadelphia.</p>
-
-<p><address>211 South Broad Street<br>Philadelphia, PA 19107</address></p>
+<p>We pulled together this guide of location restaurants, cafes, and more to help you enjoy your stay.</p>
 
 </div>
 
-<a href="https://api.mapbox.com/styles/v1/katydecorah/cip4sx34c0000bmm7n22s4dnz.html?title=false&access_token={{site.token}}#14.5/39.949089/-75.163937"><img src="https://api.mapbox.com/styles/v1/katydecorah/cip4sx34c0000bmm7n22s4dnz/static/-75.163937,39.949089,14.5,0/1280x500@2x?access_token={{site.token}}" alt="map of Terra Hall" style="margin-bottom: -3.2em; position: relative" class="show-desktop" /><img src="https://api.mapbox.com/styles/v1/katydecorah/cip4sx34c0000bmm7n22s4dnz/static/-75.163937,39.949089,14.5,0/500x500@2x?access_token={{site.token}}" alt="map of Terra Hall" style="margin-bottom: -3.2em; position: relative" class="show-mobile" /></a>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+
+
+<div class="ela-map" id="map"></div>
+
+<div class="fill-dark">
+  <div class="limiter">
+    <nav id='filter-group' class='filter-group'></nav>
+  </div>
+</div>
+
+<div class="limiter">
+
+  {% assign icons = "" | split: "" %}
+  {% for place in site.data.places %}
+      {% assign icons = icons | push: place.icon %}
+  {% endfor %}
+
+  {% assign uniqIcons = icons | uniq %}
+
+  {% for type in uniqIcons %}
+  <h2>{% if type == 'theatre' %}entertainment {% elsif type == 'star' %} Ela Conf locations{% else %}{{type}}{% endif %}{% if type == 'restaurant' or type == 'bar' or type == 'cafe' %}s{% endif %}</h2>
+    {% assign matches = site.data.places | where: 'icon', type %}
+    {% for match in matches %}
+      <p><a href="{{match.link}}" class="strong">{{match.title}}</a>{% if match.notes %}<br>{{match.notes}}{% endif %}<br>{{match.address}}{% if match.phone %}<br>{{match.phone}}{% endif %}</p>
+    {% endfor %}
+  {% endfor %}
+
+  <h2>Airbnb</h2>
+
+  <p>Here's a <a href="https://www.airbnb.com/s/Center-City--Philadelphia--PA--United-States?page=1&source=filters&airbnb_plus_only=false&checkin=11%2F04%2F2016&checkout=11%2F06%2F2016&guests=1&price_min=70&price_max=219&neighborhoods%5B%5D=Center%20City&neighborhoods%5B%5D=Rittenhouse%20Square&room_types%5B%5D=Entire%20home%2Fapt&ss_id=6t243yu8&allow_override%5B%5D=&s_tag=J1OPceTc">filtered list of Airbnbs near the venue</a>! Please note that availability may change for these so please be sure to double check days.</p>
+
+</div>
+
+
+<script src="/venue/places.js"></script>

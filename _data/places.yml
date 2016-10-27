@@ -1,0 +1,294 @@
+- address: 211 South Broad St, Philadelphia, PA 19107
+  title: Terra Hall
+  notes: Ela Conf venue
+  icon: star
+  link: http://www.uarts.edu/locations/campus/terra-hall
+  coordinates:
+    - -75.163937
+    - 39.949055
+
+- address: 1315 Sansom St, Philadelphia, PA 19107
+  title: Time Restaurant
+  icon: star
+  notes: Saturday night networking event
+  link: /agenda/networking-event/
+  coordinates:
+    - -75.16249
+    - 39.950129
+
+- address: 230 S Broad St, Philadelphia, PA 19102
+  title: Tuscany Cafe
+  icon: restaurant
+  link: http://www.tuscanycafe.org/philadelphia.html
+  phone: (215) 964-9176
+  coordinates:
+  - -75.164876
+  - 39.9484323
+
+- address: 1511 Pine St, Philadelphia, PA 19102
+  title: Waffles and Wedges
+  icon: restaurant
+  link: http://www.waffleswedges.com/
+  phone: (215) 309-3222
+  coordinates:
+  - -75.167253
+  - 39.945873
+
+- address: 212 S 13th St, Philadelphia, PA 19107
+  title: Green Eggs Cafe
+  link: http://greeneggscafe.com/
+  phone: (267) 861-0314
+  icon: restaurant
+  coordinates:
+  - -75.162284
+  - 39.948329
+
+- address: 1328 Pine St, Philadelphia, PA 19107
+  title: 'Giorgio On Pine'
+  link: http://www.giorgioonpine.com/
+  phone: (215) 545-6265
+  icon: restaurant
+  coordinates:
+  - -75.164009
+  - 39.945375
+
+- address: 1516 Sansom St, Philadelphia, PA 19102
+  icon: restaurant
+  title: 'Mission Taqueria'
+  link: http://www.missiontaqueria.com/
+  phone: (215) 383-1200
+  coordinates:
+  - -75.166583
+  - 39.950221
+
+- address: 337 S Broad St, Philadelphia, PA 19107
+  icon: restaurant
+  title: 'Sumo Sushi'
+  link: http://www.sumosushiphiladelphia.com/
+  phone: (215) 985-1115
+  coordinates:
+  - -75.16426742076872
+  - 39.94705150424565
+
+- address: 131 S 13th St, Philadelphia, PA 19107
+  icon: restaurant
+  title: 'Charlie Was a Sinner (vegan)'
+  link: http://charliewasasinner.com/
+  phone: (267) 758-5372
+  coordinates:
+  - -75.161762
+  - 39.949607
+
+- address: 110 S 13th St, Philadelphia, PA 19107
+  icon: restaurant
+  title: Barbuzzo
+  link: http://barbuzzo.com/
+  phone: (215) 546-9300
+  coordinates:
+  - -75.162168
+  - 39.94999
+
+- address: 120 S 13th St, Philadelphia, PA 19107
+  icon: restaurant
+  title: 'Double Knot'
+  link: http://www.doubleknotphilly.com/
+  phone: (215) 631-3868
+  coordinates:
+  - -75.162151
+  - 39.949765
+
+- address: 1234 Locust St, Philadelphia, PA 19107
+  icon: lodging
+  title: The Independent Hotel
+  link: http://www.theindependenthotel.com/
+  phone: (215) 772-1440
+  coordinates:
+  - -75.162138
+  - 39.947863
+
+- address: 301 S 12th St, Philadelphia, PA 19107
+  title: Alexander Inn
+  link: http://www.alexanderinn.com/
+  phone: (215) 923-3535
+  icon: lodging
+  coordinates:
+  - -75.161057
+  - 39.946262
+
+- address: 117 S 17th St, Philadelphia, PA 19103
+  icon: lodging
+  title: 'Kimpton Hotel Palomar'
+  link: http://www.hotelpalomar-philadelphia.com/
+  phone:
+  coordinates:
+    - -75.168838
+    - 39.950858
+
+- address: 200 South Broad St, Philadelphia, PA 19102
+  icon: lodging
+  title: Hyatt at The Bellevue
+  link: https://philadelphiabellevue.hyatt.com/en/hotel/home.html
+  phone:
+  coordinates:
+    - -75.16484677791595
+    - 39.94907074504737
+
+- address: 929 South St, Philadelphia, PA 19147
+  icon: grocery
+  title: Whole Foods
+  link: http://www.wholefoodsmarket.com/
+  phone: (215) 733-9788
+  coordinates:
+    - -75.157785
+    - 39.942914
+
+- address: 2121 Market St, Philadelphia, PA 19103
+  icon: grocery
+  title: Trader Joe's
+  link: http://www.traderjoes.com/
+  phone: (215) 569-9282
+  coordinates:
+    - -75.176361
+    - 39.954249
+
+- address: 1500 Spruce St, Philadelphia, PA 19102
+  icon: pharmacy
+  title: CVS
+  link: http://www.cvs.com/
+  phone: (215) 790-3290
+  coordinates:
+  - -75.166761
+  - 39.946924
+
+
+- address: 215 South Broad St, Philadelphia, PA 19107
+  icon: pharmacy
+  title: Rite Aid
+  link: https://www.riteaid.com/
+  phone: (215) 735-3593
+  coordinates:
+    - -75.16400992870331
+    - 39.94876231089985
+
+- address: 1 S Broad St, Philadelphia, PA 19110
+  title: Walgreens
+  icon: pharmacy
+  link: https://www.walgreens.com/
+  phone: (267) 330-0290
+  coordinates:
+    - -75.163762
+    - 39.951101
+
+- address: 1320 Chancellor St, Philadelphia, PA 19107
+  title: Franky Bradley’s
+  icon: bar
+  link: http://www.frankybradleys.com/
+  phone: (215) 735-0735
+  coordinates:
+  - -75.163109
+  - 39.948499
+
+- address: 224 S 15th St, Philadelphia, PA 19102
+  title: Good Dog Bar
+  icon: bar
+  link: http://www.gooddogbar.com/
+  phone: (215) 985-9600
+  coordinates:
+  - -75.166339
+  - 39.948708
+
+- address: 264 S 16th St, Philadelphia, PA 19103
+  icon: bar
+  title: Monk’s Cafe
+  link: http://www.monkscafe.com/
+  phone: (215) 545-7005
+  coordinates:
+  - -75.168287
+  - 39.947774
+
+
+- address: 121 S 13th St, Philadelphia, PA 19107
+  title: El Vez
+  icon: bar
+  link: http://www.elvezrestaurant.com/
+  phone:
+  coordinates:
+    - -75.161737
+    - 39.949662
+
+
+- address: 249 S 13th St, Philadelphia, PA 19107
+  title: Square One Coffee
+  icon: cafe
+  link: http://www.squareonecoffee.com/
+  phone: (267) 758-6352
+  coordinates:
+    - -75.16215
+    - 39.947311
+
+
+- address: 207 S Sydenham St, Philadelphia, PA 19102
+  icon: cafe
+  title: Elixr Coffee
+  link: http://www.elixrcoffee.com/
+  phone: (239) 404-1730
+  coordinates:
+  - -75.166757
+  - 39.949587
+
+
+- address: 341 S Broad St, Philadelphia, PA 19107
+  title: Starbucks
+  icon: cafe
+  link: https://www.starbucks.com
+  phone: (215) 546-2810
+  coordinates:
+  - -75.164588
+  - 39.945664
+
+- address: 1300 Pine St, Philadelphia, PA 19147
+  icon: cafe
+  title: Last Drop
+  link: https://www.yelp.com/biz/last-drop-philadelphia
+  phone:
+  coordinates:
+  - -75.163076
+  - 39.945182
+
+- address: 260 S Broad St, Philadelphia, PA 19107
+  title: 'The Philadelphia Orchestra'
+  link: https://www.philorch.org
+  phone: (215) 893-1900
+  icon: theatre
+  coordinates:
+  - -75.16503989696503
+  - 39.94720366907094
+
+- address: 2030 Sansom St, Philadelphia, PA 19103
+  icon: theatre
+  title: 'ComedySportz'
+  link: http://www.comedysportzphilly.com/
+  phone: (877) 985-2844
+  coordinates:
+  - -75.174237
+  - 39.951365
+
+- address: 1020 South St, Philadelphia, PA 19147
+  icon: theatre
+  title: 'Philadelphia’s Magic Gardens'
+  link: https://www.phillymagicgardens.org/about-us/mission-values/
+  phone: (215) 733-0390
+  coordinates:
+  - -75.159314
+  - 39.94271
+
+- address: 1336 Chestnut St, Philadelphia, PA 19107
+  icon: theatre
+  title: Lucky Strike Bowling
+  link: http://www.bowlluckystrike.com/locations/philadelphia/
+  phone: (215) 545-2471
+  coordinates:
+  - -75.162957
+  - 39.950744
+
+
