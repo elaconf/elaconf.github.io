@@ -78,7 +78,7 @@
 
 - name: Cerner
   site: http://www.cerner.com/
-  image: cerner.svg
+  image: cerner.png
   level: Conference supporter
   twitter: cerner
 
