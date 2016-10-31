@@ -70,7 +70,7 @@
   level: Community builder
   twitter: istrategylabs
 
-- name: Inday Hall
+- name: Indy Hall
   site: http://www.indyhall.org/
   image: indyhall.png
   level: Community builder
@@ -118,3 +118,8 @@
 - name: Steve Faulkner
   level: Individuals
 
+- name: Salesforce
+  site: https://www.salesforce.com/
+  image: salesforce.png
+  level: Community builder
+  twitter: salesforce
