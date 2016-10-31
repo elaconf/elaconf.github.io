@@ -1,15 +1,18 @@
 ---
 time: "1:30 - 2:30"
 date: 2016-11-05 13:30
-room:
 breakout: 2
-title: 'Tell Your Story: Crafting An Authentic Elevator Pitch That Works'
+title: Thanks for your Feedback!
 type: workshop
-permalink: /agenda/tell-your-story/
+permalink: /agenda/thanks-for-your-feedback/
 speakers:
-- Hillary Rea
+- Yuval Yarden
 ---
 
-In this one hour interactive workshop, use storytelling and humor to create an authentic elevator pitch that you’re actually comfortable pitching. Develop a compelling way to answer the dreaded question, “What exactly is it that you do?” This workshop covers the elements of storytelling that will help you get your fun, positive stories of your past endeavors out there — be it for a presentation, networking event or job interview. Tell a story about an achievement or life experience that you are proud of and turn your small talk into opportunities for advancement.
+Providing and receiving feedback is an art, and one of the most important communication skills you need in any relationship. Whether we realize it or not, feedback is coming at us constantly from every direction. We crave it, yet we avoid it. It produces a sense of fulfillment and strengthens our relationships, yet it gives us significant anxiety as well. During this workshop, participants will begin to hone their skills and have the opportunity to practice with one another.
 
-This workshop is perfect for anyone who wants to learn about and practice their storytelling skills. It works on both a personal and professional level.
+Strengthening my ability to provide and receive feedback has made me a more confident friend, employee, and leader. During the last year, I found myself anxiously awaiting meetings around feedback and constantly rehearsing my feedback statements prior to any potential interaction. The effect it had on my life was significant, and I decided to take the time to learn how to improve my skills. Now, I feel much more confident walking into meetings and sharing my thoughts with others as they come up.
+
+I'm no expert, but I'd love to have the opportunity to share my learnings and experiences with others. We'll learn how to listen for feedback, how to grow from it and how to accept it. We'll also discuss the process of filtering and following up on your feedback. Ultimately, we will learn how to create a safe space where people can ask questions, share experiences and practice with one another. The overall goal is to help attendees build skills that will unleash the potential in their relationships and learn how to communicate effectively.
+
+This session is a great fit for anyone working in a collaborative environment who is hoping to strengthen their communication skills. This is not an opportunity to complain about all of the people in your life who (give non-constructive feedback) are terrible at giving feedback.
