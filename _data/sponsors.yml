@@ -119,7 +119,7 @@
   level: Individuals
 
 - name: Salesforce
-  site: https://www.salesforce.com/
+  site: https://developer.salesforce.com/en/
   image: salesforce.png
   level: Community builder
   twitter: salesforce
