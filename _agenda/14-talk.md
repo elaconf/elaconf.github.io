@@ -1,7 +1,7 @@
 ---
 time: "10:55 - 11:15"
 date: 2016-11-05 10:55
-room: Auditorium
+room: Caplan Recital Hall
 title: Get yourself a squad!
 speakers:
 - Nicole Zhu

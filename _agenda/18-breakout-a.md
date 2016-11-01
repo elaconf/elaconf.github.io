@@ -7,6 +7,7 @@ type: workshop
 permalink: /agenda/thanks-for-your-feedback/
 speakers:
 - Yuval Yarden
+room: 831
 ---
 
 Providing and receiving feedback is an art, and one of the most important communication skills you need in any relationship. Whether we realize it or not, feedback is coming at us constantly from every direction. We crave it, yet we avoid it. It produces a sense of fulfillment and strengthens our relationships, yet it gives us significant anxiety as well. During this workshop, participants will begin to hone their skills and have the opportunity to practice with one another.

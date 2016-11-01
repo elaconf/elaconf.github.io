@@ -1,7 +1,7 @@
 ---
 time: 7:35 - 7:40
 date: 2016-11-04 19:25
-room: Auditorium
+room: Caplan Recital Hall
 title: 5 Ways to Increase Your Influence
 permalink: /agenda/increase-your-influence/
 speakers:

@@ -1,7 +1,7 @@
 ---
 time: "3:05 - 3:25"
 date: 2016-11-05 15:05
-room: Auditorium
+room: Caplan Recital Hall
 title: The Value of "I Don't Know"
 speakers:
 - Elise Wei
