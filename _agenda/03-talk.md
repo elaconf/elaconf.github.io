@@ -1,7 +1,7 @@
 ---
 time: "7:10 - 7:30"
 date: 2016-11-04 19:10
-room: Auditorium
+room: Caplan Recital Hall
 title: Build Your Community to Build Your Career
 permalink: /agenda/build-your-community/
 speakers:

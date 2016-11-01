@@ -1,7 +1,7 @@
 ---
 time: "3:55 - 4:15"
 date: 2016-11-05 15:55
-room: Auditorium
+room: Caplan Recital Hall
 title: Getting Involved and Giving Back As A Beginner
 speakers:
 - Lisa Yoder

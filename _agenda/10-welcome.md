@@ -1,7 +1,7 @@
 ---
 time: "9:00 - 9:20"
 date: 2016-11-05 09:00
-room: Auditorium
+room: Caplan Recital Hall
 title: Welcome & Announcements
 permalink: /agenda/announcements/
 ---

@@ -1,7 +1,7 @@
 ---
 time: "10:30 - 10:50"
 date: 2016-11-05 10:30
-room: Auditorium
+room: Caplan Recital Hall
 title: The Respect Effect
 speakers:
 - Timirah James
