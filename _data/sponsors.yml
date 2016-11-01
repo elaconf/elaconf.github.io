@@ -120,6 +120,6 @@
 
 - name: Salesforce
   site: https://developer.salesforce.com/en/
-  image: salesforce.png
+  image: salesforce.svg
   level: Community builder
   twitter: salesforce
