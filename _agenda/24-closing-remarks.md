@@ -1,7 +1,7 @@
 ---
 time: "4:20 - 5:00"
 date: 2016-11-05 16:20
-room: Auditorium
+room: Caplan Recital Hall
 title: "Take up space: claiming your place in tech"
 speakers:
 - Adrienne Lowe

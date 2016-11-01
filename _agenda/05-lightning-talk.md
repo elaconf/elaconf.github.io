@@ -1,7 +1,7 @@
 ---
 time: "7:45 - 7:50"
 date: 2016-11-04 19:45
-room: Auditorium
+room: Caplan Recital Hall
 title: Angry Black Woman
 permalink: /agenda/angry-black-woman/
 speakers:

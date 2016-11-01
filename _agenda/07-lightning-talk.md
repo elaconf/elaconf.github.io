@@ -1,7 +1,7 @@
 ---
 time: "8:05 - 8:10"
 date: 2016-11-04 20:05
-room: Auditorium
+room: Caplan Recital Hall
 title: 'Scope Creep: Keep It From Creeping Up On You'
 permalink: /agenda/scope-creep/
 speakers:
