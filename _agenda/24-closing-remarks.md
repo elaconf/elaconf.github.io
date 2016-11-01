@@ -6,6 +6,7 @@ title: "Take up space: claiming your place in tech"
 speakers:
 - Adrienne Lowe
 permalink: /agenda/closing-keynote/
+image: take-up-space.jpg
 ---
 
 How do you feel about taking up space?

@@ -6,6 +6,7 @@ title: Keynote
 speakers:
   - Mary Scotton
 permalink: /agenda/keynote/
+image: keynote.jpg
 ---
 
 5 things I've learned about leadership from my son (told via Instagram photos).
