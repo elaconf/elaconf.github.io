@@ -46,7 +46,7 @@
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {{x.date | date: '%p' | downcase}}{% unless x.speakers %} <span class="show-mobile"> &mdash; <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a></span>{% endunless %}</td>
 {% endif %}
 <td class="agenda-details"><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "Breakfast" %}:sunny: {% elsif x.title contains "Break" %}:walking: {% endif %}{% if x.type %} <span class="breakout-type small">{{x.type}}</span>{% endif %}</a>
-{% if x.breakout and x.room %}<div class="agenda-room">Room {{x.room}}</div>{% endif %}
+{% if x.breakout and x.room %}<div class="agenda-room">{% unless x.room == 'Caplan Recital Hall' %}Room {% endunless %}{{x.room}}</div>{% endif %}
 {% for s in x.speakers %}
 {% assign items = (site.speakers | where: "title", s ) %}
 {% assign speaker = items[0] %}<a href="{{site.baseurl}}/{{speaker.category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{speaker.category}}/{% if speaker.image %}{{speaker.image}}{% else %}{{speaker.title | slugify}}.png{% endif %}),{{site.gradient}}" class="speaker-img-small"></div>{{s}}</a>{% endfor %}{% if x.moderator %}
