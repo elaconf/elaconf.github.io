@@ -1,5 +1,5 @@
 ---
-time: "11:15 - 11:25"
+time: "11:15"
 date: 2016-11-05 11:15
 room:
 title: Coffee break
