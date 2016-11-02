@@ -21,9 +21,11 @@ layout: default
 
       {% capture tweet %}Hear "{{page.title}}" {% if handle != '' %}by{{handle}}{% else %}by {{speakers}}{% endif %} at @elaconf on Nov {{page.date | date: '%-d'}} {{site.url}}{{page.url}} 💜 ✨{% endcapture %}
 
-      <p>{% if page.room %}<strong>{% if page.breakout %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}} {{page.date | date: '%p' | downcase}}{% endif %} {% if page.speakers %}<a class="twitter-share-button js-tweet" href="https://twitter.com/intent/tweet?text={{tweet | url_encode}}">{% include svg/twitter.svg %}</a>{% endif %}</p>
+      <p>{% if page.room %}<strong>{% if page.breakout and page.room != 'Caplan Recital Hall' %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}} {{page.date | date: '%p' | downcase}}{% endif %} {% if page.speakers %}<a class="twitter-share-button js-tweet" href="https://twitter.com/intent/tweet?text={{tweet | url_encode}}">{% include svg/twitter.svg %}</a>{% endif %}</p>
 
       {% if page.video %}<p><a href="{{page.video}}">Watch on YouTube</a></p>{% endif %}
+
+      {% if page.speakers %}<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqFuEgM46nnA4wmomepHX1l4DK_7ZsQi40c2vExKKl11Khgw/viewform?entry.96767881={{page.title | url_encode}}&entry.333138454&entry.459148311" class="button">Submit Speaker Feedback</a></p>{% endif %}
 
       {{content}}
 

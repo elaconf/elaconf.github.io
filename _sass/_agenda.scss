@@ -12,16 +12,17 @@
 }
 
 .agenda-table {
-
   border: 0;
+
+  @include breakpoint(medium) {
+    tr:nth-child(even) td,
+    .row-breakout td {
+      background: rgba($gold, .1);
+    }
+  }
 
   th {
     border-bottom: .2em solid $gold;
-  }
-
-  tr:nth-child(even) td,
-  .row-breakout td {
-    background: rgba($gold, .1);
   }
 
   td {
@@ -29,9 +30,19 @@
     vertical-align: text-top;
 
     @include breakpoint(small) {
-      padding: .25em 1em;
+      background: rgba($gold, .2);
+      padding: .5em 1em;
+
+      &.agenda-time {
+        background: $gold;
+      }
+
     }
 
+  }
+
+  .agenda-time a {
+    color: $text-color;
   }
 
 }
@@ -62,6 +73,19 @@
   display: block;
   font-weight: bold;
   margin-bottom: .5em;
+
+  @include breakpoint(small) {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+}
+
+@include breakpoint(small) {
+
+  .agenda-details {
+    margin-bottom: 1em;
+  }
 }
 
 @include breakpoint(medium) {
@@ -69,7 +93,7 @@
     border-right: .2em solid $accent-tertiary;
     position: relative;
     text-align: right;
-    //min-width: 6.15em;
+    width: 10em;
 
     &:not(th)::before {
       background: $accent-main;
@@ -94,14 +118,6 @@
 .agenda-room {
   color: $accent-secondary;
   margin-bottom: 1em;
-
-  @include breakpoint(medium) {
-    font-size: .75em;
-    left: -5.6em;
-    position: absolute;
-    text-align: right;
-  }
-
 }
 
 .breakout-type {
@@ -112,9 +128,12 @@
   vertical-align: middle;
 }
 
-.session-lunch-and-table-discussions.session-lunch-and-table-discussions.session-lunch-and-table-discussions td {
-  background: transparent;
+@include breakpoint(medium) {
+  .session-lunch-and-table-discussions.session-lunch-and-table-discussions.session-lunch-and-table-discussions td {
+    background: transparent;
+  }
 }
+
 
 .twitter-share-button {
   border: 2px solid $link-color;
@@ -147,4 +166,18 @@
 
 .button-footer {
   margin-top: 2em;
+}
+
+@include breakpoint(small) {
+  .agenda-collapse {
+
+    .agenda-time {
+      margin-bottom: 1em;
+    }
+
+    .agenda-details {
+      display: none;
+    }
+
+  }
 }

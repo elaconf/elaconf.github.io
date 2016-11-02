@@ -12,6 +12,7 @@ speakers:
 - Cathryn Stickel
 - Lindsay Rice Silver
 moderator: Angelina Simms
+room: Caplan Recital Hall
 ---
 
 In this panel, learn from women from different backgrounds in how they landed in tech, advice for applying for jobs, and starting your career.

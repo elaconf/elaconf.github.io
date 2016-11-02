@@ -9,6 +9,7 @@ speakers:
 - Marianna Morris
 - Rakia Finley
 - Lucy Bain
+image: lunch.jpg
 ---
 
 We'll be holding lunch table topics. Join a lunch table with a topic that you'd like to know more about or enjoy discussing.

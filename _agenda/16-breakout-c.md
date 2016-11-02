@@ -10,6 +10,7 @@ speakers:
 - Alanna Burke
 - Alicia Sedlock
 moderator: Bri Piccari
+room: Caplan Recital Hall
 ---
 
 Hear from women in the industry discuss the importance of self care. Topics and questions will include but are not limited to:

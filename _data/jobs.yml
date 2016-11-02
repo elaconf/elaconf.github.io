@@ -13,6 +13,11 @@
   link: https://www.mapbox.com/jobs/254440/
   image: mapbox.svg
 
+- position: Customer Success
+  company: Mapbox
+  link: https://www.mapbox.com/jobs/486973/
+  image: mapbox.svg
+
 - position: Software Engineer
   company: Braintree
   link: https://boards.greenhouse.io/braintree/jobs/164179?gh_jid=164179#.WAei15MrKCR
@@ -33,10 +38,10 @@
   link: https://boards.greenhouse.io/braintree/jobs/159552?gh_jid=159552#.WAeiz5MrKCR
   image: braintree.svg
 
-- position: Lead Systems Engineer
-  company: Wildbit
-  link: http://wildbit.com/jobs/senior-systems-engineer
-  image: wildbit.svg
+#- position: Lead Systems Engineer
+#  company: Wildbit
+#  link: http://wildbit.com/jobs/senior-systems-engineer
+#  image: wildbit.svg
 
 - position: Community and Safety Engineering Intern
   company: GitHub
@@ -72,3 +77,23 @@
   company: AgileBits
   link: https://blog.agilebits.com/2016/06/01/love-1password-were-hiring/
   image: agilebits.svg
+
+- position: Full Stack Engineer
+  company: iStrategyLabs
+  link: https://isl.co/careers/
+  image: isl.svg
+
+- position: Web Developer
+  company: iStrategyLabs
+  link: https://isl.co/careers/
+  image: isl.svg
+
+- position: Lead Software Engineer for Infrastructure
+  company: Salesforce
+  link: https://careers.secure.force.com/jobs/apex/ts2__JobDetails?jobId=a1k70000003BUxrAAG
+  image: salesforce.svg
+
+- position: Java Engineer for new product development
+  company: Salesforce
+  link: https://careers.secure.force.com/jobs/apex/ts2__JobDetails?jobId=a1k70000003FoYyAAK
+  image: salesforce.svg

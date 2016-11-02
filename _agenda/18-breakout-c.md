@@ -9,6 +9,8 @@ permalink: /agenda/werk-mama-and-the-third-shift/
 speakers:
 - Julia Elman
 - Swati Vauthrin
+image: third-shift.jpg
+room: 702
 ---
 
 *This session will feature two 20-minute talks and a Q & A session.*

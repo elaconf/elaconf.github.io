@@ -7,6 +7,7 @@ type: workshop
 permalink: /agenda/technical-blogging/
 speakers:
 - Vaidehi Joshi
+room: 831
 ---
 
 Blogs: we love reading them and we all dread writing them. Technical blogging is one of the easiest ways to give back to the tech community, and it was the place that I started when I was fresh graduate of a coding bootcamp and had just started my first developer job.

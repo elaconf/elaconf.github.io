@@ -1,7 +1,7 @@
 ---
 time: "3:30 - 3:50"
 date: 2016-11-05 15:30
-room: Auditorium
+room: Caplan Recital Hall
 title: It's not you, it's them. What next?
 speakers:
 - Ruthie Floats

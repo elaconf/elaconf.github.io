@@ -70,9 +70,56 @@
   level: Community builder
   twitter: istrategylabs
 
-- name: Inday Hall
+- name: Indy Hall
   site: http://www.indyhall.org/
   image: indyhall.png
   level: Community builder
   twitter: indyhall
-  
+
+- name: Cerner
+  site: http://www.cerner.com/
+  image: cerner.png
+  level: Conference supporter
+  twitter: cerner
+
+- name: Amanda Thomas
+  level: Individuals
+
+- name: Christine Neuleib
+  level: Individuals
+
+- name: Geoff DiMasi
+  level: Individuals
+
+- name: Chris Morrell
+  level: Individuals
+
+- name: Sarah Prasuhn
+  level: Individuals
+
+- name: Kevin Lee
+  level: Individuals
+
+- name: Kati Sipp
+  level: Individuals
+
+- name: Mjumbe Poe
+  level: Individuals
+
+- name: Drew Marshall
+  level: Individuals
+
+- name: Alex Hillman
+  level: Individuals
+
+- name: Ed Freebowitz
+  level: Individuals
+
+- name: Steve Faulkner
+  level: Individuals
+
+- name: Salesforce
+  site: https://developer.salesforce.com/en/
+  image: salesforce.svg
+  level: Community builder
+  twitter: salesforce

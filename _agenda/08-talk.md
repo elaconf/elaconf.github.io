@@ -1,7 +1,7 @@
 ---
 time: "8:15 - 8:35"
 date: 2016-11-04 20:15
-room: Auditorium
+room: Caplan Recital Hall
 title: Shaving my head made me a better programmer
 permalink: /agenda/shaving-my-head/
 speakers:

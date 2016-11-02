@@ -1,7 +1,7 @@
 ---
 time: "7:55 - 8:00"
 date: 2016-11-04 19:55
-room: Auditorium
+room: Caplan Recital Hall
 title: 5 Stages of Accepting Negative Feedback
 speakers:
 - Jessica Hall
