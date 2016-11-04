@@ -3,40 +3,32 @@ layout: default
 ---
 <section class="fill-light">
   <div class="limiter">
-    <p>Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech. All profits from this event will be donated to <a href="https://www.girldevelopit.com/">Girl Develop It</a>.</p>
-    <p>In an industry where women are so often marginalized, leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When women become leaders, the entire tech community benefits.
-    </p>
-    <p>Our <a href="code-of-conduct/">code of conduct</a> is the heart of our event. Please <a href="mailto:hello@elaconf.com">reach out to us</a> if you have any concerns or there is something you would like to see included that isn’t.</p>
-    <p><strong>This year, Ela Conf will be held on the evening of Friday, November 4 and all day Saturday, November 5 at <a href="/venue">The University of the Arts</a> in Philadelphia.</strong></p>
+    <p>Kick-off Ela Conf with us on <a href="#friday">Friday evening</a> for a meet and greet, early registration, and talks. We'll have a full day on <a href="#saturday">Saturday</a> with talks, panels, and workshops!<p>
 
-    {% include tickets.html %}
+    <p>We'll start both days in the Caplan Recital Hall (17th floor) in <a href="/venue">Terra Hall at the University of the Arts</a>.</p>
 
+    {% include agenda.html %}
   </div>
 </section>
 
-<section class="fill-dark">
+<section class="fill-dark" id="volunteers">
   <div class="limiter">
-    <h2 id="speakers">Speakers</h2>
-    <p>Meet our {{ site.speakers | size }} amazing speakers and <a href="/agenda">see when they will be speaking</a>!</p>
+    <h2>We &lt;3 our volunteers!</h2>
+    <p>Ela Conf would be a little less magical without our volunteers. We appreciate all your hard work and enthusiasm into making the conference a wonderful experience.</p>
   </div>
   <div class="limiter limiter-large">
-    <div class="speakers">
-      {% assign speakers = (site.speakers | sort: 'order') %}
-      {% for speaker in speakers %}{% if speaker.social %}
-      <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
-        <div class="speaker-img" style="background-image:url(/images/speakers/{% if speaker.image %}{{speaker.image}}{% else %}{{speaker.title | slugify}}.png{% endif %}), {{site.gradient}}">
-        </div>
-        <div class="speaker-name">{{speaker.title}}<div class="speaker-topic">{{speaker.topic}}</div></div>
-      </a>
+    <div class="volunteers grid">
+      {% assign volunteers = site.data.volunteers | sort:'name' %}
+      {% for volunteer in volunteers %}{% if volunteer.social %}
+      <div class="seven volunteer" id="{{volunteer.name | slugify}}">
+        <a href="https://{{volunteer.social}}.com/{{volunteer.handle}}" class="volunteer-img" style="background-image:url(/images/volunteers/{{volunteer.name | slugify}}.png),{{site.gradient}}"></a>
+        <div class="speaker-name small">{{volunteer.name}} {{volunteer.social.twitter}}</div>
+      </div>
       {% endif %}{% endfor %}
     </div>
   </div>
-  <div class="limiter">
-    <h3>Agenda</h3>
-    <p>Kick-off Ela Conf with us on Friday evening for a meet and greet, early registration, and talks. We'll have a full day on Saturday with talks, panels, and workshops!<p>
-    <p><a href="/agenda" class="button">See the entire agenda</a></p>
-  </div>
 </section>
+
 
 <section class="fill-light">
   <div class="limiter">
@@ -55,42 +47,3 @@ layout: default
     {% include sponsors.html %}
   </div>
 </section>
-
-<section class="fill-dark">
-  <div class="limiter">
-    <h2 id="convince-your-boss">Convince Your Boss</h2>
-    <p>We know it can be difficult making the case to attend an event. Luckily, there are so many reasons why attending Ela Conf will not only be great for you, but good for your company.</p>
-    <p>At Ela Conf, you will:</p>
-    <ul>
-      <li>Learn valuable new tech and communication skills</li>
-      <li>Get inspired and motivated</li>
-      <li>Gain confidence to embrace and share your talents</li>
-      <li>Help hire talented, local women</li>
-      <li>Develop new ways of thinking and approaching the existing diversity gap in tech</li>
-      <li>Network with your peers</li>
-      <li>Become part of a lasting local community</li>
-      <li>Learn how to take action, become a leader, and create your own opportunities</li>
-      <li>Become part of a lasting, meaningful mentorship</li>
-    </ul>
-    <p>We've also created the <em>Boss Convincer</em> for you to download and share with your boss:</p>
-    <p><a href="/docs/convincer.pdf" class="button">Download the Boss Convincer</a>
-    </div>
-  </section>
-
-  <section class="fill-light" id="volunteers">
-    <div class="limiter">
-      <h2>We &lt;3 our volunteers!</h2>
-      <p>Ela Conf would be a little less magical without our volunteers. We appreciate all your hard work and enthusiasm into making the conference a wonderful experience.</p>
-    </div>
-    <div class="limiter limiter-large">
-      <div class="volunteers grid">
-        {% assign volunteers = site.data.volunteers | sort:'name' %}
-        {% for volunteer in volunteers %}{% if volunteer.social %}
-        <div class="seven volunteer" id="{{volunteer.name | slugify}}">
-          <a href="https://{{volunteer.social}}.com/{{volunteer.handle}}" class="volunteer-img" style="background-image:url(/images/volunteers/{{volunteer.name | slugify}}.png),{{site.gradient}}"></a>
-          <div class="speaker-name small">{{volunteer.name}} {{volunteer.social.twitter}}</div>
-        </div>
-        {% endif %}{% endfor %}
-      </div>
-    </div>
-  </section>
