@@ -9,6 +9,7 @@ permalink: /agenda/tell-your-story/
 speakers:
 - Hillary Rea
 room: 702
+image: tell-your-story.jpg
 ---
 
 In this one hour interactive workshop, use storytelling and humor to create an authentic elevator pitch that you’re actually comfortable pitching. Develop a compelling way to answer the dreaded question, “What exactly is it that you do?” This workshop covers the elements of storytelling that will help you get your fun, positive stories of your past endeavors out there — be it for a presentation, networking event or job interview. Tell a story about an achievement or life experience that you are proud of and turn your small talk into opportunities for advancement.
