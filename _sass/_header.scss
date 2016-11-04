@@ -1,22 +1,14 @@
 header {
   background-image: radial-gradient(farthest-corner at 2em 2em, $gradient-light, $gradient-dark);
   color: $white;
+
   position: relative;
 
-  @include breakpoint(small) {
-    display: none;
-  }
 
   img {
     display: block;
   }
 
-}
-
-nav {
-  @include breakpoint(small) {
-    margin-bottom: 1em;
-  }
 }
 
 .float-header {
