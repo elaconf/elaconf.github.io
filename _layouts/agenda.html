@@ -25,7 +25,7 @@ layout: default
 
       {% if page.video %}<p><a href="{{page.video}}">Watch on YouTube</a></p>{% endif %}
 
-      {% comment %}{% if page.speakers %}<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqFuEgM46nnA4wmomepHX1l4DK_7ZsQi40c2vExKKl11Khgw/viewform?entry.96767881={{page.title | url_encode}}&entry.333138454&entry.459148311" class="button">Submit Speaker Feedback</a></p>{% endif %}{% endcomment %}
+      {% if page.speakers %}<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqFuEgM46nnA4wmomepHX1l4DK_7ZsQi40c2vExKKl11Khgw/viewform?entry.96767881={{page.title | url_encode}}&entry.333138454&entry.459148311" class="button">Submit Speaker Feedback</a></p>{% endif %}
 
       {{content}}
 
