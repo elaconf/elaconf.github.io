@@ -6,6 +6,7 @@ title: It's not you, it's them. What next?
 speakers:
 - Ruthie Floats
 permalink: /agenda/its-not-you/
+type: talk
 ---
 
 People on forums are sometimes the worst. Sarcastic, dismissive, rude. Or are they? Free yourself from the dark cloud of assuming they're all out to get you. Some women are afraid of StackOverflow because they don't want the emotional price tag. Others avoid open source projects because after 8 hours in the office who needs thankless labor? Come learn from my forum experiences: the good, the bad, and most important-- the changeable. Let me outline my framework for after-work work. Yay! Use my actionable tips to find ways to make open source projects and developer forums work for you.

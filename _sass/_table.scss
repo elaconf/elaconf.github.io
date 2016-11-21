@@ -23,8 +23,6 @@ table {
     overflow: visible;
 
     @include breakpoint(medium) {
-      border-left: 1px solid $light;
-      border-width: 0 0 0 1px;
       padding: .75em 1em;
     }
 
@@ -43,7 +41,6 @@ table {
   }
 
   thead {
-    text-align: left;
     vertical-align: bottom;
 
     @include breakpoint(medium) {
@@ -58,3 +55,61 @@ table {
 
 }
 
+.by-the-nums {
+
+  @include breakpoint(small) {
+
+    thead,
+    thead tr {
+      display: block;
+    }
+
+    thead th:empty {
+      display: none;
+    }
+
+    thead th,
+    th ~ td {
+      float: left;
+      width: 50%;
+    }
+
+    th,
+    td {
+      padding: .5em 0;
+    }
+  }
+
+  .row-header {
+    background: $accent-main;
+    color: $white;
+    text-align: left;
+
+    @include breakpoint(small) {
+      padding: .5em 0;
+      text-align: center;
+    }
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid $white;
+    text-align: right;
+
+    @include breakpoint(small) {
+      text-align: center;
+    }
+  }
+
+
+  tr td:nth-child(even),
+  tr th:nth-child(even) {
+    background: rgba($accent-main, .05);
+  }
+
+  tr td:last-child:not(.row-header),
+  tr th:last-child:not(.row-header) {
+    background: rgba($accent-main, .1);
+  }
+
+}

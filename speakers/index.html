@@ -6,16 +6,14 @@ description: Meet the speakers for Ela Conf 2016!
 ---
 
 </div>
-
-<section  style="margin-top: 2em;">
-  <div class="speakers">
-    {% assign speakers = site.speakers | sort: 'order'  %}
-    {% for speaker in speakers %}{% if speaker.social %}
-    <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
-      <div class="speaker-img" style="background-image:url(/images/speakers/{% if speaker.image %}{{speaker.image}}{% else %}{{speaker.title | slugify}}.png{% endif %}), {{site.gradient}}">
-      </div>
-      <div class="speaker-name">{{speaker.title}}</div>
-    </a>
-    {% endif %}{% endfor %}
-  </div>
-</section>
+<div class="limiter limiter-side"><p>Meet our {{site.speakers | size}} speakers from Ela Conf 2016!</p></div>
+<div class="speakers">
+  {% assign speakers = site.speakers | sort: 'order'  %}
+  {% for speaker in speakers %}{% if speaker.social %}
+  <a href="{{site.baseurl}}{{speaker.url}}" class="speaker">
+    <div class="speaker-img" style="background-image:url(/images/speakers/{% if speaker.image %}{{speaker.image}}{% else %}{{speaker.title | slugify}}.png{% endif %}), {{site.gradient}}">
+    </div>
+    <div class="speaker-name">{{speaker.title}}</div>
+  </a>
+  {% endif %}{% endfor %}
+</div>

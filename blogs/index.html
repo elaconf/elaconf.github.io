@@ -1,0 +1,12 @@
+---
+title: Blogs
+layout: page
+---
+
+<p>Many of our attendees wrote blog posts about their experience, read about Ela Conf through their eyes:</p>
+
+<ul>
+{% for blog in site.data.blogs %}
+  <li><a href="{{blog.link}}">{{blog.title}}</a> by {{blog.author}}</li>
+{% endfor %}
+</ul>

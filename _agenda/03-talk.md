@@ -7,6 +7,7 @@ permalink: /agenda/build-your-community/
 speakers:
 - Eleanor Whitney
 image: build-your-community.jpg
+type: talk
 ---
 
 When I worked for a community-focused 3D printing startup we used to brag that our “community was our IP.” Meaning, the community we built up and nurtured made us strong as a company. The same is true for you as an individual. Your community is your intellectual property and the foundation of your career.

@@ -1,0 +1,24 @@
+---
+layout: page
+title: Sessions
+types:
+- talk
+- lightning talk
+- panel
+- workshop
+---
+
+<p>We had {{ site.speakers | size }} speakers present on a wide range of important topics this year. Take a look at all the talks, panels, and workshops we had at Ela Conf 2016.</p>
+
+{% for type in page.types %}
+<h3>{{type | capitalize}}s</h3>
+
+{% assign agenda = site.agenda | where: 'type', type  %}
+<ul>
+  {% for item in agenda %}{% if item.speakers %}
+  <li><a href="{{item.url}}">{{item.title}}</a></li>
+  {% endif %}{% endfor %}
+</ul>
+
+{% endfor %}
+

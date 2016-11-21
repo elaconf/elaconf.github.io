@@ -6,6 +6,7 @@ title: Shaving my head made me a better programmer
 permalink: /agenda/shaving-my-head/
 speakers:
 - Alex Qin
+type: talk
 ---
 
 How do perceptions and stereotypes affect those in the programming community?

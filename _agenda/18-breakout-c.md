@@ -4,7 +4,7 @@ date: 2016-11-05 13:30
 room:
 breakout: 2
 title: 'WERK MAMA & The Third Shift'
-type: talks
+type: talk
 permalink: /agenda/werk-mama-and-the-third-shift/
 speakers:
 - Julia Elman

@@ -24,13 +24,5 @@
     {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
   </div>
   <div class="ela-hero" style="background-image:url({{site.baseurl}}/images/hero.jpg), {{site.gradientDark}}"></div>
-
-  <div class="ela-location">
-    <div class="limiter">
-      <div class="ela-location-item">{% include svg/calendar.svg %} {{site.date}}</div>
-      <div class="ela-location-item">{% include svg/marker.svg %} {{site.building}}, Philadelphia</div>
-    </div>
-  </div>
 </header>
-<div class="second-nav"><div class="limiter">{% include nav-pages.html %}</div></div>
 {% endif %}

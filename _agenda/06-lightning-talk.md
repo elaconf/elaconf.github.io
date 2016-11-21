@@ -6,6 +6,7 @@ title: 5 Stages of Accepting Negative Feedback
 speakers:
 - Jessica Hall
 permalink: /agenda/accepting-feedback/
+type: lightning talk
 ---
 
 Failure is valuable but it hurts. We came up with the five stages of accepting negative feedback so we could laugh and move on.
