@@ -30,7 +30,7 @@
 }
 
 .hide-mobile {
-  
+
   @include breakpoint(small) {
     display: none;
   }
