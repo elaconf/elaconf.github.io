@@ -2,7 +2,7 @@
 layout: page
 title: Tickets
 nav: false
-description: Tickets for Ela Conf are on sale now until November 1.
+description: Tickets for Ela Conf are now closed.
 ---
 
 {% include tickets.html %}

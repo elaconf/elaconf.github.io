@@ -2,6 +2,7 @@
 layout: page
 title: Wifi
 nav: false
+description: Wifi instructions for getting connected at the University of Arts.
 ---
 
 [See full PDF instructions](/docs/wifi.pdf)
