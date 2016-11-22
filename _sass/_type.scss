@@ -101,3 +101,7 @@ section blockquote p {
   text-align: center;
 }
 
+.quiet {
+  color: lighten($text-color, 20%);
+}
+

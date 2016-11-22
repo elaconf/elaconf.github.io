@@ -5,8 +5,8 @@ layout: page
 
 <p>Many of our attendees wrote blog posts about their experience, read about Ela Conf through their eyes:</p>
 
-<ul>
+<div class="blogs">
 {% for blog in site.data.blogs %}
-  <li><a href="{{blog.link}}">{{blog.title}}</a> by {{blog.author}}</li>
+  <div class="blog"><a href="{{blog.link}}">{{blog.title}}</a><br><span class="blog-img" style="background-image:url('/images/blogs/{{blog.image}}')"></span> <span class="quiet">{{blog.author}}</span></div>
 {% endfor %}
-</ul>
+</div>
