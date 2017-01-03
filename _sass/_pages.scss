@@ -20,3 +20,95 @@
   }
 
 }
+
+.blog {
+  margin-bottom: 2em;
+}
+
+.blog-img {
+  background-blend-mode: overlay;
+  background-size: 100%;
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  margin-right: .25em;
+  vertical-align: middle;
+  width: 40px;
+}
+
+
+abbr {
+  position: relative;
+
+  @include breakpoint(large) {
+    border-bottom: 2px dotted lighten($text-color, 30%);
+    cursor: help;
+
+    &:hover::after {
+
+      background: $accent-tertiary;
+      color: $white;
+      display: block;
+      left: 0;
+      padding: 1em;
+      position: absolute;
+      text-align: left;
+      top: 130%;
+      width: calc(100% - 2em);
+      z-index: 100;
+    }
+
+  }
+
+  &::after {
+    @extend %small;
+
+    color: lighten($text-color, 30%);
+    content: attr(data-info);
+    display: block;
+    font-family: $font-body;
+    font-weight: 400;
+
+    @include breakpoint(large) {
+      display: none;
+    }
+  }
+}
+
+.photos {
+  margin-bottom: 1em;
+}
+
+.img-half {
+
+  @include breakpoint(large) { width: 49.6%; }
+
+}
+
+.img-thirds {
+
+  @include breakpoint(large) {
+    width: 32.89%;
+  }
+
+}
+
+.img-fourths {
+
+  @include breakpoint(large) { width: 24.5%; }
+
+}
+
+.img-split-wide,
+.img-wide {
+
+  @include breakpoint(large) { width: 62.7%; }
+
+}
+
+.img-split-tall,
+.img-tall {
+
+  @include breakpoint(large) { width: 35.25%; }
+
+}

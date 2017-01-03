@@ -14,6 +14,7 @@ body {
   font-weight: 400;
   line-height: 1.45;
   position: relative;
+  text-rendering: optimizeLegibility;
 }
 
 .limiter {
@@ -51,6 +52,7 @@ body {
 footer {
   background: $footer-bg;
   color: $white;
+  margin-top: 1em;
   padding-bottom: 1em;
   padding-top: 1em;
 
@@ -148,9 +150,9 @@ footer {
 
 .footer-links {
   border-top: 1px solid rgba($white, .5);
-  -moz-columns: 3;
-  -webkit-columns: 3;
-  columns: 3;
+  -moz-columns: 4 175px;
+  -webkit-columns: 4 175px;
+  columns: 4 175px;
   margin-top: 1em;
   padding-bottom: 1em;
   padding-top: 1em;

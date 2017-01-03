@@ -19,3 +19,9 @@
   }
 
 }
+
+.columns {
+  -moz-columns: 2 300px;
+  -webkit-columns: 2 300px;
+  columns: 2 300px;
+}

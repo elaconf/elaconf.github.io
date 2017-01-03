@@ -21,14 +21,14 @@ layout: default
 
       {% capture tweet %}Hear "{{page.title}}" {% if handle != '' %}by{{handle}}{% else %}by {{speakers}}{% endif %} at @elaconf on Nov {{page.date | date: '%-d'}} {{site.url}}{{page.url}} 💜 ✨{% endcapture %}
 
-      <p>{% if page.room %}<strong>{% if page.breakout and page.room != 'Caplan Recital Hall' %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}} {{page.date | date: '%p' | downcase}}{% endif %} {% if page.speakers %}<a class="twitter-share-button js-tweet" href="https://twitter.com/intent/tweet?text={{tweet | url_encode}}">{% include svg/twitter.svg %}</a>{% endif %}</p>
+      <p>{% if page.room %}<strong>{% if page.breakout and page.room != 'Caplan Recital Hall' %}Room {% endif %}{{page.room}}</strong> &bull; {% endif %}{{page.date | date: '%B %d'}}{% if page.time %} &bull; {{page.time}} {{page.date | date: '%p' | downcase}}{% endif %}{% comment %} {% if page.speakers %}<a class="twitter-share-button js-tweet" href="https://twitter.com/intent/tweet?text={{tweet | url_encode}}">{% include svg/twitter.svg %}</a>{% endif %}{% endcomment %}</p>
 
       {% if page.video %}<p><a href="{{page.video}}">Watch on YouTube</a></p>{% endif %}
 
       {{content}}
 
       <div class="button-footer">
-        <p><a href="{{site.baseurl}}/agenda/" class="button">&larr; Agenda</a></p>
+        <p><a href="{{site.baseurl}}/sessions/" class="button">&larr; Sessions</a></p>
       </div>
   </div>
 </section>

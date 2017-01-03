@@ -1,13 +1,27 @@
 .sticky-nav {
+  background: $accent-tertiary;
   transition: .2s;
 
+  a {
+    color: $light;
+    display: inline-block;
+    padding: 1em;
+    transition: .2s;
+
+    &:hover {
+      color: $gold;
+    }
+
+  }
+
   .active {
-    color: $accent-secondary;
+    color: $gold;
     transition: .2s;
   }
 
   ul {
     list-style: none;
+    margin: 0;
     padding: 0 1em;
     text-align: center;
   }
@@ -18,24 +32,8 @@
       display: inline-block;
       font-size: .9em;
       margin: 0;
-      padding-left: .75em;
-      padding-right: 1.5em;
+      padding: 0;
       position: relative;
-
-      &:not(:first-of-type)::before {
-        border: .15em solid $turquoise;
-        content: '';
-        height: .7em;
-        left: -1em;
-        position: absolute;
-        top: .3em;
-        width: .7em;
-      }
-
-      &:nth-child(odd)::before {
-        border-radius: .7em;
-      }
-
     }
 
   }
@@ -43,7 +41,6 @@
 }
 
 .sticky {
-  background: $text-color;
   border-top: 0;
   left: 0;
   position: fixed;
@@ -51,16 +48,5 @@
   transition: .2s;
   width: 100%;
   z-index: 10000;
-
-  a {
-    color: $light;
-    transition: .2s;
-
-    &:hover {
-      color: $accent-secondary;
-    }
-
-  }
-
 }
 

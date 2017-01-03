@@ -1,0 +1,191 @@
+---
+title: Evaluation
+layout: page
+description: We circulated a conference evaluation and received valuable feedback from our attendees.
+---
+
+<p>We circulated a conference evaluation and received valuable feedback from our attendees. Our Net Promoter Score (NPS) is 83. Here are some of the highlights:</p>
+
+<div id="last_year" style="width: 100%; height: 450px;"></div>
+<div id="friend" style="width: 100%; height: 450px;"></div>
+<div id="attend" style="width: 100%; height: 450px;"></div>
+<div id="career" style="width: 100%; height: 450px;"></div>
+<div id="work" style="width: 100%; height: 450px;"></div>
+
+<h3>What is the most valuable thing you learned at Ela Conf?</h3>
+
+<div class="columns evaluation-quotes">
+
+  <blockquote>Just how supportive the women-in-tech community is. It really made me excited to get more involved.</blockquote>
+
+  <blockquote>That I'm not alone.</blockquote>
+
+  <blockquote>We all have a story to tell</blockquote>
+
+  <blockquote>Community. I learned my people are out here.</blockquote>
+
+  <blockquote>Community!</blockquote>
+
+  <blockquote>We all have a story to tell</blockquote>
+
+  <blockquote>To strategically direct my energy into my goals, and to re-adjust my commitments that aren't serving that purpose. I gained the confidence that I DO have something valuable to talk about at conferences. I also learned the importance of getting and growing a lady squad.</blockquote>
+
+  <blockquote>Get yourself a squad and work hard at maintaining it!</blockquote>
+
+  <blockquote>I got a ton out of the breakout session workshop on Feedback.</blockquote>
+
+  <blockquote>The value of breaking the rules, the power of community</blockquote>
+
+  <blockquote>Negotiation tactics.</blockquote>
+
+  <blockquote>To dedicate time to finding a #squad that will lift me up and support me through my career path and personal life</blockquote>
+
+  <blockquote>Ooh. Ela Conf for me is less about learning specific things (how to do X) and more about thinking differently and building a supportive community. That's one of my favorite things about Ela - there are plenty of places to learn how to do specific things, but fewer resources the build community and help technologists to be better as people within a technology context.</blockquote>
+
+  <blockquote>Shine theory! I love that. Helping women is so important. And there is room for all of us, in this space. No need for competition!</blockquote>
+
+  <blockquote>I'm not too old.</blockquote>
+
+  <blockquote>It was just really powerful seeing ladies of all ages in various stages of their tech careers being represented.</blockquote>
+
+  <blockquote>Great negotiating tips! Usually they're abstract and/or require a lot of big mindset changes, but Tibbs' suggestions will be so easy to apply.</blockquote>
+
+  <blockquote>That everyone is dealing with the same things. Seeing everyone else be open, authentic, vulnerable - it was so eye-opening.</blockquote>
+
+  <blockquote>not new but reinforced that what matters most in our career paths in consistency: consistently learning, improving, growing which is challenging</blockquote>
+
+  <blockquote>The community of women in tech is so supportive and diverse, and that we all have meaningful things to contribute no matter who we are or what stage in our careers we're at.</blockquote>
+
+  <blockquote>Learned some great leadership lessons.</blockquote>
+
+  <blockquote>My feelings matter!</blockquote>
+
+  <blockquote>Every year I feel like I pick up on better insights on how to guide my career, and how to help others with theirs.</blockquote>
+
+  <blockquote>To listen to the Call Your Girlfriend podcast!</blockquote>
+
+  <blockquote>Be yourself, celebrate every achievement, and have a squad</blockquote>
+
+  <blockquote>I am enough. I'm already a badass.</blockquote>
+
+  <blockquote>I think it was less a thing, and more about the relationships. I met so many awesome women that I hope to keep in touch with!</blockquote>
+
+  <blockquote>That I am not alone</blockquote>
+
+  <blockquote>The role and importance of community (and micro-communities, e.g., squads!) for women and underrepresented folks in tech.</blockquote>
+
+  <blockquote>That some of the struggles I feel in tech are felt by other women. I learned many strategies on how to combat those things.</blockquote>
+
+</div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  // Did you attend last year?
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['No', 95],
+    ['Yes', 34]
+  ]);
+  var options = {
+    title: 'Did you attend Ela Conf last year?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('last_year'));
+  chart.draw(data, options);
+
+  // Recommend friend?
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Not very likely', 0],
+    ['Not likely', 0],
+    ['Neutral', 0],
+    ['Likely', 3],
+    ['Very likely', 32]
+  ]);
+  var options = {
+    title: 'How likely are you to recommend Ela Conf to a friend?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.BarChart(document.getElementById('friend'));
+  chart.draw(data, options);
+
+  // Attend again?
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Not very likely', 0],
+    ['Not likely', 1],
+    ['Neutral', 1],
+    ['Likely', 7],
+    ['Very likely', 26]
+  ]);
+  var options = {
+    title: 'How likely are you to attend Ela Conf again?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.BarChart(document.getElementById('attend'));
+  chart.draw(data, options);
+
+  // Career
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Just getting started!', 24],
+    ['1-2 years', 32],
+    ['3-5 years', 22],
+    ['more than 5 years', 33]
+  ]);
+  var options = {
+    title: 'How far along are you in your tech career?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('career'));
+  chart.draw(data, options);
+
+  // type of work
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['front-end developer', 45],
+    ['back-end developer/engineer', 31],
+    ['UI/UX', 23],
+    ['community manager', 19],
+    ['content strategy', 18],
+    ['designer', 17],
+    ['social media', 17],
+    ['project manager', 17],
+    ['user research', 13],
+    ['technical writer', 10],
+    ['support', 9],
+    ['mobile developer', 8],
+    ['photographer/videographer', 6]
+  ]);
+  var options = {
+    title: 'What type of work do you do?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#c200fb', '#890e5b', '#f7b32b', '#57dddd', '#4056f4', '#c100fa', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('work'));
+  chart.draw(data, options);
+}
+</script>

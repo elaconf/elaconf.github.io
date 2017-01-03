@@ -7,6 +7,8 @@ speakers:
   - Mary Scotton
 permalink: /agenda/keynote/
 image: keynote.jpg
+type: talk
+video: https://youtu.be/NBM219e0KFw
 ---
 
 5 things I've learned about leadership from my son (told via Instagram photos).
