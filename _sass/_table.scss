@@ -69,7 +69,8 @@ table {
     }
 
     thead th,
-    th ~ td {
+    th ~ td,
+    th ~ th {
       float: left;
       width: 50%;
     }
@@ -80,14 +81,24 @@ table {
     }
   }
 
-  .row-header {
+  .row-header.row-header {
     background: $accent-main;
     color: $white;
-    text-align: left;
+    font-weight: normal;
 
     @include breakpoint(small) {
       padding: .5em 0;
-      text-align: center;
+
+      &:first-child {
+        margin-top: 2em;
+        text-align: center;
+      }
+    }
+
+    @include breakpoint(medium) {
+      &:first-child {
+        text-align: left;
+      }
     }
   }
 
@@ -112,4 +123,21 @@ table {
     background: rgba($accent-main, .1);
   }
 
+  .minus {
+    color: $accent-secondary;
+
+    &::before {
+      content: '-';
+    }
+
+  }
+
+  .plus {
+    color: $accent-main;
+
+    &::before {
+      content: '+';
+    }
+
+  }
 }

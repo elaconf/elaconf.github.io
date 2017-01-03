@@ -7,6 +7,7 @@ speakers:
 - Jessica Hall
 permalink: /agenda/accepting-feedback/
 type: lightning talk
+video: https://youtu.be/VSn4auDgXmY
 ---
 
 Failure is valuable but it hurts. We came up with the five stages of accepting negative feedback so we could laugh and move on.

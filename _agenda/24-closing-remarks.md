@@ -7,6 +7,7 @@ speakers:
 - Adrienne Lowe
 permalink: /agenda/closing-keynote/
 image: take-up-space.jpg
+video: https://www.youtube.com/watch?v=Seov1EPFyBA
 ---
 
 How do you feel about taking up space?

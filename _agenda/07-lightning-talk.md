@@ -7,6 +7,7 @@ permalink: /agenda/scope-creep/
 speakers:
 - Angelina Simms
 type: lightning talk
+video: https://youtu.be/DpHeEiI3HKM
 ---
 
 This will be a timely discussion of importance geared towards those new to project management, digital creatives, entrepreneurs and freelancers.

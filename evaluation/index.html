@@ -4,17 +4,17 @@ layout: page
 description: We circulated a conference evaluation and received valuable feedback from our attendees.
 ---
 
-<p>We circulated a conference evaluation and received valuable feedback from our attendees. Here are some of the highlights:</p>
+<p>We circulated a conference evaluation and received valuable feedback from our attendees. Our Net Promoter Score (NPS) is 83. Here are some of the highlights:</p>
 
 <div id="last_year" style="width: 100%; height: 450px;"></div>
 <div id="friend" style="width: 100%; height: 450px;"></div>
 <div id="attend" style="width: 100%; height: 450px;"></div>
+<div id="career" style="width: 100%; height: 450px;"></div>
+<div id="work" style="width: 100%; height: 450px;"></div>
 
 <h3>What is the most valuable thing you learned at Ela Conf?</h3>
 
-<div class="columns">
-
-  <blockquote>What is the most valuable thing you learned at Ela Conf?</blockquote>
+<div class="columns evaluation-quotes">
 
   <blockquote>Just how supportive the women-in-tech community is. It really made me excited to get more involved.</blockquote>
 
@@ -38,7 +38,7 @@ description: We circulated a conference evaluation and received valuable feedbac
 
   <blockquote>Negotiation tactics.</blockquote>
 
-  <blockquote>To dedicate time to finding a</blockquote>
+  <blockquote>To dedicate time to finding a #squad that will lift me up and support me through my career path and personal life</blockquote>
 
   <blockquote>Ooh. Ela Conf for me is less about learning specific things (how to do X) and more about thinking differently and building a supportive community. That's one of my favorite things about Ela - there are plenty of places to learn how to do specific things, but fewer resources the build community and help technologists to be better as people within a technology context.</blockquote>
 
@@ -93,9 +93,10 @@ function drawChart() {
   var options = {
     title: 'Did you attend Ela Conf last year?',
     titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
-    colors: ['#4056f4', '#62c'],
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
     backgroundColor: 'none',
-    fontName: 'Open Sans'
+    fontName: 'Open Sans',
+    is3D: true
   };
   var chart = new google.visualization.PieChart(document.getElementById('last_year'));
   chart.draw(data, options);
@@ -112,9 +113,10 @@ function drawChart() {
   var options = {
     title: 'How likely are you to recommend Ela Conf to a friend?',
     titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
-    colors: ['#4056f4', '#4056f4', '#4056f4', '#4056f4', '#4056f4'],
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
     backgroundColor: 'none',
-    fontName: 'Open Sans'
+    fontName: 'Open Sans',
+    is3D: true
   };
   var chart = new google.visualization.BarChart(document.getElementById('friend'));
   chart.draw(data, options);
@@ -131,11 +133,59 @@ function drawChart() {
   var options = {
     title: 'How likely are you to attend Ela Conf again?',
     titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
-    colors: ['#4056f4', '#4056f4', '#4056f4', '#4056f4', '#4056f4'],
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
     backgroundColor: 'none',
-    fontName: 'Open Sans'
+    fontName: 'Open Sans',
+    is3D: true
   };
   var chart = new google.visualization.BarChart(document.getElementById('attend'));
+  chart.draw(data, options);
+
+  // Career
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Just getting started!', 24],
+    ['1-2 years', 32],
+    ['3-5 years', 22],
+    ['more than 5 years', 33]
+  ]);
+  var options = {
+    title: 'How far along are you in your tech career?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('career'));
+  chart.draw(data, options);
+
+  // type of work
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['front-end developer', 45],
+    ['back-end developer/engineer', 31],
+    ['UI/UX', 23],
+    ['community manager', 19],
+    ['content strategy', 18],
+    ['designer', 17],
+    ['social media', 17],
+    ['project manager', 17],
+    ['user research', 13],
+    ['technical writer', 10],
+    ['support', 9],
+    ['mobile developer', 8],
+    ['photographer/videographer', 6]
+  ]);
+  var options = {
+    title: 'What type of work do you do?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#c200fb', '#890e5b', '#f7b32b', '#57dddd', '#4056f4', '#c100fa', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('work'));
   chart.draw(data, options);
 }
 </script>

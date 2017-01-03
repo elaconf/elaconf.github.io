@@ -8,6 +8,10 @@ description: Read blog posts from Ela Conf 2016 attendees and speakers to learn 
 
 <div class="blogs">
 {% for blog in site.data.blogs %}
-  <div class="blog"><a href="{{blog.link}}">{{blog.title}}</a><br><span class="blog-img" style="background-image:url('/images/blogs/{{blog.image}}')"></span> <span class="quiet">{{blog.author}}</span></div>
+  <div class="blog">
+    {% if blog.quote %}<blockquote>{{blog.quote}}</blockquote>{% endif %}
+    <a href="{{blog.link}}">{{blog.title}}</a>
+    <div><span class="blog-img" style="background-image:url('/images/blogs/{{blog.image}}'),{{site.gradient}}"></span> <span class="quiet">{{blog.author}}</span></div>
+  </div>
 {% endfor %}
 </div>

@@ -83,15 +83,21 @@ a:hover {
 
 blockquote {
 
-  @extend %small;
-
+  background: rgba($accent-main, .1);
   font-style: italic;
-  margin: 0 1em 1em;
+  margin: 0 0 .5em;
+  max-width: 600px;
   padding: 1em;
   position: relative;
+}
+
+.evaluation-quotes blockquote {
+  @extend %small;
+
+  margin: 0 1em 1em;
 
   &:nth-child(odd) {
-    background: rgba($accent-main, .1);
+    background: none;
   }
 
 }
