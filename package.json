@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "scss-lint _sass/*.scss && tape test/*.js | tap-min"
+    "test": "scss-lint _sass/*.scss && htmlproofer ./_site && tape test/*.js | tap-min"
   },
   "bin": {
     "update-avatars": "bin/avatars.js",
