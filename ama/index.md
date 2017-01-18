@@ -16,18 +16,20 @@ All guests this year will receive a complimentary ticket to Ela Conf 2017 🤗
 
 ## How it Works
 
-Guests will receive an invite to the Slack channel prior to the start of the #ama, along with a list of community generated questions collected from #ama-questions. Guests are asked to send along a short bio to organizers sharing their background and mentioning any specific work or projects they would be especially excited to talk about right now.  
+Guests will receive an invite to the Slack channel prior to the start of the #ama. Guests are asked to send along a short bio to organizers sharing their background and mentioning any specific work or projects they would be especially excited to talk about right now. Bios will be shared in #general in the time leading up to the event and used to promote the ama on Twitter. 
 
-Each session will begin with an introduction and shared bio on behalf of the organizers, followed by the guest answering chosen, relevant questions until the designated end time. Due to the absence of threaded discussions, we ask that guests try to copy the question they are responding to and include it in their response to better help participants track the conversation, at which point participants are free to ask any follow up questions.
+Each session will begin with an introduction and shared bio on behalf of the organizers, followed by the start of participant questions. Guests will choose and answer questions until the established end time, though it may not be possible to touch on every submitted question. Following a [threaded discussion format](https://slackhq.com/threaded-messaging-comes-to-slack-417ffba054bd#.t88f3budk), participants are free to ask any follow-up questions they may have as well.
+
+We’ll be posting schedules and summaries on our community site that we are aiming to roll out within the next couple months.
 
 *Please note that #ama questions and responses may be published after the event but the identity of those asking questions will always be withheld.*
 
 ## To Join
 
 * As an existing Ela Slack member simply search for and join the #ama channel
-* As a non member [please complete a brief form](https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform) to receive an invite to our Slack  
+* As a non member [please complete a brief form](https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform) to receive an invite to our Slack; welcome!
 
-*Note: main questions are submitted and chosen from #ama-questions prior to the scheduled event.*
+*Friendly reminder that the Ela community, including Slack, is for adult women (18+).*
 
 ## Rules and General Guidelines
 
