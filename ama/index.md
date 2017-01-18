@@ -3,6 +3,7 @@ layout: page
 title: AMA
 description: "We'll be hosting a monthly 'ask me anything' series in our Slack channel."
 nav: false
+image: ama.png
 ---
 
 We’ll be hosting a monthly “ask me anything” series in our Slack channel, #ama. These sessions will take place on designated weekdays either around 12PM EST or 6:30PM EST and last up to one hour, depending on the guest’s schedule.
