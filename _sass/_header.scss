@@ -76,6 +76,20 @@ nav {
 
 }
 
+.ela-logo-small {
+
+  @include breakpoint(medium) {
+    left: 15px;
+    top: 15px;
+
+    svg {
+      height: 3em;
+      width: 3em;
+    }
+  }
+
+}
+
 .tagline {
   font-size: 1.5em;
   line-height: 1.2;
