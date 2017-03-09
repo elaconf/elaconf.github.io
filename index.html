@@ -1,57 +1,37 @@
 ---
 layout: default
-toc:
-- Blogs
-- By the Numbers
-- Evaluation
-- Photos + Videos
-- Speakers
-- Sponsor
-- Sessions
-- Volunteers
-- Organizers
 ---
 
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Sticky Nav -->
-<!-- ///////////////////////////////////////////////////// -->
-<div class="sticky-nav hide-mobile">
-  <div class="clearfix center">
-    <ul class="">
-      {% for section in page.toc %}
-      <li><a href="#{{section | slugify}}" class="{{section | slugify}}">{{section}}</a></li>
-      {% endfor %}
-    </ul>
+<div class="grid">
+  <div class="col col--12">
+    <a href="/" class="ela-logo ela-logo-fill ela-logo-small">{% include logo.svg %}</a>
+  </div>
+  <div class="col col--6-mm col--12">
+    <div class="p24 p10-mm mt48-mm">
+      <h2>Ela Conf 2017 coming soon!</h2>
+      <div class="">
+        <div class="mb24">
+          <div class="mb18 strong">See our past events</div>
+          <a href="http://elaconf.com/2016" class="btn btn--purple">Ela Conf 2016</a> <a href="http://elaconf.com/2015/" class="btn btn--purple">Ela Conf 2015</a>
+        </div>
+
+        <div class="mb24">
+          <div class="mb18 strong">Get updates</div>
+          <a href="https://twitter.com/elaconf" class="btn btn--purple">Twitter</a> <a href="http://eepurl.com/byGVfb" class="btn btn--purple">Newsletter</a> <a href="mailto:hello@elaconf.com" class="btn btn--purple">Email</a>
+          <a href="https://medium.com/@elaconf" class="btn btn--purple">Blog</a>
+        </div>
+
+        <div class="mb24">
+          <div class="mb18 strong">Join our community</div>
+          <a href="/ama" class="btn btn--purple">AMA</a> <a href="/code-of-conduct" class="btn btn--purple">Code of Conduct</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform" class="btn btn--purple">Slack</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col col--6-mm col--12">
+    <div class="p24 p10-mm mt120-mm">
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/Ja5WqfXO720' frameborder='0' allowfullscreen></iframe></div>
+      <a class="mt12 block align-center txt-m link link--purple" href="https://www.youtube.com/watch?v=Ja5WqfXO720">Watch the Ela Conf promo videos to learn more about us!</a>
+    </div>
   </div>
 </div>
-
-<div class="limiter">
-  <h2>2016 Recap</h2>
-
-  <p>Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for adult women (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech.</p>
-
-  <p>In an industry where women are so often marginalized, leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When women become leaders, the entire tech community benefits.</p>
-
-  <p>We held the second Ela Conf on November 4th and 5th, 2016 at Terra Hall at the University of the Arts in Philadelphia, Pennsylvania. Learn about <a href="http://elaconf.com/2015/">our first event in 2015</a>.</p>
-
-  <p>On Friday night, we hosted a meet and greet and talks. Saturday's day-long event featured 8 main stage talks and 2 break-out sessions with 4 workshops, panels, or talks each. We concluded Saturday with a networking event at Time Restuarant.</p>
-
-  <p>Overall, we had <strong>122 attendees</strong> including <strong>36 speakers</strong>, <strong>27 volunteers</strong>, <strong>14 sponsors</strong>, and <strong>4 organizers</strong>!</p>
-
-  <h3>Thanks again to our 2016 sponsors!</h3>
-
-  {% for sponsor in site.data.sponsors %}{% if sponsor.level != 'Individuals' %}<a href="{{sponsor.site}}">{{sponsor.name}}</a>{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
-
-</div>
-
-
-{% for item in page.toc %}
-<div class="limiter" id="{{item | slugify}}">
-  <h2>{{item}}</h2>
-  {{site.pages | where: 'title',item}}
-</div>
-{% endfor %}
-
-
-
-  <script src="{{site.baseurl}}/js/sticky.js"></script>

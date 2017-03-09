@@ -66,12 +66,26 @@ nav {
   }
 
   &.ela-logo-fill {
-    background: $accent-tertiary;
+    background: $accent-main;
   }
 
   path,
   rect {
-    fill: $white;
+    fill: $light;
+  }
+
+}
+
+.ela-logo-small {
+
+  @include breakpoint(medium) {
+    left: 15px;
+    top: 15px;
+
+    svg {
+      height: 3em;
+      width: 3em;
+    }
   }
 
 }
@@ -132,7 +146,7 @@ nav {
   }
 
   .no-backgroundblendmode & {
-    background-image: url('/images/hero.jpg');
+    background-image: url('/2016/images/hero.jpg');
   }
 
 }

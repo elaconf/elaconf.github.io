@@ -1,4 +1,0 @@
-{% assign pages = site.pages | sort:'title' %}
-{% for item in pages %}{% if item.layout == 'page' or item.layout == 'speaker' %}{% unless item.nav == false %}
-<a href="{{item.url}}" class="header-nav-item{% if item.title == page.title %} active{% endif %}">{{item.title}}</a>
-{% endunless %}{% endif %}{% endfor %}

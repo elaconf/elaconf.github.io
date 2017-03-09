@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Code of Conduct
-nav: false
 description: Our Code of Conduct is at the heart of our event.
 ---
 

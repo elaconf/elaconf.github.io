@@ -11,8 +11,9 @@
 @import 'layout'; // basic layout formatting
 @import 'header'; // header
 @import 'type'; // typography
-@import 'buttons'; // buttons
 @import 'table'; // table
+/*@import 'buttons'; // buttons
+
 @import 'sticky';
 
 @import 'homepage'; // front page styles
@@ -23,9 +24,8 @@
   @import 'jobs';
   @import 'volunteers';
   @import 'map';
-
+*/
 @import 'pages'; // inner page styles
-
 @import 'utilities';
 
 

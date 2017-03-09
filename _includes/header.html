@@ -1,28 +1,4 @@
-
-{% if page.title %}
 <div class="limiter limiter-side limiter-header">
   <nav>
-  <a href="/" class="ela-logo{% if page.title %} ela-logo-fill{% endif %}">{% include svg/logo.svg %}</a>
-  <label for="menu" class="button-menu">{% include svg/menu.svg %}</label>
-  <input id="menu" type="checkbox" name="name" value="" class="menu">
-  <div class="header-nav">
-    {% include nav-pages.html %}
-  </div>
-  </nav>
+  <a href="/" class="ela-logo{% if page.title %} ela-logo-fill{% endif %}">{% include logo.svg %}</a>
 </div>
-{% else %}
-<nav>
-<a href="/" class="ela-logo{% if page.title %} ela-logo-fill{% endif %}">{% include svg/logo.svg %}</a>
-<label for="menu" class="button-menu">{% include svg/menu.svg %}</label>
-<input id="menu" type="checkbox" name="name" value="" class="menu">
-<div class="header-nav show-mobile">
-  {% include nav-pages.html %}
-</div>
-</nav>
-<header>
-  <div class="float-header">
-    {% unless page.title %}<div class="tagline">{{site.tagline}}</div>{% endunless %}
-  </div>
-  <div class="ela-hero" style="background-image:url({{site.baseurl}}/images/hero.jpg), {{site.gradientDark}}"></div>
-</header>
-{% endif %}
