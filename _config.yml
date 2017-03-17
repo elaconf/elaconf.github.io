@@ -31,3 +31,8 @@ exclude:
 - node_modules
 - bin
 - test
+
+gems:
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
