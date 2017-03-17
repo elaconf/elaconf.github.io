@@ -1,25 +1,15 @@
 .button {
-  //background: $button-color;
-  //border-radius: 1em;
-  border: .25em solid;
+  background: $blue;
+  border-radius: 2em;
   color: $white;
   display: inline-block;
   margin-bottom: .5em;
-  padding: .6em 1.2em;
+  padding: .25em 1em;
   text-decoration: none;
 
-  .page-inner & {
-    color: $accent-main;
-
-    &:hover {
-      background: $accent-main;
-      border-color: $accent-main;
-      color: $white;
-    }
-
-  }
-
   &:hover {
+    background: darken($blue, 10%);
+    color: $white;
     text-decoration: none;
   }
 

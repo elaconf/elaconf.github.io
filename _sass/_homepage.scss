@@ -1,0 +1,38 @@
+body {
+  background-image: url('/images/splash.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.splash-details {
+  @include breakpoint(medium) {
+    padding-top: 3em;
+  }
+}
+
+.splash-video {
+  @include breakpoint(medium) {
+    padding-top: 6em;
+  }
+}
+
+
+
+.page-main {
+  .grid {
+    padding: 0 2em;
+
+    @include breakpoint(medium) {
+      padding: 0 1em;
+    }
+  }
+
+  p {
+    margin-bottom: .75em;
+  }
+}
+
+.embed-container {
+  border: .5em solid $accent-main;
+  margin-bottom: .5em;
+}

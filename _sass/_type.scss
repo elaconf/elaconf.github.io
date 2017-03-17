@@ -54,10 +54,10 @@ small,
 .small,
 %small {font-size: .8em;}
 
-a:not(.btn) {
+a {
   color: $link-color;
   text-decoration: none;
-  
+
   &:hover {
     color: $link-hover;
     text-decoration: underline;
