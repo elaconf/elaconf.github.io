@@ -8,6 +8,4 @@ Ela Conf is a conference with a goal to create a safe, supportive, inspiring and
 
 In an industry where women are so often marginalized, leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When women become leaders, the entire tech community benefits.
 
-Ela Conf was held on the evening of Friday, November 4 and all day Saturday, November 5 at [The University of the Arts](/venue/) in Philadelphia.
-
-Stay tuned for details on Ela Conf 2017.
+We use an inclusive definition of "woman" and "female" and we welcome trans women, genderqueer women, and non-binary people.
