@@ -18,10 +18,14 @@ permalink: /:categories/:title/
 sass:
   style: :compressed
 
-nvite: a89f
 twitter: elaconf
 email: hello@elaconf.com
 slack: https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform
+
+collections:
+  organizers:
+    output: true
+    permalink: /organizers/:path/
 
 exclude:
 - Gemfile
@@ -36,3 +40,12 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "organizers"
+    values:
+      layout: "speaker"
+      category: "organizers"
+      topic: Organizer
