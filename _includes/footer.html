@@ -14,9 +14,15 @@
         <div><a href="{{site.slack}}" class="footer-social-link"><span class="show-desktop small">Slack</span> {% include svg/slack.svg %}</a></div>
         <div><a href="mailto:hello@elaconf.com" class="footer-social-link"><span class="show-desktop small">Email</span> {% include svg/email.svg %}</a></div>
         <div><a href="https://twitter.com/elaconf" class="footer-social-link"><span class="show-desktop small">Twitter</span> {% include svg/twitter.svg %}</a></div>
+        <div><a href="https://www.youtube.com/channel/UCrOaNE6f1r6Xrgmpq3UzcIA" class="footer-social-link"><span class="show-desktop small">YouTube</span> {% include svg/youtube.svg %}</a></div>
       </div>
+
+      <div class="footer-links text-center">
+       {% assign pages = site.pages | sort:'title' %}
+       {% for item in pages %}{% if item.layout == 'page' or item.layout == 'speaker' %}{% unless item.nav == false %}
+       <div><a href="{{item.url}}" class="footer-link small">{{item.title}}</a></div>
+       {% endunless %}{% endif %}{% endfor %}
+     </div>
     </div>
-
   </div>
-
 </footer>

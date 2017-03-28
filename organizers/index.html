@@ -1,0 +1,15 @@
+---
+title: Organizers
+layout: page
+---
+
+<div class="speakers">
+  {% assign organizers = site.organizers | sort: 'order' %}
+  {% for organizer in organizers %}{% if organizer.image %}
+  <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
+    <div class="speaker-img" style="background-image:url(/images/organizers/{{organizer.image}})">
+    </div>
+    <div class="speaker-name">{{organizer.title}}</div>
+  </a>
+  {% endif %}{% endfor %}
+</div>
