@@ -6,6 +6,8 @@ description: Our Code of Conduct is at the heart of our event.
 
 All attendees, speakers, sponsors, and volunteers at {{site.title}} and throughout a mentorship are required to agree with the following code of conduct. Organizers will enforce this code throughout {{site.title}} and for the duration of a mentorship. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
+We use an inclusive definition of “woman” and “female” and we welcome all of those with marginalized genders and identities.
+
 ## Need Help?
 
 The {{site.title}} email is [{{site.email}}](mailto:{{site.email}}). Relevant phone numbers will be shared before the conference and during the mentorship matching phase.
