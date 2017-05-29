@@ -1,6 +1,6 @@
 # Ela Conf [![Build Status](https://travis-ci.org/elaconf/elaconf.github.io.svg)](https://travis-ci.org/elaconf/elaconf.github.io)
 
-Ela Conference works to eliminate the existing diversity gap in tech by empowering more individuals identifying as a woman (18+) in a way that is significant to them to be leaders and take action through practical training and thoughtful mentorships.
+Ela Conf works to eliminate the existing diversity gap in tech by empowering more individuals identifying as a woman (18+) in a way that is significant to them to be leaders and take action through practical training and thoughtful mentorships.
 
 ## Build
 
@@ -19,9 +19,7 @@ Recommended build: `bundle exec jekyll serve -w`
   - `twitter` &mdash; the handle only
 * The bio goes directly in the post content area (below the front matter)
 
-### Sponsorship levels
-
-To update or change a sponsorship level, edit: `_data/levels.yml`.
+<!--
 
 ### Speakers
 
@@ -72,3 +70,4 @@ To update or change a sponsorship level, edit: `_data/levels.yml`.
   * `company` &mdash; name of the company
   * `link` &mdash; link to the job listing on the company's website
   * `image` &mdash; file name of sponsor's image found in `images/sponsors/`
+-->

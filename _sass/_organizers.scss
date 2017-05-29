@@ -58,5 +58,9 @@
     path {
       fill: rgba($white, .75);
     }
+
+    &.fill-purple path {
+      fill: darken($purple, 10);
+    }
   }
 }

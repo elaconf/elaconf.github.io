@@ -96,7 +96,7 @@
   }
 }
 
-.fill-blue {
+.bg-blue {
   background: $blue;
   color: $white;
 
@@ -105,7 +105,7 @@
   a { color: lighten($blue-light, 15%); }
 }
 
-.fill-purple {
+.bg-purple {
   background: $purple;
   color: $white;
 
@@ -114,7 +114,13 @@
   a { color: lighten($purple-light, 20%); }
 }
 
-.fill-about {
+.fill-purple {
+  path {
+    fill: $purple;
+  }
+}
+
+.bg-about {
   background-blend-mode: screen;
   background-color: $purple;
   background-image: url('../images/home/photo1.jpg');

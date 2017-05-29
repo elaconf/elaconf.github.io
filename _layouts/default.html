@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}} 2017</title>
   <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">

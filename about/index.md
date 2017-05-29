@@ -12,13 +12,18 @@ We use an inclusive definition of “woman” and “female” and we welcome al
 
 ## Organizers
 
-<div class="speakers">
+<div class="organizers">
   {% assign organizers = site.organizers | sort: 'order' %}
   {% for organizer in organizers %}{% if organizer.image %}
-  <a href="{{site.baseurl}}{{organizer.url}}" class="speaker">
-    <div class="speaker-img" style="background-image:url(/images/organizers/{{organizer.image}})">
+  <div class="organizer">
+    <div class="organizer-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></div>
+    <div class="organizer-bio">
+      <div class="hide-mobile">{{organizer.content}}</div>
+      <div class="organizer-links">
+        <a href="https://www.twitter.com/{{organizer.handle}}" class="fill-purple">{% include svg/twitter.svg %}</a>
+        <a href="{{organizer.link}}" class="fill-purple">{% include svg/link.svg %}</a>
+      </div>
     </div>
-    <div class="speaker-name">{{organizer.title}}</div>
-  </a>
+  </div>
   {% endif %}{% endfor %}
 </div>
