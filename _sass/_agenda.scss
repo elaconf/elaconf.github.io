@@ -17,12 +17,12 @@
   @include breakpoint(medium) {
     tr:nth-child(even) td,
     .row-breakout td {
-      background: rgba($gold, .1);
+      background: rgba($blue-light, .1);
     }
   }
 
   th {
-    border-bottom: .2em solid $gold;
+    border-bottom: .2em solid $blue-light;
   }
 
   td {
@@ -30,11 +30,11 @@
     vertical-align: text-top;
 
     @include breakpoint(small) {
-      background: rgba($gold, .2);
+      background: rgba($blue-light, .2);
       padding: .5em 1em;
 
       &.agenda-time {
-        background: $gold;
+        background: $blue-light;
       }
 
     }
@@ -90,13 +90,13 @@
 
 @include breakpoint(medium) {
   .agenda-time {
-    border-right: .2em solid $accent-tertiary;
+    border-right: .2em solid $purple;
     position: relative;
     text-align: right;
     width: 10em;
 
     &:not(th)::before {
-      background: $accent-main;
+      background: $blue;
       border-radius: .7em;
       content: '';
       height: 1em;
@@ -116,12 +116,12 @@
 }
 
 .agenda-room {
-  color: $accent-secondary;
+  color: $purple-light;
   margin-bottom: 1em;
 }
 
 .breakout-type {
-  background: $accent-tertiary;
+  background: $purple;
   border-radius: 4px;
   color: $white;
   padding: .1em .4em .2em;

@@ -2,15 +2,23 @@
   box-sizing: border-box;
 }
 
+html {
+  background: $blue;
+}
+
 body {
   background: $body-bg;
   color: $text-color;
   font-family: $font-body;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.45;
   position: relative;
   text-rendering: optimizeLegibility;
+
+  @include breakpoint (medium) {
+    font-size: 22px;
+  }
 }
 
 .limiter {
@@ -19,7 +27,11 @@ body {
 
   margin: 0 auto;
   max-width: $max-width;
-  padding: 0 15px;
+  padding: 0 2em;
+
+  @include breakpoint(medium) {
+    padding: 0 1em;
+  }
 
 }
 
@@ -45,31 +57,40 @@ body {
   max-width: $max-width * 1.3;
 }
 
+.limiter-xlarge {
+  max-width: $max-width * 1.5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  //max-width: $max-width * 2;
+}
+
 footer {
   background: $footer-bg;
   color: $white;
-  margin-top: 1em;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-top: 2em;
 
   a {
     color: $white;
 
     &:hover {
-      color: $gold;
+      color: $blue-light;
     }
   }
 }
 
-.footer-pattern {
-  margin-bottom: 2em;
-}
+.footer {
+  @extend %flex;
+  @extend %flex-center;
+  @extend %flex-wrap;
 
-@include breakpoint(small) {
-  .footer-location {
-    margin-bottom: 1em;
+  @include breakpoint(small) {
+    display: block;
   }
 }
+
 
 .footer-logo {
   display: inline-block;
@@ -78,7 +99,7 @@ footer {
 
     path,
     rect {
-      fill: $gold;
+      fill: $blue-light;
     }
 
   }
@@ -94,17 +115,7 @@ footer {
 }
 
 .footer-social-links {
-  text-align: center;
-
-  @include breakpoint(medium) {
-    text-align: right;
-  }
-
-  @include breakpoint(small) {
-    div {
-      display: inline-block;
-    }
-  }
+  columns: 2 100px;
 }
 
 .footer-social-link {
@@ -113,14 +124,10 @@ footer {
 
   &:hover {
 
-    text-decoration: none;
+    color: $white;
 
     path {
-      fill: $gold;
-    }
-
-    span {
-      text-decoration: underline;
+      fill: $blue-light;
     }
 
   }
@@ -158,10 +165,9 @@ footer {
   }
 }
 
-
 hr {
   border: 0;
-  border-bottom: 1px solid $accent-main;
+  border-bottom: 1px solid $blue;
   margin-bottom: 3em;
   margin-top: 3em;
   max-width: 600px;
@@ -171,8 +177,3 @@ img {
   max-width: 100%;
 }
 
-@include breakpoint(medium) {
-  .pull-up {
-    margin-top: -4.5em;
-  }
-}

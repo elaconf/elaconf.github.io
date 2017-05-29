@@ -1,36 +1,116 @@
-.organizer {
-  margin-bottom: 5em;
-}
+.organizers {
 
-.organizer-bio {
-  max-width: 675px;
+  .organizer {
+    @extend %flex;
+    @extend %flex-center;
+    @extend %flex-nowrap;
+    @extend %flex-space-between;
 
-  @include breakpoint(medium) {
-    margin: 0 auto;
-    padding: 1em .5em;
+    margin-bottom: 4em;
+
+    @include breakpoint(small) {
+      display: block;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      // scss-lint:disable NestingDepth
+      .organizer-img {
+        @include breakpoint (medium) {
+          margin-left: 3em;
+          margin-right: 0;
+        }
+      }
+    }
   }
 
+  .organizer-img {
+    flex-shrink: 0;
+    height: 200px;
+    margin: 0 auto 1em;
+    width: 200px;
+
+    @include breakpoint (medium) {
+      margin-right: 3em;
+    }
+
+    @include breakpoint (large) {
+      height: 300px;
+      width: 300px;
+    }
+  }
 }
 
 .organizer-img {
-  border: .4em solid $light;
+  @extend %bg-blend-purple;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: block;
-  margin-bottom: 2em;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include breakpoint(medium) {
-    margin-bottom: 0;
-    width: 40%;
-  }
-
-  @include breakpoint(large) {
-    width: 25%;
-  }
-
 }
 
-.organizer:nth-of-type(even) .organizer-img {
-  border-radius: 100%;
+.organizer-bio {
+  display: block;
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 0;
+
+  @include breakpoint(small) {
+    text-align: center;
+  }
 }
 
+.organizer-links {
+  margin-top: 1em;
+
+  @include breakpoint(small) {
+    text-align: center;
+  }
+
+  svg {
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    path {
+      fill: rgba($white, .75);
+    }
+
+    &.fill-purple path {
+      fill: darken($purple, 10);
+    }
+  }
+}
+
+.organizers-list {
+  @extend %flex;
+  @extend %flex-space-between;
+  @extend %flex-wrap;
+
+  .organizer {
+    display: block;
+    margin-bottom: 1em;
+    width: 49%;
+
+    @include breakpoint(medium) {
+      width: 19%;
+    }
+  }
+
+  .organizer-bio {
+
+    @extend %fancy;
+    @extend %small;
+
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .organizer-img {
+    padding-bottom: 100%;
+    width: 100%;
+  }
+}

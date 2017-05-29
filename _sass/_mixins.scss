@@ -1,18 +1,13 @@
 @mixin breakpoint($point) {
   @if $point == medium {
-    @media (min-width: 600px) { @content; }
+    @media (min-width: 700px) { @content; }
   } @else if $point == small {
-    @media (max-width: 600px) { @content; }
+    @media (max-width: 700px) { @content; }
   } @else if $point == large {
     @media (min-width: 900px) { @content; }
   } @else if $point == xlarge {
     @media (min-width: 1150px) { @content; }
   }
-}
-
-.img-center {
-  display: block;
-  margin: 0 auto;
 }
 
 @mixin clearfix() {
@@ -29,77 +24,4 @@
 
 }
 
-.hide-mobile {
 
-  @include breakpoint(small) {
-    display: none;
-  }
-
-}
-
-.show-mobile {
-  display: none;
-
-  @include breakpoint(small) {
-    display: inline-block;
-  }
-
-}
-
-.show-mobile-block {
-  display: none;
-
-  @include breakpoint(small) {
-    display: block;
-  }
-
-}
-
-.show-desktop {
-  display: none;
-
-  @include breakpoint(medium) {
-    display: inline-block;
-  }
-
-}
-
-// scss-lint:disable VendorPrefixes, PropertySortOrder
-
-%center {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-%center-medium {
-  @include breakpoint(medium) {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}

@@ -1,20 +1,24 @@
-.page-job-board {
+.job {
+  @extend %flex;
+  @extend %flex-center-y;
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+  margin-bottom: 1em;
 
-  img {
-    border-radius: 100%;
-    display: inline-block;
-    height: 50px;
-    margin-right: .25em;
-    vertical-align: middle;
-    width: 50px;
-  }
+  .job-image {
+    margin-right: 1em;
 
-  li p {
-    margin-bottom: 0;
+    @include breakpoint(medium) {
+      svg {
+        width: 100px;
+      }
+    }
+
+    @include breakpoint(small) {
+      svg {
+        width: 50px;
+      }
+    }
   }
 }
+
+

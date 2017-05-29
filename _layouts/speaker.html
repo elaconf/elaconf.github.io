@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-
 {% include header.html %}
-<section class="limiter limiter-side pull-up">
+<section class="limiter limiter-large">
   <h1>{{page.title}}</h1>
 
   <div alt="{{page.title}}" class="speaker-img show-large" style="background-image:url(/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.png{% endif %})"></div>
 
-  <p><span alt="{{page.title}}" class="speaker-img-small hide-large" style="background-image:url(/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.png{% endif %})"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.social %}<a href="https://www.{{page.social}}.com/{% if page.social == 'linkedin' %}in/{% endif %}{{page.handle}}">{% if page.social == 'twitter' %}@{%else %}{{page.social}}: {%endif %}{{page.handle}}</a>{% endif %}</p>
+  <p><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url(/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.png{% endif %})"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.social %}<a href="https://www.{{page.social}}.com/{% if page.social == 'linkedin' %}in/{% endif %}{{page.handle}}">{% if page.social == 'twitter' %}@{%else %}{{page.social}}: {%endif %}{{page.handle}}</a>{% endif %}</p>
   {{content}}
   {% assign moderators = (site.agenda | where: "moderator", page.title) %}
   {% assign talk_num = 0 %}{% for talk in site.agenda %}{% if talk.speakers contains page.title or talk.moderator == page.title %}{% assign talk_num = talk_num | plus: 1 %}{% endif %}{% endfor %}
@@ -22,4 +21,3 @@ layout: default
     <p><a href="/{{page.category}}" class="button">&larr; {{page.category | capitalize}}</a></p>
   </div>
 </section>
-{% include footer.html %}

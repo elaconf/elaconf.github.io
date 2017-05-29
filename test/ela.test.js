@@ -17,13 +17,14 @@ fs.readdirSync('images/organizers/').forEach(function(i) {
   organizersImg.push(i);
 });
 
-
+/*
 var agenda = [];
 fs.readdirSync('_agenda/').forEach(function(i) {
   agenda.push('_agenda/' + i);
   posts.push('_agenda/' + i);
 });
-
+*/
+/*
 var speakers = [];
 fs.readdirSync('_speakers/').forEach(function(i) {
   speakers.push('_speakers/' + i);
@@ -39,6 +40,7 @@ var volunteersImg = [];
 fs.readdirSync('images/volunteers/').forEach(function(i) {
   volunteersImg.push(i);
 });
+*/
 
 // build array of permalinks
 var permalinks = posts.reduce(function(prev, post, index, list) {
@@ -65,18 +67,22 @@ var permalinks = posts.reduce(function(prev, post, index, list) {
 
 var data = {
   sponsors: readData('_data/', 'sponsors.yml'),
-  levels: readData('_data/', 'levels.yml'),
-  volunteers: readData('_data/', 'volunteers.yml'),
-  places: readData('_data/', 'places.yml')
+  levels: readData('_data/', 'levels.yml')
+  //volunteers: readData('_data/', 'volunteers.yml'),
+  //places: readData('_data/', 'places.yml')
 };
+/*
 // build array of places
 var places = data.volunteers.metadata.map(function(post) {
   return post.title;
 });
+*/
+/*
 // build array of volunteers
 var volunteers = data.volunteers.metadata.map(function(post) {
   return post.name;
 });
+*/
 // build array of sponsors
 var sponsors = data.sponsors.metadata.map(function(post) {
   return post.name;
@@ -162,7 +168,7 @@ organizers.forEach(function(post) {
 
 });
 
-
+/*
 agenda.forEach(function(post) {
   var file = readPost(post);
 
@@ -186,8 +192,9 @@ agenda.forEach(function(post) {
   });
 
 });
+*/
 
-
+/*
 speakers.forEach(function(post) {
   var file = readPost(post);
 
@@ -210,8 +217,7 @@ speakers.forEach(function(post) {
   });
 
 });
-
-
+*/
 
 data.sponsors.metadata.forEach(function(post) {
 
@@ -223,7 +229,7 @@ data.sponsors.metadata.forEach(function(post) {
     t.ok(post.level,'sponsor must have a \'type\'');
     t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
 
-    if (post.level != 'Individuals') {
+    if (post.level !== 'Individuals') {
       t.ok(post.image,'sponsor must have an \'image\'');
       t.ok(post.site,'sponsor must have a \'site\'');
       t.ok(post.twitter,'sponsor must have a \'twitter\'');
@@ -233,6 +239,7 @@ data.sponsors.metadata.forEach(function(post) {
   });
 });
 
+/*
 data.volunteers.metadata.forEach(function(post) {
 
   test(post.name, function(t) {
@@ -251,7 +258,9 @@ data.volunteers.metadata.forEach(function(post) {
     t.end();
   });
 });
+*/
 
+/*
 data.places.metadata.forEach(function(post) {
 
   test(post.title, function(t) {
@@ -267,3 +276,4 @@ data.places.metadata.forEach(function(post) {
     t.end();
   });
 });
+*/

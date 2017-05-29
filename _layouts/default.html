@@ -10,7 +10,7 @@
   <meta name="google-site-verification" content="fwQlP4L8TVoaRJctoltAtyp9zrdfeOkm1NNSAVENMdk" />
   <!-- twitter-->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@{{site.twitter}}">
+  <meta name="twitter:site" content="@elaconf">
   <meta name="twitter:title" content="{{site.title}}">
   <meta name="twitter:description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
   <meta name="twitter:image" content="{% if page.image %}{{site.url}}/images/{% if page.category %}{{page.category}}/{% endif %}{{page.image}}{% else %}http://elaconf.com/logo.png{% endif %}">
@@ -21,8 +21,8 @@
   <meta property="og:site_name" content="{{site.title}}" />
   <meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}" />
   <meta property="og:image" content="{% if page.image %}{{site.url}}/images/{% if page.category %}{{page.category}}/{% endif %}{{page.image}}{% else %}http://elaconf.com/logo.png{% endif %}" />
-  {% unless page.image %}<meta property="og:image:width" content="1196" />
-  <meta property="og:image:height" content="894" />{% endunless %}
+  {% unless page.image %}<meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />{% endunless %}
   <link rel="shortcut icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
   <link rel="icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
   <link type="text/css" rel="stylesheet" href="{{site.baseurl}}/css/elaconf.css" />
@@ -31,7 +31,10 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% else %} page-main{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
-{{content}}
+  <div class="wrapper">
+    {{content}}
+  </div>
+{% include footer.html %}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

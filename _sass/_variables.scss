@@ -1,33 +1,25 @@
+$max-width: 700px;
+
 $body-bg: #fff;
-$text-color: #333;
+$text-color: #263d83;
 $light: #fff;
-
-// main color accents
-$accent-main: #263d83;
-$accent-main-light: #794d9a;
-$accent-secondary: #890e5b;
-$accent-tertiary: #62c;
-
-$gradient-light: #f7b32b;
-$gradient-dark: #c200fb;
-
-// secondary colors
-$turquoise: #57dddd;
-$blue: #0053be;
-$violet: #c100fa;
-$gold: #f7b32b;
-
-$footer-bg: $accent-main;
-
 $white: #fff;
+$black: #000;
 
-$max-width: 800px;
+// COLOR PALETTE
+$blue: #263d83;
+$blue-light: #4480fd;
+$purple: #794d9a;
+$purple-light: #9f76ff;
+$green: #80ddae;
+$teal: #1fdce5;
+$lavendar: #7781f6;
 
-$link-color: $blue;
-$link-hover: adjust-hue($link-color, 15deg);
-$button-color: $violet;
-$border-color: $accent-secondary;
-
+$link-color: darken($blue-light, 10);
+$link-hover: darken($link-color, 20);
+$button-color: $purple-light;
+$border-color: $purple-light;
+$footer-bg: $blue;
 
 $font-headings: 'Questrial', sans-serif;
 $font-body: 'Open Sans', sans-serif;

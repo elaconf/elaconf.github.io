@@ -4,9 +4,13 @@
 
 @import 'normalize';
 
-@import 'mixins';
 @import 'variables';
+@import 'mixins';
+@import 'utilities';
+@import 'flex';
+
 @import 'grid';
+@import 'theme';
 
 @import 'layout'; // basic layout formatting
 @import 'header'; // header
@@ -14,16 +18,15 @@
 @import 'table'; // table
 @import 'buttons'; // buttons
 
-@import 'sticky';
+//@import 'sticky';
 
 @import 'homepage'; // front page styles
   @import 'organizers';
   @import 'speakers';
-  @import 'sponsors';
-  @import 'agenda';
+  //@import 'sponsors';
+  //@import 'agenda';
   @import 'jobs';
-  @import 'volunteers';
-  @import 'map';
+  //@import 'volunteers';
+  //@import 'map';
 
 @import 'pages'; // inner page styles
-@import 'utilities';

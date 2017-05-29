@@ -1,52 +1,128 @@
 ---
 layout: default
+description: Ela Conf - October 27 &amp; 28 2017 in Philadelphia. A safe, inclusive tech leadership conference and community for adult (18+) marginalized genders to connect with and empower one another.
+head: |
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
 ---
 
-<div class="">
-  <a href="/" class="ela-logo ela-logo-fill ela-logo-small">{% include logo.svg %}</a>
-</div>
-
-<div class="grid" style="margin-bottom: 125px">
-  <div class="half">
-    <div class="splash-details">
-      <h2>Ela Conf 2017 coming soon!</h2>
-      <p><a href="/sponsor" class="button">Become a sponsor</a></p>
-      <div class="">
-
-        <div class="">
-          <p class="">See our past events</p>
-          <p>
-            <a href="http://elaconf.com/2016" class="button">Ela Conf 2016</a>
-            <a href="http://elaconf.com/2015/" class="button">Ela Conf 2015</a>
-          </p>
-        </div>
-
-        <div class="">
-          <p class="">Get updates</p>
-          <p>
-            <a href="https://twitter.com/elaconf" class="button">Twitter</a>
-            <a href="http://eepurl.com/byGVfb" class="button">Newsletter</a>
-            <a href="mailto:hello@elaconf.com" class="button">Email</a>
-            <a href="https://medium.com/@elaconf" class="button">Blog</a>
-          </p>
-        </div>
-
-        <div class="">
-          <p class="">Join our community</p>
-          <p>
-            <a href="http://ela.community" class="button">Ela Community</a>
-            <a href="/code-of-conduct" class="button">Code of Conduct</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform" class="button">Slack</a>
-          </p>
-        </div>
+<div class="hero">
+  <div class="hero-image">
+    <div class="hero-logo">
+      {% include svg/logo_shadow.svg %}
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="hero-side-inner text-center">
+      <p class="large">October 27 &amp; 28 2017<br>PHILADELPHIA, PA</p>
+      <p>Get updates in your inbox with our newsletter:</p>
+      {% include newsletter.html %}
+      <div class="social">
+        <a class="link-social flex-no-shrink" href="{{site.twitter}}">{% include svg/twitter.svg %}</a>
+        <a class="link-social flex-no-shrink" href="{{site.medium}}">{% include svg/medium.svg %}</a>
+        <a class="link-social flex-no-shrink" href="{{site.youtube}}">{% include svg/youtube.svg %}</a>
+        <a class="link-social flex-no-shrink" href="{{site.instagram}}">{% include svg/instagram.svg %}</a>
       </div>
     </div>
   </div>
-  <div class="half">
-    <div class="splash-video">
-      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/Ja5WqfXO720' frameborder='0' allowfullscreen></iframe></div>
-      <a class="small" href="http://www.youtube.com/watch?v=Ja5WqfXO720">Watch our promo videos to learn more about Ela Conf!</a>
-    </div>
-  </div>
 </div>
 
-{% include footer.html %}
+<section id="about">
+  <div class="limiter">
+    <h2>About</h2>
+    <p class="large">A safe, inclusive tech leadership conference and <a href="http://ela.community">community</a> for adult (18+) marginalized genders to connect with and empower one another.</p>
+
+    <p>Leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When marginalized individuals become leaders, the entire tech community benefits.</p>
+
+    <p>This is a 1.5 day event, spanning a Friday evening and full Saturday. All timeline announcements, such as CFP opening and ticket sales, will be published on our <a href="https://medium.com/@elaconf">blog</a> and <a href="http://elaconf.us11.list-manage.com/subscribe?u=35575c3d011d3489cb7c3c214&id=e88ae52852">newsletter</a>.</p>
+
+    <p>All attendees, speakers, volunteers, specials guests, and organizers are expected to follow the <a href="{{site.baseurl}}/code-of-conduct/">Code of Conduct</a> at all times.</p>
+
+  </div>
+</section>
+
+<section class="bg-about center-mobile">
+  <div class="limiter">
+    <div class="large hide-mobile">Ela Conf was established in 2015 by women, is run by women organizers, and is reserved exclusively for marginalized individuals to speak and attend.</div>
+    <div class="corner-button"><a href="{{site.url}}{{site.baseurl}}/2016" class="button">2016 recap</a></div>
+  </div>
+  <div class="hide-mobile corner corner-purple-light hide-mobile"></div>
+</section>
+
+<section id="sponsorship" class="bg-blue flex flex-center">
+  <div class="limiter limiter-large">
+    <h2>Sponsorship</h2>
+    <p>This event is simply not possible without your support. We aim to keep ticket costs low while also offering childcare stipends, financial and diversity grants, cover all meals, secure a centrally located venue, reimburse speaker travel and lodging, and host a networking party following the event.</p>
+    <p>We cannot wait to call you a partner in our mission. <a href="http://elaconf.com/docs/ela-prospectus-2017.pdf">Review our prospectus</a> and <a href="mailto:hello@elaconf.com">email us to learn more</a>.</p>
+    <div class="hide-mobile past-sponsors">
+      <div class="badge">Past sponsors</div>
+      <div class="flex flex-space-between flex-wrap">
+        {% for sponsor in site.data['past-sponsors'] %}
+        {% assign img = '/past/' | append: sponsor.image %}
+        {% include {{img}} %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="corner-button"><a href="http://elaconf.com/docs/ela-prospectus-2017.pdf" class="button">Prospectus</a></div>
+  </div>
+  <div class="corner corner-purple hide-mobile"></div>
+</section>
+
+<section class="bg-purple hide-mobile">
+  {% include video.html %}
+  <div class="limiter limiter-large">
+    <div class="corner-button"><a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfzGRVQwDuKeE7QA77NZTTU" class="button">Promo videos</a></div>
+  </div>
+  <div class="corner corner-blue hide-mobile"></div>
+
+</section>
+
+<div class="images">
+  <div class="image2"></div>
+  <div class="image3"></div>
+</div>
+
+<section class="vmin50" id="venue">
+  <div class="limiter limiter-large">
+    <h2>Venue</h2>
+    <div class="grid flex-align-top">
+      <div class="two-thirds">
+        <p>University of Arts<br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA 19147</p>
+      </div>
+      <div class="third flex-align-top">
+        <p>Hotel details coming soon!</p>
+        <div class="icon-location">{% include svg/location.svg %}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include map.html %}
+<div class="images">
+  <div class="image4"></div>
+  <div class="image5"></div>
+</div>
+
+<section id="organizers" class="bg-purple">
+  <div class="limiter limiter-xlarge">
+    <h2>Organizers</h2>
+    <div class="organizers">
+      {% assign organizers = site.organizers | sort: 'order' %}
+      {% for organizer in organizers %}{% if organizer.image %}
+      <div class="organizer">
+        <a href="/organizers/{{organizer.title | slugify}}" class="organizer-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></a>
+        <div class="organizer-bio">
+          <div class="hide-mobile">{{organizer.content}}</div>
+          <div class="show-mobile">{{organizer.title}}</div>
+          <div class="organizer-links">
+            <a href="https://www.twitter.com/{{organizer.handle}}">{% include svg/twitter.svg %}</a>
+            <a href="{{organizer.link}}">{% include svg/link.svg %}</a>
+          </div>
+        </div>
+
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+  <div class="corner corner-purple-light"></div>
+</section>
+

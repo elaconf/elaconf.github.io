@@ -1,0 +1,35 @@
+.bg-blue {
+  background: $blue;
+  color: $white;
+
+  h2 { color: inherit; }
+
+  a {
+    color: lighten($blue-light, 15%);
+
+    &:hover {
+      color: lighten($blue-light, 5%);
+    }
+  }
+}
+
+.bg-purple {
+  background: $purple;
+  color: $white;
+
+  h2 { color: inherit; }
+
+  a {
+    color: lighten($purple-light, 20%);
+
+    &:hover {
+      color: lighten($purple-light, 10%);
+    }
+  }
+}
+
+.fill-purple {
+  path {
+    fill: $purple;
+  }
+}

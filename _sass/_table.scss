@@ -82,7 +82,7 @@ table {
   }
 
   .row-header.row-header {
-    background: $accent-main;
+    background: $blue;
     color: $white;
     font-weight: normal;
 
@@ -118,16 +118,16 @@ table {
 
   tr td:nth-child(even),
   tr th:nth-child(even) {
-    background: rgba($accent-main, .05);
+    background: rgba($blue, .05);
   }
 
   tr td:last-child:not(.row-header),
   tr th:last-child:not(.row-header) {
-    background: rgba($accent-main, .1);
+    background: rgba($blue, .1);
   }
 
   .minus {
-    color: $accent-secondary;
+    color: $purple-light;
 
     &::before {
       content: '-';
@@ -136,7 +136,7 @@ table {
   }
 
   .plus {
-    color: $accent-main;
+    color: $blue;
 
     &::before {
       content: '+';

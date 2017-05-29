@@ -2,7 +2,7 @@ title: Ela Conf
 url: http://elaconf.com
 baseurl: ''
 location: "Philadelphia, Pennsylvania"
-mission: "We are a not-for-profit event with a goal to create a safe, supportive, inspiring and comfortable <em>community</em> for women and marginalized genders to gain the confidence needed to become leaders, open source contributors, speakers, and teachers in the world of tech."
+mission: "A safe, inclusive tech leadership conference and community for adult (18+) marginalized genders to connect with and empower one another."
 tagline: Empowering more women and marginalized genders to be leaders in tech.
 
 author:
@@ -18,14 +18,47 @@ permalink: /:categories/:title/
 sass:
   style: :compressed
 
-twitter: elaconf
+twitter: https://www.twitter.com/elaconf
 email: hello@elaconf.com
 slack: https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform
+youtube: https://www.youtube.com/channel/UCrOaNE6f1r6Xrgmpq3UzcIA
+medium: https://medium.com/@elaconf
+instagram: https://www.instagram.com/ela_community/
+newsletter: http://elaconf.us11.list-manage1.com/subscribe?u=35575c3d011d3489cb7c3c214&id=e88ae52852
 
 collections:
   organizers:
     output: true
     permalink: /organizers/:path/
+  speakers:
+    output: true
+    permalink: /2017/speakers/:path/
+  agenda:
+    output: true
+    permalink: /2017/agenda/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "organizers"
+    values:
+      layout: "speaker"
+      category: "organizers"
+      topic: Organizer
+  - scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"
+      category: "speakers"
+      topic: Speaker
+  - scope:
+      path: ""
+      type: "agenda"
+    values:
+      layout: "agenda"
+      category: "agenda"
+      topic: Agenda
 
 exclude:
 - Gemfile
@@ -40,12 +73,3 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
-
-defaults:
-  - scope:
-      path: ""
-      type: "organizers"
-    values:
-      layout: "speaker"
-      category: "organizers"
-      topic: Organizer
