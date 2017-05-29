@@ -1,36 +1,62 @@
 .organizer {
-  margin-bottom: 5em;
-}
+  margin-bottom: 4em;
 
-.organizer-bio {
-  max-width: 675px;
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
 
-  @include breakpoint(medium) {
-    margin: 0 auto;
-    padding: 1em .5em;
+    .organizer-img {
+      @include breakpoint (medium) {
+        margin-left: 3em;
+        margin-right: 0;
+      }
+    }
   }
-
 }
 
 .organizer-img {
-  border: .4em solid $light;
+  background-blend-mode: screen;
+  background-color: $purple;
+  background-size: 100%;
   display: block;
-  margin-bottom: 2em;
-  margin-left: auto;
-  margin-right: auto;
+  flex-shrink: 0;
+  height: 200px;
+  margin: 0 auto 1em;
+  width: 200px;
 
-  @include breakpoint(medium) {
-    margin-bottom: 0;
-    width: 40%;
+  @include breakpoint (medium) {
+    margin-right: 3em;
   }
 
-  @include breakpoint(large) {
-    width: 25%;
+  @include breakpoint (large) {
+    height: 300px;
+    width: 300px;
   }
 
 }
 
-.organizer:nth-of-type(even) .organizer-img {
-  border-radius: 100%;
+.organizer-bio {
+  display: block;
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 0;
 }
 
+.organizer-links {
+  margin-top: 1em;
+
+  @include breakpoint(small) {
+    text-align: center;
+  }
+
+  svg {
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    path {
+      fill: rgba($white, .75);
+    }
+  }
+}

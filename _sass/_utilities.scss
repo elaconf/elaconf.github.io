@@ -1,4 +1,39 @@
 
+.hide-mobile {
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+}
+
+.show-mobile {
+  display: none;
+
+  @include breakpoint(small) {
+    display: inline-block;
+  }
+
+}
+
+.show-mobile-block {
+  display: none;
+
+  @include breakpoint(small) {
+    display: block;
+  }
+
+}
+
+.show-desktop {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: inline-block;
+  }
+
+}
+
 @include breakpoint(small) {
   .hide-small {
     display: none;
@@ -20,8 +55,25 @@
 
 }
 
+.center-mobile {
+
+  @include breakpoint (small) {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+  }
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+%columns,
 .columns {
   -moz-columns: 2 300px;
   -webkit-columns: 2 300px;
   columns: 2 300px;
 }
+

@@ -18,9 +18,12 @@ permalink: /:categories/:title/
 sass:
   style: :compressed
 
-twitter: elaconf
+twitter: https://www.twitter.com/elaconf
 email: hello@elaconf.com
 slack: https://docs.google.com/forms/d/e/1FAIpQLSctRXPSgQaXHkawUB2gP8NR0w41KsAbZit8AZr4q19swxQ50A/viewform
+youtube: https://www.youtube.com/channel/UCrOaNE6f1r6Xrgmpq3UzcIA
+medium: https://medium.com/@elaconf
+instagram: https://www.instagram.com/ela_community/
 
 collections:
   organizers:

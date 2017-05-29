@@ -3,7 +3,8 @@ title: Joni Trythall
 image: joni-trythall.png
 social: twitter
 handle: JoniTrythall
+link: http://jonibologna.com/
 order: 1
 ---
 
-Joni Trythall is a designer, author, occasional teacher, and all the time mom. Joni got started in tech because she wanted to bring her colorful illustrations to life on the screen and hasn’t looked back since. Years later she works to give back to the community that has taught and supported her so much. She lives at the tip top of Delaware and is known for making gluten free cookies that don’t taste gluten free.
+Joni Trythall is a designer that works from home at the top of Delaware. She publishes books and articles on front-end design, such as [Pocket Guide to Writing SVG](http://svgpocketguide.com/book/), and co-founded Ela in 2015 to create a more welcoming and inclusive conference experience for marginalized individuals in tech. Joni makes gluten free cookies that “don’t taste gluten free” and enjoys sharing drawing projects with her son [on their blog](http://www.bolognaandben.com/).

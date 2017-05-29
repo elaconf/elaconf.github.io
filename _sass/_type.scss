@@ -14,18 +14,8 @@ strong {
   font-weight: 700;
 }
 
-h1,
-h2,
-h3,
-.button,
-header,
-footer,
-.nav,
-table,
-.sticky-nav,
-.sidebar-link,
-.header-nav-item,
-.sponsors-level-name {
+.fancy,
+%fancy {
   font-family: $font-headings;
 }
 
@@ -33,7 +23,11 @@ h1,
 h2,
 h3,
 h4 {
+
+  @extend %fancy;
+
   font-weight: inherit;
+  letter-spacing: 1px;
   line-height: 1.2;
   margin: 1.414em 0 .5em;
 }
@@ -43,7 +37,10 @@ h1 {
   margin-top: 0;
 }
 
-h2 {font-size: 1.953em;}
+h2 {
+  color: $purple;
+  font-size: 1.953em;
+}
 
 h3,
 %h3 {font-size: 1.563em;}
@@ -53,6 +50,9 @@ h4 {font-size: 1.25em;}
 small,
 .small,
 %small {font-size: .8em;}
+
+.large,
+%large {font-size: 1.2em;}
 
 a {
   color: $link-color;
@@ -65,7 +65,7 @@ a {
 }
 
 ::selection {
-  background: $text-color;
+  background: $purple;
   color: $white;
 }
 
@@ -75,36 +75,14 @@ a {
 
 .text-center { text-align: center; }
 
-.video-link {
-  display: inline-block;
-  font-weight: 700;
-  margin-bottom: .25em;
-}
-
 blockquote {
 
-  background: rgba($accent-main, .1);
+  background: rgba($blue, .1);
   font-style: italic;
   margin: 0 0 .5em;
   max-width: 600px;
   padding: 1em;
   position: relative;
-}
-
-.evaluation-quotes blockquote {
-  @extend %small;
-
-  margin: 0 1em 1em;
-
-  &:nth-child(odd) {
-    background: none;
-  }
-
-}
-
-section blockquote p {
-  margin-bottom: 0;
-  text-align: center;
 }
 
 .quiet {

@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-
 {% include header.html %}
-<section class="limiter limiter-side pull-up">
+<section class="limiter limiter-large">
   <h1>{{page.title}}</h1>
 
   <div alt="{{page.title}}" class="speaker-img show-large" style="background-image:url(/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.png{% endif %})"></div>
@@ -22,4 +21,3 @@ layout: default
     <p><a href="/{{page.category}}" class="button">&larr; {{page.category | capitalize}}</a></p>
   </div>
 </section>
-{% include footer.html %}

@@ -1,10 +1,6 @@
 
 .page-inner {
 
-  .ela-logo:hover {
-    background: $accent-main;
-  }
-
   section {
     min-height: 450px;
   }
@@ -21,21 +17,6 @@
 
 }
 
-.blog {
-  margin-bottom: 2em;
-}
-
-.blog-img {
-  background-blend-mode: overlay;
-  background-size: 100%;
-  border-radius: 100%;
-  display: inline-block;
-  height: 40px;
-  margin-right: .25em;
-  vertical-align: middle;
-  width: 40px;
-}
-
 
 abbr {
   position: relative;
@@ -46,7 +27,7 @@ abbr {
 
     &:hover::after {
 
-      background: $accent-tertiary;
+      background: $purple;
       color: $white;
       display: block;
       left: 0;

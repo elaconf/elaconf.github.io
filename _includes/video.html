@@ -1,0 +1,29 @@
+<div class="promo-wrapper">
+  <div class="promo" id="promo"></div>
+  <script async src="https://www.youtube.com/iframe_api"></script>
+  <script>
+  function onYouTubeIframeAPIReady() {
+    var player;
+    player = new YT.Player('promo', {
+      videoId: 'Ja5WqfXO720',
+      playerVars: {
+        autoplay: 1,
+        controls: 1,
+        showinfo: 0,
+        modestbranding: 1,
+        loop: 1,
+        fs: 0,
+        cc_load_policy: 0,
+        iv_load_policy: 3,
+        autohide: 0,
+        playlist: 'jGt5aIuN0p8'
+      },
+      events: {
+        onReady: function(e) {
+          e.target.mute();
+        }
+      }
+    });
+  }
+  </script>
+</div>

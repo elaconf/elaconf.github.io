@@ -1,15 +1,29 @@
+.page-main {
+  .button {
+    color: $white;
+
+    &:hover {
+      color: rgba($white, .75);
+    }
+  }
+}
+
 .button {
-  background: $blue;
+
+  @extend %fancy;
+
+  background: transparent;
+  border: .2em solid;
   border-radius: 2em;
-  color: $white;
+  color: $blue;
+  cursor: pointer;
   display: inline-block;
   margin-bottom: .5em;
-  padding: .25em 1em;
+  padding: .5em 1em;
   text-decoration: none;
 
   &:hover {
-    background: darken($blue, 10%);
-    color: $white;
+    color: darken($blue, 10%);
     text-decoration: none;
   }
 
@@ -22,4 +36,14 @@
 
 .button-large {
   font-size: 1.2em;
+}
+
+.badge {
+
+  @extend %fancy;
+
+  font-size: .8em;
+  letter-spacing: 3px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }

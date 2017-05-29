@@ -5,6 +5,8 @@
 @import 'normalize';
 
 @import 'mixins';
+@import 'utilities';
+@import 'flex';
 @import 'variables';
 @import 'grid';
 
@@ -14,16 +16,15 @@
 @import 'table'; // table
 @import 'buttons'; // buttons
 
-@import 'sticky';
+//@import 'sticky';
 
 @import 'homepage'; // front page styles
   @import 'organizers';
-  @import 'speakers';
-  @import 'sponsors';
-  @import 'agenda';
-  @import 'jobs';
-  @import 'volunteers';
-  @import 'map';
+  //@import 'speakers';
+  //@import 'sponsors';
+  //@import 'agenda';
+  //@import 'jobs';
+  //@import 'volunteers';
+  //@import 'map';
 
 @import 'pages'; // inner page styles
-@import 'utilities';
