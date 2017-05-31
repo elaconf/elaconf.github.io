@@ -1,5 +1,12 @@
 # EXAMPLE
-#- name: Mapbox
-#  site: https://www.mapbox.com
-#  image: mapbox.svg
-#  level: Conference Supporter
+- name: AgileBits
+  site: https://agilebits.com
+  level: Community Builder
+
+- name: iStrategyLabs
+  site: https://isl.co/
+  level: Community Builder
+
+- name: Wildbit
+  site: http://wildbit.com/
+  level: Community Builder

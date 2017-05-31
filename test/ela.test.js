@@ -42,6 +42,11 @@ fs.readdirSync('images/volunteers/').forEach(function(i) {
 });
 */
 
+var sponsorImg = [];
+fs.readdirSync('_includes/sponsors/').forEach(function(i) {
+  sponsorImg.push(i);
+});
+
 // build array of permalinks
 var permalinks = posts.reduce(function(prev, post, index, list) {
   var permalink;
@@ -88,10 +93,9 @@ var sponsors = data.sponsors.metadata.map(function(post) {
   return post.name;
 });
 // build array of levels
-var levels = [];
-for (var level in data.levels.metadata) {
-  levels.push(level);
-}
+var levels = data.levels.metadata.map(function(post) {
+  return post.name;
+});
 
 function getDir(srcpath) {
   return fs.readdirSync(srcpath).filter(function(file) {
@@ -230,9 +234,8 @@ data.sponsors.metadata.forEach(function(post) {
     t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
 
     if (post.level !== 'Individuals') {
-      t.ok(post.image,'sponsor must have an \'image\'');
+      t.notEqual(sponsorImg.indexOf(post.name.toLowerCase() + '.svg'), -1, 'sponsor must have image: _includes/sponsors/' + post.name.toLowerCase() + '.svg')
       t.ok(post.site,'sponsor must have a \'site\'');
-      t.ok(post.twitter,'sponsor must have a \'twitter\'');
     }
 
     t.end();

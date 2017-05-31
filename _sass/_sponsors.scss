@@ -1,42 +1,16 @@
-.sponsor-image {
+.sponsors {
+  @extend %flex;
+  @extend %flex-wrap;
+  //@extend %flex-space-between;
+
+  margin: 2em 0 3em;
+}
+
+.sponsor {
   display: block;
-  margin: 2em auto;
-  max-width: 60%;
+  margin-right: 2em;
 
-  @include breakpoint(medium) {
-    display: inline-block;
-    height: 150px;
-    margin: 0 .5em 0 0;
+  svg {
+    height: 50px;
   }
-
 }
-
-.sponsor-level {
-  @include clearfix();
-
-  margin-bottom: .5em;
-}
-
-.sponsors-level-name {
-
-  @extend %h3;
-
-  @include breakpoint(medium) {
-    background: $purple;
-    color: $white;
-    float: left;
-    font-size: 1em;
-    height: 150px;
-    margin-right: 1em;
-    padding: .25em;
-    text-align: center;
-    width: 150px;
-  }
-
-}
-
-.sponsor-level-individuals .sponsors-images {
-  font-family: $font-headings;
-  padding: 1em 0;
-}
-
