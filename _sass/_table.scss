@@ -57,6 +57,8 @@ table {
 
 .by-the-nums {
 
+  @extend %small;
+
   @include breakpoint(small) {
 
     thead,
@@ -72,11 +74,12 @@ table {
     th ~ td,
     th ~ th {
       float: left;
-      width: 50%;
+      width: 33.33%;
     }
 
     th,
     td {
+      min-height: 36px;
       padding: .5em 0;
     }
   }
