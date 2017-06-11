@@ -73,7 +73,8 @@
   }
 
   @include breakpoint(large) {
-    width: 33.33%;
+    max-width: 500px;
+    width: 39%;
   }
 
   form {
@@ -251,7 +252,7 @@
   @extend %flex-space-between;
 
   margin: 2em auto 0;
-  max-width: 450px;
+  max-width: 300px;
 }
 
 .link-social {
