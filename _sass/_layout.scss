@@ -114,8 +114,15 @@ footer {
   }
 }
 
+// scss-lint:disable PropertySortOrder
 .footer-social-links {
+  -webkit-columns: 2 100px;
+  -moz-columns: 2 100px;
   columns: 2 100px;
+
+  @include breakpoint(small) {
+    margin-top: 2em;
+  }
 }
 
 .footer-social-link {
