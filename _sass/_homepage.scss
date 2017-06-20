@@ -298,16 +298,55 @@
   min-height: calc(50vmin - 2em) !important;
 }
 
-.past-sponsors {
+.all-sponsors {
   margin-top: 2em;
 
   @media (min-width: 900px) and (max-width: 1400px) {
     margin-right: 10em;
   }
 
+  .sponsor-group {
+    margin-bottom: 1em;
+  }
+
+  .sponsor-logo {
+    background: $white;
+    border-radius: 2em;
+    display: block;
+    margin: 0 1em 1em 0;
+    padding: .5em 1em;
+
+    &:hover {
+      background: rgba($white, .75);
+    }
+  }
+
   svg {
     display: block;
     height: 40px;
-    margin: 0 20px 25px 0;
+  }
+
+  .sponsor-signature-sponsor svg {
+    height: 4em;
+  }
+
+  .sponsor-ecosystem-supporter svg {
+    height: 3.5em;
+  }
+
+  .sponsor-networking-event-sponsor svg {
+    height: 3em;
+  }
+
+  .sponsor-conference-supporter svg {
+    height: 2.5em;
+  }
+
+  .sponsor-community-builder svg {
+    height: 2em;
+  }
+
+  .sponsor-friend-of-ela svg {
+    height: 1em;
   }
 }
