@@ -62,7 +62,7 @@ head: |
           {% if count > 0 and level != 'Friend of Ela' %}
             <div class="sponsor-group">
               <div class="badge">{{level}}</div>
-              <div class="flex flex-space-between flex-wrap">
+              <div class="flex flex-wrap">
               {% for sponsor in sponsors %}
               {% assign name = sponsor.name | slugify %}
               {% assign img = '/sponsors/' | append: name | append: '.svg' %}
