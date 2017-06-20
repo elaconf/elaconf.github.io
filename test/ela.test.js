@@ -93,9 +93,7 @@ var sponsors = data.sponsors.metadata.map(function(post) {
   return post.name;
 });
 // build array of levels
-var levels = data.levels.metadata.map(function(post) {
-  return post.name;
-});
+var levels = data.levels.metadata;
 
 function getDir(srcpath) {
   return fs.readdirSync(srcpath).filter(function(file) {
