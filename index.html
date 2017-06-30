@@ -76,16 +76,35 @@ head: |
     </div>
     <div class="corner-button"><a href="http://elaconf.com/docs/ela-prospectus-2017.pdf" class="button">Prospectus</a></div>
   </div>
-  <div class="corner corner-purple hide-mobile"></div>
+  <div class="corner corner-blue-light hide-mobile"></div>
 </section>
 
-<section class="bg-purple hide-mobile">
+<section id="call-for-proposals" class="bg-purple">
+  <div class="limiter limiter-large">
+    <h2>Call For Proposals</h2>
+    <p>The Call For Proposals for Ela Conf 2017 is open now until July 22nd!</p>
+    <p>Check out <a href="https://medium.com/@elaconf/950b861d0f9e">our blog post</a> to learn about the types of proposals you can submit, important dates, speaker benefits including travel stipends, and talk proposal ideas.</p>
+    {% comment %}<div class="speakers">
+      {% assign speakers = site.speakers | sort: 'order' %}
+      {% for speaker in speakers %}
+      <a class="speaker" href="{{speaker.url}}">
+        <div class="speaker-img" style="background-image:url('/images/speakers/{{speaker.title | slugify}}.jpg')"></div>
+        <div class="speaker-title">{{speaker.title}}</div>
+        {% if speaker.subtitle %}<div class="speaker-subtitle">{{speaker.subtitle}}</div>{% endif %}
+      </a>
+      {% endfor %}
+    </div>{% endcomment %}
+    <div class="corner-button"><a href="https://goo.gl/forms/5UhUYSsDyl6ynZSt1" class="button">Call For Proposals</a></div>
+  </div>
+  <div class="corner corner-purple-light hide-mobile"></div>
+</section>
+
+<section class="bg-blue hide-mobile">
   {% include video.html %}
   <div class="limiter limiter-large">
     <div class="corner-button"><a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfzGRVQwDuKeE7QA77NZTTU" class="button">Promo videos</a></div>
   </div>
   <div class="corner corner-blue hide-mobile"></div>
-
 </section>
 
 <div class="images">
