@@ -30,6 +30,7 @@
   }
 }
 
+// scss-lint:disable PropertySpelling
 .speakers {
   display: grid;
   grid-auto-rows: minmax(100px, auto);
@@ -40,7 +41,19 @@
   @include breakpoint(medium) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  > .speaker {
+    float: left;
+    width: 33.333%;
+  }
 }
+
+@supports (display: grid) {
+  .speakers > .speaker {
+    width: auto;
+  }
+}
+
 
 .speaker {
   display: block;
