@@ -29,3 +29,46 @@
     display: none;
   }
 }
+
+// scss-lint:disable PropertySpelling
+.speakers {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2em 0;
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > .speaker {
+    float: left;
+    width: 33.333%;
+  }
+}
+
+@supports (display: grid) {
+  .speakers > .speaker {
+    width: auto;
+  }
+}
+
+
+.speaker {
+  display: block;
+  text-align: center;
+
+  .speaker-img {
+    @extend %bg-blend-purple;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: .5em;
+    padding-bottom: 100%;
+  }
+
+  .speaker-subtitle {
+    @extend %small;
+  }
+}

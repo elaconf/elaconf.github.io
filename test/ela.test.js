@@ -17,14 +17,6 @@ fs.readdirSync('images/organizers/').forEach(function(i) {
   organizersImg.push(i);
 });
 
-/*
-var agenda = [];
-fs.readdirSync('_agenda/').forEach(function(i) {
-  agenda.push('_agenda/' + i);
-  posts.push('_agenda/' + i);
-});
-*/
-/*
 var speakers = [];
 fs.readdirSync('_speakers/').forEach(function(i) {
   speakers.push('_speakers/' + i);
@@ -35,6 +27,15 @@ var speakersImg = [];
 fs.readdirSync('images/speakers/').forEach(function(i) {
   speakersImg.push(i);
 });
+
+/*
+var agenda = [];
+fs.readdirSync('_agenda/').forEach(function(i) {
+  agenda.push('_agenda/' + i);
+  posts.push('_agenda/' + i);
+});
+*/
+/*
 
 var volunteersImg = [];
 fs.readdirSync('images/volunteers/').forEach(function(i) {
@@ -196,7 +197,7 @@ agenda.forEach(function(post) {
 });
 */
 
-/*
+
 speakers.forEach(function(post) {
   var file = readPost(post);
 
@@ -207,7 +208,7 @@ speakers.forEach(function(post) {
 
     t.ok(metadata.title,"post must have a title");
 
-    var tempImg = metadata.title.replace(/\s+/g, '-').replace('\'','-').replace('.','').toLowerCase() + '.png';
+    var tempImg = metadata.title.replace(/\s+/g, '-').replace('\'','-').replace('.','').toLowerCase() + '.jpg';
 
     if (metadata.image) t.notEqual(speakersImg.indexOf(metadata.image), -1, metadata.image + ' must exist in images/speakers/ folder');
     else t.notEqual(speakersImg.indexOf(tempImg), -1, tempImg + ' must exist in images/speakers/ folder');
@@ -219,7 +220,7 @@ speakers.forEach(function(post) {
   });
 
 });
-*/
+
 
 data.sponsors.metadata.forEach(function(post) {
 

@@ -37,23 +37,20 @@ Recommended build: `bundle exec jekyll serve -w`
   * `company` &mdash; name of the company
   * `link` &mdash; link to the job listing on the company's website
 
-<!--
 
 ### Speakers
 
-* Each speaker has her own page located in `_speakers/`
+* Each speaker has their own page located in `_speakers/`
 * Each file is named: `first-last.md`.
 * In the front matter of each file, please include:
   - `title` &mdash; first and last name
-  - `image` &mdash; optional. The name and extension of the image. Save images in the `/images/speakers/` folder. (If you don't define an image, we'll automatically use the profile picture from the social site you define below.)
   - `social` &mdash; twitter, facebook, instagram, gravatar
   - `handle` &mdash; social handle from platform chosen in `social`
   - `topic` &mdash; optional.
 * The bio goes directly in the post content area (below the front matter)
+* Save image in `images/speakers/` saved in the following format: `first-last.jpg`
 
-![image](https://cloud.githubusercontent.com/assets/2180540/10857560/2b1f4af8-7f25-11e5-951f-b817bbc24217.png)
-
-
+<!--
 ### Talks
 
 * Each talk has its own page located in `_agenda/`
