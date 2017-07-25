@@ -2,7 +2,7 @@
 title: Shanise Barona
 image: shanise-barona.jpg
 social: twitter
-handle: shanisefeliz
+handle: shanisebarona
 link: http://shanisebarona.com/
 order: 5
 ---
