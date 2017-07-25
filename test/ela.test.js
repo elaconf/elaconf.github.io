@@ -233,7 +233,7 @@ data.sponsors.metadata.forEach(function(post) {
     t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
 
     if (post.level !== 'Individuals') {
-      t.notEqual(sponsorImg.indexOf(post.name.toLowerCase() + '.svg'), -1, 'sponsor must have image: _includes/sponsors/' + post.name.toLowerCase() + '.svg')
+      t.notEqual(sponsorImg.indexOf(post.name.toLowerCase().replace(' ', '-') + '.svg'), -1, 'sponsor must have image: _includes/sponsors/' + post.name.toLowerCase().replace(' ', '-') + '.svg')
       t.ok(post.site,'sponsor must have a \'site\'');
     }
 
