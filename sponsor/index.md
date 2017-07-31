@@ -16,7 +16,8 @@ Reach out to us at [hello@elaconf.com](mailto:hello@elaconf.com) to become a spo
 
 <div class="sponsors">
 {% for sponsor in site.data.sponsors %}
-{% assign img = '/sponsors/' | append: sponsor.name | downcase | append: '.svg' %}
+{% assign sponsorName = sponsor.name | downcase | slugify %}
+{% assign img = '/sponsors/' | append: sponsorName | append: '.svg' %}
 <a href="{{sponsor.site}}" class="sponsor">{% include {{img}} %}</a>
 {% endfor %}
 </div>

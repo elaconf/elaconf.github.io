@@ -54,29 +54,33 @@ head: |
     <h2>Sponsorship</h2>
     <p>This event is simply not possible without your support. We aim to keep ticket costs low while also offering childcare stipends, financial and diversity grants, cover all meals, secure a centrally located venue, reimburse speaker travel and lodging, and host a networking party following the event.</p>
     <p>We cannot wait to call you a partner in our mission. <a href="http://elaconf.com/docs/ela-prospectus-2017.pdf">Review our prospectus</a> and <a href="mailto:hello@elaconf.com">email us to learn more</a>.</p>
-    <div class="all-sponsors">
-      <h3>2017 Sponsors</h3>
-        {% for level in site.data.levels %}
-          {% assign sponsors = site.data.sponsors | where: 'level', level %}
-          {% assign count = sponsors | size %}
-          {% if count > 0 and level != 'Friend of Ela' %}
-            <div class="sponsor-group">
-              <div class="badge">{{level}}</div>
-              <div class="flex flex-wrap">
-              {% for sponsor in sponsors %}
-              {% assign name = sponsor.name | slugify %}
-              {% assign img = '/sponsors/' | append: name | append: '.svg' %}
-              <a href="{{sponsor.site}}" class="sponsor-logo sponsor-{{level | slugify}}">{% include {{img}} %}</a>
-              {% endfor %}
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
-
-    </div>
     <div class="corner-button"><a href="http://elaconf.com/docs/ela-prospectus-2017.pdf" class="button">Prospectus</a></div>
   </div>
   <div class="corner corner-blue-light hide-mobile"></div>
+</section>
+
+<section id="sponsors">
+  <div class="limiter">
+    <h2>Sponsors</h2>
+    <div class="all-sponsors">
+      {% for level in site.data.levels %}
+      {% assign sponsors = site.data.sponsors | where: 'level', level %}
+      {% assign count = sponsors | size %}
+      {% if count > 0 and level != 'Friend of Ela' %}
+      <div class="badge">{{level}}</div>
+      <div class="sponsor-group">
+        <div class="flex flex-wrap">
+          {% for sponsor in sponsors %}
+          {% assign name = sponsor.name | slugify %}
+          {% assign img = '/sponsors/' | append: name | append: '.svg' %}
+          <a href="{{sponsor.site}}" class="sponsor-logo sponsor-{{level | slugify}}">{% include {{img}} %}</a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 <section id="speakers" class="bg-purple">

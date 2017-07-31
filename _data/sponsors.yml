@@ -1,9 +1,17 @@
+- name: Braintree
+  site: https://www.braintreepayments.com/
+  level: Networking Event Sponsor
+
 - name: Panic
   site: https://panic.com/
   level: Conference Supporter
 
 - name: GitHub
   site: https://github.com/
+  level: Conference Supporter
+
+- name: Mapbox
+  site: https://www.mapbox.com/
   level: Conference Supporter
 
 - name: AgileBits
@@ -20,6 +28,18 @@
 
 - name: Zapier
   site: https://zapier.com
+  level: Community Builder
+
+- name: US Cellular
+  site: https://www.uscellular.com/
+  level: Community Builder
+
+- name: PromptWorks
+  site: https://www.promptworks.com/
+  level: Community Builder
+
+- name: React Rally
+  site: http://www.reactrally.com/
   level: Community Builder
 
 - name: Seer
