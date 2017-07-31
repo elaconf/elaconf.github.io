@@ -37,11 +37,6 @@ head: |
     <p>This is a 1.5 day event, spanning a Friday evening and full Saturday. All timeline announcements, such as CFP opening and ticket sales, will be published on our <a href="https://medium.com/@elaconf">blog</a> and <a href="http://elaconf.us11.list-manage.com/subscribe?u=35575c3d011d3489cb7c3c214&id=e88ae52852">newsletter</a>.</p>
 
     <p>All attendees, speakers, volunteers, specials guests, and organizers are expected to follow the <a href="{{site.baseurl}}/code-of-conduct/">Code of Conduct</a> at all times.</p>
-
-    <h2 id='tickets'>Tickets</h2>
-
-    {% include tickets.html %}
-
   </div>
 </section>
 
@@ -51,6 +46,13 @@ head: |
     <div class="corner-button"><a href="http://elaconf.com/2016" class="button">2016 recap</a></div>
   </div>
   <div class="hide-mobile corner corner-purple-light hide-mobile"></div>
+</section>
+
+<section id="tickets" class="">
+  <div class="limiter">
+    <h2 id='tickets'>Tickets</h2>
+    {% include tickets.html %}
+  </div>
 </section>
 
 <section id="sponsorship" class="bg-blue flex flex-center">
@@ -97,6 +99,7 @@ head: |
       </a>
       {% endfor %}
     </div>
+    <div class="corner-button"><a href="#tickets" class="button">Buy a ticket</a></div>
   </div>
   <div class="corner corner-purple-light hide-mobile"></div>
 </section>
