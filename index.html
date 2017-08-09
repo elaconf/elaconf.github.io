@@ -79,7 +79,7 @@ head: |
           {% for sponsor in sponsors %}
           {% assign name = sponsor.name | slugify %}
           {% assign img = '/sponsors/' | append: name | append: '.svg' %}
-          <a href="{{sponsor.site}}" class="sponsor-logo sponsor-{{level | slugify}}">{% include {{img}} %}</a>
+          <a href="{{sponsor.site}}" class="partner-img sponsor-{{level | slugify}}">{% include {{img}} %}</a>
           {% endfor %}
         </div>
       </div>
