@@ -348,3 +348,41 @@
     height: 30px;
   }
 }
+
+
+.ad {
+  @extend %flex;
+  @extend %flex-nowrap;
+  @extend %flex-center-y;
+
+  background-color: $blue;
+  border-radius: .25em;
+  color: $white;
+  margin-bottom: 1.5em;
+  padding: 1em 1.5em;
+
+  p {
+    margin-bottom: 0;
+
+    @include breakpoint(medium) {
+      margin-left: 1em;
+    }
+
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($white, 15%);
+    }
+  }
+
+  svg {
+    display: block;
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+  }
+}
