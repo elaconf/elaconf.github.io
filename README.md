@@ -50,7 +50,6 @@ Recommended build: `bundle exec jekyll serve -w`
 * The bio goes directly in the post content area (below the front matter)
 * Save image in `images/speakers/` saved in the following format: `first-last.jpg`
 
-<!--
 ### Talks
 
 * Each talk has its own page located in `_agenda/`
@@ -66,4 +65,7 @@ Recommended build: `bundle exec jekyll serve -w`
 
 ![image](https://cloud.githubusercontent.com/assets/2180540/10857537/07e55e1a-7f25-11e5-8604-b4d5eee38c28.png)
 
--->
+## Volunteers
+
+* Add the volunteer's `name`, `social` media site, and `handle` for that site to `_data/volunteers.yml`.
+* Save their picture in the `images/volunteers/` folder as `firstname-lastname.jpg`.

@@ -4,6 +4,15 @@ description: Ela Conf - October 27 &amp; 28 2017 in Philadelphia. A safe, inclus
 head: |
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+toc:
+- About
+- Tickets
+- Speakers
+- Agenda
+- Sponsorship
+- Venue
+- Volunteers
+- Organizers
 ---
 
 <div class="hero">
@@ -24,6 +33,19 @@ head: |
         <a class="link-social flex-no-shrink" href="{{site.instagram}}">{% include svg/instagram.svg %}</a>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- ///////////////////////////////////////////////////// -->
+<!-- Sticky Nav -->
+<!-- ///////////////////////////////////////////////////// -->
+<div class="sticky-nav hide-mobile">
+  <div class="clearfix center">
+    <ul class="">
+      {% for section in page.toc %}
+      <li><a href="#{{section | slugify}}" class="item-{{section | slugify}}">{{section}}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 
@@ -61,6 +83,32 @@ head: |
   </div>
 </section>
 
+<section id="speakers" class="bg-purple">
+  <div class="limiter limiter-xlarge">
+    <h2>Speakers</h2>
+    <div class="speakers">
+      {% assign speakers = site.speakers | sort: 'order' %}
+      {% for speaker in speakers %}
+      <a class="speaker" href="{{site.baseurl}}{{speaker.url}}">
+        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/speakers/{{speaker.title | slugify}}.jpg')"></div>
+        <div class="speaker-title">{{speaker.title}}</div>
+        {% if speaker.subtitle %}<div class="speaker-subtitle">{{speaker.subtitle}}</div>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+    <div class="corner-button"><a href="#tickets" class="button">Buy a ticket</a></div>
+  </div>
+  <div class="corner corner-purple-light hide-mobile"></div>
+</section>
+
+<section id="agenda">
+  <div class="limiter limiter-large">
+    <h2>Agenda</h2>
+    {% include agenda.html %}
+  </div>
+</section>
+
+
 <section id="sponsorship" class="bg-blue flex flex-center">
   <div class="limiter limiter-large">
     <h2>Sponsorship</h2>
@@ -95,25 +143,6 @@ head: |
   </div>
 </section>
 
-<section id="speakers" class="bg-purple">
-  <div class="limiter limiter-large">
-    <h2>Speakers</h2>
-    <p>The Call For Proposals for Ela Conf 2017 is now closed. Check back on September 1st when we announce our entire speaker line-up.</p>
-    <div class="speakers">
-      {% assign speakers = site.speakers | sort: 'order' %}
-      {% for speaker in speakers %}
-      <a class="speaker" href="{{speaker.url}}">
-        <div class="speaker-img" style="background-image:url('/images/speakers/{{speaker.title | slugify}}.jpg')"></div>
-        <div class="speaker-title">{{speaker.title}}</div>
-        {% if speaker.subtitle %}<div class="speaker-subtitle">{{speaker.subtitle}}</div>{% endif %}
-      </a>
-      {% endfor %}
-    </div>
-    <div class="corner-button"><a href="#tickets" class="button">Buy a ticket</a></div>
-  </div>
-  <div class="corner corner-purple-light hide-mobile"></div>
-</section>
-
 <section class="bg-blue hide-mobile">
   {% include video.html %}
   <div class="limiter limiter-large">
@@ -128,13 +157,16 @@ head: |
 </div>
 
 <section class="vmin50" id="venue">
-  <div class="limiter">
-    <h2>Venue</h2>
-    <p>University of Arts<br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA 19147</p>
-    <h3>Accomodations</h3>
-    <p>Courtyard Philadelphia Downtown by Marriott<br>21 N. Juniper Street<br>Philadelphia, PA 19107, US</p>
-    <p>We have teamed up with the Marriott Courtyard in downtown Philadelphia for the event. The hotel is within walking distance and they have secured a limited number of rooms at the rate of $229 a night. You can <a href="https://aws.passkey.com/e/49316132">book online</a> or call 1-800-321-2211 or 1-888-887-8130. <em>Cutoff date for this rate is October 6th.</em></p>
-    <p>Looking to save some cash and sync up with other speakers regarding lodging or just needing more suggestions from locals? We have a Slack channel for that: #lodging</p>
+  <div class="limiter grid flex-align-top">
+    <div class="half">
+      <h3>Venue</h3>
+      <p><a href="http://www.uarts.edu/locations/campus/gershman-hall">University of the Arts</a><br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA 19147</p>
+    </div>
+    <div class="half">
+      <h3>Accomodations</h3>
+      <p><a href="http://www.marriott.com/hotels/travel/phldc-courtyard-philadelphia-downtown/">Courtyard Philadelphia Downtown by Marriott</a><br>21 N. Juniper Street<br>Philadelphia, PA 19107</p>
+      <a href="/venue#accommodations">Get the group rate.</a>
+    </div>
   </div>
 </section>
 {% include map.html %}
@@ -142,6 +174,22 @@ head: |
   <div class="image4"></div>
   <div class="image5"></div>
 </div>
+
+<section id="volunteers">
+  <div class="limiter limiter-xlarge">
+    <h2>Volunteers</h2>
+    <p>Big thank you to our volunteers. We couldn't do this without you! Our volunteers are helping before and during the event as speaker mentors, timekeepers, sketchnoters, and more!</p>
+    <div class="volunteers">
+      {% assign volunteers = site.data.volunteers | sort: 'name' %}
+      {% for volunteer in volunteers %}
+      <a class="volunteer" href="https://www.{{volunteer.social}}.com/{{volunteer.handle}}">
+        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/volunteers/{{volunteer.name | slugify}}.jpg')"></div>
+        <div class="speaker-title">{{volunteer.name}}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <section id="organizers" class="bg-purple">
   <div class="limiter limiter-xlarge">
@@ -166,3 +214,5 @@ head: |
   </div>
   <div class="corner corner-purple-light"></div>
 </section>
+
+<script src="{{site.baseurl}}/js/sticky.js"></script>

@@ -1,0 +1,16 @@
+---
+layout: page
+title: Speakers
+description: Meet Ela Conf 2017's speakers.
+---
+
+<div class="speakers">
+  {% assign speakers = site.speakers | sort: 'order' %}
+  {% for speaker in speakers %}
+  <a class="speaker" href="{{speaker.url}}">
+    <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/speakers/{{speaker.title | slugify}}.jpg')"></div>
+    <div class="speaker-title">{{speaker.title}}</div>
+    {% if speaker.subtitle %}<div class="speaker-subtitle">{{speaker.subtitle}}</div>{% endif %}
+  </a>
+  {% endfor %}
+</div>
