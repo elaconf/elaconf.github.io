@@ -79,6 +79,5 @@
 
 %bg-blend-purple {
   background-blend-mode: screen;
-  background-color: $purple;
+  background-color: rgba($purple, .75);
 }
-

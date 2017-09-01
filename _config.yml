@@ -26,6 +26,8 @@ medium: https://medium.com/@elaconf
 instagram: https://www.instagram.com/ela_community/
 newsletter: http://elaconf.us11.list-manage1.com/subscribe?u=35575c3d011d3489cb7c3c214&id=e88ae52852
 
+future: true
+
 collections:
   organizers:
     output: true
@@ -35,7 +37,7 @@ collections:
     permalink: /2017/speakers/:path/
   agenda:
     output: true
-    permalink: /2017/agenda/:path/
+    permalink: /2017/agenda/:title/
 
 defaults:
   - scope:
@@ -52,6 +54,7 @@ defaults:
       layout: "speaker"
       category: "speakers"
       topic: Speaker
+      order: 100
   - scope:
       path: ""
       type: "agenda"
@@ -69,7 +72,7 @@ exclude:
 - bin
 - test
 
-gems:
+plugins:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap

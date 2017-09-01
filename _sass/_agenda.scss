@@ -34,7 +34,8 @@
       padding: .5em 1em;
 
       &.agenda-time {
-        background: $blue-light;
+        background: rgba($blue-light, .5);
+        //color: $white;
       }
 
     }
@@ -96,7 +97,7 @@
     width: 10em;
 
     &:not(th)::before {
-      background: $blue;
+      background-color: $blue;
       border-radius: .7em;
       content: '';
       height: 1em;
@@ -129,7 +130,7 @@
 }
 
 @include breakpoint(medium) {
-  .session-lunch-and-table-discussions.session-lunch-and-table-discussions.session-lunch-and-table-discussions td {
+  .row-breakout.row-breakout.row-breakout td {
     background: transparent;
   }
 }

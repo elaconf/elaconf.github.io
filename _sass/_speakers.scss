@@ -30,6 +30,13 @@
   }
 }
 
+.page-agenda-single,
+.agenda-table {
+  .speaker-img-small {
+    display: inline-block;
+  }
+}
+
 // scss-lint:disable PropertySpelling
 .speakers {
   display: grid;
@@ -39,12 +46,12 @@
   margin: 2em 0;
 
   @include breakpoint(medium) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   > .speaker {
     float: left;
-    width: 33.333%;
+    width: 25%;
   }
 }
 
@@ -54,7 +61,32 @@
   }
 }
 
+// scss-lint:disable PropertySpelling
+.volunteers {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2em 0;
 
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  > .volunteer {
+    float: left;
+    width: 16.66%;
+  }
+}
+
+@supports (display: grid) {
+  .volunteers > .volunteer {
+    width: auto;
+  }
+}
+
+
+.volunteer,
 .speaker {
   display: block;
   text-align: center;
@@ -71,4 +103,8 @@
   .speaker-subtitle {
     @extend %small;
   }
+}
+
+.volunteer {
+  @extend %small;
 }

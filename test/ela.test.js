@@ -28,20 +28,18 @@ fs.readdirSync('images/speakers/').forEach(function(i) {
   speakersImg.push(i);
 });
 
-/*
 var agenda = [];
 fs.readdirSync('_agenda/').forEach(function(i) {
-  agenda.push('_agenda/' + i);
-  posts.push('_agenda/' + i);
+  if (i[0] !== '.') {
+    agenda.push('_agenda/' + i);
+    posts.push('_agenda/' + i);
+  }
 });
-*/
-/*
 
 var volunteersImg = [];
 fs.readdirSync('images/volunteers/').forEach(function(i) {
   volunteersImg.push(i);
 });
-*/
 
 var sponsorImg = [];
 fs.readdirSync('_includes/sponsors/').forEach(function(i) {
@@ -73,8 +71,8 @@ var permalinks = posts.reduce(function(prev, post, index, list) {
 
 var data = {
   sponsors: readData('_data/', 'sponsors.yml'),
-  levels: readData('_data/', 'levels.yml')
-  //volunteers: readData('_data/', 'volunteers.yml'),
+  levels: readData('_data/', 'levels.yml'),
+  volunteers: readData('_data/', 'volunteers.yml')
   //places: readData('_data/', 'places.yml')
 };
 /*
@@ -83,12 +81,12 @@ var places = data.volunteers.metadata.map(function(post) {
   return post.title;
 });
 */
-/*
+
 // build array of volunteers
 var volunteers = data.volunteers.metadata.map(function(post) {
   return post.name;
 });
-*/
+
 // build array of sponsors
 var sponsors = data.sponsors.metadata.map(function(post) {
   return post.name;
@@ -171,7 +169,6 @@ organizers.forEach(function(post) {
 
 });
 
-/*
 agenda.forEach(function(post) {
   var file = readPost(post);
 
@@ -195,8 +192,6 @@ agenda.forEach(function(post) {
   });
 
 });
-*/
-
 
 speakers.forEach(function(post) {
   var file = readPost(post);
@@ -241,7 +236,6 @@ data.sponsors.metadata.forEach(function(post) {
   });
 });
 
-/*
 data.volunteers.metadata.forEach(function(post) {
 
   test(post.name, function(t) {
@@ -254,13 +248,12 @@ data.volunteers.metadata.forEach(function(post) {
     t.ok(post.social,'volunteer must have a \'social\'');
     t.notEqual(social.indexOf(post.social), -1, 'value of \'social\' must be one of the following: ' + social.join(', '));
     t.ok(post.handle,'volunteer must have a \'handle\'');
-    var img = post.name.toLowerCase().replace(' ','-').replace('\'','-') + '.png';
+    var img = post.name.toLowerCase().replace(' ','-').replace('\'','-') + '.jpg';
     t.notEqual(volunteersImg.indexOf(img), -1, img + ' must exist in images/volunteers/ folder');
 
     t.end();
   });
 });
-*/
 
 /*
 data.places.metadata.forEach(function(post) {
