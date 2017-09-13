@@ -1,10 +1,10 @@
 ---
 title: Sponsor
 layout: page
-description: Your sponsorship will make Ela Conf 2017 even better and support marginalized genders in tech.
+description: Your sponsorship will make Ela Conf 2017 even better and support women (cis and trans), trans men, and genderqueer people in tech.
 ---
 
-Ela is a conference and community with a goal to create a safe, supportive, inspiring and comfortable space for adult (18+) marginalized genders to gain the confidence needed to become leaders, speakers, writers, and teachers in the world of tech.
+Ela is a conference and community with a goal to create a safe, supportive, inspiring and comfortable space for adult (18+) women (cis and trans), trans men, and genderqueer people to gain the confidence needed to become leaders, speakers, writers, and teachers in the world of tech.
 
 Ela Conf is simply not possible without your support. We aim to keep ticket costs low while also offering childcare stipends, financial and diversity grants, cover all meals, secure a centrally located venue, reimburse speaker travel and lodging, and host a networking party following the event. The spirit of the event focuses on providing a platform for new and experienced speakers to share their stories and knowledge.
 

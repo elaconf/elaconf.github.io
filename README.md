@@ -1,6 +1,6 @@
 # Ela Conf [![Build Status](https://travis-ci.org/elaconf/elaconf.github.io.svg)](https://travis-ci.org/elaconf/elaconf.github.io)
 
-A safe, inclusive tech leadership conference and community for adult (18+) marginalized genders to connect with and empower one another.
+A safe, inclusive tech leadership conference and community for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another.
 
 ## Build
 
