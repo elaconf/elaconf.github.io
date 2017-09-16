@@ -1,10 +1,10 @@
 ---
 layout: page
 title: About
-description: Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable _community_ for adult marginalized genders (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech.
+description: Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable _community_ for women (cis and trans), trans men, and genderqueer people to gain the confidence needed to become leaders, speakers, and teachers in the world of tech.
 ---
 
-Ela Conf is a conference with a goal to create a safe, supportive, inspiring and comfortable _community_ for adult marginalized genders (18+) to gain the confidence needed to become leaders, speakers, and teachers in the world of tech.
+A safe, inclusive tech leadership conference and community for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another.
 
 Leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When marginalized individuals become leaders, the entire tech community benefits.
 

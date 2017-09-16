@@ -7,7 +7,7 @@ description: Our Code of Conduct is at the heart of our event.
 
 All attendees, speakers, sponsors, and volunteers at Ela Conf, throughout a mentorship, on Slack, and community events are required to agree with the following code of conduct. Organizers will enforce this code throughout Ela Conf, the community, and for the duration of a mentorship. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
-Ela is a conference and community for adult (18+) marginalized genders.
+Ela is a conference and community for adult (18+) women (cis and trans), trans men, and genderqueer people.
 
 ## Need Help?
 
