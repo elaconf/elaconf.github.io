@@ -21,7 +21,7 @@ During Ela Conf and community events, you can reach out to the organizers for he
 * [Arti Walker-Peddakotla](/organizers/arti-walker-peddakotla/)
 * [Shanise Barona](/organizers/shanise-barona/)
 
-During Ela Conf, at least one organizer will be at the registration table at all times.
+During Ela Conf, at least one organizer will be at the registration table. The organizers will be introduced at the start of the event on both days and will wear organizer badges.
 
 ## The Quick Version
 
