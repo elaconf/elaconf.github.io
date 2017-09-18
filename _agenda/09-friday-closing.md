@@ -3,8 +3,8 @@ title: Is It Me?
 speakers:
 - Alex Lash
 permalink: /2017/agenda/is-it-me/
-time: "8:11"
-date: 2017-10-27 20:33
+time: "8:04"
+date: 2017-10-27 20:04
 image: promo/alex-lash.png
 ---
 

@@ -3,8 +3,8 @@ title: 5 Unconventional Uses for Software Tests
 speakers:
 - Emily DuBois
 permalink: /2017/agenda/software-tests/
-time: "8:04"
-date: 2017-10-27 20:04
+time: "7:57"
+date: 2017-10-27 19:57
 type: lightning talk
 image: promo/emily-dubois.png
 ---
