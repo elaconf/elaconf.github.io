@@ -6,6 +6,7 @@ permalink: /2017/agenda/glow-revolution/
 time: "7:50"
 date: 2017-10-27 19:50
 type: lightning talk
+image: promo/cecy-correa.png
 ---
 
 Everyone is talking about GLOW or Gorgeous Ladies of Wrestling. A fictional show about a real 1980s TV show featuring an all-women wrestling cast. But did you know that there is an actual revolution in women's pro-wrestling happening right now?! Yes, right now!

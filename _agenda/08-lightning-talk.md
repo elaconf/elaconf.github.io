@@ -6,6 +6,7 @@ permalink: /2017/agenda/software-tests/
 time: "8:04"
 date: 2017-10-27 20:04
 type: lightning talk
+image: promo/emily-dubois.png
 ---
 
 Software tests execute your source code and evaluate if it's fit for use. They are traditionally used to identify bugs that could cause systems to fail, and are an important component of resilient and thoughtful code. The goal is almost always end-user satisfaction.
