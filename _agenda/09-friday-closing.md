@@ -3,8 +3,8 @@ title: Is It Me?
 speakers:
 - Alex Lash
 permalink: /2017/agenda/is-it-me/
-time: "8:11"
-date: 2017-10-27 20:33
+time: "8:04"
+date: 2017-10-27 20:04
 ---
 
 Even though we spend the majority of our time working—or maybe because of it—identifying a work environment as detrimental to self-worth and a healthy work/life balance is difficult. Whether harassed by coworkers, demeaned by a demanding boss, or a part of a culture that conflates hard work with working 24/7, it can be difficult to make the distinction between the ups-and-downs that accompany working life and legitimately toxic surroundings. Not identifying this early enough can lead to burnout, a questionably short tenure on your resume, or lasting self-doubt.  

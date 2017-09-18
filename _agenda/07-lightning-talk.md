@@ -3,8 +3,8 @@ title: Leveraging the Power of “We”
 speakers:
 - Charmel Sippio
 permalink: /2017/agenda/power-of-we/
-time: "7:57"
-date: 2017-10-27 19:57
+time: "7:50"
+date: 2017-10-27 19:50
 type: lightning talk
 ---
 
