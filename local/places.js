@@ -28,8 +28,8 @@ mapboxgl.accessToken = '{{site.token}}';
 var filterGroup = document.getElementById('filter-group');
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/katydecorah/ciuk0gf75005g2is1luza9c5o',
-  center: [-75.165,39.948],
+  style: 'mapbox://styles/katydecorah/cj81p65lj8v2y2spkusxrnv1w',
+  center: [-75.164, 39.949],
   zoom: 14.5
 });
 
@@ -61,7 +61,7 @@ map.on('load', function() {
         "source": "places",
         "layout": {
           "icon-image": symbol + "-15",
-          "icon-allow-overlap": true
+          "icon-allow-overlap": false
         },
         "filter": ["==", "icon", symbol]
       });
@@ -116,3 +116,4 @@ map.on('load', function() {
 });
 
 map.scrollZoom.disable();
+map.addControl(new mapboxgl.NavigationControl());
