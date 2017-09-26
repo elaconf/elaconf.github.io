@@ -72,15 +72,14 @@ var permalinks = posts.reduce(function(prev, post, index, list) {
 var data = {
   sponsors: readData('_data/', 'sponsors.yml'),
   levels: readData('_data/', 'levels.yml'),
-  volunteers: readData('_data/', 'volunteers.yml')
-  //places: readData('_data/', 'places.yml')
+  volunteers: readData('_data/', 'volunteers.yml'),
+  places: readData('_data/', 'places.yml')
 };
-/*
+
 // build array of places
 var places = data.volunteers.metadata.map(function(post) {
   return post.title;
 });
-*/
 
 // build array of volunteers
 var volunteers = data.volunteers.metadata.map(function(post) {
@@ -255,7 +254,6 @@ data.volunteers.metadata.forEach(function(post) {
   });
 });
 
-/*
 data.places.metadata.forEach(function(post) {
 
   test(post.title, function(t) {
@@ -271,4 +269,3 @@ data.places.metadata.forEach(function(post) {
     t.end();
   });
 });
-*/
