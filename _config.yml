@@ -76,3 +76,5 @@ plugins:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
+
+token: pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiY2lwOGJsbjR2MDBweGVhbnJyOHUxd3BmciJ9.RmDyfo38D_xPFdDst05n-g

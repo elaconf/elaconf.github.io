@@ -13,14 +13,14 @@
   <meta name="twitter:site" content="@elaconf">
   <meta name="twitter:title" content="{{site.title}}">
   <meta name="twitter:description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
-  <meta name="twitter:image" content="{% if page.image %}{{site.url}}/images/{% if page.category %}{{page.category}}/{% endif %}{{page.image}}{% else %}http://elaconf.com/logo.png{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{site.url}}/images/{{page.image}}{% else %}http://elaconf.com/logo.png{% endif %}">
   <!-- facebook-->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{site.url}}{{page.url | replace:'index.html',''}}" />
   <meta property="og:title" content="{% if page.title %}{{page.title}} - {% endif %}{{site.title}}" />
   <meta property="og:site_name" content="{{site.title}}" />
   <meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}" />
-  <meta property="og:image" content="{% if page.image %}{{site.url}}/images/{% if page.category %}{{page.category}}/{% endif %}{{page.image}}{% else %}http://elaconf.com/logo.png{% endif %}" />
+  <meta property="og:image" content="{% if page.image %}{{site.url}}/images/{{page.image}}{% else %}http://elaconf.com/logo.png{% endif %}" />
   {% unless page.image %}<meta property="og:image:width" content="800" />
   <meta property="og:image:height" content="400" />{% endunless %}
   <link rel="shortcut icon" href="{{site.baseurl}}/images/elafav.png" type="image/x-icon">
