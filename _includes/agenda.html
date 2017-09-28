@@ -14,7 +14,7 @@
 <tr{% unless x.speakers %} class="agenda-collapse"{% endunless %}>
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {{x.date | date: '%p' | downcase}}{% unless x.speakers %} <span class="show-mobile"> &mdash; <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a></span>{% endunless %}</td>
 <td class="agenda-details"><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{% if x.type == 'lightning talk' %}:zap:{% endif %} {{ x.title }}</a>
-<!--{% if x.room %}{{x.room}}{% else %}{% endif %}-->
+<div class="agenda-room">{% include svg/location.svg %}{% if x.room %}{{x.room}}{% else %}Levitt Auditorium{% endif %}</div>
 {% for s in x.speakers %}
 {% assign items = (site.speakers | where: "title", s ) %}{% assign speaker = items[0] %}<a href="{{site.baseurl}}/2017/{{speaker.category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{speaker.category}}/{{speaker.title | slugify}}.jpg)" class="speaker-img-small"></div>{{s}}</a>{% endfor %}
 </tr>
@@ -45,7 +45,7 @@
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {{x.date | date: '%p' | downcase}}{% unless x.speakers %} <span class="show-mobile"> &mdash; <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a></span>{% endunless %}</td>
 {% endif %}
 <td class="agenda-details"><a href="{{site.baseurl}}{{x.url}}" class="agenda-title">{% if x.breakout %}Breakout session {{x.breakout}}: {% endif %}{{ x.title }} {% if x.title contains "Coffee" %}:coffee: {% elsif x.title contains "Welcome" %}:wave: {% elsif x.title contains "Breakfast" %}:sunny: {% elsif x.title contains "Break" %}:walking: {% endif %}{% if x.type %} <span class="breakout-type small">{{x.type}}</span>{% endif %}</a>
-{% if x.breakout and x.room %}<div class="agenda-room">{% unless x.room == 'Caplan Recital Hall' %}Room {% endunless %}{{x.room}}</div>{% endif %}
+<div class="agenda-room">{% include svg/location.svg %}{% if x.room %}{{x.room}}{% else %}Levitt Auditorium{% endif %}</div>
 {% for s in x.speakers %}
 {% assign items = (site.speakers | where: "title", s ) %}
 {% assign speaker = items[0] %}<a href="{{site.baseurl}}/2017/{{speaker.category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{speaker.category}}/{{{speaker.title | slugify}}.jpg)" class="speaker-img-small"></div>{{s}}</a>{% endfor %}{% if x.moderator %}

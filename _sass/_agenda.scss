@@ -18,6 +18,7 @@
     tr:nth-child(even) td,
     .row-breakout td {
       background: rgba($blue-light, .1);
+      border-radius: 5px;
     }
   }
 
@@ -119,6 +120,12 @@
 .agenda-room {
   color: $purple-light;
   margin-bottom: 1em;
+
+  svg {
+    height: 18px;
+    margin-right: .25em;
+    width: 13px;
+  }
 }
 
 .breakout-type {

@@ -1,7 +1,7 @@
 ---
 time: "9:00"
 date: 2017-10-28 09:00
-room:
+room: Levitt Auditorium
 title: Welcome & Announcements
 permalink: /2017/agenda/announcements/
 speakers:
