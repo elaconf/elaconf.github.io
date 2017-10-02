@@ -40,7 +40,7 @@
 {% assign first_break = x.breakout %}
 <tr class="{{x.title | slugify | prepend:'session-'}}{% if x.breakout %} row-breakout{% endif %}{% unless x.speakers %} agenda-collapse{% endunless %}">
 {% if prev_break == null and first_break and x.breakout %}
-<td rowspan="3" class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {% if (x.date | date: '%H') == 11 %}pm{% else %}{{x.date | date: '%p' | downcase}}{% endif %}</td>
+<td rowspan="3" class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {{x.date | date: '%p' | downcase}}</td>
 {% elsif x.breakout == null %}
 <td class="agenda-time">{{x.time | replace:' ','&nbsp;'}} {{x.date | date: '%p' | downcase}}{% unless x.speakers %} <span class="show-mobile"> &mdash; <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a></span>{% endunless %}</td>
 {% endif %}
