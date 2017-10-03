@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "scss-lint _sass/*.scss && htmlproofer --check-html ./_site && node test/*.js | tap-min"
+    "test": "scss-lint _sass/*.scss && node test/*.js | tap-min"
   },
   "dependencies": {
     "scsslint": "0.0.3"

@@ -1,0 +1,80 @@
+.filter-group {
+
+  color: $white;
+  font: inherit;
+  text-align: center;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+  .small.hide.hide {
+    display: none;
+  }
+
+  input {
+    display: none;
+
+    + label {
+      background-color: $blue;
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+
+    + label:hover,
+    &:checked + label {
+      background-color: $blue;
+    }
+
+    + label::before {
+      content: ' ';
+      display: inline-block;
+      margin-right: 5px;
+      width: 12px;
+    }
+
+    &:checked + label::before {
+      content: '✔';
+      margin-right: 5px;
+    }
+
+  }
+
+}
+
+.ela-map {
+  height: 450px;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+  .mapboxgl-popup {
+    width: 200px;
+  }
+
+  .mapboxgl-popup-content {
+    background: $purple;
+    color: $white;
+    font-family: $font-body;
+  }
+
+  .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+    border-bottom-color: $purple;
+  }
+
+  .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: $purple;
+  }
+
+  h3 {
+    margin: 1em 0 0;
+  }
+
+}
+
+.page-venue-and-around-philly h2 {
+  text-transform: capitalize;
+}

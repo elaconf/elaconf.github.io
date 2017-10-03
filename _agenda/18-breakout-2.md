@@ -7,6 +7,8 @@ time: "1:30"
 date: 2017-10-28 13:30
 breakout: 2
 type: workshop
+image: promo/aisha-blake.png
+room: Room 408
 ---
 
 Constructive feedback can be difficult to receive gracefully, but it can also be extremely hard to speak up when we notice our teammates struggling. We don't want to hurt anyone's feelings or make things awkward. Sometimes it just feels like too much work to organize our thoughts into a coherent message that could help someone who's falling behind move forward. Many of us have a hard time deciding when it's time to draw attention to a problem.

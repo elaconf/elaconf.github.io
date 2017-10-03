@@ -1,7 +1,7 @@
 ---
 time: "8:00"
 date: 2017-10-28 08:00
-room: Lobby
+room: Gershman Foyer (1st Floor)
 title: Registration & Light Breakfast
 permalink: /agenda/registration/
 ---

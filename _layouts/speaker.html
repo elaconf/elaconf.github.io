@@ -6,9 +6,9 @@ layout: default
   <div><a href="{{site.url}}{{site.baseurl}}">&larr; Back</a></div>
   <h1>{{page.title}}</h1>
 
-  <div alt="{{page.title}}" class="speaker-img show-large" style="background-image:url({{site.baseurl}}/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.jpg{% endif %})"></div>
+  <div alt="{{page.title}}" class="speaker-img show-large" style="background-image:url({{site.baseurl}}/images/{{page.category}}/{{page.title | slugify}}.jpg)"></div>
 
-  <p><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url({{site.baseurl}}/images/{{page.category}}/{% if page.image %}{{page.image}}{% else %}{{page.title | slugify}}.jpg{% endif %})"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.social %}<a href="{% if page.social == 'website' %}{{page.handle}}{% else %}https://www.{{page.social}}.com/{% if page.social == 'linkedin' %}in/{% endif %}{{page.handle}}{% endif %}">{% if page.social == 'twitter' %}@{{page.handle}}{% elsif page.social == 'website' %}website{% else %}{{page.social}}: {{page.handle}} {%endif %}</a>{% endif %}</p>
+  <p><span alt="{{page.title}}" class="speaker-img-small" style="background-image:url({{site.baseurl}}/images/{{page.category}}/{{page.title | slugify}}.jpg)"></span>{% if page.topic %}<strong>{{page.topic}}</strong> &bull; {% endif %}{% if page.social %}<a href="{% if page.social == 'website' %}{{page.handle}}{% else %}https://www.{{page.social}}.com/{% if page.social == 'linkedin' %}in/{% endif %}{{page.handle}}{% endif %}">{% if page.social == 'twitter' %}@{{page.handle}}{% elsif page.social == 'website' %}website{% else %}{{page.social}}: {{page.handle}} {%endif %}</a>{% endif %}</p>
   {{content}}
   {% assign moderators = site.agenda | where: "moderator", page.title %}
   {% assign talk_num = 0 %}{% for talk in site.agenda %}{% if talk.speakers contains page.title or talk.moderator == page.title %}{% assign talk_num = talk_num | plus: 1 %}{% endif %}{% endfor %}

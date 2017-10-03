@@ -1,0 +1,38 @@
+---
+title: Around Philly
+layout: page
+description: Check out restuarants, cafes, and more around Philly.
+head: |
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+---
+
+
+</div>
+
+<div class="ela-map" id="map"></div>
+
+<div class="bg-blue">
+  <div class="limiter limiter-large">
+    <nav id='filter-group' class='filter-group'></nav>
+  </div>
+</div>
+
+<div class="limiter">
+
+{% assign icons = "" | split: "" %}
+{% for place in site.data.places %}
+{% assign icons = icons | push: place.icon %}
+{% endfor %}
+
+{% assign uniqIcons = icons | uniq %}
+
+{% for type in uniqIcons %}
+<h3>{% if type == 'theatre' %}entertainment {% elsif type == 'star' %} Ela Conf locations{% else %}{{type}}{% endif %}{% if type == 'restaurant' or type == 'bar' or type == 'cafe' %}s{% endif %}</h3>
+{% assign matches = site.data.places | where: 'icon', type %}
+{% for match in matches %}
+<p><a href="{{match.link}}" class="strong">{{match.title}}</a>{% if match.notes %}<br>{{match.notes}}{% endif %}<br>{{match.address}}{% if match.phone %}<br>{{match.phone}}{% endif %}</p>
+{% endfor %}
+{% endfor %}
+
+<script src="places.js"></script>
