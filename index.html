@@ -127,7 +127,7 @@ toc:
       {% for level in site.data.levels %}
       {% assign sponsors = site.data.sponsors | where: 'level', level %}
       {% assign count = sponsors | size %}
-      {% if count > 0 and level != 'Friend of Ela' %}
+      {% if count > 0 %}
       <div class="badge">{{level}}</div>
       <div class="sponsor-group">
         <div class="flex flex-wrap">
