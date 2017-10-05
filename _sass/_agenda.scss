@@ -14,33 +14,36 @@
 .agenda-table {
   border: 0;
 
-  @include breakpoint(medium) {
-    tr:nth-child(even) td,
-    .row-breakout td {
-      background: rgba($blue-light, .1);
+  tr:nth-child(even) td,
+  .row-breakout td {
+    background: rgba($blue-light, .1);
+  }
+
+  tr:nth-child(even) td:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  tr:nth-child(even) td:last-child {
+    border-radius: 0 5px 5px 0;
+
+    @include breakpoint(small) {
       border-radius: 5px;
     }
   }
 
-  th {
-    border-bottom: .2em solid $blue-light;
-  }
 
   td {
+    padding: 1em;
     position: relative;
     vertical-align: text-top;
 
     @include breakpoint(small) {
-      background: rgba($blue-light, .2);
       padding: .5em 1em;
 
       &.agenda-time {
-        background: rgba($blue-light, .5);
-        //color: $white;
+        display: none;
       }
-
     }
-
   }
 
   .agenda-time a {
@@ -92,23 +95,11 @@
 
 @include breakpoint(medium) {
   .agenda-time {
-    border-right: .2em solid $purple;
+    //border-right: .2em solid $purple;
+    display: table-cell;
     position: relative;
     text-align: right;
-    width: 10em;
-
-    &:not(th)::before {
-      background-color: $blue;
-      border-radius: .7em;
-      content: '';
-      height: 1em;
-      position: absolute;
-      right: -.6em;
-      top: 1em;
-      width: 1em;
-      z-index: 100;
-    }
-
+    width: 7em;
   }
 
 }
@@ -118,14 +109,10 @@
 }
 
 .agenda-room {
-  color: $purple-light;
-  margin-bottom: 1em;
 
-  svg {
-    height: 18px;
-    margin-right: .25em;
-    width: 13px;
-  }
+  @extend %small;
+  //color: $purple-light;
+  margin-bottom: 1em;
 }
 
 .breakout-type {
@@ -136,10 +123,8 @@
   vertical-align: middle;
 }
 
-@include breakpoint(medium) {
-  .row-breakout.row-breakout.row-breakout td {
-    background: transparent;
-  }
+.row-breakout.row-breakout.row-breakout td {
+  background: transparent;
 }
 
 
