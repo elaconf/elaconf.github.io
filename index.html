@@ -130,11 +130,12 @@ toc:
       {% if count > 0 %}
       <div class="badge">{{level}}</div>
       <div class="sponsor-group">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap{% if level == 'Opportunity Grant Donor' %} small{% endif %}">
           {% for sponsor in sponsors %}
           {% assign name = sponsor.name | slugify %}
           {% assign img = '/sponsors/' | append: name | append: '.svg' %}
-          <a href="{{sponsor.site}}" class="partner-img sponsor-{{level | slugify}}">{% include {{img}} %}</a>
+          {% if sponsor.site %}<a href="{{sponsor.site}}" class="partner-img sponsor-{{level | slugify}}">{% include {{img}} %}</a>
+          {% else %}{{sponsor.name}}{% unless forloop.last %}, {% endunless %}{% endif %}
           {% endfor %}
         </div>
       </div>
