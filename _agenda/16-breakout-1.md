@@ -1,7 +1,7 @@
 ---
 title: "Moving Forward After Failure"
 speakers:
-- Divya Sasidharan
+- Sarah Zero
 - Lisa Ghisolf
 - Jessica Salinas
 moderator: Jen Dionisio
