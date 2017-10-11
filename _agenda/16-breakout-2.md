@@ -1,7 +1,6 @@
 ---
 title: "Better Job Descriptions"
 speakers:
-- Tiberius Hefflin
 - Caro Griffin
 permalink: /2017/agenda/job-descriptions/
 time: "11:10"
