@@ -243,7 +243,7 @@ data.volunteers.metadata.forEach(function(post) {
 
     t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
 
-    var social = ['facebook','twitter','instagram','gravatar'];
+    var social = ['facebook','twitter','instagram','gravatar','linkedin'];
 
     t.ok(post.name,'volunteer must have a \'name\'');
     t.ok(post.social,'volunteer must have a \'social\'');
