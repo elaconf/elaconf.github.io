@@ -46,9 +46,9 @@
   site: http://www.messageagency.com/
   level: Community Builder
 
-#- name: Elsevier
-#  site: https://www.elsevier.com/
-#  level: Community Builder
+- name: Elsevier
+  site: https://www.elsevier.com/
+  level: Community Builder
 
 - name: nvite
   site: https://nvite.com/
