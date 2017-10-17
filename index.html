@@ -48,4 +48,114 @@ toc:
   </div>
 </section>
 
+
+<section id="sponsorship" class="bg-blue flex flex-center">
+  <div class="limiter limiter-large">
+    <h2>Sponsorship</h2>
+    <p>This event is simply not possible without your support. We aim to keep ticket costs low while also offering childcare stipends, financial and diversity grants, cover all meals, secure a centrally located venue, reimburse speaker travel and lodging, and host a networking party following the event.</p>
+    <p>We cannot wait to call you a partner in our mission. <a href="http://elaconf.com/docs/ela-prospectus-2017.pdf">Review our prospectus</a> and <a href="mailto:hello@elaconf.com">email us to learn more</a>.</p>
+    <p>Another great way to support the conference is to <a href="/donate-a-ticket/">donate a ticket</a>. Your donation will help us found our <a href="/grants/">opportunity grant</a> that provides complimentary tickets to those who would be unable to attend otherwise.</p>
+    <div class="corner-button"><a href="http://elaconf.com/docs/ela-prospectus-2017.pdf" class="button">Prospectus</a></div>
+  </div>
+  <div class="corner corner-blue-light hide-mobile"></div>
+</section>
+
+<section id="sponsors">
+  <div class="limiter">
+    <h2>Sponsors</h2>
+    <div class="all-sponsors">
+      {% for level in site.data.levels %}
+      {% assign sponsors = site.data.sponsors | where: 'level', level %}
+      {% assign count = sponsors | size %}
+      {% if count > 0 %}
+      <div class="badge">{{level}}</div>
+      <div class="sponsor-group">
+        <div class="flex flex-wrap{% if level == 'Opportunity Grant Donor' %} small{% endif %}">
+          {% for sponsor in sponsors %}
+          {% assign name = sponsor.name | slugify %}
+          {% assign img = '/sponsors/' | append: name | append: '.svg' %}
+          {% if sponsor.site %}<a href="{{sponsor.site}}" class="partner-img sponsor-{{level | slugify}}">{% include {{img}} %}</a>
+          {% else %}{{sponsor.name}}{% unless forloop.last %}, {% endunless %}{% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-blue hide-mobile">
+  {% include video.html %}
+  <div class="limiter limiter-large">
+    <div class="corner-button"><a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfzGRVQwDuKeE7QA77NZTTU" class="button">Promo videos</a></div>
+  </div>
+  <div class="corner corner-blue hide-mobile"></div>
+</section>
+
+<div class="images">
+  <div class="image2"></div>
+  <div class="image3"></div>
+</div>
+
+<section class="vmin50" id="venue">
+  <div class="limiter limiter-large grid flex-align-top">
+    <div class="half">
+      <h3>Venue</h3>
+      <p><a href="https://uarts.edu/campus">University of the Arts</a><br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA 19147</p>
+      <p><a href="/local/">Around Philly guide &rarr;</a></p>
+    </div>
+    <div class="half">
+      <h3>Accomodations</h3>
+      <p><a href="http://www.marriott.com/hotels/travel/phldc-courtyard-philadelphia-downtown/">Courtyard Philadelphia Downtown by Marriott</a><br>21 N. Juniper Street<br>Philadelphia, PA 19107</p>
+      <a href="/venue#accommodations">Get the group rate &rarr;</a>
+    </div>
+  </div>
+</section>
+{% include map.html %}
+<div class="images">
+  <div class="image4"></div>
+  <div class="image5"></div>
+</div>
+
+<section id="volunteers">
+  <div class="limiter limiter-xlarge">
+    <h2>Volunteers</h2>
+    <p>Big thank you to our volunteers. We couldn't do this without you! Our volunteers are helping before and during the event as speaker mentors, timekeepers, sketchnoters, and more!</p>
+    <div class="volunteers">
+      {% assign volunteers = site.data.volunteers | sort: 'name' %}
+      {% for volunteer in volunteers %}
+      <a class="volunteer" href="https://www.{{volunteer.social}}.com/{{volunteer.handle}}">
+        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/volunteers/{{volunteer.name | slugify}}.jpg')"></div>
+        <div class="speaker-title">{{volunteer.name}}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="organizers" class="bg-purple">
+  <div class="limiter limiter-xlarge">
+    <h2>Organizers</h2>
+    <div class="organizers">
+      {% assign organizers = site.organizers | sort: 'order' %}
+      {% for organizer in organizers %}{% if organizer.image %}
+      <div class="organizer">
+        <a href="/organizers/{{organizer.title | slugify}}" class="organizer-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></a>
+        <div class="organizer-bio">
+          <div class="hide-mobile">{{organizer.content}}</div>
+          <div class="show-mobile">{{organizer.title}}</div>
+          <div class="organizer-links">
+            <a href="https://www.twitter.com/{{organizer.handle}}">{% include svg/twitter.svg %}</a>
+            <a href="{{organizer.link}}">{% include svg/link.svg %}</a>
+          </div>
+        </div>
+
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+  <div class="corner corner-purple-light"></div>
+</section>
+
 <script src="{{site.baseurl}}/js/sticky.js"></script>

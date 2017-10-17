@@ -228,8 +228,8 @@ data.sponsors.metadata.forEach(function(post) {
     t.ok(post.level,'sponsor must have a \'type\'');
     t.notEqual(levels.indexOf(post.level), -1, 'sponsor level must be one of the following: ' + levels.join(', '));
 
-    if (post.level !== 'Individuals') {
-      t.notEqual(sponsorImg.indexOf(post.name.toLowerCase().replace(' ', '-') + '.svg'), -1, 'sponsor must have image: _includes/sponsors/' + post.name.toLowerCase().replace(' ', '-') + '.svg')
+    if (post.level !== 'Opportunity Grant Donor') {
+      t.notEqual(sponsorImg.indexOf(post.name.toLowerCase().replace(/ /g, '-') + '.svg'), -1, 'sponsor must have image: _includes/sponsors/' + post.name.toLowerCase().replace(/ /g, '-') + '.svg')
       t.ok(post.site,'sponsor must have a \'site\'');
     }
 
@@ -243,7 +243,7 @@ data.volunteers.metadata.forEach(function(post) {
 
     t.equal( typeof post, 'object', 'sponsor must be formatted correctly');
 
-    var social = ['facebook','twitter','instagram','gravatar'];
+    var social = ['facebook','twitter','instagram','gravatar','linkedin'];
 
     t.ok(post.name,'volunteer must have a \'name\'');
     t.ok(post.social,'volunteer must have a \'social\'');
