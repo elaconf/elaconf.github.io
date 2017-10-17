@@ -4,39 +4,43 @@ description: Ela Conf - October 27 &amp; 28 2017 in Philadelphia. A safe, inclus
 head: |
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
-toc:
-- Agenda
-- About
-- Tickets
-- Speakers
-- Sponsorship
-- Venue
-- Volunteers
-- Organizers
 ---
 
-{% include header.html %}
-
-<div class="bg-purple" style="padding: 2em 0;">
-  <div class="limiter limiter-large" style="margin-bottom: 2em;">
-    <a href="/about">About</a> &bull;
-    <a href="#agenda">Agenda</a> &bull;
-    <a href="/code-of-conduct">Code of Conduct</a> &bull;
-    <a href="/speakers">Speakers</a> &bull;
-    <a href="/organizers">Organizers</a>
+<div class="hero">
+  <div class="hero-image">
+    <div class="hero-logo">
+      {% include svg/logo_shadow.svg %}
+    </div>
   </div>
+  <div class="hero-side">
+    <div class="hero-side-inner text-center">
+      <p class="hero-heading">October 27 - 28 '17<br>PHILADELPHIA, PA</p>
+      <p>Tickets are sold out!</a>
+      <div class="social">
+        <a class="link-social flex-no-shrink" href="{{site.twitter}}">{% include svg/twitter.svg %}</a>
+        <a class="link-social flex-no-shrink" href="{{site.medium}}">{% include svg/medium.svg %}</a>
+        <a class="link-social flex-no-shrink" href="{{site.youtube}}">{% include svg/youtube.svg %}</a>
+        <a class="link-social flex-no-shrink" href="{{site.instagram}}">{% include svg/instagram.svg %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding: 2em 0; margin-bottom: -4em;">
   <div class="limiter limiter-large">
     <div class="grid flex-align-top">
-      <div class="third">
-        <strong>Venue</strong><br><a href="https://goo.gl/maps/yAK4BEUud5x" target="_blank">University of the Arts<br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA</a>
+      <div class="third" style="margin-bottom: 1em">
+        <div><strong>Venue</strong></div>
+        <div><a href="https://goo.gl/maps/yAK4BEUud5x" target="_blank">University of the Arts<br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA</a></div>
       </div>
-      <div class="third">
-        <strong>Contact</strong><br><a href="mailto:hello@elaconf.com">hello@elaconf.com</a>
+      <div class="third" style="margin-bottom: 1em">
+        <div><strong>Contact</strong></div>
+        <div><a href="mailto:hello@elaconf.com">hello@elaconf.com</a></div>
       </div>
-      <div class="third">
-        <strong>Social media</strong><br>
-        <a href="{{site.twitter}}">@elaconf</a><br>
-        <a href="https://twitter.com/hashtag/elaconf">#elaconf</a>
+      <div class="third" style="margin-bottom: 1em">
+        <div><strong>Social media</strong></div>
+        <div><a href="{{site.twitter}}">@elaconf</a></div>
+        <div><a href="https://twitter.com/hashtag/elaconf">#elaconf</a></div>
       </div>
     </div>
   </div>
@@ -46,18 +50,6 @@ toc:
   <div class="limiter limiter-large">
     {% include agenda.html %}
   </div>
-</section>
-
-
-<section id="sponsorship" class="bg-blue flex flex-center">
-  <div class="limiter limiter-large">
-    <h2>Sponsorship</h2>
-    <p>This event is simply not possible without your support. We aim to keep ticket costs low while also offering childcare stipends, financial and diversity grants, cover all meals, secure a centrally located venue, reimburse speaker travel and lodging, and host a networking party following the event.</p>
-    <p>We cannot wait to call you a partner in our mission. <a href="http://elaconf.com/docs/ela-prospectus-2017.pdf">Review our prospectus</a> and <a href="mailto:hello@elaconf.com">email us to learn more</a>.</p>
-    <p>Another great way to support the conference is to <a href="/donate-a-ticket/">donate a ticket</a>. Your donation will help us found our <a href="/grants/">opportunity grant</a> that provides complimentary tickets to those who would be unable to attend otherwise.</p>
-    <div class="corner-button"><a href="http://elaconf.com/docs/ela-prospectus-2017.pdf" class="button">Prospectus</a></div>
-  </div>
-  <div class="corner corner-blue-light hide-mobile"></div>
 </section>
 
 <section id="sponsors">
@@ -85,77 +77,16 @@ toc:
   </div>
 </section>
 
-<section class="bg-blue hide-mobile">
-  {% include video.html %}
-  <div class="limiter limiter-large">
-    <div class="corner-button"><a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfzGRVQwDuKeE7QA77NZTTU" class="button">Promo videos</a></div>
+<div style="margin-bottom: 4em;">
+  <div class="limiter">
+    <h2>More links</h2>
+    <div class="columns">
+      <div><a href="/about">About</a></div>
+      <div><a href="/code-of-conduct">Code of Conduct</a></div>
+      <div><a href="/organizers">Organizers</a></div>
+      <div><a href="/speakers">Speakers</a></div>
+      <div><a href="/venue">Venue</a></div>
+      <div><a href="/volunteer">Volunteers</a></div>
+    </div>
   </div>
-  <div class="corner corner-blue hide-mobile"></div>
-</section>
-
-<div class="images">
-  <div class="image2"></div>
-  <div class="image3"></div>
 </div>
-
-<section class="vmin50" id="venue">
-  <div class="limiter limiter-large grid flex-align-top">
-    <div class="half">
-      <h3>Venue</h3>
-      <p><a href="https://uarts.edu/campus">University of the Arts</a><br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA 19147</p>
-      <p><a href="/local/">Around Philly guide &rarr;</a></p>
-    </div>
-    <div class="half">
-      <h3>Accomodations</h3>
-      <p><a href="http://www.marriott.com/hotels/travel/phldc-courtyard-philadelphia-downtown/">Courtyard Philadelphia Downtown by Marriott</a><br>21 N. Juniper Street<br>Philadelphia, PA 19107</p>
-      <a href="/venue#accommodations">Get the group rate &rarr;</a>
-    </div>
-  </div>
-</section>
-{% include map.html %}
-<div class="images">
-  <div class="image4"></div>
-  <div class="image5"></div>
-</div>
-
-<section id="volunteers">
-  <div class="limiter limiter-xlarge">
-    <h2>Volunteers</h2>
-    <p>Big thank you to our volunteers. We couldn't do this without you! Our volunteers are helping before and during the event as speaker mentors, timekeepers, sketchnoters, and more!</p>
-    <div class="volunteers">
-      {% assign volunteers = site.data.volunteers | sort: 'name' %}
-      {% for volunteer in volunteers %}
-      <a class="volunteer" href="https://www.{{volunteer.social}}.com/{{volunteer.handle}}">
-        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/volunteers/{{volunteer.name | slugify}}.jpg')"></div>
-        <div class="speaker-title">{{volunteer.name}}</div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section id="organizers" class="bg-purple">
-  <div class="limiter limiter-xlarge">
-    <h2>Organizers</h2>
-    <div class="organizers">
-      {% assign organizers = site.organizers | sort: 'order' %}
-      {% for organizer in organizers %}{% if organizer.image %}
-      <div class="organizer">
-        <a href="/organizers/{{organizer.title | slugify}}" class="organizer-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></a>
-        <div class="organizer-bio">
-          <div class="hide-mobile">{{organizer.content}}</div>
-          <div class="show-mobile">{{organizer.title}}</div>
-          <div class="organizer-links">
-            <a href="https://www.twitter.com/{{organizer.handle}}">{% include svg/twitter.svg %}</a>
-            <a href="{{organizer.link}}">{% include svg/link.svg %}</a>
-          </div>
-        </div>
-
-      </div>
-      {% endif %}{% endfor %}
-    </div>
-  </div>
-  <div class="corner corner-purple-light"></div>
-</section>
-
-<script src="{{site.baseurl}}/js/sticky.js"></script>
