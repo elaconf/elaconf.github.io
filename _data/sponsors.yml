@@ -79,3 +79,15 @@
 
 - name: Sparkbox
   level: Opportunity Grant Donor
+
+- name: Ela Bffs
+  site: https://elabffs.club/
+  level: Friend of Ela
+
+- name: Customer.io
+  site: https://customer.io/
+  level: Friend of Ela
+
+- name: Protocol Labs
+  site: https://protocol.ai/
+  level: Community Builder
