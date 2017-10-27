@@ -68,7 +68,7 @@
           {{ x.moderator}} (moderator)
         </a>
         {% endif %}
-        {% if x.speakers %}<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScshO77JQ8VYNrqWvj53r0j8EFoB5buDeeVut0fOemytccWjQ/viewform?usp=pp_url&entry.96767881={{x.title | url_encode}}&entry.333138454&entry.459148311" class="button-feedback" target="_blank">Submit Speaker Feedback</a>{% endif %}
+        {% if x.speakers and x.feedback != false %}<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScshO77JQ8VYNrqWvj53r0j8EFoB5buDeeVut0fOemytccWjQ/viewform?usp=pp_url&entry.96767881={{x.title | url_encode}}&entry.333138454&entry.459148311" class="button-feedback" target="_blank">Submit Speaker Feedback</a>{% endif %}
       </td>
     </tr>
     {% assign prev_break = x.breakout %}

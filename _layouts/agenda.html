@@ -27,7 +27,7 @@ layout: default
 
       {% if page.video %}<p><a href="{{page.video}}">Watch on YouTube</a></p>{% endif %}
 
-      {% if page.speakers %}<p><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScshO77JQ8VYNrqWvj53r0j8EFoB5buDeeVut0fOemytccWjQ/viewform?usp=pp_url&entry.96767881={{page.title | url_encode}}&entry.333138454&entry.459148311" class="button-feedback" target="_blank">Submit Speaker Feedback</a></p>{% endif %}
+      {% if page.speakers and page.feedback != false %}<p><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScshO77JQ8VYNrqWvj53r0j8EFoB5buDeeVut0fOemytccWjQ/viewform?usp=pp_url&entry.96767881={{page.title | url_encode}}&entry.333138454&entry.459148311" class="button-feedback" target="_blank">Submit Speaker Feedback</a></p>{% endif %}
 
       {{content}}
 
