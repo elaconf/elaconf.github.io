@@ -6,6 +6,7 @@ title: Welcome & Announcements
 permalink: /2017/agenda/announcements/
 speakers:
 - Ruthie Fields
+feedback: false
 ---
 
 Quick hello, announcements, and introducing our host for the day, Ruthie Fields!

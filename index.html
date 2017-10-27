@@ -4,15 +4,6 @@ description: Ela Conf - October 27 &amp; 28 2017 in Philadelphia. A safe, inclus
 head: |
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
-toc:
-- About
-- Tickets
-- Speakers
-- Agenda
-- Sponsorship
-- Venue
-- Volunteers
-- Organizers
 ---
 
 <div class="hero">
@@ -24,8 +15,7 @@ toc:
   <div class="hero-side">
     <div class="hero-side-inner text-center">
       <p class="hero-heading">October 27 - 28 '17<br>PHILADELPHIA, PA</p>
-      <p>Tickets on sale now!</p>
-      <p><a href="#tickets" class="button">Buy a ticket</a>
+      <p>Tickets are sold out!</a>
       <div class="social">
         <a class="link-social flex-no-shrink" href="{{site.twitter}}">{% include svg/twitter.svg %}</a>
         <a class="link-social flex-no-shrink" href="{{site.medium}}">{% include svg/medium.svg %}</a>
@@ -36,88 +26,30 @@ toc:
   </div>
 </div>
 
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Sticky Nav -->
-<!-- ///////////////////////////////////////////////////// -->
-<div class="sticky-nav hide-mobile">
-  <div class="clearfix center">
-    <ul class="">
-      {% for section in page.toc %}
-      <li><a href="#{{section | slugify}}" class="item-{{section | slugify}}">{{section}}</a></li>
-      {% endfor %}
-    </ul>
+<div style="padding: 2em 0; margin-bottom: -4em;">
+  <div class="limiter limiter-large">
+    <div class="grid flex-align-top">
+      <div class="third" style="margin-bottom: 1em">
+        <div><strong>Venue</strong></div>
+        <div><a href="https://goo.gl/maps/yAK4BEUud5x" target="_blank">University of the Arts<br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA</a></div>
+      </div>
+      <div class="third" style="margin-bottom: 1em">
+        <div><strong>Contact</strong></div>
+        <div><a href="mailto:hello@elaconf.com">hello@elaconf.com</a></div>
+      </div>
+      <div class="third" style="margin-bottom: 1em">
+        <div><strong>Social media</strong></div>
+        <div><a href="{{site.twitter}}">@elaconf</a></div>
+        <div><a href="https://twitter.com/hashtag/elaconf">#elaconf</a></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<section id="about">
-  <div class="limiter">
-    <h2>About</h2>
-    <p class="large">A safe, inclusive tech leadership conference and <a href="http://ela.community">community</a> for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another.</p>
-
-    <div class="ad">
-      <div class="hide-small">{% include svg/megaphone.svg %}</div>
-      <p><strong>Ticket are on sale now!</strong> <a href="#tickets">Buy a ticket.</a></p>
-    </div>
-
-    <p>Leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When marginalized individuals become leaders, the entire tech community benefits.</p>
-
-    <p>This is a 1.5 day event, spanning a Friday evening and full Saturday. All timeline announcements, such as CFP opening and ticket sales, will be published on our <a href="https://medium.com/@elaconf">blog</a> and <a href="http://elaconf.us11.list-manage.com/subscribe?u=35575c3d011d3489cb7c3c214&id=e88ae52852">newsletter</a>.</p>
-
-    <p>All attendees, speakers, volunteers, special guests, and organizers are expected to follow the <a href="{{site.baseurl}}/code-of-conduct/">Code of Conduct</a> at all times.</p>
-
-  </div>
-</section>
-
-<section class="bg-about center-mobile">
-  <div class="limiter">
-    <div class="large hide-mobile">Ela Conf was established in 2015 by women, is run by women organizers, and is reserved exclusively for women (cis and trans), trans men, and genderqueer people to speak and attend.</div>
-    <div class="corner-button"><a href="http://elaconf.com/2016" class="button">2016 recap</a></div>
-  </div>
-  <div class="hide-mobile corner corner-purple-light hide-mobile"></div>
-</section>
-
-<section id="tickets" class="">
-  <div class="limiter">
-    <h2>Tickets</h2>
-    {% include tickets.html %}
-  </div>
-</section>
-
-<section id="speakers" class="bg-purple">
-  <div class="limiter limiter-xlarge">
-    <h2>Speakers</h2>
-    <div class="speakers">
-      {% assign speakers = site.speakers | sort: 'order' %}
-      {% for speaker in speakers %}
-      <a class="speaker" href="{{site.baseurl}}{{speaker.url}}">
-        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/speakers/{{speaker.title | slugify}}.jpg')"></div>
-        <div class="speaker-title">{{speaker.title}}</div>
-        {% if speaker.subtitle %}<div class="speaker-subtitle">{{speaker.subtitle}}</div>{% endif %}
-      </a>
-      {% endfor %}
-    </div>
-    <div class="corner-button"><a href="#tickets" class="button">Buy a ticket</a></div>
-  </div>
-  <div class="corner corner-purple-light hide-mobile"></div>
-</section>
-
 <section id="agenda">
   <div class="limiter limiter-large">
-    <h2>Agenda</h2>
     {% include agenda.html %}
   </div>
-</section>
-
-
-<section id="sponsorship" class="bg-blue flex flex-center">
-  <div class="limiter limiter-large">
-    <h2>Sponsorship</h2>
-    <p>This event is simply not possible without your support. We aim to keep ticket costs low while also offering childcare stipends, financial and diversity grants, cover all meals, secure a centrally located venue, reimburse speaker travel and lodging, and host a networking party following the event.</p>
-    <p>We cannot wait to call you a partner in our mission. <a href="http://elaconf.com/docs/ela-prospectus-2017.pdf">Review our prospectus</a> and <a href="mailto:hello@elaconf.com">email us to learn more</a>.</p>
-    <p>Another great way to support the conference is to <a href="/donate-a-ticket/">donate a ticket</a>. Your donation will help us found our <a href="/grants/">opportunity grant</a> that provides complimentary tickets to those who would be unable to attend otherwise.</p>
-    <div class="corner-button"><a href="http://elaconf.com/docs/ela-prospectus-2017.pdf" class="button">Prospectus</a></div>
-  </div>
-  <div class="corner corner-blue-light hide-mobile"></div>
 </section>
 
 <section id="sponsors">
@@ -145,77 +77,17 @@ toc:
   </div>
 </section>
 
-<section class="bg-blue hide-mobile">
-  {% include video.html %}
-  <div class="limiter limiter-large">
-    <div class="corner-button"><a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfzGRVQwDuKeE7QA77NZTTU" class="button">Promo videos</a></div>
+<div style="margin-bottom: 4em;">
+  <div class="limiter">
+    <h2>More links</h2>
+    <div class="columns">
+      <div><a href="/about">About</a></div>
+      <div><a href="/code-of-conduct">Code of Conduct</a></div>
+      <div><a href="/organizers">Organizers</a></div>
+      <div><a href="/speakers">Speakers</a></div>
+      <div><a href="/venue">Venue</a></div>
+      <div><a href="/volunteer">Volunteers</a></div>
+      <div><a href="/jobs">Job Board</a></div>
+    </div>
   </div>
-  <div class="corner corner-blue hide-mobile"></div>
-</section>
-
-<div class="images">
-  <div class="image2"></div>
-  <div class="image3"></div>
 </div>
-
-<section class="vmin50" id="venue">
-  <div class="limiter limiter-large grid flex-align-top">
-    <div class="half">
-      <h3>Venue</h3>
-      <p><a href="https://uarts.edu/campus">University of the Arts</a><br>Gershman Hall<br>401 S Broad St<br>Philadelphia, PA 19147</p>
-      <p><a href="/local/">Around Philly guide &rarr;</a></p>
-    </div>
-    <div class="half">
-      <h3>Accomodations</h3>
-      <p><a href="http://www.marriott.com/hotels/travel/phldc-courtyard-philadelphia-downtown/">Courtyard Philadelphia Downtown by Marriott</a><br>21 N. Juniper Street<br>Philadelphia, PA 19107</p>
-      <a href="/venue#accommodations">Get the group rate &rarr;</a>
-    </div>
-  </div>
-</section>
-{% include map.html %}
-<div class="images">
-  <div class="image4"></div>
-  <div class="image5"></div>
-</div>
-
-<section id="volunteers">
-  <div class="limiter limiter-xlarge">
-    <h2>Volunteers</h2>
-    <p>Big thank you to our volunteers. We couldn't do this without you! Our volunteers are helping before and during the event as speaker mentors, timekeepers, sketchnoters, and more!</p>
-    <div class="volunteers">
-      {% assign volunteers = site.data.volunteers | sort: 'name' %}
-      {% for volunteer in volunteers %}
-      <a class="volunteer" href="https://www.{{volunteer.social}}.com/{{volunteer.handle}}">
-        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/volunteers/{{volunteer.name | slugify}}.jpg')"></div>
-        <div class="speaker-title">{{volunteer.name}}</div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section id="organizers" class="bg-purple">
-  <div class="limiter limiter-xlarge">
-    <h2>Organizers</h2>
-    <div class="organizers">
-      {% assign organizers = site.organizers | sort: 'order' %}
-      {% for organizer in organizers %}{% if organizer.image %}
-      <div class="organizer">
-        <a href="/organizers/{{organizer.title | slugify}}" class="organizer-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></a>
-        <div class="organizer-bio">
-          <div class="hide-mobile">{{organizer.content}}</div>
-          <div class="show-mobile">{{organizer.title}}</div>
-          <div class="organizer-links">
-            <a href="https://www.twitter.com/{{organizer.handle}}">{% include svg/twitter.svg %}</a>
-            <a href="{{organizer.link}}">{% include svg/link.svg %}</a>
-          </div>
-        </div>
-
-      </div>
-      {% endif %}{% endfor %}
-    </div>
-  </div>
-  <div class="corner corner-purple-light"></div>
-</section>
-
-<script src="{{site.baseurl}}/js/sticky.js"></script>

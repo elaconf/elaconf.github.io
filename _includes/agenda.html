@@ -1,4 +1,4 @@
-<h3 id="friday">Friday, October 27th</h3>
+<h2>Friday</h2>
 <table class="agenda-table">
   <tbody>
     {% assign agenda = site.agenda | sort: 'date'  %}
@@ -21,6 +21,9 @@
         </div>
         {% for s in x.speakers %}
         {% assign items = (site.speakers | where: "title", s ) %}{% assign speaker = items[0] %}<a href="{{site.baseurl}}/2017/{{speaker.category}}/{{s |slugify}}/" class="agenda-speaker-link"><div style="background-image:url({{site.baseurl}}/images/{{speaker.category}}/{{speaker.title | slugify}}.jpg)" class="speaker-img-small"></div>{{s}}</a>{% endfor %}
+
+        {% if x.speakers %}<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScshO77JQ8VYNrqWvj53r0j8EFoB5buDeeVut0fOemytccWjQ/viewform?usp=pp_url&entry.96767881={{x.title | url_encode}}&entry.333138454&entry.459148311" class="button-feedback" target="_blank">Submit Speaker Feedback</a>{% endif %}
+
       </td>
     </tr>
     {% assign prev_break = x.breakout %}
@@ -28,9 +31,7 @@
   </tbody>
 </table>
 
-
-<h3 id="saturday">Saturday, October 28th</h3>
-
+<h2>Saturday</h2>
 <table class="agenda-table">
   <tbody>
     {% assign agenda = site.agenda | sort: 'date'  %}
@@ -67,6 +68,7 @@
           {{ x.moderator}} (moderator)
         </a>
         {% endif %}
+        {% if x.speakers and x.feedback != false %}<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScshO77JQ8VYNrqWvj53r0j8EFoB5buDeeVut0fOemytccWjQ/viewform?usp=pp_url&entry.96767881={{x.title | url_encode}}&entry.333138454&entry.459148311" class="button-feedback" target="_blank">Submit Speaker Feedback</a>{% endif %}
       </td>
     </tr>
     {% assign prev_break = x.breakout %}
