@@ -87,3 +87,7 @@
 - name: Customer.io
   site: https://customer.io/
   level: Friend of Ela
+
+- name: Protocol Labs
+  site: https://protocol.ai/
+  level: Community Builder
