@@ -1,19 +1,10 @@
-.button-feedback {
-  @extend %small;
-
-  background: $blue;
-  border-radius: 2em;
-  color: $white;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: .5em;
-  padding: .25em 1em;
-  text-decoration: none;
-
-  &:hover {
-    background: darken($blue, 10%);
+.page-main {
+  .button {
     color: $white;
-    text-decoration: none;
+
+    &:hover {
+      color: rgba($white, .75);
+    }
   }
 }
 
