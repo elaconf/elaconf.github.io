@@ -3,7 +3,6 @@ title: "Negotiating Pay and Benefits"
 speakers:
 - Julie Menge
 - Bonnie Bogle
-- Cristina Lara
 - Jumoke Dada
 moderator: Kate Catlin
 permalink: /2017/agenda/negotiating-pay/
