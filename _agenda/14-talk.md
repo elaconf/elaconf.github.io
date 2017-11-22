@@ -6,6 +6,7 @@ permalink: /2017/agenda/sorry-not-sorry/
 time: "10:30"
 date: 2017-10-28 10:30
 image: promo/niya-narashimhan.png
+video: https://youtu.be/XYSJ4ZgNnu0
 ---
 
 I've spent nearly two decades in tech trying to "fit in" with assigned labels, roles and expectations. And it wasn't till recently, when I started paying attention to the stories and narratives shared by other women in tech, that I had an epiphany.

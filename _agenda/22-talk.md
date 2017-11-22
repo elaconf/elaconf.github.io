@@ -6,6 +6,7 @@ permalink: /2017/agenda/curse-of-common-knowledge/
 time: "3:55"
 date: 2017-10-28 15:55
 image: promo/yulan-lin.png
+video: https://youtu.be/Ztv4pDoqjpg
 ---
 
 Once we’ve learned something, we often forget what it was like to not know, and how hard it was to learn. This “curse of knowledge” can impact the way we interact with our colleagues and our mentees. For our colleagues we consider “technical,” if their experience doesn’t overlap with us, there are often things that we find second nature that they have never experienced. This can lead to frustration, miscommunication, and sometimes equating competence with knowing potentially obscure definitions.

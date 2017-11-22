@@ -6,8 +6,8 @@ head: |
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
 toc:
 - About
+- Videos & Photos
 - Evaluation
-- Photos & Videos
 - Speakers
 - Volunteers
 - Organizers
@@ -72,22 +72,43 @@ toc:
   <div class="hide-mobile corner corner-purple-light hide-mobile"></div>
 </section>
 
+<section id="videos-photos" class="">
+  <div class="limiter">
+    <h2>Videos</h2>
+    <p>Play the <a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfkkWVc-sW9z35EmWqzYcC-">conference playlist</a> or jump right into a talk:</p>
+    <div class="blogs">
+      {% for post in site.agenda %}{% if post.video %}
+      <div class="blog">
+        <a href="{{post.video}}">{{post.title}}</a>
+        <div><span class="blog-img" style="background-image:url('/images/speakers/{{post.speakers[0] | slugify}}.jpg')"></span> <span class="quiet">{{post.speakers[0]}}</span></div>
+      </div>{% endif %}{% endfor %}
+    </div>
+    <h2>Photos</h2>
+    <p>Browse the <a href="https://jrblackwell.smugmug.com/Events/Ela-Conf/">full album</a>. Photos by J.R. Blackwell.</p>
+    <div class="photos">
+    <img src="/images/highlights/16.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/1.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/2.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/3.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/4.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/6.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/7.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/8.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/9.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/10.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/11.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/12.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/13.jpg" class="img-tall" alt="Ela Conf 2017">
+    <img src="/images/highlights/14.jpg" class="img-wide" alt="Ela Conf 2017">
+    <img src="/images/highlights/15.jpg" alt="Ela Conf 2017">
+  </div>
+  </div>
+</section>
+
 <section id="evaluation" class="">
   <div class="limiter">
     <h2>Evaluation</h2>
     {% include evaluation.html %}
-  </div>
-</section>
-
-<div class="images">
-  <div class="image2"></div>
-  <div class="image3"></div>
-</div>
-
-<section id="photos-videos" class="">
-  <div class="limiter">
-    <h2>Photos & Videos</h2>
-    <p>Coming soon!</p>
   </div>
 </section>
 
@@ -115,11 +136,6 @@ toc:
   </div>
   <div class="corner corner-blue hide-mobile"></div>
 </section>
-
-<div class="images">
-  <div class="image4"></div>
-  <div class="image5"></div>
-</div>
 
 <section id="volunteers">
   <div class="limiter limiter-xlarge">
