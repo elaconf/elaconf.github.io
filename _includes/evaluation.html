@@ -1,0 +1,119 @@
+<p>We circulated a conference evaluation and received valuable feedback from 75 of our attendees. Here are some of the highlights:</p>
+
+<div id="last_year" style="width: 100%; height: 450px;"></div>
+<div id="friend" style="width: 100%; height: 450px;"></div>
+<div id="attend" style="width: 100%; height: 450px;"></div>
+<div id="career" style="width: 100%; height: 450px;"></div>
+<div id="work" style="width: 100%; height: 450px;"></div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  // Did you attend last year?
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['No', 135],
+    ['Yes', 47]
+  ]);
+  var options = {
+    title: 'Did you attend Ela Conf last year?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('last_year'));
+  chart.draw(data, options);
+
+  // Recommend friend?
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Not very likely', 0],
+    ['Not likely', 0],
+    ['Neutral', 6],
+    ['Likely', 16],
+    ['Very likely', 53]
+  ]);
+  var options = {
+    title: 'How likely are you to recommend Ela Conf to a friend?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.BarChart(document.getElementById('friend'));
+  chart.draw(data, options);
+
+  // Attend again?
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Not very likely', 0],
+    ['Not likely', 2],
+    ['Neutral', 9],
+    ['Likely', 16],
+    ['Very likely', 47]
+  ]);
+  var options = {
+    title: 'How likely are you to attend Ela Conf again?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.BarChart(document.getElementById('attend'));
+  chart.draw(data, options);
+
+  // Career
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['Just getting started!', 35],
+    ['1-2 years', 46],
+    ['3-5 years', 51],
+    ['more than 5 years', 49]
+  ]);
+  var options = {
+    title: 'How far along are you in your tech career?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#890e5b', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('career'));
+  chart.draw(data, options);
+
+  // type of work
+  var data = google.visualization.arrayToDataTable([
+    ['Response', 'Count'],
+    ['front-end developer', 64],
+    ['back-end developer/engineer', 41],
+    ['UI/UX', 34],
+    ['community manager', 26],
+    ['content strategy', 28],
+    ['designer', 42],
+    ['social media', 26],
+    ['project manager', 27],
+    ['user research', 16],
+    ['technical writer', 15],
+    ['support', 16],
+    ['mobile developer', 9],
+    ['photographer/videographer', 10]
+  ]);
+  var options = {
+    title: 'What type of work do you do?',
+    titleTextStyle: {fontSize: 22, bold: false, fontName: 'Open Sans' },
+    colors: ['#4056f4', '#62c', '#c200fb', '#890e5b', '#f7b32b', '#57dddd', '#4056f4', '#c100fa', '#f7b32b'],
+    backgroundColor: 'none',
+    fontName: 'Open Sans',
+    is3D: true
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('work'));
+  chart.draw(data, options);
+}
+</script>

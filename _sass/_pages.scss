@@ -62,7 +62,7 @@ abbr {
 
 .img-half {
 
-  @include breakpoint(large) { width: 49.6%; }
+  @include breakpoint(large) { width: 49.5%; }
 
 }
 
@@ -92,4 +92,21 @@ abbr {
 
   @include breakpoint(large) { width: 35.25%; }
 
+}
+
+.blog {
+  margin-bottom: 2em;
+}
+
+.blog-img {
+  @extend %bg-blend-purple;
+
+  background-blend-mode: overlay;
+  background-size: 100%;
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  margin-right: .25em;
+  vertical-align: middle;
+  width: 40px;
 }

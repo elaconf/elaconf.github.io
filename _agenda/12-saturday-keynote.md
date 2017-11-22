@@ -5,6 +5,7 @@ speakers:
 permalink: /2017/agenda/keynote/
 time: "9:20"
 date: 2017-10-28 09:20
+video: https://youtu.be/_id_j1ybTfA
 ---
 
 We all know being in tech is a daily challenge. With a new controversy about workplace violence or gender discrimination coming out almost weekly we find ourselves working in an industry that has shown time and again that it doesn’t want us. We’re forced to carve out spaces like Ela Conf for support and validation. The beauty in it, however, is that these spaces allow us to grow and thrive on our own terms and is subsequently beneficial to everyone. How can we leverage the history of our struggles to propel us forward and continue to demand and fight for what we deserve?

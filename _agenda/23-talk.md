@@ -6,6 +6,7 @@ permalink: /2017/agenda/really-who-are-you/
 time: "4:40"
 date: 2017-10-28 16:40
 image: promo/dawn-mcdougall.png
+video: https://youtu.be/g-9B2akxu2Q
 ---
 
 We get a lot of advice on success about ourselves and our careers, including "be yourself" or "be authentic". Often times we take for granted that we are being ourselves by simply being. Or we allow ourselves to be defined by our profession of choice. Too often, we don't stop to take the question earnestly and respond to the prompt.

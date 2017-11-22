@@ -6,9 +6,8 @@ head: |
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
 toc:
 - About
+- Videos & Photos
 - Speakers
-- Agenda
-- Sponsors
 - Volunteers
 - Organizers
 ---
@@ -21,7 +20,6 @@ toc:
   </div>
   <div class="hero-side">
     <div class="hero-side-inner text-center">
-      <p class="hero-heading">October 27 - 28 '17<br>PHILADELPHIA, PA</p>
       <p>Get updates in your inbox with our newsletter:</p>
       {% include newsletter.html %}
       <div class="social">
@@ -49,14 +47,19 @@ toc:
 
 <section id="about">
   <div class="limiter">
-    <h2>About</h2>
+    <h2>2017 Recap</h2>
     <p class="large">A safe, inclusive tech leadership conference and <a href="http://ela.community">community</a> for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another.</p>
 
     <p>Leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When marginalized individuals become leaders, the entire tech community benefits.</p>
 
-    <p>This is a 1.5 day event, spanning a Friday evening and full Saturday. All timeline announcements, such as CFP opening and ticket sales, will be published on our <a href="https://medium.com/@elaconf">blog</a> and <a href="http://elaconf.us11.list-manage.com/subscribe?u=35575c3d011d3489cb7c3c214&id=e88ae52852">newsletter</a>.</p>
+    <p>We held the third Ela Conf on October 27th and 28th at Gershman Hall at the University of the Arts in Philadelphia, Pennsylvania. Learn about our events in <a href="/2015">2015</a> and <a href="/2016">2016</a>.</p>
 
-    <p>All attendees, speakers, volunteers, special guests, and organizers are expected to follow the <a href="{{site.baseurl}}/code-of-conduct/">Code of Conduct</a> at all times.</p>
+    <p>On Friday night, we hosted a meet and greet and talks. Saturday's day-long event featured 7 main stage talks and 2 break-out sessions with 3 workshops and panels. We concluded Saturday with a networking event at Mission Taqueria.</p>
+
+    <p>Overall, we had 193 attendees including 28 speakers, 20 volunteers, 22 sponsors, and 5 organizers!</p>
+
+    <h3>Thanks again to our 2017 sponsors!</h3>
+    {% for sponsor in site.data.sponsors %}{% unless sponsor.level == 'Opportunity Grant Donor' %}<a href="{{sponsor.link}}">{{sponsor.name}}</a>{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}
 
   </div>
 </section>
@@ -64,10 +67,50 @@ toc:
 <section class="bg-about center-mobile">
   <div class="limiter">
     <div class="large hide-mobile">Ela Conf was established in 2015 by women, is run by women organizers, and is reserved exclusively for women (cis and trans), trans men, and genderqueer people to speak and attend.</div>
-    <div class="corner-button"><a href="http://elaconf.com/2016" class="button">2016 recap</a></div>
   </div>
-  <div class="hide-mobile corner corner-purple-light hide-mobile"></div>
 </section>
+
+<section id="videos-photos" class="">
+  <div class="limiter">
+    <h2>Videos</h2>
+    <p>Play the <a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfkkWVc-sW9z35EmWqzYcC-">conference playlist</a> or jump right into a talk:</p>
+    <div class="blogs">
+      {% for post in site.agenda %}{% if post.video %}
+      <div class="blog">
+        <a href="{{post.video}}">{{post.title}}</a>
+        <div><span class="blog-img" style="background-image:url('/images/speakers/{{post.speakers[0] | slugify}}.jpg')"></span> <span class="quiet">{{post.speakers[0]}}</span></div>
+      </div>{% endif %}{% endfor %}
+    </div>
+    <h2>Photos</h2>
+    <p>Browse the <a href="https://jrblackwell.smugmug.com/Events/Ela-Conf/">full album</a>. Photos by J.R. Blackwell.</p>
+    <div class="photos">
+    <img src="/images/highlights/16.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/1.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/2.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/3.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/4.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/6.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/7.jpg" class="img-half" alt="Ela Conf 2017">
+    <img src="/images/highlights/8.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/9.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/10.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/11.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/12.jpg" alt="Ela Conf 2017">
+    <img src="/images/highlights/13.jpg" class="img-tall" alt="Ela Conf 2017">
+    <img src="/images/highlights/14.jpg" class="img-wide" alt="Ela Conf 2017">
+    <img src="/images/highlights/15.jpg" alt="Ela Conf 2017">
+  </div>
+  </div>
+</section>
+
+<!--
+<section id="evaluation" class="">
+  <div class="limiter">
+    <h2>Evaluation</h2>
+    {% include evaluation.html %}
+  </div>
+</section>
+-->
 
 <section id="speakers" class="bg-purple">
   <div class="limiter limiter-xlarge">
@@ -86,38 +129,6 @@ toc:
   <div class="corner corner-purple-light hide-mobile"></div>
 </section>
 
-<section id="agenda">
-  <div class="limiter limiter-large">
-    <h2>Agenda</h2>
-    {% include agenda.html %}
-  </div>
-</section>
-
-<section id="sponsors">
-  <div class="limiter">
-    <h2>Sponsors</h2>
-    <div class="all-sponsors">
-      {% for level in site.data.levels %}
-      {% assign sponsors = site.data.sponsors | where: 'level', level %}
-      {% assign count = sponsors | size %}
-      {% if count > 0 %}
-      <div class="badge">{{level}}</div>
-      <div class="sponsor-group">
-        <div class="flex flex-wrap{% if level == 'Opportunity Grant Donor' %} small{% endif %}">
-          {% for sponsor in sponsors %}
-          {% assign name = sponsor.name | slugify %}
-          {% assign img = '/sponsors/' | append: name | append: '.svg' %}
-          {% if sponsor.site %}<a href="{{sponsor.site}}" class="partner-img sponsor-{{level | slugify}}">{% include {{img}} %}</a>
-          {% else %}{{sponsor.name}}{% unless forloop.last %}, {% endunless %}{% endif %}
-          {% endfor %}
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <section class="bg-blue hide-mobile">
   {% include video.html %}
   <div class="limiter limiter-large">
@@ -125,16 +136,6 @@ toc:
   </div>
   <div class="corner corner-blue hide-mobile"></div>
 </section>
-
-<div class="images">
-  <div class="image2"></div>
-  <div class="image3"></div>
-</div>
-
-<div class="images">
-  <div class="image4"></div>
-  <div class="image5"></div>
-</div>
 
 <section id="volunteers">
   <div class="limiter limiter-xlarge">
