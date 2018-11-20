@@ -109,7 +109,7 @@
   section {
     min-height: calc(100vmin - 2em);
     overflow: hidden;
-    padding: 2em 0;
+    padding-top: 2em;
     position: relative;
     z-index: 0;
   }
@@ -386,4 +386,49 @@
     height: 50px;
     width: 50px;
   }
+}
+
+.photos-wrapper {
+  padding: 1em;
+}
+
+.photos {
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-gap: 1em;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(32%, 2fr));
+  }
+}
+
+.photo-box {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: flex;
+    background: $purple;
+    color: $white;
+    padding: 1em;
+    align-items: center;
+  }
+
+
+  svg {
+    height: 80px;
+    align-self: flex-end;
+  }
+}
+
+.photo-box-1 {
+  background: #231947;
+}
+
+.photo-box-2 {
+  background-image: radial-gradient(farthest-corner at 2em 2em, #f7b32b, #c200fb);
+}
+
+.photo-box-3 {
+  background-image: url(../images/home/hero.png);
+  background-size: 200%;
 }

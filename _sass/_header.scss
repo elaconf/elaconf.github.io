@@ -5,13 +5,6 @@
   padding: 1em 0;
   position: relative;
 
-  @include breakpoint(medium) {
-    background-image: url('../images/home/hero.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2em;
-  }
-
   svg {
     height: 3em;
   }

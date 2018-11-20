@@ -1,11 +1,5 @@
-.page-main {
-  .button {
-    color: $white;
-
-    &:hover {
-      color: rgba($white, .75);
-    }
-  }
+.page-main .button {
+  margin: 3em auto 1em;
 }
 
 .button {
