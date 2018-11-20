@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}} 2017</title>
+  <title>{% if page.title %}{{page.title}} &bull; {% endif %}{{site.title}}</title>
   <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{% if page.title %}{{page.content | strip_html | strip_newlines | escape | truncatewords: 30}}{% else %} &bull; {{site.mission | strip_html}}{% endif %}{% endif %}">
   <meta name="keywords" content="web design,design,designer,developer,front-end,tech,technology,women,female,girls,conference,empower,web,women in tech">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,6 @@
   <link type="text/css" rel="stylesheet" href="{{site.baseurl}}/css/elaconf.css" />
   <link href='https://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   {{page.head}}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body class="page{% if page.title %} page-inner page-{{page.title | slugify}}{% else %} page-main{% endif %}{% if page.category %} page-{{page.category}}-single{% endif %}">
   <div class="wrapper">

@@ -56,10 +56,6 @@ abbr {
   }
 }
 
-.photos {
-  margin-bottom: 1em;
-}
-
 .img-half {
 
   @include breakpoint(large) { width: 49.5%; }

@@ -95,15 +95,6 @@ footer {
 .footer-logo {
   display: inline-block;
 
-  &:hover {
-
-    path,
-    rect {
-      fill: $blue-light;
-    }
-
-  }
-
   svg {
     height: 4em;
 
@@ -183,4 +174,3 @@ hr {
 img {
   max-width: 100%;
 }
-

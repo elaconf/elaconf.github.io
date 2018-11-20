@@ -1,180 +1,30 @@
 ---
 layout: default
-description: Ela Conf - October 27 &amp; 28 2017 in Philadelphia. A safe, inclusive tech leadership conference and community for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another.
-head: |
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
-toc:
-- About
-- Videos & Photos
-- Speakers
-- Volunteers
-- Organizers
+description: Ela Conf
 ---
 
-<div class="hero">
-  <div class="hero-image">
-    <div class="hero-logo">
-      {% include svg/logo_shadow.svg %}
-    </div>
-  </div>
-  <div class="hero-side">
-    <div class="hero-side-inner text-center">
-      <p>Get updates in your inbox with our newsletter:</p>
-      {% include newsletter.html %}
-      <div class="social">
-        <a class="link-social flex-no-shrink" href="{{site.twitter}}">{% include svg/twitter.svg %}</a>
-        <a class="link-social flex-no-shrink" href="{{site.medium}}">{% include svg/medium.svg %}</a>
-        <a class="link-social flex-no-shrink" href="{{site.youtube}}">{% include svg/youtube.svg %}</a>
-        <a class="link-social flex-no-shrink" href="{{site.instagram}}">{% include svg/instagram.svg %}</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ///////////////////////////////////////////////////// -->
-<!-- Sticky Nav -->
-<!-- ///////////////////////////////////////////////////// -->
-<div class="sticky-nav hide-mobile">
-  <div class="clearfix center">
-    <ul class="">
-      {% for section in page.toc %}
-      <li><a href="#{{section | slugify}}" class="item-{{section | slugify}}">{{section}}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+{% include header.html %}
 
 <section id="about">
   <div class="limiter">
-    <h2>2017 Recap</h2>
-    <p class="large">A safe, inclusive tech leadership conference and <a href="http://ela.community">community</a> for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another.</p>
-
-    <p>Leadership skills are crucial to making an impact in the field and creating diversity in the workplace. Companies with greater top-level gender diversity perform better financially, are more empathetic, and more innovative. When marginalized individuals become leaders, the entire tech community benefits.</p>
-
-    <p>We held the third Ela Conf on October 27th and 28th at Gershman Hall at the University of the Arts in Philadelphia, Pennsylvania. Learn about our events in <a href="/2015">2015</a> and <a href="/2016">2016</a>.</p>
-
-    <p>On Friday night, we hosted a meet and greet and talks. Saturday's day-long event featured 7 main stage talks and 2 break-out sessions with 3 workshops and panels. We concluded Saturday with a networking event at Mission Taqueria.</p>
-
-    <p>Overall, we had 193 attendees including 28 speakers, 20 volunteers, 22 sponsors, and 5 organizers!</p>
-
-    <h3>Thanks again to our 2017 sponsors!</h3>
-    {% for sponsor in site.data.sponsors %}{% unless sponsor.level == 'Opportunity Grant Donor' %}<a href="{{sponsor.link}}">{{sponsor.name}}</a>{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}
-
+    <h1>Dear Ela Community,</h1>
+    {% capture letter %}{% include letter.md %}{% endcapture %}
+    {{ letter | markdownify }}
   </div>
 </section>
 
-<section class="bg-about center-mobile">
-  <div class="limiter">
-    <div class="large hide-mobile">Ela Conf was established in 2015 by women, is run by women organizers, and is reserved exclusively for women (cis and trans), trans men, and genderqueer people to speak and attend.</div>
+<section id="photos" class="photos-wrapper">
+  <div class="photos">
+    <a title="Ela Conf 2015" href="/2015" class="photo-box photo-box-1">{% include svg/2015.svg %}</a>
+    <img class="photo-1" src="/images/home/01.jpg" alt="Ela Conf">
+    <img class="photo-2" src="/images/home/02.jpg" alt="Ela Conf">
+
+    <img class="photo-3" src="/images/home/03.jpg" alt="Ela Conf">
+    <a title="Ela Conf 2016" href="/2016" class="photo-box photo-box-2">{% include svg/2016.svg %}</a>
+    <img class="photo-6" src="/images/home/06.jpg" alt="Ela Conf">
+
+    <img class="photo-4" src="/images/home/04.jpg" alt="Ela Conf">
+    <img class="photo-5" src="/images/home/05.jpg" alt="Ela Conf">
+    <a title="Ela Conf 2017" href="/2017" class="photo-box photo-box-3">{% include svg/2017.svg %}</a>
   </div>
 </section>
-
-<section id="videos-photos" class="">
-  <div class="limiter">
-    <h2>Videos</h2>
-    <p>Play the <a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfkkWVc-sW9z35EmWqzYcC-">conference playlist</a> or jump right into a talk:</p>
-    <div class="blogs">
-      {% for post in site.agenda %}{% if post.video %}
-      <div class="blog">
-        <a href="{{post.video}}">{{post.title}}</a>
-        <div><span class="blog-img" style="background-image:url('/images/speakers/{{post.speakers[0] | slugify}}.jpg')"></span> <span class="quiet">{{post.speakers[0]}}</span></div>
-      </div>{% endif %}{% endfor %}
-    </div>
-    <h2>Photos</h2>
-    <p>Browse the <a href="https://jrblackwell.smugmug.com/Events/Ela-Conf/">full album</a>. Photos by J.R. Blackwell.</p>
-    <div class="photos">
-    <img src="/images/highlights/16.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/1.jpg" class="img-half" alt="Ela Conf 2017">
-    <img src="/images/highlights/2.jpg" class="img-half" alt="Ela Conf 2017">
-    <img src="/images/highlights/3.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/4.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/6.jpg" class="img-half" alt="Ela Conf 2017">
-    <img src="/images/highlights/7.jpg" class="img-half" alt="Ela Conf 2017">
-    <img src="/images/highlights/8.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/9.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/10.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/11.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/12.jpg" alt="Ela Conf 2017">
-    <img src="/images/highlights/13.jpg" class="img-tall" alt="Ela Conf 2017">
-    <img src="/images/highlights/14.jpg" class="img-wide" alt="Ela Conf 2017">
-    <img src="/images/highlights/15.jpg" alt="Ela Conf 2017">
-  </div>
-  </div>
-</section>
-
-<!--
-<section id="evaluation" class="">
-  <div class="limiter">
-    <h2>Evaluation</h2>
-    {% include evaluation.html %}
-  </div>
-</section>
--->
-
-<section id="speakers" class="bg-purple">
-  <div class="limiter limiter-xlarge">
-    <h2>Speakers</h2>
-    <div class="speakers">
-      {% assign speakers = site.speakers | sort: 'order' %}
-      {% for speaker in speakers %}
-      <a class="speaker" href="{{site.baseurl}}{{speaker.url}}">
-        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/speakers/{{speaker.title | slugify}}.jpg')"></div>
-        <div class="speaker-title">{{speaker.title}}</div>
-        {% if speaker.subtitle %}<div class="speaker-subtitle">{{speaker.subtitle}}</div>{% endif %}
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="corner corner-purple-light hide-mobile"></div>
-</section>
-
-<section class="bg-blue hide-mobile">
-  {% include video.html %}
-  <div class="limiter limiter-large">
-    <div class="corner-button"><a href="https://www.youtube.com/playlist?list=PLB1PViL_KEtfzGRVQwDuKeE7QA77NZTTU" class="button">Promo videos</a></div>
-  </div>
-  <div class="corner corner-blue hide-mobile"></div>
-</section>
-
-<section id="volunteers">
-  <div class="limiter limiter-xlarge">
-    <h2>Volunteers</h2>
-    <p>Big thank you to our volunteers. We couldn't do this without you! Our volunteers are helping before and during the event as speaker mentors, timekeepers, sketchnoters, and more!</p>
-    <div class="volunteers">
-      {% assign volunteers = site.data.volunteers | sort: 'name' %}
-      {% for volunteer in volunteers %}
-      <a class="volunteer" href="https://www.{{volunteer.social}}.com/{{volunteer.handle}}">
-        <div class="speaker-img" style="background-image:url('{{site.baseurl}}/images/volunteers/{{volunteer.name | slugify}}.jpg')"></div>
-        <div class="speaker-title">{{volunteer.name}}</div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section id="organizers" class="bg-purple">
-  <div class="limiter limiter-xlarge">
-    <h2>Organizers</h2>
-    <div class="organizers">
-      {% assign organizers = site.organizers | sort: 'order' %}
-      {% for organizer in organizers %}{% if organizer.image %}
-      <div class="organizer">
-        <a href="/organizers/{{organizer.title | slugify}}" class="organizer-img" style="background-image:url({{site.baseurl}}/images/organizers/{{organizer.image}})"></a>
-        <div class="organizer-bio">
-          <div class="hide-mobile">{{organizer.content}}</div>
-          <div class="show-mobile">{{organizer.title}}</div>
-          <div class="organizer-links">
-            <a href="https://www.twitter.com/{{organizer.handle}}">{% include svg/twitter.svg %}</a>
-            <a href="{{organizer.link}}">{% include svg/link.svg %}</a>
-          </div>
-        </div>
-
-      </div>
-      {% endif %}{% endfor %}
-    </div>
-  </div>
-  <div class="corner corner-purple-light"></div>
-</section>
-
-<script src="{{site.baseurl}}/js/sticky.js"></script>

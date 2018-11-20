@@ -11,8 +11,6 @@ author:
   uri: http://elaconf.com
 
 repository: elaconf/elaconf.github.io
-modernizr: 2.8.3
-jquery: 2.2.3
 permalink: /:categories/:title/
 
 sass:
@@ -32,12 +30,6 @@ collections:
   organizers:
     output: true
     permalink: /organizers/:path/
-  speakers:
-    output: true
-    permalink: /2017/speakers/:path/
-  agenda:
-    output: true
-    permalink: /2017/agenda/:title/
 
 defaults:
   - scope:
@@ -47,21 +39,6 @@ defaults:
       layout: "speaker"
       category: "organizers"
       topic: Organizer
-  - scope:
-      path: ""
-      type: "speakers"
-    values:
-      layout: "speaker"
-      category: "speakers"
-      topic: Speaker
-      order: 100
-  - scope:
-      path: ""
-      type: "agenda"
-    values:
-      layout: "agenda"
-      category: "agenda"
-      topic: Agenda
 
 exclude:
 - Gemfile
@@ -76,5 +53,3 @@ plugins:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
-
-token: pk.eyJ1Ijoia2F0eWRlY29yYWgiLCJhIjoiY2lwOGJsbjR2MDBweGVhbnJyOHUxd3BmciJ9.RmDyfo38D_xPFdDst05n-g

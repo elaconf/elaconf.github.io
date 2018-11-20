@@ -1,5 +1,0 @@
-#!/bin/sh
-
-for doc in _speakers/*.md; do
-  aspell --personal=./scripts/jargon.en.pws -c $doc
-done
