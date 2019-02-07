@@ -28,9 +28,11 @@ Effective immediately we are no longer accepting emails and can not be contacted
 
 Slack will remain open until November 30th, at which point it will be deleted. We are no longer accepting new members at this time. Please be sure to finalize any conversations currently taking place and we apologize for any inconvenience this may cause.   
 
-### Photos, Videos
+### Videos
 
-Photos and videos from all three conferences will remain online as an archive.
+We are not able to continue hosting speaker videos as we originally thought. If you spoke at Ela Conf in ’15, ’16, or ’17 and would like your previously published video please request via email: [elaconf@gmail.com](mailto:elaconf@gmail.com)
+
+We will continue to check for these emails through spring 2019. 
 
 ### Twitter, Instagram
 
