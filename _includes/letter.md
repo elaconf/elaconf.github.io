@@ -22,7 +22,7 @@ Over the next few weeks we will be closing or archiving our accounts and social 
 
 ### Email
 
-Effective immediately we are no longer accepting emails and can not be contacted through this medium.
+Effective immediately we are no longer accepting emails through hello@elaconf.com and can not be contacted through this medium at all.
 
 ### Slack
 
