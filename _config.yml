@@ -1,5 +1,5 @@
 title: Ela Conf
-url: http://elaconf.com
+url: https://elaconf.github.io
 baseurl: ''
 location: "Philadelphia, Pennsylvania"
 mission: "A safe, inclusive tech leadership conference and community for adult (18+) women (cis and trans), trans men, and genderqueer people to connect with and empower one another."
@@ -8,7 +8,7 @@ tagline: Empowering more marginalized individuals to be leaders in tech.
 author:
   name: Ela Conf
   email: hello@elaconf.com
-  uri: http://elaconf.com
+  uri: https://elaconf.github.io
 
 repository: elaconf/elaconf.github.io
 permalink: /:categories/:title/
